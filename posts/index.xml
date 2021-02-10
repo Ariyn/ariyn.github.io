@@ -6,7 +6,22 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Feb 2021 00:38:22 +0900</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Feb 2021 00:44:07 +0900</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vimwiki와 hugo 연동</title>
+      <link>http://example.org/posts/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99/</link>
+      <pubDate>Thu, 11 Feb 2021 00:44:07 +0900</pubDate>
+      
+      <guid>http://example.org/posts/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99/</guid>
+      <description>vimwiki를 데이터 저장소로 사용하고, hugo를 렌더링 엔진으로만 사용하기 위해 여러가지 방법을 사용했다.
+vimwiki에서 파일을 만들고, 스크립트를 사용하면 _wiki내의 모든 파일들이 hugo/content/posts/하위로 이동한다. 이를 위해서 파일을 읽고, 메타 정보를 만들며, 다시 옮기는 파이썬 스크립트 하나, vim의 custom command를 사용하기 위해 vimrc에 추가한 몇줄이 전부이다.
+~/.vimrc에 추가한 구문
+:command UpdateWiki !UpdateWiki
+UpdateWiki 명령어 추가
+&amp;gt; which UpdateWiki /usr/bin/UpdateWiki &amp;gt; ls -al /usr/bin/UpdateWiki ~/Documents/blog/tools/vimwiki-to-hugo.py vimwiki 수정
+&amp;gt; which vimwiki /usr/bin/vimwiki &amp;gt; cat /usr/bin/vimwiki #!</description>
+    </item>
+    
     <item>
       <title> 세벌식의 단점 </title>
       <link>http://example.org/posts/-%EC%84%B8%EB%B2%8C%EC%8B%9D%EC%9D%98-%EB%8B%A8%EC%A0%90-/</link>
@@ -44,21 +59,6 @@
       
       <guid>http://example.org/posts/-21-%EC%83%9D%EA%B0%81-/</guid>
       <description>02/11 기계인간의 블로그와 흡사하겠지마는, 그래도 이렇게 시작하는게 어디인가. 평소 그의 블로그를 보면서 굉장히 존경 했으니 이렇게라도 조금은 따라가보자</description>
-    </item>
-    
-    <item>
-      <title>vimwiki와 hugo 연동</title>
-      <link>http://example.org/posts/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99/</link>
-      <pubDate>Thu, 11 Feb 2021 00:25:50 +0900</pubDate>
-      
-      <guid>http://example.org/posts/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99/</guid>
-      <description>vimwiki를 데이터 저장소로 사용하고, hugo를 렌더링 엔진으로만 사용하기 위해 여러가지 방법을 사용했다.
-vimwiki에서 파일을 만들고, 스크립트를 사용하면 _wiki내의 모든 파일들이 hugo/content/posts/하위로 이동한다. 이를 위해서 파일을 읽고, 메타 정보를 만들며, 다시 옮기는 파이썬 스크립트 하나, vim의 custom command를 사용하기 위해 vimrc에 추가한 몇줄이 전부이다.
-~/.vimrc에 추가한 구문
-:command UpdateWiki !UpdateWiki
-UpdateWiki 명령어 추가
-&amp;gt; which UpdateWiki /usr/bin/UpdateWiki &amp;gt; ls -al /usr/bin/UpdateWiki ~/Documents/blog/tools/vimwiki-to-hugo.py vimwiki 수정
-&amp;gt; which vimwiki /usr/bin/vimwiki &amp;gt; cat /usr/bin/vimwiki #!</description>
     </item>
     
     <item>
