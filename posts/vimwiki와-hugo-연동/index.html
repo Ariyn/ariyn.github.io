@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="http://example.org/categories/" />
-  <link rel="canonical" href="http://example.org/categories/" /><link rel="alternate" type="application/atom+xml" href="http://example.org/index.xml" title="My New Hugo Site">
+  <meta property="og:url" content="http://example.org/posts/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99/" />
+  <link rel="canonical" href="http://example.org/posts/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99/" /><link rel="alternate" type="application/atom+xml" href="http://example.org/index.xml" title="My New Hugo Site">
 
   <script type="application/ld+json">
   {
@@ -18,28 +18,40 @@
            "@type": "WebPage",
            "@id": "http:\/\/example.org\/"
       },
-      "articleSection" : "categories",
-      "name" : "Categories",
-      "headline" : "Categories",
-      "description" : "",
+      "articleSection" : "posts",
+      "name" : "vimwiki와 hugo 연동",
+      "headline" : "vimwiki와 hugo 연동",
+      "description" : "vimwiki를 데이터 저장소로 사용하고, hugo를 렌더링 엔진으로만 사용하기 위해 여러가지 방법을 사용했다.\nvimwiki에서 파일을 만들고, 스크립트를 사용하면 _wiki내의 모든 파일들이 hugo\/content\/posts\/하위로 이동한다. 이를 위해서 파일을 읽고, 메타 정보를 만들며, 다시 옮기는 파이썬 스크립트 하나, vim의 custom command를 사용하기 위해 vimrc에 추가한 몇줄이 전부이다.\n~\/.vimrc에 추가한 구문\n:command UpdateWiki !UpdateWiki\nUpdateWiki 명령어 추가\n\u0026gt; which UpdateWiki \/usr\/bin\/UpdateWiki \u0026gt; ls -al \/usr\/bin\/UpdateWiki ~\/Documents\/blog\/tools\/vimwiki-to-hugo.py vimwiki 수정\n\u0026gt; which vimwiki \/usr\/bin\/vimwiki \u0026gt; cat \/usr\/bin\/vimwiki #!",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
       "publisher": "",
       "accountablePerson" : "",
       "copyrightHolder" : "",
-      "copyrightYear" : "0001",
-      "datePublished": "0001-01-01 00:00:00 \u002b0000 UTC",
-      "dateModified" : "0001-01-01 00:00:00 \u002b0000 UTC",
-      "url" : "http:\/\/example.org\/categories\/",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-02-11 00:22:04 \u002b0900 KST",
+      "dateModified" : "2021-02-11 00:22:04 \u002b0900 KST",
+      "url" : "http:\/\/example.org\/posts\/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99\/",
       "keywords" : [  ]
   }
 </script>
-<title>Categories</title>
-  <meta property="og:title" content="Categories" />
+<title>vimwiki와 hugo 연동</title>
+  <meta property="og:title" content="vimwiki와 hugo 연동" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="vimwiki를 데이터 저장소로 사용하고, hugo를 렌더링 엔진으로만 사용하기 위해 여러가지 방법을 사용했다.
+vimwiki에서 파일을 만들고, 스크립트를 사용하면 _wiki내의 모든 파일들이 hugo/content/posts/하위로 이동한다. 이를 위해서 파일을 읽고, 메타 정보를 만들며, 다시 옮기는 파이썬 스크립트 하나, vim의 custom command를 사용하기 위해 vimrc에 추가한 몇줄이 전부이다.
+~/.vimrc에 추가한 구문
+:command UpdateWiki !UpdateWiki
+UpdateWiki 명령어 추가
+&amp;gt; which UpdateWiki /usr/bin/UpdateWiki &amp;gt; ls -al /usr/bin/UpdateWiki ~/Documents/blog/tools/vimwiki-to-hugo.py vimwiki 수정
+&amp;gt; which vimwiki /usr/bin/vimwiki &amp;gt; cat /usr/bin/vimwiki #!" />
+  <meta name="description" content="vimwiki를 데이터 저장소로 사용하고, hugo를 렌더링 엔진으로만 사용하기 위해 여러가지 방법을 사용했다.
+vimwiki에서 파일을 만들고, 스크립트를 사용하면 _wiki내의 모든 파일들이 hugo/content/posts/하위로 이동한다. 이를 위해서 파일을 읽고, 메타 정보를 만들며, 다시 옮기는 파이썬 스크립트 하나, vim의 custom command를 사용하기 위해 vimrc에 추가한 몇줄이 전부이다.
+~/.vimrc에 추가한 구문
+:command UpdateWiki !UpdateWiki
+UpdateWiki 명령어 추가
+&amp;gt; which UpdateWiki /usr/bin/UpdateWiki &amp;gt; ls -al /usr/bin/UpdateWiki ~/Documents/blog/tools/vimwiki-to-hugo.py vimwiki 수정
+&amp;gt; which vimwiki /usr/bin/vimwiki &amp;gt; cat /usr/bin/vimwiki #!" />
   <meta property="og:locale" content="en-us" />
 
   
@@ -71,10 +83,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post " id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -91,11 +104,74 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">vimwiki와 hugo 연동</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-02-11 00:22:04 KST">
+                11 Feb 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>vimwiki를 데이터 저장소로 사용하고, hugo를 렌더링 엔진으로만 사용하기 위해 여러가지 방법을 사용했다.</p>
+<p>vimwiki에서 파일을 만들고, 스크립트를 사용하면 <code>_wiki</code>내의 모든 파일들이 <code>hugo/content/posts/</code>하위로 이동한다.
+이를 위해서 파일을 읽고, 메타 정보를 만들며, 다시 옮기는 파이썬 스크립트 하나, vim의 custom command를 사용하기 위해 vimrc에 추가한 몇줄이 전부이다.</p>
+<p>~/.vimrc에 추가한 구문</p>
+<p><code>:command UpdateWiki !UpdateWiki</code></p>
+<p>UpdateWiki 명령어 추가</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; which UpdateWiki
+/usr/bin/UpdateWiki
+
+&gt; ls -al /usr/bin/UpdateWiki
+~/Documents/blog/tools/vimwiki-to-hugo.py
+</code></pre></div><p>vimwiki 수정</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; which vimwiki
+/usr/bin/vimwiki
+
+&gt; cat /usr/bin/vimwiki
+<span style="color:#75715e">#!/bin/bash</span>
+vim -c VimwikiIndex
+
+&gt; echo <span style="color:#e6db74">&#39;#!/bin/bash\nvim -c VimwikiIndex &amp;&amp; UpdateWiki&#39;</span> &gt; /usr/bin/vimwiki
+</code></pre></div><p>TODO
+[ ] python 스크립트 정리 후 배포
+[ ] hugo로 빌드한 뒤, github에 자동으로 배포하는 명령어 추가</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -115,6 +191,8 @@
     
   
 </script>
+
+  
 
 </body>
 
