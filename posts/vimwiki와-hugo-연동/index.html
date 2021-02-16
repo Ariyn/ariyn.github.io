@@ -29,8 +29,8 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2021",
-      "datePublished": "2021-02-14 01:29:48 \u002b0900 KST",
-      "dateModified" : "2021-02-14 01:29:48 \u002b0900 KST",
+      "datePublished": "2021-02-16 20:53:16 \u002b0900 KST",
+      "dateModified" : "2021-02-16 20:53:16 \u002b0900 KST",
       "url" : "http:\/\/example.org\/posts\/vimwiki%EC%99%80-hugo-%EC%97%B0%EB%8F%99\/",
       "keywords" : [  ]
   }
@@ -112,8 +112,8 @@ UpdateWiki 명령어 추가
           <div class="row post-desc">
             <div class="col-xs-6">
               
-              <time class="post-date" datetime="2021-02-14 01:29:48 KST">
-                14 Feb 2021
+              <time class="post-date" datetime="2021-02-16 20:53:16 KST">
+                16 Feb 2021
               </time>
               
             </div>
@@ -147,19 +147,21 @@ vim -c VimwikiIndex
 
 &gt; echo <span style="color:#e6db74">&#39;#!/bin/bash\nvim -c VimwikiIndex &amp;&amp; UpdateWiki&#39;</span> &gt; /usr/bin/vimwiki
 </code></pre></div><p>TODO</p>
-<p>아무래도 index.md를 시작으로 령크된 파일을들 한번 검사해야 할 것 같다.
-vimwiki에서는 <code>/</code>가 포함된 제목이 아니라면, 실제로 파일을 만들지는 않는듯.
-따라서 index.md를 루트로 하는 트리로 (혹은 그래프로) 파싱해서 존재하는 파일들은 path에 맞게 복사, 없다면 posts에 넣어줘야 할 것 같다.</p>
-<hr>
-<p>[ ] python 스크립트 정리 후 배포</p>
-<p>[ ] hugo로 빌드한 뒤, github에 자동으로 배포하는 명령어 추가</p>
-<p>[ ] 노션의 비공식 api를 사용해서 특정 페이지와 동기화 (아이패드에서도 블로그를 작성할 수 있게)</p>
-<p>[ ] /project-a 하위에 <code>a'</code>, <code>b'</code> 이라는 문서가 있다면 project-a에 하나로 묶어주기. (각 타이틀은 ## 과 같이 타이틀로 설정하고, 파일의 내용을 그대로 붙여넣기)</p>
-<p>[ ] 이미지 url을 모두 찾아서, 깨진것이 있는지 확인. 옵션을 주어서, 강제로 파일로 받아줄 수도 있게.</p>
-<p>[ ] 드래프트등의 메타정보를 담을 수 있는 vimwiki용 구조 만들것. 이를 파싱해서 hugo로 변환시에 넣어야 함.</p>
-<p>[*] 메모 제목의 trailing whitesapce, heading whitespace는 삭제할 것.</p>
-<p>[*] 파일을 정상적인 path로 복사할 것.</p>
-<p>[*] vimwiki의 path단위가 hugo에서는 먹히지 않는다. 정확히는 posts에 들어간 모든게 그냥 목록에 나오는 문제.</p>
+<ul>
+<li><input disabled="" type="checkbox"> python 스크립트 정리 후 배포</li>
+<li><input checked="" disabled="" type="checkbox"> hugo로 빌드한 뒤, github에 자동으로 배포하는 명령어 추가</li>
+<li><input disabled="" type="checkbox"> 노션의 비공식 api를 사용해서 특정 페이지와 동기화 (아이패드에서도 블로그를 작성할 수 있게)</li>
+<li><input disabled="" type="checkbox"> /project-a 하위에 <code>a'</code>, <code>b'</code> 이라는 문서가 있다면 project-a에 하나로 묶어주기. (각 타이틀은 ## 과 같이 타이틀로 설정하고, 파일의 내용을 그대로 붙여넣기)</li>
+<li><input disabled="" type="checkbox"> a의 하위에 b가 있고, c의 하위에도 b가 있을경우, vimwiki는 하나로 인식하지만, 현재 스크립트는 다른 파일로 인식한다.(부모를 기준으로 정하기 때문에.) 이걸 정상적으로 하나로 인식해서 움직이게 할 것.</li>
+<li><input disabled="" type="checkbox"> 이미지 url을 모두 찾아서, 깨진것이 있는지 확인. 옵션을 주어서, 강제로 파일로 받아줄 수도 있게.</li>
+<li><input disabled="" type="checkbox"> vimwiki의 플러그인등을 찾아보거나 만들어보자.</li>
+<li><input disabled="" type="checkbox"> 정말 간단하게 vimwiki를 켜는 방법? (단축키 하나로 vimwiki의 편집창 내지는 다른 에디터에서 해당 파일을 건드릴 수 있게 할 것)</li>
+<li><input checked="" disabled="" type="checkbox"> 드래프트등의 메타정보를 담을 수 있는 vimwiki용 구조 만들것. 이를 파싱해서 hugo로 변환시에 넣어야 함.</li>
+<li><input disabled="" type="checkbox"> 화면을 새로 그리지 않고, python커맨드를 실행할 수 있는 방법 찾기. 혹은 vim plugin으로 해길할 것.</li>
+<li><input checked="" disabled="" type="checkbox"> 메모 제목의 trailing whitesapce, heading whitespace는 삭제할 것.</li>
+<li><input checked="" disabled="" type="checkbox"> 파일을 정상적인 path로 복사할 것.</li>
+<li><input checked="" disabled="" type="checkbox"> vimwiki의 path단위가 hugo에서는 먹히지 않는다. 정확히는 posts에 들어간 모든게 그냥 목록에 나오는 문제.</li>
+</ul>
 
         </div>
 
