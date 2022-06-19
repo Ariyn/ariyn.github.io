@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>file write가 안되는 경우 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="file write가 안되는 경우" />
+<meta property="og:description" content="문제의 코드  javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt; panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/294uvuols/" /><meta property="article:section" content="posts" />
+
+
+
+
+  
+  <meta itemprop="name" content="file write가 안되는 경우">
+<meta itemprop="description" content="문제의 코드  javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt; panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7.">
+
+<meta itemprop="wordCount" content="233">
+<meta itemprop="keywords" content="개발,golang,linux,TIL," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="file write가 안되는 경우"/>
+<meta name="twitter:description" content="문제의 코드  javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt; panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7."/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/294uvuols/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "file write가 안되는 경우",
+    "headline": "file write가 안되는 경우",
+    "alternativeHeadline": "",
+    "description": "문제의 코드  javascript\u0026lt;\/br\u0026gt;f, err := os.OpenFile(\u0026quot;\/tmp\/test\u0026quot;, os.Append, 0755)\u0026lt;\/br\u0026gt;if err != nil {\u0026lt;\/br\u0026gt; panic(err)\u0026lt;\/br\u0026gt;}\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;fmt.Fprintln(f, \u0026quot;test\u0026quot;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read\/write, respectively.  https:\/\/man7.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/294uvuols\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "0001-01-01T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/294uvuols\/",
+    "wordCount" : "233",
+    "genre" : [ "개발" , "golang" , "linux" , "TIL" ],
+    "keywords" : [ "개발" , "golang" , "linux" , "TIL" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">file write가 안되는 경우</h2>
+      <ul>
+<li>문제의 코드
+<ul>
+<li><code>javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt;  panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;)</code></li>
+</ul>
+</li>
+<li>그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.
+<ul>
+<li><code>bad file descriptor</code></li>
+</ul>
+</li>
+<li>확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.
+<ul>
+<li><code>The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**.  These request opening the file read-only, write-only, or read/write, respectively.</code>
+<ul>
+<li><a href="https://man7.org/linux/man-pages/man2/open.2.html">https://man7.org/linux/man-pages/man2/open.2.html</a></li>
+</ul>
+</li>
+<li>open 커맨드의 man에 따르자면, access mode는 세가지. <strong>O_RDONLY</strong>, <strong>O_WRONLY</strong>, <strong>O_RDWR</strong>인 듯 하다.
+<ul>
+<li>이 세개중 하나는 반드시 들어가야 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>각각의 플래그의 값은 이렇다.
+<ul>
+<li><code>javascript&lt;/br&gt;O_RDONLY                          = 0x0&lt;/br&gt;O_WRONLY                          = 0x1&lt;/br&gt;O_RDWR                            = 0x2&lt;/br&gt;O_APPEND                          = 0x8</code></li>
+<li>따라서 O_APPEND만 사용하면 <code>0x8</code>이 되는데, 첫번째 비트가 0이기 때문에, <code>O_RDONLY</code>로 열리게 되는 것.</li>
+</ul>
+</li>
+<li>추가로 golang에서 파일을 열 때 사용할 수 있는 플래그는 아래와 같다.
+<ul>
+<li><code>javascript&lt;/br&gt;golang/src/os/file.go&lt;/br&gt;const (&lt;/br&gt;	// Exactly one of O_RDONLY, O_WRONLY, or O_RDWR must be specified.&lt;/br&gt;	O_RDONLY int = syscall.O_RDONLY // open the file read-only.&lt;/br&gt;	O_WRONLY int = syscall.O_WRONLY // open the file write-only.&lt;/br&gt;	O_RDWR   int = syscall.O_RDWR   // open the file read-write.&lt;/br&gt;	// The remaining values may be or'ed in to control behavior.&lt;/br&gt;	O_APPEND int = syscall.O_APPEND // append data to the file when writing.&lt;/br&gt;	O_CREATE int = syscall.O_CREAT  // create a new file if none exists.&lt;/br&gt;	O_EXCL   int = syscall.O_EXCL   // used with O_CREATE, file must not exist.&lt;/br&gt;	O_SYNC   int = syscall.O_SYNC   // open for synchronous I/O.&lt;/br&gt;	O_TRUNC  int = syscall.O_TRUNC  // truncate regular writable file when opened.&lt;/br&gt;)</code></li>
+<li>확인해보니 주석으로도 세개중 하나를 반드시 사용하라고 되어 있다&hellip;</li>
+</ul>
+</li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/%EA%B0%9C%EB%B0%9C'>개발</a>, <a href='/tags/golang'>Golang</a>, <a href='/tags/linux'>Linux</a>, <a href='/tags/til'>Til</a></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gorm on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/gorm/</link>
+    <description>Recent content in gorm on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/gorm/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gorm을 쓸 때, `sql: Scan error on column index 1, name &#34;created_at&#34;: unsupported Scan, storing driver.Value type []uint8 into type *time.Time` 오류가 나는 경우</title>
+      <link>https://ariyn.github.io/posts/eytikfvjz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/eytikfvjz/</guid>
+      <description> sql connection string의 제일 뒤에, ?parseTime=true를 붙여주자  </description>
+    </item>
+    
+    <item>
+      <title>unaddressable value문제</title>
+      <link>https://ariyn.github.io/posts/ubfwpramn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ubfwpramn/</guid>
+      <description> reflect: reflect.Value.Set using unaddressable value db.Create(v)에서 v가 값으로 복사되는지 확인하자. pointer가 들어가야 한다.  올바른 예: db.Create(&amp;amp;v) 잘못된 예: db.Create(v)    </description>
+    </item>
+    
+  </channel>
+</rss>

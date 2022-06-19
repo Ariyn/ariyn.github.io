@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>beanstalk on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/beanstalk/</link>
+    <description>Recent content in beanstalk on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/beanstalk/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>beanstalk 설정들</title>
+      <link>https://ariyn.github.io/posts/yo8d67xqr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/yo8d67xqr/</guid>
+      <description> 설정이 개판이다. 여러대의 인스턴스를 사용하도록 설정  구성 &amp;gt; 용량 &amp;gt; 인스턴스 미니멈 instance size를 1에서 2로 옮김   health check의 패스를 변경  구성 &amp;gt; 로드밸런서 &amp;gt; 프로세스 &amp;gt; 상태 검사 경로 프로세스의 경우, 내부에서 어떤 포트를 사용해 프로세스에 요청할 것인지 설정 리스너는 외부에 어떤 포트를 열 것인지 설정    </description>
+    </item>
+    
+    <item>
+      <title>beanstalk에서 /etc/hosts를 수정하는 방법</title>
+      <link>https://ariyn.github.io/posts/mzsmfdhir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/mzsmfdhir/</guid>
+      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가  javascript&amp;lt;/br&amp;gt;command:&amp;lt;/br&amp;gt; echo &#39;127.0.0.1 hostname&#39; &amp;gt;&amp;gt; /etc/hosts https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
+    </item>
+    
+    <item>
+      <title>beanstalk에서 golang을 사용할 때 주의할 점</title>
+      <link>https://ariyn.github.io/posts/zfvgtxxdo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/zfvgtxxdo/</guid>
+      <description> golang을 사용할 때, 몇가지 옵션을 사용할 수 있다.  Buildfile을 사용한 빌드 application.go를 자동으로 빌드 bin/application 바이너리를 사용  root에 Procfile이 필수     이때 주의할 점은, 앞에서 하나라도 만족되면 이후 것들이 진행되지 않는다.  따라서 application.go가 있다면, Procfile에서 bin/application을 실행하라고 해도 실행되지 않는다.   로그에서 확인 할 것  no Buildfile found, checking application.go file 이런식으로 계속 있을것. 어디까지 로그가 찍혀 있는지 확인필요    </description>
+    </item>
+    
+    <item>
+      <title>beanstalk에서 nginx 설정을 바꾸는 방법</title>
+      <link>https://ariyn.github.io/posts/7ynbsztwg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/7ynbsztwg/</guid>
+      <description> .ebextensions 폴더는 legacy  .platform 폴더를 사용해야 함   https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions https://mystria.github.io/archivers/fail-case-timeout-free-on-aws https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk  </description>
+    </item>
+    
+  </channel>
+</rss>

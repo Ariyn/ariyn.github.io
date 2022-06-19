@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/docker/</link>
+    <description>Recent content in docker on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/docker/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`sudo usermod -aG docker $USER`</title>
+      <link>https://ariyn.github.io/posts/vs-2alikq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/vs-2alikq/</guid>
+      <description> 도커 커맨드를 sudo 없이 쓰게 하는 방법 usermod  -a : append -G : add to other group   이경우 sudo를 사용했기 때문에, user가 admin으로 되어있게 된다.  따라서 docker가 admin 그룹에 포함되게 됨    </description>
+    </item>
+    
+    <item>
+      <title>docker run -it `--entrypoint` /bin/bash</title>
+      <link>https://ariyn.github.io/posts/olhs1ftpz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/olhs1ftpz/</guid>
+      <description> entrypoint가 설정되어 있는 경우, 그것을 무시하기 위해서 사용  </description>
+    </item>
+    
+    <item>
+      <title>docker 컨테이너를 실행할 때, 파일을 넘겨주기</title>
+      <link>https://ariyn.github.io/posts/tumz9uohu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/tumz9uohu/</guid>
+      <description> 상대경로는 안되는 듯. 절대 경로로 실행하자. javascript&amp;lt;/br&amp;gt;docker run -v $PWD/file.txt:/root/file.txt  </description>
+    </item>
+    
+    <item>
+      <title>dockerfile에서 자주 사용되는 것들</title>
+      <link>https://ariyn.github.io/posts/rov0rloae/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/rov0rloae/</guid>
+      <description> FROM docker_image:version RUN cli command with arguments ENV key=value WORKDIR /path/to/working/directory  </description>
+    </item>
+    
+    <item>
+      <title>docker에서 alpine 이미지</title>
+      <link>https://ariyn.github.io/posts/i7lwoqubd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/i7lwoqubd/</guid>
+      <description> https://www.lesstif.com/docker/alpine-linux-35356819.html latest처럼 특정한 의미가 있다기 보다는, alpine linux를 사용해서 만들어진 이미지라는 뜻  alpine 배포판은 용량이 80mb정도로 경량화되어 있음 따라서 docker 이미지로 사용하면 5mb정도의 이미지가 나오게됨    </description>
+    </item>
+    
+    <item>
+      <title>docker에서 chromium을 설치할 때, timezone을 물어보는 input이 나올때</title>
+      <link>https://ariyn.github.io/posts/a40q4vdgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/a40q4vdgs/</guid>
+      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자  javascript&amp;lt;/br&amp;gt;ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime   혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정  debian, ubuntu만 가능함 javascript&amp;lt;/br&amp;gt;ENV DEBIAN_FRONTEND=noninteractive 단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
+    </item>
+    
+    <item>
+      <title>wsl에서 docker가 아래의 이유로 시작할 수 없을때</title>
+      <link>https://ariyn.github.io/posts/1mlnwjyhc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/1mlnwjyhc/</guid>
+      <description> javascript&amp;lt;/br&amp;gt;System has not been booted with systemd as init system (PID 1). Can&#39;t operate.&amp;lt;/br&amp;gt;Failed to connect to bus: Host is down https://github.com/MicrosoftDocs/WSL/issues/457  sudo /etc/init.d/docker start    </description>
+    </item>
+    
+    <item>
+      <title>wsl에서 도커가 실행 안될때</title>
+      <link>https://ariyn.github.io/posts/mu4oltbad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/mu4oltbad/</guid>
+      <description> 대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다  javascript&amp;lt;/br&amp;gt;could not use snapshotter aufs in metadata plugin&amp;quot; error=&amp;quot;modprobe aufs failed: &amp;quot;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin   이경우 iptables를 legacy 모드로 바꿔줘야 함  javascript&amp;lt;/br&amp;gt;sudo update-alternatives --set iptables /usr/sbin/iptables-legacy&amp;lt;/br&amp;gt;sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy   출처  https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
+    </item>
+    
+    <item>
+      <title>도커 이미지를 다른 컴퓨터로 옮기기</title>
+      <link>https://ariyn.github.io/posts/undu96xhi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/undu96xhi/</guid>
+      <description> shell&amp;lt;/br&amp;gt;docker save -o &amp;lt;path for generated tar file&amp;gt; &amp;lt;image name&amp;gt;&amp;lt;/br&amp;gt;docker load -i &amp;lt;path to image tar file&amp;gt; 출처: https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository  </description>
+    </item>
+    
+    <item>
+      <title>실행중인 docker container에 bash로 들어가기</title>
+      <link>https://ariyn.github.io/posts/ejbd8pn0s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ejbd8pn0s/</guid>
+      <description> docker exec -it {container id} /bin/bash  </description>
+    </item>
+    
+  </channel>
+</rss>

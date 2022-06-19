@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jenkins on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/jenkins/</link>
+    <description>Recent content in jenkins on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/jenkins/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jenkins에서 private repo에 github push가 도저히 연동 안될때</title>
+      <link>https://ariyn.github.io/posts/gpyn_hla5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/gpyn_hla5/</guid>
+      <description> log에서 깃헙 푸시 오는지 확인 만약 no matching repository라면, gitscm에 등록해둔 url이 로그의 push에 존재 하는지 확인  없다면, sshUrl에 들어있는 그 값으로 바꿔줄 것 (private에 ssh로 접속하는 경우에는 user, .git suffix 등등의 설정이 조금 다른듯)    </description>
+    </item>
+    
+    <item>
+      <title>jenkins에서 ssh할때, `Host key verification failed`로 끝나는 경우</title>
+      <link>https://ariyn.github.io/posts/bbae78lgw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/bbae78lgw/</guid>
+      <description> sudo su jenkins를 통해서 jenkins로 유저를 바꾸고, ~/.ssh/known_hosts에 호스트의 fingerprint를 추가해주자  </description>
+    </item>
+    
+  </channel>
+</rss>

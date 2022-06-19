@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>생각의 도구들 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/%EC%83%9D%EA%B0%81%EC%9D%98-%EB%8F%84%EA%B5%AC%EB%93%A4/</link>
+    <description>Recent content in 생각의 도구들 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/%EC%83%9D%EA%B0%81%EC%9D%98-%EB%8F%84%EA%B5%AC%EB%93%A4/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>생각의 도구를 컴퓨터공학 도메인에 맞춰서 정리해야 한다</title>
+      <link>https://ariyn.github.io/posts/idkgl0jbu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/idkgl0jbu/</guid>
+      <description>그래야 내 생각이 내 전문성을 사용해서 뻗어나갈 수 있다. 좋은 예시) https://johngrib.github.io/wiki/cleaning-tile-cycle/  물때를 언제 청소할 것인가에 대한 간단한 생각에서 출발한다.그러나 물때를 청소하는 것에 대한 요구사항(?)을 Threshold로 명명한다.이름을 threshold로 명명하고 나니, cs에서 사용하는 접근방법들이 같이 떠오르고, 이를 사용해서 문제를 해결한다. plain text&amp;lt;/br&amp;gt;자동 GC라면 기계가 되었던 사람이 되었건 항상 누군가가 대기하여 threshold를 감지하고 일정 영역을 청소할 준비를 해놔야 한다. &#39;처리량(throughput)&#39;과 &#39;짧은 일시 정지 시간&#39;이 상충한다는 GC의 상식을 떠올려본다. 나라면 &amp;ldquo;더러움에 대한 역치&amp;quot;라는 단어를 사용 했을 것이다.</description>
+    </item>
+    
+    <item>
+      <title>인슐린 저항성</title>
+      <link>https://ariyn.github.io/posts/aev36ilz5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/aev36ilz5/</guid>
+      <description> 인슐린 저항성이 높을 경우, 인체는 이미 포도당이 충분함에도 불구하고 인슐린에 의해 포도당의 축적이나 포도당 생성이 조절되어야 함에도 불구하고 계속해서 인슐린을 만들어 내고 그로 인해 췌장에서 인슐린을 만들어내는 베타세포는 과부하로 결국 그 기능을 못하고 대미지를 입게 되기도 한다.  출처 위키    </description>
+    </item>
+    
+  </channel>
+</rss>

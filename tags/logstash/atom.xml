@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logstash on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/logstash/</link>
+    <description>Recent content in logstash on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/logstash/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>logstash timezone 설정</title>
+      <link>https://ariyn.github.io/posts/ulyzqi4mc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ulyzqi4mc/</guid>
+      <description> javascript&amp;lt;/br&amp;gt;date {&amp;lt;/br&amp;gt; timezone =&amp;gt; &amp;quot;Asia/Seoul&amp;quot;&amp;lt;/br&amp;gt;}  </description>
+    </item>
+    
+    <item>
+      <title>logstash에서 json을 파싱할 때, root에 추가하기</title>
+      <link>https://ariyn.github.io/posts/mtkokevx0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/mtkokevx0/</guid>
+      <description> json filter plugin을 사용하고 target을 지정하지 않으면 root로 들어가게 된다.  javascript&amp;lt;/br&amp;gt;filter {&amp;lt;/br&amp;gt; grok {&amp;lt;/br&amp;gt; match =&amp;gt; &amp;quot;test %{GREEDYDATA:jsonString}&amp;quot;&amp;lt;/br&amp;gt; }&amp;lt;/br&amp;gt; json {&amp;lt;/br&amp;gt; source =&amp;gt; &amp;quot;jsonString&amp;quot;&amp;lt;/br&amp;gt; }&amp;lt;/br&amp;gt;}   https://www.elastic.co/guide/en/logstash/current/plugins-filters-json.html#plugins-filters-json-target  </description>
+    </item>
+    
+    <item>
+      <title>logstash에서 사용하는 json, grok등등의 이름</title>
+      <link>https://ariyn.github.io/posts/ygybygxfk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ygybygxfk/</guid>
+      <description> file input plugin, grok filter plugin 등등으로 부르는 듯 하다.  https://www.elastic.co/guide/en/logstash/current/plugins-inputs-file.html https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html    </description>
+    </item>
+    
+    <item>
+      <title>opensearch에서 logstash-oss와 logstash-opensearch-output-plugin이 동작 안할때</title>
+      <link>https://ariyn.github.io/posts/njo_ltxgb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/njo_ltxgb/</guid>
+      <description> https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다 문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다  업데이트가 안된 버전임 결국 삭제후 재 설치해야 함 javascript&amp;lt;/br&amp;gt;bin/logstash-plugin uninstall logstash-output-opensearch&amp;lt;/br&amp;gt;bin/logstash-plugin install logstash-output-opensearch   생명의 구원자  https://githubmemory.com/@arianitu    </description>
+    </item>
+    
+  </channel>
+</rss>

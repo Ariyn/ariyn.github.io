@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goland on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/goland/</link>
+    <description>Recent content in goland on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/goland/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>goland에서 go fmt가 동작 안할때</title>
+      <link>https://ariyn.github.io/posts/os3uqbwsq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/os3uqbwsq/</guid>
+      <description> file watcher에서 go fmt를 활성화 go fmt의 설정에서  program: /path/to/go/gofmt arguments : -w $FilePath$ output path to refresh: $FilePath$ 임을 확인할 것    </description>
+    </item>
+    
+    <item>
+      <title>intellij에서 invert if기능</title>
+      <link>https://ariyn.github.io/posts/ybrgmwu7p/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ybrgmwu7p/</guid>
+      <description>   </description>
+    </item>
+    
+  </channel>
+</rss>

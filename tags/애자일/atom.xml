@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>애자일 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</link>
+    <description>Recent content in 애자일 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>실수는 예방하는 것이 아니라 관리하는 것</title>
+      <link>https://ariyn.github.io/posts/af2wyqmg5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/af2wyqmg5/</guid>
+      <description> http://agile.egloos.com/5774862 안티프래질에서도 비슷한 이야기를 함  {{[[embed]]: 6Qy7d9A4W}}    </description>
+    </item>
+    
+    <item>
+      <title>팀이 함께 무엇인가를 해야한다.</title>
+      <link>https://ariyn.github.io/posts/5yv_6pkpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/5yv_6pkpp/</guid>
+      <description> 개인의 실패가 팀의 실패로 이어지지 않게  미리미리 실패하는 팀원이 있지 않도록 확인하고, 팀이 버퍼역할을 할 수 있도록   개인의 성공이 팀원 모두의 성공으로 이어지게  개인의 성공의 핵심이 팀원 모두가 공감하고 배울 수 있는 방식으로 전해져야 함 개인에게 의존하지 않게 되는것이 핵심    </description>
+    </item>
+    
+  </channel>
+</rss>

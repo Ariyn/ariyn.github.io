@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>apt가 설치할 때 yes를 물어보는 경우 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="apt가 설치할 때 yes를 물어보는 경우" />
+<meta property="og:description" content=" 대충 짐작으로 &ldquo;추가 패키지가 딸려오는 경우&quot;로만 생각했었는데, AskUbuntu에 따르면 3가지 경우가 있다고 한다.  추가적인 패키지가 딸려오는 경우 시스템에 필수적인 패키지를 지우는 경우 과거버전으로 명시한 패키지를 바꾸는 경우   이중 시스템에 필수적인 패키지를 지우는 경우에는 -y옵션을 주어도 꼭 물어본다고 한다. 출처: https://askubuntu.com/questions/441793/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/aflryfrwt/" /><meta property="article:section" content="posts" />
+
+
+
+
+  
+  <meta itemprop="name" content="apt가 설치할 때 yes를 물어보는 경우">
+<meta itemprop="description" content=" 대충 짐작으로 &ldquo;추가 패키지가 딸려오는 경우&quot;로만 생각했었는데, AskUbuntu에 따르면 3가지 경우가 있다고 한다.  추가적인 패키지가 딸려오는 경우 시스템에 필수적인 패키지를 지우는 경우 과거버전으로 명시한 패키지를 바꾸는 경우   이중 시스템에 필수적인 패키지를 지우는 경우에는 -y옵션을 주어도 꼭 물어본다고 한다. 출처: https://askubuntu.com/questions/441793/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages  ">
+
+<meta itemprop="wordCount" content="40">
+<meta itemprop="keywords" content="TIL,shell,apt," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="apt가 설치할 때 yes를 물어보는 경우"/>
+<meta name="twitter:description" content=" 대충 짐작으로 &ldquo;추가 패키지가 딸려오는 경우&quot;로만 생각했었는데, AskUbuntu에 따르면 3가지 경우가 있다고 한다.  추가적인 패키지가 딸려오는 경우 시스템에 필수적인 패키지를 지우는 경우 과거버전으로 명시한 패키지를 바꾸는 경우   이중 시스템에 필수적인 패키지를 지우는 경우에는 -y옵션을 주어도 꼭 물어본다고 한다. 출처: https://askubuntu.com/questions/441793/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages  "/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/aflryfrwt/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "apt가 설치할 때 yes를 물어보는 경우",
+    "headline": "apt가 설치할 때 yes를 물어보는 경우",
+    "alternativeHeadline": "",
+    "description": " 대충 짐작으로 \u0026ldquo;추가 패키지가 딸려오는 경우\u0026quot;로만 생각했었는데, AskUbuntu에 따르면 3가지 경우가 있다고 한다.  추가적인 패키지가 딸려오는 경우 시스템에 필수적인 패키지를 지우는 경우 과거버전으로 명시한 패키지를 바꾸는 경우   이중 시스템에 필수적인 패키지를 지우는 경우에는 -y옵션을 주어도 꼭 물어본다고 한다. 출처: https:\/\/askubuntu.com\/questions\/441793\/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages  ",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/aflryfrwt\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "0001-01-01T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/aflryfrwt\/",
+    "wordCount" : "40",
+    "genre" : [ "TIL" , "shell" , "apt" ],
+    "keywords" : [ "TIL" , "shell" , "apt" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">apt가 설치할 때 yes를 물어보는 경우</h2>
+      <ul>
+<li>대충 짐작으로 &ldquo;추가 패키지가 딸려오는 경우&quot;로만 생각했었는데, AskUbuntu에 따르면 3가지 경우가 있다고 한다.
+<ul>
+<li>추가적인 패키지가 딸려오는 경우</li>
+<li>시스템에 필수적인 패키지를 지우는 경우</li>
+<li>과거버전으로 명시한 패키지를 바꾸는 경우</li>
+</ul>
+</li>
+<li>이중 <code>시스템에 필수적인 패키지를 지우는 경우</code>에는 -y옵션을 주어도 꼭 물어본다고 한다.</li>
+<li>출처: <a href="https://askubuntu.com/questions/441793/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages">https://askubuntu.com/questions/441793/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages</a></li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/til'>Til</a>, <a href='/tags/shell'>Shell</a>, <a href='/tags/apt'>Apt</a></div>
+</main>
+</body>
+</html>

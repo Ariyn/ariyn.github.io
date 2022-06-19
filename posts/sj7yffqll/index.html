@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>var _ CustomInterface = CustomType{} 의 의미 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="var _ CustomInterface = CustomType{} 의 의미" />
+<meta property="og:description" content=" 이경우 컴파일 시간에, CustomType이 CustomInterface를 구현했는지 체크할 수 있다고 함 생각해보면 구현체만 존재하고, 사용하지 않는경우 컴파일 체크가 불가능함. 따라서 명시적으로 var _ CustomInterface = CustomType{}라는 코드를 통해 체크가 가능. 출처: https://stackoverflow.com/questions/13194272/what-does-an-underscore-and-interface-name-after-keyword-var-mean  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/sj7yffqll/" /><meta property="article:section" content="posts" />
+
+
+
+
+  
+  <meta itemprop="name" content="var _ CustomInterface = CustomType{} 의 의미">
+<meta itemprop="description" content=" 이경우 컴파일 시간에, CustomType이 CustomInterface를 구현했는지 체크할 수 있다고 함 생각해보면 구현체만 존재하고, 사용하지 않는경우 컴파일 체크가 불가능함. 따라서 명시적으로 var _ CustomInterface = CustomType{}라는 코드를 통해 체크가 가능. 출처: https://stackoverflow.com/questions/13194272/what-does-an-underscore-and-interface-name-after-keyword-var-mean  ">
+
+<meta itemprop="wordCount" content="31">
+<meta itemprop="keywords" content="TIL,golang," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="var _ CustomInterface = CustomType{} 의 의미"/>
+<meta name="twitter:description" content=" 이경우 컴파일 시간에, CustomType이 CustomInterface를 구현했는지 체크할 수 있다고 함 생각해보면 구현체만 존재하고, 사용하지 않는경우 컴파일 체크가 불가능함. 따라서 명시적으로 var _ CustomInterface = CustomType{}라는 코드를 통해 체크가 가능. 출처: https://stackoverflow.com/questions/13194272/what-does-an-underscore-and-interface-name-after-keyword-var-mean  "/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/sj7yffqll/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "var _ CustomInterface = CustomType{} 의 의미",
+    "headline": "var _ CustomInterface = CustomType{} 의 의미",
+    "alternativeHeadline": "",
+    "description": " 이경우 컴파일 시간에, CustomType이 CustomInterface를 구현했는지 체크할 수 있다고 함 생각해보면 구현체만 존재하고, 사용하지 않는경우 컴파일 체크가 불가능함. 따라서 명시적으로 var _ CustomInterface = CustomType{}라는 코드를 통해 체크가 가능. 출처: https:\/\/stackoverflow.com\/questions\/13194272\/what-does-an-underscore-and-interface-name-after-keyword-var-mean  ",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/sj7yffqll\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "0001-01-01T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/sj7yffqll\/",
+    "wordCount" : "31",
+    "genre" : [ "TIL" , "golang" ],
+    "keywords" : [ "TIL" , "golang" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">var _ CustomInterface = CustomType{} 의 의미</h2>
+      <ul>
+<li>이경우 컴파일 시간에, CustomType이 CustomInterface를 구현했는지 체크할 수 있다고 함</li>
+<li>생각해보면 구현체만 존재하고, 사용하지 않는경우 컴파일 체크가 불가능함.</li>
+<li>따라서 명시적으로 <code>var _ CustomInterface = CustomType{}</code>라는 코드를 통해 체크가 가능.</li>
+<li>출처: <a href="https://stackoverflow.com/questions/13194272/what-does-an-underscore-and-interface-name-after-keyword-var-mean">https://stackoverflow.com/questions/13194272/what-does-an-underscore-and-interface-name-after-keyword-var-mean</a></li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/til'>Til</a>, <a href='/tags/golang'>Golang</a></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>물건 상자를 잘 사용 하는 방법 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="물건 상자를 잘 사용 하는 방법" />
+<meta property="og:description" content="집에 잡동사니가 들어있는 상자(보관함)이 여러개 있다. 차곡차곡 쌓여있음.  따라서 아랫쪽에 있는 상자에서 꺼낼때는, 위에있는 상자를 치워놓고 꺼내야 함. 이 과정이 너무 불편하다.   각 상자에는 잡동사니의 종류별로 넣어 놓았다.  여기까지는 문제가 없지만, 자주 사용하는 것들에 대해서는 생각하지 못했다.   잡동사니 상자를 &ldquo;스토리지&quot;로 생각했을때, 스토리지에서 자주 꺼내는 것들은 캐시에 담아둔다.  여기서도 동일하게 적용할 수 있지 않을까?  LRU를 적용해보면 어떨까?   캐시 상자는 따로 일을 하지 않아도, 바로 열 수 있는 곳에 둔다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/hjzrvdsma/" /><meta property="article:section" content="posts" />
+
+
+
+
+  
+  <meta itemprop="name" content="물건 상자를 잘 사용 하는 방법">
+<meta itemprop="description" content="집에 잡동사니가 들어있는 상자(보관함)이 여러개 있다. 차곡차곡 쌓여있음.  따라서 아랫쪽에 있는 상자에서 꺼낼때는, 위에있는 상자를 치워놓고 꺼내야 함. 이 과정이 너무 불편하다.   각 상자에는 잡동사니의 종류별로 넣어 놓았다.  여기까지는 문제가 없지만, 자주 사용하는 것들에 대해서는 생각하지 못했다.   잡동사니 상자를 &ldquo;스토리지&quot;로 생각했을때, 스토리지에서 자주 꺼내는 것들은 캐시에 담아둔다.  여기서도 동일하게 적용할 수 있지 않을까?  LRU를 적용해보면 어떨까?   캐시 상자는 따로 일을 하지 않아도, 바로 열 수 있는 곳에 둔다.">
+
+<meta itemprop="wordCount" content="149">
+<meta itemprop="keywords" content="개선,TIL," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="물건 상자를 잘 사용 하는 방법"/>
+<meta name="twitter:description" content="집에 잡동사니가 들어있는 상자(보관함)이 여러개 있다. 차곡차곡 쌓여있음.  따라서 아랫쪽에 있는 상자에서 꺼낼때는, 위에있는 상자를 치워놓고 꺼내야 함. 이 과정이 너무 불편하다.   각 상자에는 잡동사니의 종류별로 넣어 놓았다.  여기까지는 문제가 없지만, 자주 사용하는 것들에 대해서는 생각하지 못했다.   잡동사니 상자를 &ldquo;스토리지&quot;로 생각했을때, 스토리지에서 자주 꺼내는 것들은 캐시에 담아둔다.  여기서도 동일하게 적용할 수 있지 않을까?  LRU를 적용해보면 어떨까?   캐시 상자는 따로 일을 하지 않아도, 바로 열 수 있는 곳에 둔다."/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/hjzrvdsma/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "물건 상자를 잘 사용 하는 방법",
+    "headline": "물건 상자를 잘 사용 하는 방법",
+    "alternativeHeadline": "",
+    "description": "집에 잡동사니가 들어있는 상자(보관함)이 여러개 있다. 차곡차곡 쌓여있음.  따라서 아랫쪽에 있는 상자에서 꺼낼때는, 위에있는 상자를 치워놓고 꺼내야 함. 이 과정이 너무 불편하다.   각 상자에는 잡동사니의 종류별로 넣어 놓았다.  여기까지는 문제가 없지만, 자주 사용하는 것들에 대해서는 생각하지 못했다.   잡동사니 상자를 \u0026ldquo;스토리지\u0026quot;로 생각했을때, 스토리지에서 자주 꺼내는 것들은 캐시에 담아둔다.  여기서도 동일하게 적용할 수 있지 않을까?  LRU를 적용해보면 어떨까?   캐시 상자는 따로 일을 하지 않아도, 바로 열 수 있는 곳에 둔다.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/hjzrvdsma\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "0001-01-01T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/hjzrvdsma\/",
+    "wordCount" : "149",
+    "genre" : [ "개선" , "TIL" ],
+    "keywords" : [ "개선" , "TIL" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">물건 상자를 잘 사용 하는 방법</h2>
+      <ul>
+<li>집에 잡동사니가 들어있는 상자(보관함)이 여러개 있다. 차곡차곡 쌓여있음.
+<ul>
+<li>따라서 아랫쪽에 있는 상자에서 꺼낼때는, 위에있는 상자를 치워놓고 꺼내야 함.</li>
+<li>이 과정이 너무 불편하다.</li>
+</ul>
+</li>
+<li>각 상자에는 잡동사니의 종류별로 넣어 놓았다.
+<ul>
+<li>여기까지는 문제가 없지만, 자주 사용하는 것들에 대해서는 생각하지 못했다.</li>
+</ul>
+</li>
+<li>잡동사니 상자를 &ldquo;스토리지&quot;로 생각했을때, 스토리지에서 자주 꺼내는 것들은 캐시에 담아둔다.
+<ul>
+<li>여기서도 동일하게 적용할 수 있지 않을까?
+<ul>
+<li>LRU를 적용해보면 어떨까?</li>
+</ul>
+</li>
+<li>캐시 상자는 따로 일을 하지 않아도, 바로 열 수 있는 곳에 둔다.
+<ul>
+<li>가장 최근에 쓴 물건은 캐시 상자에 옮겨둔다.</li>
+<li>다음번에 쓴 물건을 넣을때, 캐시상자에서 가장 오래전에 쓴 물건을 뺀다. (정확하게 할 수는 없으니, 적당히 안썼던 것, 앞으로도 한동안 안 쓸것을 빼야할 듯.)</li>
+<li>캐시상자에서 뺀 물건은&hellip;
+<ul>
+<li>원래의 상자에 넣는것은 기존과 동일한 수준의 일거리가 될 듯.</li>
+<li>가장 위에있는 상자에 넣으면 어떨까?</li>
+<li>최종적으로 캐시상자부터 아래 상자까지 &ldquo;최근 사용한 물건 순서&quot;로 정렬되는 방식</li>
+<li>무엇인가를 찾을때는 위에서부터 순서대로 박스를 열어보면 되는 구조.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>잡동사니가 잘 안쓰이다보니, 캐시 히트가 잘 안될 수 있을 것 같다.
+<ul>
+<li>한동안 실험해보고 다시 정리 해야겠다.</li>
+</ul>
+</li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/%EA%B0%9C%EC%84%A0'>개선</a>, <a href='/tags/til'>Til</a></div>
+</main>
+</body>
+</html>

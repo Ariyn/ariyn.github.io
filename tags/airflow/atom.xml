@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>airflow on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/airflow/</link>
+    <description>Recent content in airflow on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/airflow/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pip로 설치한 airflow에서 webserver로 접속 했을때, 새로은 dag가 뜨지 않을때</title>
+      <link>https://ariyn.github.io/posts/v8lhygvlq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/v8lhygvlq/</guid>
+      <description> 상태  example는 보인다. airflow dags list에서도 보인다. ~/airflow/dags에 들어 있지만, 웹서버 에서만 보이지 않음   airflow scheduler가 돌고 있는지 확인하자 dag를 모니터링 하는 녀석이 스케쥴러라고 한다. javascript&amp;lt;/br&amp;gt;https://airflow.apache.org/docs/apache-airflow/stable/concepts/scheduler.html  </description>
+    </item>
+    
+    <item>
+      <title>스케쥴러 실행시, 테이블이 없어서 실행되지 않는 경우</title>
+      <link>https://ariyn.github.io/posts/nkbzgocvw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/nkbzgocvw/</guid>
+      <description> WARNING - Failed to log action with (sqlite3.OperationalError) no such table: log airflow_home이 잘 설정되어 있는지 보고, airflow db init를 하자  기본적으로는 ~/airflow로 설정되는듯    </description>
+    </item>
+    
+  </channel>
+</rss>

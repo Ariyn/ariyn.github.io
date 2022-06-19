@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>moto on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/moto/</link>
+    <description>Recent content in moto on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/moto/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>moto에서 aws account id를 모킹하는 방법</title>
+      <link>https://ariyn.github.io/posts/sa3nzeqjc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/sa3nzeqjc/</guid>
+      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000  </description>
+    </item>
+    
+  </channel>
+</rss>

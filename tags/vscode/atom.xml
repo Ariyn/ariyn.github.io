@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/vscode/</link>
+    <description>Recent content in vscode on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/vscode/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vscode를 터미널에서 실행시키고, 그 결과값을 받기위해 기다리는 법</title>
+      <link>https://ariyn.github.io/posts/0rj_ue7ch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/0rj_ue7ch/</guid>
+      <description> code --wait  </description>
+    </item>
+    
+  </channel>
+</rss>

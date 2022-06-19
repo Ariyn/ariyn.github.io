@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lambda on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/lambda/</link>
+    <description>Recent content in lambda on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/lambda/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang으로 lambda 함수를 만들때</title>
+      <link>https://ariyn.github.io/posts/qm8yip9td/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/qm8yip9td/</guid>
+      <description> api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript&amp;lt;/br&amp;gt;func handler(myModel MyModel) {} &amp;gt; lambda proxy를 안쓸경우 사용가능&amp;lt;/br&amp;gt;func handler(proxyModel events.APIGatewayProxyRequest) &amp;gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다.  javascript&amp;lt;/br&amp;gt;{&amp;lt;/br&amp;gt; &amp;quot;body&amp;quot;:&amp;quot;...&amp;quot;,&amp;lt;/br&amp;gt; &amp;quot;uri&amp;quot; :&amp;quot;...&amp;quot;,&amp;lt;/br&amp;gt; ...&amp;lt;/br&amp;gt;}    </description>
+    </item>
+    
+    <item>
+      <title>lambda provisioned concurrency</title>
+      <link>https://ariyn.github.io/posts/vlangm8mw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/vlangm8mw/</guid>
+      <description> 설정한 숫자만큼 hot start 시켜놓는 기능  </description>
+    </item>
+    
+  </channel>
+</rss>

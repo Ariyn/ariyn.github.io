@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/python/</link>
+    <description>Recent content in python on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/python/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>간단하게 웹서버가 필요할 때</title>
+      <link>https://ariyn.github.io/posts/s2vhxiq02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/s2vhxiq02/</guid>
+      <description> static webserver를 띄우기 위해서는, 해당 폴더에서 javascript&amp;lt;/br&amp;gt;python3 -m http.server 80  </description>
+    </item>
+    
+  </channel>
+</rss>
