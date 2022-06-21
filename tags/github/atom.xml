@@ -5,29 +5,30 @@
     <link>https://ariyn.github.io/tags/github/</link>
     <description>Recent content in github on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/github/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>gh auth login에서 --with-token을 사용할 때, stdin으로 사용해야 함</title>
-      <link>https://ariyn.github.io/posts/jbv4dg8tg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/jbv4dg8tg/</guid>
-      <description> javascript&amp;lt;/br&amp;gt;echo &amp;quot;token&amp;quot; | gh auth login --with-token  </description>
-    </item>
-    
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jan 2022 16:56:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/github/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>github에서 private repository를 personal access token으로 접속하는 방법</title>
       <link>https://ariyn.github.io/posts/n7abkj6kg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jan 2022 16:56:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/n7abkj6kg/</guid>
       <description> git clone https://${TOKEN}:x-oauth-basic@github.com/user/repo.git  </description>
     </item>
     
     <item>
+      <title>gh auth login에서 --with-token을 사용할 때, stdin으로 사용해야 함</title>
+      <link>https://ariyn.github.io/posts/jbv4dg8tg/</link>
+      <pubDate>Wed, 01 Dec 2021 22:47:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/jbv4dg8tg/</guid>
+      <description> javascript&amp;lt;/br&amp;gt;echo &amp;quot;token&amp;quot; | gh auth login --with-token  </description>
+    </item>
+    
+    <item>
       <title>jenkins에서 private repo에 github push가 도저히 연동 안될때</title>
       <link>https://ariyn.github.io/posts/gpyn_hla5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Oct 2021 23:26:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/gpyn_hla5/</guid>
       <description> log에서 깃헙 푸시 오는지 확인 만약 no matching repository라면, gitscm에 등록해둔 url이 로그의 push에 존재 하는지 확인  없다면, sshUrl에 들어있는 그 값으로 바꿔줄 것 (private에 ssh로 접속하는 경우에는 user, .git suffix 등등의 설정이 조금 다른듯)    </description>

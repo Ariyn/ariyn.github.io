@@ -5,20 +5,30 @@
     <link>https://ariyn.github.io/tags/git/</link>
     <description>Recent content in git on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/git/atom.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 03:04:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/git/atom.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>branch의 upstream branch가 다른 브랜치로 설정된 경우</title>
-      <link>https://ariyn.github.io/posts/wbz9gpvc7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>`git log &lt;COMMIT_ID&gt;^..&lt;COMMIT_ID&gt;`</title>
+      <link>https://ariyn.github.io/posts/d4mhg2ucg/</link>
+      <pubDate>Tue, 26 Apr 2022 03:04:00 +0000</pubDate>
       
-      <guid>https://ariyn.github.io/posts/wbz9gpvc7/</guid>
-      <description> 정확히는 upstream branch의 name과 local이 다를경우 발생하는 문제 아래와 같은 에러가 뜸 javascript&amp;lt;/br&amp;gt;fatal: The upstream branch of your current branch does not match&amp;lt;/br&amp;gt;the name of your current branch. To push to the upstream branch&amp;lt;/br&amp;gt;on the remote, use&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt; git push origin HEAD:master&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;To push to the branch of the same name on the remote, use&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt; git push origin HEAD&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;어느 한 쪽 옵션만 계속 선택하려면, &#39;git help config&#39;에서 push.default를 참고하십시오.&amp;lt;/br&amp;gt; 해결책  git push origin HEAD &amp;gt; 이번 한번만 푸시 git push -u origin HEAD &amp;gt; 업스트림 브랜치를 업데이트함    </description>
+      <guid>https://ariyn.github.io/posts/d4mhg2ucg/</guid>
+      <description> 특정 커밋 사이의 커밋들만 로그를 보는 방법 &amp;lt;COMMIT_ID&amp;gt;..&amp;lt;COMMIT_ID&amp;gt;^은 해당 커밋을 포함하지 않음 &amp;lt;COMMIT_ID&amp;gt; 대신 symbolic reference 사용 가능  </description>
+    </item>
+    
+    <item>
+      <title>git에서 ssh를 사용해서 접속하도록 하는 방법</title>
+      <link>https://ariyn.github.io/posts/2fgpwznkf/</link>
+      <pubDate>Sun, 13 Mar 2022 15:27:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/2fgpwznkf/</guid>
+      <description> javascript&amp;lt;/br&amp;gt;[url &amp;quot;ssh://git@github.com/&amp;quot;]&amp;lt;/br&amp;gt;	insteadOf = https://github.com/ global config에 위와 같은 라인을 추가  </description>
     </item>
     
     <item>
       <title>git clone할 때, 마지막 한개의 커밋만 가져오는 방법</title>
       <link>https://ariyn.github.io/posts/zxk8l4zhs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jan 2022 16:57:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/zxk8l4zhs/</guid>
       <description> git clone --depth 1  </description>
@@ -27,127 +37,127 @@
     <item>
       <title>git clone할 때, 특정 브랜치만 가져오는 방법</title>
       <link>https://ariyn.github.io/posts/afg55odu1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jan 2022 16:57:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/afg55odu1/</guid>
       <description> git clone -b ${BRANCH_NAME} --single-branch single-branch의 역할?  </description>
     </item>
     
     <item>
-      <title>git diff --diff-filter=U</title>
-      <link>https://ariyn.github.io/posts/wb8daxpug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/wb8daxpug/</guid>
-      <description> unmerged옵션 이외에도 존재하는 옵션으로는  Added (A) Copied (C) Modified (M) Unmerged (U) Renamed (R) Type changed (T) Unknown (X) Broken (B)    </description>
-    </item>
-    
-    <item>
-      <title>git log에서 해시값만 보이기</title>
-      <link>https://ariyn.github.io/posts/jqox2ywov/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/jqox2ywov/</guid>
-      <description> git log --pretty=format:&amp;quot;%h&amp;quot; 포맷을 %H로 할 경우, 전체 해시 아이디가 보인다.  %h의 경우, 7자리만 보임    </description>
-    </item>
-    
-    <item>
       <title>git patch를 만드는 방법</title>
       <link>https://ariyn.github.io/posts/h75zxibbl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Dec 2021 12:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/h75zxibbl/</guid>
       <description> javascript&amp;lt;/br&amp;gt;git stash list // patch 파일 만들 stash 확인&amp;lt;/br&amp;gt;git stash show -p stash@{0} &amp;gt; filename.patch  </description>
     </item>
     
     <item>
-      <title>git staged된 파일의 비교</title>
-      <link>https://ariyn.github.io/posts/h9rct5cwy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>git diff --diff-filter=U</title>
+      <link>https://ariyn.github.io/posts/wb8daxpug/</link>
+      <pubDate>Mon, 20 Dec 2021 17:52:00 +0000</pubDate>
       
-      <guid>https://ariyn.github.io/posts/h9rct5cwy/</guid>
-      <description> git diff --staged 혹은 git diff --cached  </description>
-    </item>
-    
-    <item>
-      <title>git 리베이스 할 때, 특정 커밋의 뒤에 대해 진행하기</title>
-      <link>https://ariyn.github.io/posts/cwk7_jl_h/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/cwk7_jl_h/</guid>
-      <description> git rebase -i &amp;lt;since_head&amp;gt; since_head를 포함하려면 ^를 붙여주면 된다  git rebase -i &amp;lt;since_head&amp;gt;^ 이경우, 해당 커밋이 수정되면 조금 골치 아파진다.  가령 화살표 위키를 눌러서, 이전 커맨드를 다시 실행시켜서 계속 리베이스 할 수 없다. (커밋 아이디가 바뀌었기 때문에)   가능한 ^없이 사용하는게 좋을듯    </description>
-    </item>
-    
-    <item>
-      <title>git 마지막에 사용한 브랜치 이름</title>
-      <link>https://ariyn.github.io/posts/lg14ji_vc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/lg14ji_vc/</guid>
-      <description> @{-1}으로 사용  git switch @{-1} git merge @{-1} git diff @{-1}   아주 당연하지만 @{-2}, @{-3} 이런식으로 계속 사용이 가능하다.  </description>
-    </item>
-    
-    <item>
-      <title>git 특정 커밋까지만 로그 가져오기</title>
-      <link>https://ariyn.github.io/posts/wiex1gx16/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/wiex1gx16/</guid>
-      <description> git log &amp;lt;since_head&amp;gt;..HEAD 해당 커밋을 포함하려면 git log &amp;lt;since_head&amp;gt;^..HEAD  </description>
-    </item>
-    
-    <item>
-      <title>gitlens</title>
-      <link>https://ariyn.github.io/posts/dwfkeacrh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/dwfkeacrh/</guid>
-      <description> 해당 코드 라인의 커밋 메시지를 볼 수 있는 툴 vs code의 플러그인 intelli j용으로는 없을까?  https://twitter.com/GoLandIDE/status/1083732621530726401?t=h32BHzs6GEjjfvCrHwS-VA&amp;amp;s=19    </description>
-    </item>
-    
-    <item>
-      <title>git에서 ssh를 사용해서 접속하도록 하는 방법</title>
-      <link>https://ariyn.github.io/posts/2fgpwznkf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/2fgpwznkf/</guid>
-      <description> javascript&amp;lt;/br&amp;gt;[url &amp;quot;ssh://git@github.com/&amp;quot;]&amp;lt;/br&amp;gt;	insteadOf = https://github.com/ global config에 위와 같은 라인을 추가  </description>
-    </item>
-    
-    <item>
-      <title>git에서 특정 파일들만 stash하기  /stash</title>
-      <link>https://ariyn.github.io/posts/jbz107kko/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/jbz107kko/</guid>
-      <description> stash push 뒤에 파일들 입력하면 됨 shell&amp;lt;/br&amp;gt;git stash push -m &amp;quot;stash message&amp;quot; [files ...]  </description>
-    </item>
-    
-    <item>
-      <title>git에서 특정 파일들만 stash하기  /stash</title>
-      <link>https://ariyn.github.io/posts/jbz107kko/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/jbz107kko/</guid>
-      <description> stash push 뒤에 파일들 입력하면 됨 shell&amp;lt;/br&amp;gt;git stash push -m &amp;quot;stash message&amp;quot; [files ...]  </description>
+      <guid>https://ariyn.github.io/posts/wb8daxpug/</guid>
+      <description> unmerged옵션 이외에도 존재하는 옵션으로는  Added (A) Copied (C) Modified (M) Unmerged (U) Renamed (R) Type changed (T) Unknown (X) Broken (B)    </description>
     </item>
     
     <item>
       <title>untracted file을 지우는 방법</title>
       <link>https://ariyn.github.io/posts/5iva_p6yd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Dec 2021 23:58:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/5iva_p6yd/</guid>
       <description> git clean -f -fd를 할 경우, 폴더까지 삭제함  </description>
     </item>
     
     <item>
+      <title>git log에서 해시값만 보이기</title>
+      <link>https://ariyn.github.io/posts/jqox2ywov/</link>
+      <pubDate>Tue, 07 Dec 2021 23:52:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/jqox2ywov/</guid>
+      <description> git log --pretty=format:&amp;quot;%h&amp;quot; 포맷을 %H로 할 경우, 전체 해시 아이디가 보인다.  %h의 경우, 7자리만 보임    </description>
+    </item>
+    
+    <item>
+      <title>gitlens</title>
+      <link>https://ariyn.github.io/posts/dwfkeacrh/</link>
+      <pubDate>Thu, 02 Dec 2021 22:41:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/dwfkeacrh/</guid>
+      <description> 해당 코드 라인의 커밋 메시지를 볼 수 있는 툴 vs code의 플러그인 intelli j용으로는 없을까?  https://twitter.com/GoLandIDE/status/1083732621530726401?t=h32BHzs6GEjjfvCrHwS-VA&amp;amp;s=19    </description>
+    </item>
+    
+    <item>
+      <title>branch의 upstream branch가 다른 브랜치로 설정된 경우</title>
+      <link>https://ariyn.github.io/posts/wbz9gpvc7/</link>
+      <pubDate>Wed, 01 Dec 2021 22:10:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/wbz9gpvc7/</guid>
+      <description> 정확히는 upstream branch의 name과 local이 다를경우 발생하는 문제 아래와 같은 에러가 뜸 javascript&amp;lt;/br&amp;gt;fatal: The upstream branch of your current branch does not match&amp;lt;/br&amp;gt;the name of your current branch. To push to the upstream branch&amp;lt;/br&amp;gt;on the remote, use&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt; git push origin HEAD:master&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;To push to the branch of the same name on the remote, use&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt; git push origin HEAD&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;어느 한 쪽 옵션만 계속 선택하려면, &#39;git help config&#39;에서 push.default를 참고하십시오.&amp;lt;/br&amp;gt; 해결책  git push origin HEAD &amp;gt; 이번 한번만 푸시 git push -u origin HEAD &amp;gt; 업스트림 브랜치를 업데이트함    </description>
+    </item>
+    
+    <item>
+      <title>git 리베이스 할 때, 특정 커밋의 뒤에 대해 진행하기</title>
+      <link>https://ariyn.github.io/posts/cwk7_jl_h/</link>
+      <pubDate>Wed, 01 Dec 2021 14:56:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/cwk7_jl_h/</guid>
+      <description> git rebase -i &amp;lt;since_head&amp;gt; since_head를 포함하려면 ^를 붙여주면 된다  git rebase -i &amp;lt;since_head&amp;gt;^ 이경우, 해당 커밋이 수정되면 조금 골치 아파진다.  가령 화살표 위키를 눌러서, 이전 커맨드를 다시 실행시켜서 계속 리베이스 할 수 없다. (커밋 아이디가 바뀌었기 때문에)   가능한 ^없이 사용하는게 좋을듯    </description>
+    </item>
+    
+    <item>
       <title>깃 리베이스하다 날려먹은경우</title>
       <link>https://ariyn.github.io/posts/ogknmlhe6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 14:15:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/ogknmlhe6/</guid>
       <description> 우선 침착하자  터미널 히스토리를 날렸다간, 진짜 찾기 어려워진다.   .git 폴더를 압축해서, 백업을 만들어두자  백업은 반드시 작업폴더 외부에 위치하도록!   reflog를 보고, 어떤 커밋에서 어떤 행동이 벌어졌는지 조사 터미널 히스토리를 에디터에 복사해놓고, reflog와 비교  stdout, stderr 모두 나오도록 복사하는게 편할 듯   역치가 될 수 있도록 복구 계획을 세워봄  diff, show, log등 파일의 변경 히스토리를 확인하자   이후 조심스럽게 하나씩 실행해보면서 확인  </description>
+    </item>
+    
+    <item>
+      <title>git 특정 커밋까지만 로그 가져오기</title>
+      <link>https://ariyn.github.io/posts/wiex1gx16/</link>
+      <pubDate>Wed, 01 Dec 2021 11:20:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/wiex1gx16/</guid>
+      <description> git log &amp;lt;since_head&amp;gt;..HEAD 해당 커밋을 포함하려면 git log &amp;lt;since_head&amp;gt;^..HEAD  </description>
+    </item>
+    
+    <item>
+      <title>git staged된 파일의 비교</title>
+      <link>https://ariyn.github.io/posts/h9rct5cwy/</link>
+      <pubDate>Wed, 24 Nov 2021 10:15:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/h9rct5cwy/</guid>
+      <description> git diff --staged 혹은 git diff --cached  </description>
+    </item>
+    
+    <item>
+      <title>git에서 특정 파일들만 stash하기  /stash</title>
+      <link>https://ariyn.github.io/posts/jbz107kko/</link>
+      <pubDate>Fri, 12 Nov 2021 14:45:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/jbz107kko/</guid>
+      <description> stash push 뒤에 파일들 입력하면 됨 shell&amp;lt;/br&amp;gt;git stash push -m &amp;quot;stash message&amp;quot; [files ...]  </description>
+    </item>
+    
+    <item>
+      <title>git에서 특정 파일들만 stash하기  /stash</title>
+      <link>https://ariyn.github.io/posts/jbz107kko/</link>
+      <pubDate>Fri, 12 Nov 2021 14:45:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/jbz107kko/</guid>
+      <description> stash push 뒤에 파일들 입력하면 됨 shell&amp;lt;/br&amp;gt;git stash push -m &amp;quot;stash message&amp;quot; [files ...]  </description>
+    </item>
+    
+    <item>
+      <title>git 마지막에 사용한 브랜치 이름</title>
+      <link>https://ariyn.github.io/posts/lg14ji_vc/</link>
+      <pubDate>Thu, 14 Oct 2021 21:10:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/lg14ji_vc/</guid>
+      <description> @{-1}으로 사용  git switch @{-1} git merge @{-1} git diff @{-1}   아주 당연하지만 @{-2}, @{-3} 이런식으로 계속 사용이 가능하다.  </description>
     </item>
     
   </channel>

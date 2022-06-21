@@ -5,11 +5,12 @@
     <link>https://ariyn.github.io/tags/grep/</link>
     <description>Recent content in grep on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/grep/atom.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Dec 2021 22:40:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/grep/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>grep에서 or로 검색하기</title>
       <link>https://ariyn.github.io/posts/i7m3allfm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 22:40:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/i7m3allfm/</guid>
       <description> cat nohup.out | grep -e pattern -e pattern2 -e pattern3 cat nohup.out | grep -E &#39;pattern|pattern2|pattern3&#39; 참고  -E옵션을 사용하면, 정규식을 사용할 수 있게됨  javascript&amp;lt;/br&amp;gt;-E, --extended-regexp PATTERN is an extended regular expression 따라서 -E 옵션 하나만 주로 사용하는 버릇을 들이자      </description>

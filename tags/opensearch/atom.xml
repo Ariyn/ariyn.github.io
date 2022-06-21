@@ -5,11 +5,12 @@
     <link>https://ariyn.github.io/tags/opensearch/</link>
     <description>Recent content in opensearch on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/opensearch/atom.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Nov 2021 22:41:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/opensearch/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>opensearch에서 logstash-oss와 logstash-opensearch-output-plugin이 동작 안할때</title>
       <link>https://ariyn.github.io/posts/njo_ltxgb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 04 Nov 2021 22:41:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/njo_ltxgb/</guid>
       <description> https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다 문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다  업데이트가 안된 버전임 결국 삭제후 재 설치해야 함 javascript&amp;lt;/br&amp;gt;bin/logstash-plugin uninstall logstash-output-opensearch&amp;lt;/br&amp;gt;bin/logstash-plugin install logstash-output-opensearch   생명의 구원자  https://githubmemory.com/@arianitu    </description>
