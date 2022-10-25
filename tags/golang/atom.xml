@@ -6,7 +6,16 @@
     <description>Recent content in golang on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/golang/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/golang/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>고랭의 함수 콜을 정리하는 방법</title>
+      <link>https://ariyn.github.io/posts/gutceotzk/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/gutceotzk/</guid>
+      <description> shell\n &amp;gt; callgraph -format digraph {package} &amp;gt; /tmp/package.di\n \n &amp;gt; cat /tmp/package.di | digraph nodes | grep {package} &amp;gt; /tmp/package_only.di\n \n &amp;gt; while read node; do\n echo &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;$node\&amp;quot;, \&amp;quot;calls\&amp;quot;: $(cat /tmp/package.di | digraph forward &amp;quot;$node&amp;quot; | jq -R | jq -s) }&amp;quot; &amp;gt;&amp;gt; /tmp/nodes.json;\n done &amp;lt; /tmp/package_only.di </description>
+    </item>
+    
     <item>
       <title>https://pkg.go.dev/golang.org/x</title>
       <link>https://ariyn.github.io/posts/r03y4rmzg/</link>

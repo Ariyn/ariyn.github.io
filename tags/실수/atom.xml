@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>실수 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/%EC%8B%A4%EC%88%98/</link>
+    <description>Recent content in 실수 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%8B%A4%EC%88%98/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>in memory cache를 사용할 때는 주의하자</title>
+      <link>https://ariyn.github.io/posts/835gvfcrw/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/835gvfcrw/</guid>
+      <description> in memory cache에 expiring date를 담아두고, 그때까지 캐시가 남아 있으면 삭제하는 로직이 있다. 그런데 정상적으로 캐시된 date가 삭제 되었음에도 불구하고, 삭제 로직이 실행되는 케이스가 있었다. 확인해보니, process가 2개 돌고 있었고, load balancing에 의해서 어느쪽이 실행될 지 모르는 상황. 그래서 process 1에서 캐시되고, process 2에서 삭제 로직이 돌았다면, 서로 자신의 메모리만 참조하게 됨&amp;hellip; 아이고 머리야&amp;hellip; 생각해보면 당연한 내용인데, 왜 일찍 깨닫지 못했을까 #생각 #개선 #[[할 것]] </description>
+    </item>
+    
+  </channel>
+</rss>

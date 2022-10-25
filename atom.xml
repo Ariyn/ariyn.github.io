@@ -32,6 +32,27 @@
     </item>
     
     <item>
+      <title>auto load를 적용한 스크립트는 _ready 이후에서만 인식된다</title>
+      <link>https://ariyn.github.io/posts/8kd_rq31s/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;vt01h5M2Z&#34;&gt;export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;이 내용과 동일함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;따라서 사용하려면 _ready 내부에서 사용해야 한다
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;javascript\n    class X:\n    	var other: other.Class;\n    \n    	func _init(name):\n    		self.other = other.Class.new()\n    \n    		._init();\n    \n    var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다.\n    \n    func _ready():\n      var x = X.new() # autoload되었기 때문에, 문제없이 동작한다.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/8kd_rq31s/</guid>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
       <title>export로 설정한 변수는 ready이전에는 null로 초기화되어 있다.</title>
       <link>https://ariyn.github.io/posts/vt01h5m2z/</link>
       <description>&lt;ul&gt;
@@ -45,6 +66,28 @@
     </item>
     
     <item>
+      <title>godot script에서 변수를 export하는 방법</title>
+      <link>https://ariyn.github.io/posts/czilir72l/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;일반적인 변수는 &lt;code&gt;var index;&lt;/code&gt;처럼 타입 없이 사용이 가능하다.
+&lt;ul&gt;
+&lt;li&gt;그러나 export하는 변수는 타입이 명확해야 함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;명시적 타입으로 export 하는 방법
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;export var index = 1;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;export(int) var index;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/czilir72l/</guid>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
       <title>다익스트라 알고리즘은 20분만에 만들어진 알고리즘이다</title>
       <link>https://ariyn.github.io/posts/snekezy23/</link>
       <description>&lt;ul&gt;
@@ -55,6 +98,18 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/snekezy23/</guid>
       <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>고랭의 함수 콜을 정리하는 방법</title>
+      <link>https://ariyn.github.io/posts/gutceotzk/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shell\n    &amp;gt; callgraph -format digraph {package} &amp;gt; /tmp/package.di\n    \n    &amp;gt; cat /tmp/package.di | digraph nodes | grep {package} &amp;gt; /tmp/package_only.di\n    \n    &amp;gt; while read node; do\n    echo &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;$node\&amp;quot;, \&amp;quot;calls\&amp;quot;: $(cat /tmp/package.di | digraph forward &amp;quot;$node&amp;quot; | jq -R | jq -s) }&amp;quot; &amp;gt;&amp;gt; /tmp/nodes.json;\n    done &amp;lt; /tmp/package_only.di&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/gutceotzk/</guid>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
     </item>
     
     <item>
@@ -79,6 +134,34 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/gypmvccah/</guid>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>CPU utilization - CPU 사용 시간</title>
+      <link>https://ariyn.github.io/posts/bpxggzudw/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization&#34;&gt;https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/bpxggzudw/</guid>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>in memory cache를 사용할 때는 주의하자</title>
+      <link>https://ariyn.github.io/posts/835gvfcrw/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;in memory cache에 expiring date를 담아두고, 그때까지 캐시가 남아 있으면 삭제하는 로직이 있다.&lt;/li&gt;
+&lt;li&gt;그런데 정상적으로 캐시된 date가 삭제 되었음에도 불구하고, 삭제 로직이 실행되는 케이스가 있었다.&lt;/li&gt;
+&lt;li&gt;확인해보니, process가 2개 돌고 있었고, load balancing에 의해서 어느쪽이 실행될 지 모르는 상황.&lt;/li&gt;
+&lt;li&gt;그래서 process 1에서 캐시되고, process 2에서 삭제 로직이 돌았다면, 서로 자신의 메모리만 참조하게 됨&amp;hellip;&lt;/li&gt;
+&lt;li&gt;아이고 머리야&amp;hellip; 생각해보면 당연한 내용인데, 왜 일찍 깨닫지 못했을까 #생각 #개선 #[[할 것]]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/835gvfcrw/</guid>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
     </item>
     
     <item>
@@ -156,6 +239,21 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/jr7n-rwjg/</guid>
       <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>카사노바</title>
+      <link>https://ariyn.github.io/posts/7udhvr5h_/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;자코모 카사노바
+1725년 이탈리아 베니스에서 태어남&lt;/li&gt;
+&lt;li&gt;총 122명의 여자들을 사귀었고, 아직까지 바람둥이의 대명사로 존재함&lt;/li&gt;
+&lt;li&gt;그의 회고록은 **&lt;a href=&#34;http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;amp;ejkGb=KOR&amp;amp;barcode=9788990287601&#34;&gt;불멸의 유혹(카사노바 자서전)&lt;/a&gt;**로 나와있다&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/7udhvr5h_/</guid>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
     </item>
     
     <item>

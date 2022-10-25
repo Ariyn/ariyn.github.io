@@ -6,7 +6,16 @@
     <description>Recent content in godot on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/godot/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/godot/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>auto load를 적용한 스크립트는 _ready 이후에서만 인식된다</title>
+      <link>https://ariyn.github.io/posts/8kd_rq31s/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/8kd_rq31s/</guid>
+      <description> export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL 이 내용과 동일함. 따라서 사용하려면 _ready 내부에서 사용해야 한다 javascript\n class X:\n var other: other.Class;\n \n func _init(name):\n self.other = other.Class.new()\n \n ._init();\n \n var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다.\n \n func _ready():\n var x = X.new() # autoload되었기 때문에, 문제없이 동작한다. </description>
+    </item>
+    
     <item>
       <title>export로 설정한 변수는 ready이전에는 null로 초기화되어 있다.</title>
       <link>https://ariyn.github.io/posts/vt01h5m2z/</link>
@@ -14,6 +23,15 @@
       
       <guid>https://ariyn.github.io/posts/vt01h5m2z/</guid>
       <description> export한 변수를 _ready가 아닌, 스크립트의 최상단에서 사용해보면, null로 나온다. 따라서 이런 변수들은 _ready에서 사용해야 제대로 동작함 </description>
+    </item>
+    
+    <item>
+      <title>godot script에서 변수를 export하는 방법</title>
+      <link>https://ariyn.github.io/posts/czilir72l/</link>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/czilir72l/</guid>
+      <description> 일반적인 변수는 var index;처럼 타입 없이 사용이 가능하다. 그러나 export하는 변수는 타입이 명확해야 함. 명시적 타입으로 export 하는 방법 export var index = 1; export(int) var index; </description>
     </item>
     
     <item>

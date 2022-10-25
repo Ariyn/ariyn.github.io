@@ -17,12 +17,30 @@
     </item>
     
     <item>
+      <title>auto load를 적용한 스크립트는 _ready 이후에서만 인식된다</title>
+      <link>https://ariyn.github.io/posts/8kd_rq31s/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/8kd_rq31s/</guid>
+      <description> export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL 이 내용과 동일함. 따라서 사용하려면 _ready 내부에서 사용해야 한다 javascript\n class X:\n var other: other.Class;\n \n func _init(name):\n self.other = other.Class.new()\n \n ._init();\n \n var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다.\n \n func _ready():\n var x = X.new() # autoload되었기 때문에, 문제없이 동작한다. </description>
+    </item>
+    
+    <item>
       <title>export로 설정한 변수는 ready이전에는 null로 초기화되어 있다.</title>
       <link>https://ariyn.github.io/posts/vt01h5m2z/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/vt01h5m2z/</guid>
       <description> export한 변수를 _ready가 아닌, 스크립트의 최상단에서 사용해보면, null로 나온다. 따라서 이런 변수들은 _ready에서 사용해야 제대로 동작함 </description>
+    </item>
+    
+    <item>
+      <title>godot script에서 변수를 export하는 방법</title>
+      <link>https://ariyn.github.io/posts/czilir72l/</link>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/czilir72l/</guid>
+      <description> 일반적인 변수는 var index;처럼 타입 없이 사용이 가능하다. 그러나 export하는 변수는 타입이 명확해야 함. 명시적 타입으로 export 하는 방법 export var index = 1; export(int) var index; </description>
     </item>
     
     <item>
@@ -35,12 +53,39 @@
     </item>
     
     <item>
+      <title>고랭의 함수 콜을 정리하는 방법</title>
+      <link>https://ariyn.github.io/posts/gutceotzk/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/gutceotzk/</guid>
+      <description> shell\n &amp;gt; callgraph -format digraph {package} &amp;gt; /tmp/package.di\n \n &amp;gt; cat /tmp/package.di | digraph nodes | grep {package} &amp;gt; /tmp/package_only.di\n \n &amp;gt; while read node; do\n echo &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;$node\&amp;quot;, \&amp;quot;calls\&amp;quot;: $(cat /tmp/package.di | digraph forward &amp;quot;$node&amp;quot; | jq -R | jq -s) }&amp;quot; &amp;gt;&amp;gt; /tmp/nodes.json;\n done &amp;lt; /tmp/package_only.di </description>
+    </item>
+    
+    <item>
       <title>선언적 지식과 절차적 지식</title>
       <link>https://ariyn.github.io/posts/gypmvccah/</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/gypmvccah/</guid>
       <description> 선언적 지식 A는 B이다와 같이 선언적인 문장으로 정리되는 지식 단순 학습의 대부분의 목표가 되며, 암기와 이해로 습득된다 절차적 지식 A를 하기 위해서는 B를 하고, C를 한다와 같이 절차적인 지식 잘 숙달된 스킬과 같이, 개별적인 지식들 동일한 선언적 지식을 가지고, 같은 경험을 같더라도 절차적 지식이 다를 수 있음 </description>
+    </item>
+    
+    <item>
+      <title>CPU utilization - CPU 사용 시간</title>
+      <link>https://ariyn.github.io/posts/bpxggzudw/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/bpxggzudw/</guid>
+      <description> https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization </description>
+    </item>
+    
+    <item>
+      <title>in memory cache를 사용할 때는 주의하자</title>
+      <link>https://ariyn.github.io/posts/835gvfcrw/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/835gvfcrw/</guid>
+      <description> in memory cache에 expiring date를 담아두고, 그때까지 캐시가 남아 있으면 삭제하는 로직이 있다. 그런데 정상적으로 캐시된 date가 삭제 되었음에도 불구하고, 삭제 로직이 실행되는 케이스가 있었다. 확인해보니, process가 2개 돌고 있었고, load balancing에 의해서 어느쪽이 실행될 지 모르는 상황. 그래서 process 1에서 캐시되고, process 2에서 삭제 로직이 돌았다면, 서로 자신의 메모리만 참조하게 됨&amp;hellip; 아이고 머리야&amp;hellip; 생각해보면 당연한 내용인데, 왜 일찍 깨닫지 못했을까 #생각 #개선 #[[할 것]] </description>
     </item>
     
     <item>
@@ -77,6 +122,15 @@
       
       <guid>https://ariyn.github.io/posts/jr7n-rwjg/</guid>
       <description> 자전거로 생각했을때, 앞바퀴 브레이크가 있는 곳에 뒷바퀴 브레이크는 오른발을 밟으면 동작한다고 한다 </description>
+    </item>
+    
+    <item>
+      <title>카사노바</title>
+      <link>https://ariyn.github.io/posts/7udhvr5h_/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/7udhvr5h_/</guid>
+      <description> 자코모 카사노바 1725년 이탈리아 베니스에서 태어남 총 122명의 여자들을 사귀었고, 아직까지 바람둥이의 대명사로 존재함 그의 회고록은 **불멸의 유혹(카사노바 자서전)**로 나와있다 </description>
     </item>
     
     <item>
