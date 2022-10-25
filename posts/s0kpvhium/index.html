@@ -8,22 +8,22 @@
   <title>rust의 소유권 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="rust의 소유권" />
-<meta property="og:description" content="기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우  rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함  rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x;&lt;/br&gt;&lt;/br&gt;println!" />
+<meta property="og:description" content="기본 rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨 할당과 관련된 골치아픈 경우 rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴 이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함 만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x;&lt;/br&gt;&lt;/br&gt;println!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/s0kpvhium/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-29T22:12:00+00:00" />
-<meta property="article:modified_time" content="2022-03-29T22:12:00+00:00" />
+<meta property="article:published_time" content="2022-03-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-29T00:00:00+00:00" />
 
 
   
   <meta itemprop="name" content="rust의 소유권">
-<meta itemprop="description" content="기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우  rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함  rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x;&lt;/br&gt;&lt;/br&gt;println!"><meta itemprop="datePublished" content="2022-03-29T22:12:00+00:00" />
-<meta itemprop="dateModified" content="2022-03-29T22:12:00+00:00" />
+<meta itemprop="description" content="기본 rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨 할당과 관련된 골치아픈 경우 rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴 이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함 만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x;&lt;/br&gt;&lt;/br&gt;println!"><meta itemprop="datePublished" content="2022-03-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-03-29T00:00:00+00:00" />
 <meta itemprop="wordCount" content="230">
 <meta itemprop="keywords" content="TIL,rust," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="rust의 소유권"/>
-<meta name="twitter:description" content="기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우  rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함  rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x;&lt;/br&gt;&lt;/br&gt;println!"/>
+<meta name="twitter:description" content="기본 rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨 할당과 관련된 골치아픈 경우 rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴 이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함 만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 rust&lt;/br&gt;let x = String::from(&quot;hello&quot;);&lt;/br&gt;let y = x;&lt;/br&gt;&lt;/br&gt;println!"/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/s0kpvhium/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "rust의 소유권",
     "headline": "rust의 소유권",
     "alternativeHeadline": "",
-    "description": "기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우  rust\u0026lt;\/br\u0026gt;let x = String::from(\u0026quot;hello\u0026quot;);\u0026lt;\/br\u0026gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함  rust\u0026lt;\/br\u0026gt;let x = String::from(\u0026quot;hello\u0026quot;);\u0026lt;\/br\u0026gt;let y = x;\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;println!",
+    "description": "기본 rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨 할당과 관련된 골치아픈 경우 rust\u0026lt;\/br\u0026gt;let x = String::from(\u0026quot;hello\u0026quot;);\u0026lt;\/br\u0026gt;let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴 이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함 만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 rust\u0026lt;\/br\u0026gt;let x = String::from(\u0026quot;hello\u0026quot;);\u0026lt;\/br\u0026gt;let y = x;\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;println!",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -67,9 +67,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2022",
-    "dateCreated": "2022-03-29T22:12:00.00Z",
-    "datePublished": "2022-03-29T22:12:00.00Z",
-    "dateModified": "2022-03-29T22:12:00.00Z",
+    "dateCreated": "2022-03-29T00:00:00.00Z",
+    "datePublished": "2022-03-29T00:00:00.00Z",
+    "dateModified": "2022-03-29T00:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",

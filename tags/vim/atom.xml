@@ -6,14 +6,14 @@
     <description>Recent content in vim on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Feb 2022 17:33:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/vim/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/vim/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vim에서 여러개의 파일을 열었을때 다음 파일로 넘어가는법</title>
       <link>https://ariyn.github.io/posts/utgrfchew/</link>
-      <pubDate>Fri, 04 Feb 2022 17:33:00 +0000</pubDate>
+      <pubDate>Fri, 04 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/utgrfchew/</guid>
-      <description> :n을 통해서 다음 파일로 넘어갈 수 있다 :wn으로 저장하고 다음 파일로 넘어가기도 가능하다  </description>
+      <description> :n을 통해서 다음 파일로 넘어갈 수 있다 :wn으로 저장하고 다음 파일로 넘어가기도 가능하다 </description>
     </item>
     
   </channel>

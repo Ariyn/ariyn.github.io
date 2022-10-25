@@ -8,22 +8,22 @@
   <title>aws cli 자동완성을 zsh에서 사용하는 방법 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="aws cli 자동완성을 zsh에서 사용하는 방법" />
-<meta property="og:description" content=" ~/.zshrc에 아래의 세 줄을 추가  javascript&lt;/br&gt;autoload bashcompinit &amp;&amp; bashcompinit&lt;/br&gt;autoload -Uz compinit &amp;&amp; compinit&lt;/br&gt;&lt;/br&gt;complete -C &quot;$(which aws_completer)&quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      " />
+<meta property="og:description" content=" ~/.zshrc에 아래의 세 줄을 추가 javascript&lt;/br&gt;autoload bashcompinit &amp;&amp; bashcompinit&lt;/br&gt;autoload -Uz compinit &amp;&amp; compinit&lt;/br&gt;&lt;/br&gt;complete -C &quot;$(which aws_completer)&quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/tdj1-h9ev/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-01T23:31:00+00:00" />
-<meta property="article:modified_time" content="2021-12-01T23:31:00+00:00" />
+<meta property="article:published_time" content="2021-12-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-12-01T00:00:00+00:00" />
 
 
   
   <meta itemprop="name" content="aws cli 자동완성을 zsh에서 사용하는 방법">
-<meta itemprop="description" content=" ~/.zshrc에 아래의 세 줄을 추가  javascript&lt;/br&gt;autoload bashcompinit &amp;&amp; bashcompinit&lt;/br&gt;autoload -Uz compinit &amp;&amp; compinit&lt;/br&gt;&lt;/br&gt;complete -C &quot;$(which aws_completer)&quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      "><meta itemprop="datePublished" content="2021-12-01T23:31:00+00:00" />
-<meta itemprop="dateModified" content="2021-12-01T23:31:00+00:00" />
+<meta itemprop="description" content=" ~/.zshrc에 아래의 세 줄을 추가 javascript&lt;/br&gt;autoload bashcompinit &amp;&amp; bashcompinit&lt;/br&gt;autoload -Uz compinit &amp;&amp; compinit&lt;/br&gt;&lt;/br&gt;complete -C &quot;$(which aws_completer)&quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 "><meta itemprop="datePublished" content="2021-12-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-12-01T00:00:00+00:00" />
 <meta itemprop="wordCount" content="47">
 <meta itemprop="keywords" content="TIL,aws,shell,bash,zsh," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="aws cli 자동완성을 zsh에서 사용하는 방법"/>
-<meta name="twitter:description" content=" ~/.zshrc에 아래의 세 줄을 추가  javascript&lt;/br&gt;autoload bashcompinit &amp;&amp; bashcompinit&lt;/br&gt;autoload -Uz compinit &amp;&amp; compinit&lt;/br&gt;&lt;/br&gt;complete -C &quot;$(which aws_completer)&quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      "/>
+<meta name="twitter:description" content=" ~/.zshrc에 아래의 세 줄을 추가 javascript&lt;/br&gt;autoload bashcompinit &amp;&amp; bashcompinit&lt;/br&gt;autoload -Uz compinit &amp;&amp; compinit&lt;/br&gt;&lt;/br&gt;complete -C &quot;$(which aws_completer)&quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/tdj1-h9ev/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "aws cli 자동완성을 zsh에서 사용하는 방법",
     "headline": "aws cli 자동완성을 zsh에서 사용하는 방법",
     "alternativeHeadline": "",
-    "description": " ~\/.zshrc에 아래의 세 줄을 추가  javascript\u0026lt;\/br\u0026gt;autoload bashcompinit \u0026amp;\u0026amp; bashcompinit\u0026lt;\/br\u0026gt;autoload -Uz compinit \u0026amp;\u0026amp; compinit\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;complete -C \u0026quot;$(which aws_completer)\u0026quot; aws https:\/\/docs.aws.amazon.com\/ko_kr\/cli\/latest\/userguide\/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https:\/\/medium.com\/harrythegreat\/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https:\/\/stackoverflow.com\/questions\/30840651\/what-does-autoload-do-in-zsh   auto complete 방법  https:\/\/devmanual.gentoo.org\/tasks-reference\/completion\/index.html\/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      ",
+    "description": " ~\/.zshrc에 아래의 세 줄을 추가 javascript\u0026lt;\/br\u0026gt;autoload bashcompinit \u0026amp;\u0026amp; bashcompinit\u0026lt;\/br\u0026gt;autoload -Uz compinit \u0026amp;\u0026amp; compinit\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;complete -C \u0026quot;$(which aws_completer)\u0026quot; aws https:\/\/docs.aws.amazon.com\/ko_kr\/cli\/latest\/userguide\/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https:\/\/medium.com\/harrythegreat\/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https:\/\/stackoverflow.com\/questions\/30840651\/what-does-autoload-do-in-zsh auto complete 방법 https:\/\/devmanual.gentoo.org\/tasks-reference\/completion\/index.html\/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -67,9 +67,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2021",
-    "dateCreated": "2021-12-01T23:31:00.00Z",
-    "datePublished": "2021-12-01T23:31:00.00Z",
-    "dateModified": "2021-12-01T23:31:00.00Z",
+    "dateCreated": "2021-12-01T00:00:00.00Z",
+    "datePublished": "2021-12-01T00:00:00.00Z",
+    "dateModified": "2021-12-01T00:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",

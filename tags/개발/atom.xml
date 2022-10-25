@@ -6,50 +6,50 @@
     <description>Recent content in 개발 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Dec 2021 20:36:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>curl에서 userAgent를 바꾸는 방법</title>
       <link>https://ariyn.github.io/posts/l_v01_w8q/</link>
-      <pubDate>Thu, 30 Dec 2021 20:36:00 +0000</pubDate>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/l_v01_w8q/</guid>
-      <description> -A 옵션  curl -A &amp;quot;Mozilla&amp;quot;    </description>
+      <description> -A 옵션 curl -A &amp;quot;Mozilla&amp;quot; </description>
     </item>
     
     <item>
       <title>moto에서 aws account id를 모킹하는 방법</title>
       <link>https://ariyn.github.io/posts/sa3nzeqjc/</link>
-      <pubDate>Tue, 14 Dec 2021 22:39:00 +0000</pubDate>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/sa3nzeqjc/</guid>
-      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000  </description>
+      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000 </description>
     </item>
     
     <item>
       <title>`=?UTF-8?B?`로 시작하는 문자열</title>
       <link>https://ariyn.github.io/posts/k6ofqb7vp/</link>
-      <pubDate>Mon, 13 Dec 2021 11:19:00 +0000</pubDate>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/k6ofqb7vp/</guid>
-      <description> MIME Encoded-Word라고 한다.  RFC 2047에 명시되어 있는 규격 전체 포맷은 =?Charset?Encoding?Encoded Text?=   Charset  IANA에 등록된 캐릭터 셋 보통은 UTF-8이 나오게 됨   Encoding  Q인경우 Q-encoding B인경우 base64 인코딩   Encoded Text  Encoding에 명시된 방법으로 인코딩된 텍스트   간혹 이메일을 통채로 열어보았을때, 이런 문자가 나오는데, 아무래도 이메일의 메타 정보가 MIME으로 작성되어 있다보니 그런 것 같다.  좀 더 정확히는 MIME가 이메일의 정보를 기술하기 위해 만들어진 포맷 (Multipurpose Internet Mail Extensions)    </description>
+      <description> MIME Encoded-Word라고 한다. RFC 2047에 명시되어 있는 규격 전체 포맷은 =?Charset?Encoding?Encoded Text?= Charset IANA에 등록된 캐릭터 셋 보통은 UTF-8이 나오게 됨 Encoding Q인경우 Q-encoding B인경우 base64 인코딩 Encoded Text Encoding에 명시된 방법으로 인코딩된 텍스트 간혹 이메일을 통채로 열어보았을때, 이런 문자가 나오는데, 아무래도 이메일의 메타 정보가 MIME으로 작성되어 있다보니 그런 것 같다. 좀 더 정확히는 MIME가 이메일의 정보를 기술하기 위해 만들어진 포맷 (Multipurpose Internet Mail Extensions) </description>
     </item>
     
     <item>
       <title>file write가 안되는 경우</title>
       <link>https://ariyn.github.io/posts/294uvuols/</link>
-      <pubDate>Thu, 09 Dec 2021 17:51:00 +0000</pubDate>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
-      <description>문제의 코드  javascript&amp;lt;/br&amp;gt;f, err := os.OpenFile(&amp;quot;/tmp/test&amp;quot;, os.Append, 0755)&amp;lt;/br&amp;gt;if err != nil {&amp;lt;/br&amp;gt; panic(err)&amp;lt;/br&amp;gt;}&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;fmt.Fprintln(f, &amp;quot;test&amp;quot;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7.</description>
+      <description>문제의 코드 javascript&amp;lt;/br&amp;gt;f, err := os.OpenFile(&amp;quot;/tmp/test&amp;quot;, os.Append, 0755)&amp;lt;/br&amp;gt;if err != nil {&amp;lt;/br&amp;gt; panic(err)&amp;lt;/br&amp;gt;}&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;fmt.Fprintln(f, &amp;quot;test&amp;quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.</description>
     </item>
     
     <item>
       <title>한글 문서를 찾아보자</title>
       <link>https://ariyn.github.io/posts/43bucqp2-/</link>
-      <pubDate>Tue, 23 Nov 2021 14:23:00 +0000</pubDate>
+      <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/43bucqp2-/</guid>
-      <description> 보통 영어 문서를 찾아보는 편  그쪽이 조금 더 공식적이고, 정확할 확률이 높기 때문 어딘가의 블로그에 적힌 내용은, 언제 적힌것인지도 파악이 어렵고, 이게 맞는지도 파악이 어렵다 덤으로 영어 공부나, 부담감도 줄이는 연습삼아서   하지만 golang의 커뮤니티를 찾아보다 꼭 그러지는 않아도 되는것을 발견함  이제는 공식 문서를 한국어로 번역하는 커뮤니티나 프로젝트도 간간히 보임   반대로 한글 문서를 찾아볼때의 장점은  쉽고 빠르게 읽을 수 있다  아무리 영어와 친해도, 모국어만큼의 속독과 문맥파악은 어렵다 공부하는게 아니라 특정 내용을 빠르게 확인해야 할때, 모국어로 훨씬 쉽게 가능   커뮤니티를 발견할 수 있다  이게 중요한것인데, 한국어로 번역하는 과정은 쉬운게 아님 그 언어/프레임워크/라이브러리/서비스에 애정을 가진 커뮤니티에서 시도해볼만한 프로젝트임 따라서 이 커뮤니티를 찾는것이 한국어 문서를 찾는 이유  혹은 커뮤니티가 아니더라도, 이런식의 프로젝트를 진행한 사람은 해당 도메인에 지식이 깊을 가능성 높음 모국어로 편하게 물어보기 쉬움        </description>
+      <description> 보통 영어 문서를 찾아보는 편 그쪽이 조금 더 공식적이고, 정확할 확률이 높기 때문 어딘가의 블로그에 적힌 내용은, 언제 적힌것인지도 파악이 어렵고, 이게 맞는지도 파악이 어렵다 덤으로 영어 공부나, 부담감도 줄이는 연습삼아서 하지만 golang의 커뮤니티를 찾아보다 꼭 그러지는 않아도 되는것을 발견함 이제는 공식 문서를 한국어로 번역하는 커뮤니티나 프로젝트도 간간히 보임 반대로 한글 문서를 찾아볼때의 장점은 쉽고 빠르게 읽을 수 있다 아무리 영어와 친해도, 모국어만큼의 속독과 문맥파악은 어렵다 공부하는게 아니라 특정 내용을 빠르게 확인해야 할때, 모국어로 훨씬 쉽게 가능 커뮤니티를 발견할 수 있다 이게 중요한것인데, 한국어로 번역하는 과정은 쉬운게 아님 그 언어/프레임워크/라이브러리/서비스에 애정을 가진 커뮤니티에서 시도해볼만한 프로젝트임 따라서 이 커뮤니티를 찾는것이 한국어 문서를 찾는 이유 혹은 커뮤니티가 아니더라도, 이런식의 프로젝트를 진행한 사람은 해당 도메인에 지식이 깊을 가능성 높음 모국어로 편하게 물어보기 쉬움 </description>
     </item>
     
   </channel>

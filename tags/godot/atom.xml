@@ -6,23 +6,32 @@
     <description>Recent content in godot on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Dec 2021 23:41:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/godot/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/godot/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>export로 설정한 변수는 ready이전에는 null로 초기화되어 있다.</title>
+      <link>https://ariyn.github.io/posts/vt01h5m2z/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/vt01h5m2z/</guid>
+      <description> export한 변수를 _ready가 아닌, 스크립트의 최상단에서 사용해보면, null로 나온다. 따라서 이런 변수들은 _ready에서 사용해야 제대로 동작함 </description>
+    </item>
+    
     <item>
       <title>godot에서 타일셋의 콜리젼이 안보이거나 선택이 안될때</title>
       <link>https://ariyn.github.io/posts/fjuhqhcxv/</link>
-      <pubDate>Fri, 03 Dec 2021 23:41:00 +0000</pubDate>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/fjuhqhcxv/</guid>
-      <description> 스크롤을 키웠다 내려보자 단순히 고도 엔진의 버그로 보임  </description>
+      <description> 스크롤을 키웠다 내려보자 단순히 고도 엔진의 버그로 보임 </description>
     </item>
     
     <item>
       <title>godot에서 signal을 변수와 함께 쓰기</title>
       <link>https://ariyn.github.io/posts/napcywbps/</link>
-      <pubDate>Wed, 24 Nov 2021 21:52:00 +0000</pubDate>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/napcywbps/</guid>
-      <description> javascript&amp;lt;/br&amp;gt;signal my_signal(value, value2)  </description>
+      <description> javascript&amp;lt;/br&amp;gt;signal my_signal(value, value2) </description>
     </item>
     
   </channel>

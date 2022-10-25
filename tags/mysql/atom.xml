@@ -6,50 +6,50 @@
     <description>Recent content in mysql on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Mar 2022 21:39:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/mysql/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/mysql/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>중복된 값을 삭제하는 쿼리</title>
       <link>https://ariyn.github.io/posts/glqyluitt/</link>
-      <pubDate>Sat, 12 Mar 2022 21:39:00 +0000</pubDate>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/glqyluitt/</guid>
-      <description> javascript&amp;lt;/br&amp;gt;DELETE S1 FROM table AS S1 &amp;lt;/br&amp;gt;INNER JOIN table AS S2 &amp;lt;/br&amp;gt;WHERE S1.id &amp;lt; S2.id AND S1.column = S2.column; inner join을 한 다음, id가 더 높고, 동일한 컬럼인 경우 삭제하는 쿼리 https://www.javatpoint.com/mysql-delete-duplicate-records  </description>
+      <description> javascript&amp;lt;/br&amp;gt;DELETE S1 FROM table AS S1 &amp;lt;/br&amp;gt;INNER JOIN table AS S2 &amp;lt;/br&amp;gt;WHERE S1.id &amp;lt; S2.id AND S1.column = S2.column; inner join을 한 다음, id가 더 높고, 동일한 컬럼인 경우 삭제하는 쿼리 https://www.javatpoint.com/mysql-delete-duplicate-records </description>
     </item>
     
     <item>
       <title>mysql에서 mod하는 방법</title>
       <link>https://ariyn.github.io/posts/iwf-fiwmv/</link>
-      <pubDate>Fri, 10 Dec 2021 13:44:00 +0000</pubDate>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/iwf-fiwmv/</guid>
-      <description> SELECT MOD(n, m) SELECT n MOD m SELECT n % m WHERE n%m = 0과 같이도 가능하다 출처  </description>
+      <description> SELECT MOD(n, m) SELECT n MOD m SELECT n % m WHERE n%m = 0과 같이도 가능하다 출처 </description>
     </item>
     
     <item>
       <title>mysql user추가</title>
       <link>https://ariyn.github.io/posts/q5ilntcnv/</link>
-      <pubDate>Fri, 03 Dec 2021 23:33:00 +0000</pubDate>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/q5ilntcnv/</guid>
-      <description> sql&amp;lt;/br&amp;gt;CREATE USER &#39;{user}&#39;@&#39;{target_host}&#39; IDENTIFIED BY &#39;{password}&#39;;&amp;lt;/br&amp;gt;GRANT ALL PRIVILEGES ON {database}.{table} TO &#39;{user}&#39;@&#39;{target_host}&#39;; target_host에 사용할 수 있는 것들  localhost % n.n.n.n    </description>
+      <description> sql&amp;lt;/br&amp;gt;CREATE USER &#39;{user}&#39;@&#39;{target_host}&#39; IDENTIFIED BY &#39;{password}&#39;;&amp;lt;/br&amp;gt;GRANT ALL PRIVILEGES ON {database}.{table} TO &#39;{user}&#39;@&#39;{target_host}&#39;; target_host에 사용할 수 있는 것들 localhost % n.n.n.n </description>
     </item>
     
     <item>
       <title>mysql의 커맨드 목록</title>
       <link>https://ariyn.github.io/posts/ftz8efx7k/</link>
-      <pubDate>Wed, 01 Dec 2021 22:34:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/ftz8efx7k/</guid>
-      <description> \G  기존의 테이블 형식이 아닌, 수직으로 보여준다. cli 환경에서 읽어야 할 일이 있을때 편하다.   \p  입력된 sql을 다시 출력한다. 디버깅용으로 사용하면 좋을듯   \W, \w  워닝을 보여줄지, 안보여줄지 설정   https://mariadb.com/kb/ko/mysql-command-line-client/#mysql-commands  </description>
+      <description> \G 기존의 테이블 형식이 아닌, 수직으로 보여준다. cli 환경에서 읽어야 할 일이 있을때 편하다. \p 입력된 sql을 다시 출력한다. 디버깅용으로 사용하면 좋을듯 \W, \w 워닝을 보여줄지, 안보여줄지 설정 https://mariadb.com/kb/ko/mysql-command-line-client/#mysql-commands </description>
     </item>
     
     <item>
       <title>mysql에서 column이름을 보지 않고, 결과만 얻기</title>
       <link>https://ariyn.github.io/posts/l2c0vdijo/</link>
-      <pubDate>Wed, 15 Sep 2021 09:47:00 +0000</pubDate>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/l2c0vdijo/</guid>
-      <description> -N옵션  javascript&amp;lt;/br&amp;gt;mysql -N -e &#39;SELECT * FROM user;&#39;   -column-names  Write column names in results. (Defaults to on; use &amp;ndash;skip-column-names to disable.)   N, &amp;ndash;skip-column-names  Don&amp;rsquo;t write column names in results.   실수로 -n 옵션을 주게되면 다른게 적용되니 조심하자  -n, &amp;ndash;unbuffered Flush buffer after each query.    </description>
+      <description> -N옵션 javascript&amp;lt;/br&amp;gt;mysql -N -e &#39;SELECT * FROM user;&#39; -column-names Write column names in results. (Defaults to on; use &amp;ndash;skip-column-names to disable.) N, &amp;ndash;skip-column-names Don&amp;rsquo;t write column names in results. 실수로 -n 옵션을 주게되면 다른게 적용되니 조심하자 -n, &amp;ndash;unbuffered Flush buffer after each query. </description>
     </item>
     
   </channel>

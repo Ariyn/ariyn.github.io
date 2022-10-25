@@ -6,59 +6,59 @@
     <description>Recent content in aws on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Apr 2022 13:58:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/aws/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/aws/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>api gateway에서 Integration Request의 http header mapping 설정시 아래와 같은 오류가 날 경우</title>
       <link>https://ariyn.github.io/posts/_takvy1qb/</link>
-      <pubDate>Fri, 08 Apr 2022 13:58:00 +0000</pubDate>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/_takvy1qb/</guid>
-      <description> Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: method.request.header.Authorization] Method Request 단계에서 Headers에 해당 해더가 정의되었는지 확인해보자  아무거나 넣어주지는 않는듯    </description>
+      <description> Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: method.request.header.Authorization] Method Request 단계에서 Headers에 해당 해더가 정의되었는지 확인해보자 아무거나 넣어주지는 않는듯 </description>
     </item>
     
     <item>
       <title>moto에서 aws account id를 모킹하는 방법</title>
       <link>https://ariyn.github.io/posts/sa3nzeqjc/</link>
-      <pubDate>Tue, 14 Dec 2021 22:39:00 +0000</pubDate>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/sa3nzeqjc/</guid>
-      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000  </description>
+      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000 </description>
     </item>
     
     <item>
       <title>aws cli 자동완성을 zsh에서 사용하는 방법</title>
       <link>https://ariyn.github.io/posts/tdj1-h9ev/</link>
-      <pubDate>Wed, 01 Dec 2021 23:31:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/tdj1-h9ev/</guid>
-      <description> ~/.zshrc에 아래의 세 줄을 추가  javascript&amp;lt;/br&amp;gt;autoload bashcompinit &amp;amp;&amp;amp; bashcompinit&amp;lt;/br&amp;gt;autoload -Uz compinit &amp;amp;&amp;amp; compinit&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;complete -C &amp;quot;$(which aws_completer)&amp;quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      </description>
+      <description> ~/.zshrc에 아래의 세 줄을 추가 javascript&amp;lt;/br&amp;gt;autoload bashcompinit &amp;amp;&amp;amp; bashcompinit&amp;lt;/br&amp;gt;autoload -Uz compinit &amp;amp;&amp;amp; compinit&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;complete -C &amp;quot;$(which aws_completer)&amp;quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 </description>
     </item>
     
     <item>
       <title>lambda provisioned concurrency</title>
       <link>https://ariyn.github.io/posts/vlangm8mw/</link>
-      <pubDate>Wed, 01 Dec 2021 22:41:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/vlangm8mw/</guid>
-      <description> 설정한 숫자만큼 hot start 시켜놓는 기능  </description>
+      <description> 설정한 숫자만큼 hot start 시켜놓는 기능 </description>
     </item>
     
     <item>
       <title>beanstalk에서 nginx 설정을 바꾸는 방법</title>
       <link>https://ariyn.github.io/posts/7ynbsztwg/</link>
-      <pubDate>Thu, 14 Oct 2021 10:56:00 +0000</pubDate>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/7ynbsztwg/</guid>
-      <description> .ebextensions 폴더는 legacy  .platform 폴더를 사용해야 함   https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions https://mystria.github.io/archivers/fail-case-timeout-free-on-aws https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk  </description>
+      <description> .ebextensions 폴더는 legacy .platform 폴더를 사용해야 함 https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions https://mystria.github.io/archivers/fail-case-timeout-free-on-aws https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk </description>
     </item>
     
     <item>
       <title>beanstalk에서 /etc/hosts를 수정하는 방법</title>
       <link>https://ariyn.github.io/posts/mzsmfdhir/</link>
-      <pubDate>Tue, 05 Oct 2021 18:31:00 +0000</pubDate>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/posts/mzsmfdhir/</guid>
-      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가  javascript&amp;lt;/br&amp;gt;command:&amp;lt;/br&amp;gt; echo &#39;127.0.0.1 hostname&#39; &amp;gt;&amp;gt; /etc/hosts https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
+      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 javascript&amp;lt;/br&amp;gt;command:&amp;lt;/br&amp;gt; echo &#39;127.0.0.1 hostname&#39; &amp;gt;&amp;gt; /etc/hosts https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825 </description>
     </item>
     
   </channel>
