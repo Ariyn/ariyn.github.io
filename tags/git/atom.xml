@@ -6,7 +6,16 @@
     <description>Recent content in git on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/git/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/git/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>리모트의 브랜치를 삭제할 때</title>
+      <link>https://ariyn.github.io/posts/2ith3xvxv/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/2ith3xvxv/</guid>
+      <description> git push origin --delete branch_name </description>
+    </item>
+    
     <item>
       <title>`git log &lt;COMMIT_ID&gt;^..&lt;COMMIT_ID&gt;`</title>
       <link>https://ariyn.github.io/posts/d4mhg2ucg/</link>

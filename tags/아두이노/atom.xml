@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>아두이노 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link>
+    <description>Recent content in 아두이노 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>아두이노와 esp 8266-01 모듈의 baud rate문제</title>
+      <link>https://ariyn.github.io/posts/scwrasju9/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/scwrasju9/</guid>
+      <description> 최초 설정인 115200으로 사용하니, esp01에서 반환하는 응답값이 깨지는 문제가 있었다. \n AT+CIP*UIQ�&amp;quot;TCP&amp;quot;,&amp;quot;192.168.0.100&amp;quot;,&amp;quot;8080&amp;quot; 자세히 찾아보니 아두이노에서 사용하기에 115200은 너무 빠르다 기본 Tx, Rx(0, 1)핀은 해당 baud에서 작동 하지만, 다른 핀을 소프트시리얼로 사용할 경우 문제가 생긴다 나의 경우 8,9번을 Tx, Rx로 사용해서 그런것으로 보인다. https://forum.arduino.cc/t/baud-rate-of-arduino-uno/464956 AT+UART_DEF=9600,8,1,0,0 명령어를 사용해서 변경하니, 문제없이 출력된다. 출처 </description>
+    </item>
+    
+  </channel>
+</rss>

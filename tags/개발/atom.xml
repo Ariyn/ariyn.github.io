@@ -6,7 +6,16 @@
     <description>Recent content in 개발 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>롬 리서치를 사용한 블로그 자동 발행기</title>
+      <link>https://ariyn.github.io/posts/uwtveejtm/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/uwtveejtm/</guid>
+      <description>내 블로그는 롬 리서치를 기반으로 한다. 롬 리서치에 특정한 태그를 작성하면, 자동으로 블로그에 올라간다. 이미 롬 리서치는 매일 쓰고 있었기 때문에 이 구조를 선택했다. 그리고 블로그를 위해서 다른 툴을 사용하는 것은 본말전도라고 생각했다 핵심은 &amp;ldquo;큰 부담 없이 롬 리서치의 글을 가져가 블로그용으로 다듬고 발행하는 것&amp;quot;이였다. 이를 위해서 블로그는 &amp;ldquo;손쉽게 만들 수 있으며&amp;rdquo;, &amp;ldquo;자동으로 발행될 수 있는 구조&amp;quot;여야 했다. 브런치나 네이버 블로그 같은것은 아웃 미디엄도 api를 배워야 했기 때문에 아웃 따라서 푸시만 하면 되는 github.</description>
+    </item>
+    
     <item>
       <title>curl에서 userAgent를 바꾸는 방법</title>
       <link>https://ariyn.github.io/posts/l_v01_w8q/</link>

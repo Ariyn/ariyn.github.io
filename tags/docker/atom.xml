@@ -6,7 +6,16 @@
     <description>Recent content in docker on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/docker/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/docker/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>도커를 실행시켰다면, 반드시 껐다 켜보자</title>
+      <link>https://ariyn.github.io/posts/gc-4ykvrt/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/gc-4ykvrt/</guid>
+      <description> 프로메테우스 docker로 사용하고 있었다 껏다가 켜니까, 3일짜리 저장된 데이터가 날아갔다 더 늦게 일어날 수도 있었음 유닛테스트를 해보는 이유처럼, 도커를 만들고 나면 모든 프로세스를 한번씩 해보자 강제로 꺼보거나, 재부팅하거나, 재빌드하거나 그리고 그 과정에서 문제가 없는지 확인하고, 있다면 기록해두자 나중에 훨씬 편한 마음으로 작업할 수 있을것 어떤 부분들을 테스트해야 하는지 general하게 정리할 수 있을까? #생각 #[[할 것]] </description>
+    </item>
+    
     <item>
       <title>docker에서 alpine 이미지</title>
       <link>https://ariyn.github.io/posts/i7lwoqubd/</link>

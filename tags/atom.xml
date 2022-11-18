@@ -6,22 +6,121 @@
     <description>Recent content in Tags on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>sed</title>
-      <link>https://ariyn.github.io/tags/sed/</link>
-      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      <title>개발</title>
+      <link>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ariyn.github.io/tags/sed/</guid>
+      <guid>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>단상</title>
+      <link>https://ariyn.github.io/tags/%EB%8B%A8%EC%83%81/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EB%8B%A8%EC%83%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>제텔카스텐</title>
+      <link>https://ariyn.github.io/tags/%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>패턴 언어</title>
+      <link>https://ariyn.github.io/tags/%ED%8C%A8%ED%84%B4-%EC%96%B8%EC%96%B4/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%ED%8C%A8%ED%84%B4-%EC%96%B8%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>https://ariyn.github.io/tags/scala/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/scala/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TIL</title>
       <link>https://ariyn.github.io/tags/til/</link>
-      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>구글시트</title>
+      <link>https://ariyn.github.io/tags/%EA%B5%AC%EA%B8%80%EC%8B%9C%ED%8A%B8/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EA%B5%AC%EA%B8%80%EC%8B%9C%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>심리</title>
+      <link>https://ariyn.github.io/tags/%EC%8B%AC%EB%A6%AC/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EC%8B%AC%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>troubleshooting</title>
+      <link>https://ariyn.github.io/tags/troubleshooting/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>롬 리서치</title>
+      <link>https://ariyn.github.io/tags/%EB%A1%AC-%EB%A6%AC%EC%84%9C%EC%B9%98/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EB%A1%AC-%EB%A6%AC%EC%84%9C%EC%B9%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>세벌식</title>
+      <link>https://ariyn.github.io/tags/%EC%84%B8%EB%B2%8C%EC%8B%9D/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EC%84%B8%EB%B2%8C%EC%8B%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>아두이노</title>
+      <link>https://ariyn.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sed</title>
+      <link>https://ariyn.github.io/tags/sed/</link>
+      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/sed/</guid>
       <description></description>
     </item>
     
@@ -62,6 +161,15 @@
     </item>
     
     <item>
+      <title>마라톤</title>
+      <link>https://ariyn.github.io/tags/%EB%A7%88%EB%9D%BC%ED%86%A4/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EB%A7%88%EB%9D%BC%ED%86%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://ariyn.github.io/tags/linux/</link>
       <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
@@ -89,15 +197,6 @@
     </item>
     
     <item>
-      <title>심리</title>
-      <link>https://ariyn.github.io/tags/%EC%8B%AC%EB%A6%AC/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EC%8B%AC%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>한자</title>
       <link>https://ariyn.github.io/tags/%ED%95%9C%EC%9E%90/</link>
       <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
@@ -107,11 +206,38 @@
     </item>
     
     <item>
+      <title>git</title>
+      <link>https://ariyn.github.io/tags/git/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>오토바이</title>
       <link>https://ariyn.github.io/tags/%EC%98%A4%ED%86%A0%EB%B0%94%EC%9D%B4/</link>
       <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EC%98%A4%ED%86%A0%EB%B0%94%EC%9D%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://ariyn.github.io/tags/docker/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>회고</title>
+      <link>https://ariyn.github.io/tags/%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -193,15 +319,6 @@
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://ariyn.github.io/tags/git/</link>
-      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/git/</guid>
       <description></description>
     </item>
     
@@ -301,15 +418,6 @@
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EB%A7%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://ariyn.github.io/tags/docker/</link>
-      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
@@ -431,29 +539,11 @@
     </item>
     
     <item>
-      <title>개발</title>
-      <link>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>logstash</title>
       <link>https://ariyn.github.io/tags/logstash/</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/tags/logstash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>회고</title>
-      <link>https://ariyn.github.io/tags/%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -814,15 +904,6 @@
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EA%B7%B8%EB%A0%88%EC%9D%B4%ED%8A%B8-%EB%A7%88%EC%9D%B8%EC%A6%88/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>롬 리서치</title>
-      <link>https://ariyn.github.io/tags/%EB%A1%AC-%EB%A6%AC%EC%84%9C%EC%B9%98/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EB%A1%AC-%EB%A6%AC%EC%84%9C%EC%B9%98/</guid>
       <description></description>
     </item>
     
