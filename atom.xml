@@ -481,11 +481,7 @@
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;확인함&lt;/li&gt;
-&lt;li&gt;input과 간단한 script 하나를 추가해두고 breakpoint를 걸었을 때, 세벌식의 경우 먼저 글자가 나타난다
-&lt;ul&gt;
-&lt;li&gt;{{[[video]]: &lt;a href=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fminuk%2Ft9ZU5Zuj9R.html%20-%20Chrome%202022-11-07%2000-38-30.mp4?alt=media&amp;amp;token=ac42c80e-2eba-4a2e-91c0-82e114bb043f%7D%7D&#34;&gt;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fminuk%2Ft9ZU5Zuj9R.html%20-%20Chrome%202022-11-07%2000-38-30.mp4?alt=media&amp;amp;token=ac42c80e-2eba-4a2e-91c0-82e114bb043f}}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;input과 간단한 script 하나를 추가해두고 breakpoint를 걸었을 때, 세벌식의 경우 먼저 글자가 나타난다&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;html\n    &amp;lt;input /&amp;gt;\n    \n    &amp;lt;script&amp;gt;\n        onkeydown = (event) =&amp;gt; {\n            console.log(event);\n        };\n    &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;2&#34;&gt;

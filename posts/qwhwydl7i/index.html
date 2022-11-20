@@ -19,7 +19,7 @@
   <meta itemprop="name" content="윈도우 세벌식에서의 오류">
 <meta itemprop="description" content="롬 리서치를 쓸 때, 세벌식을 사용하면 백쿼트를 한번 누르면 세개가 동시에 나타난다 그러나 이는 의도되지 않은 동작으로, 앞 두개만 코드 블럭으로 인식되고 마지막 백쿼트는 그냥 나타난다. 따라서 어딘가 오류가 있는 상황 윈도우 세벌식에서 키를 누르면, chrome onkeydown 이벤트 이전에 이미 글자를 적는 것 같다. 두벌식에서는 onkeydown 이벤트가 먼저 나타나고 글자가 나타남 따라서 롬 리서치에서 정상적으로 백 쿼트 두개를 추가했지만, 세벌식 입력기가 먼저 백쿼트를 하나 입력했기 때문에 세개가 나타나는 현상으로 추측 추가 확인하다보니, 세벌식 IME가 특수문자에도 keycode 229를 입력하는 것으로 보인다."><meta itemprop="datePublished" content="2022-11-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="1970-01-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="285">
+<meta itemprop="wordCount" content="283">
 <meta itemprop="keywords" content="롬 리서치,세벌식,TIL,troubleshooting," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="윈도우 세벌식에서의 오류"/>
@@ -83,7 +83,7 @@
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/qwhwydl7i\/",
-    "wordCount" : "285",
+    "wordCount" : "283",
     "genre" : [ "롬 리서치" , "세벌식" , "TIL" , "troubleshooting" ],
     "keywords" : [ "롬 리서치" , "세벌식" , "TIL" , "troubleshooting" ]
 }
@@ -135,11 +135,7 @@
 </ol>
 <ul>
 <li>확인함</li>
-<li>input과 간단한 script 하나를 추가해두고 breakpoint를 걸었을 때, 세벌식의 경우 먼저 글자가 나타난다
-<ul>
-<li>{{[[video]]: <a href="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fminuk%2Ft9ZU5Zuj9R.html%20-%20Chrome%202022-11-07%2000-38-30.mp4?alt=media&amp;token=ac42c80e-2eba-4a2e-91c0-82e114bb043f%7D%7D">https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fminuk%2Ft9ZU5Zuj9R.html%20-%20Chrome%202022-11-07%2000-38-30.mp4?alt=media&amp;token=ac42c80e-2eba-4a2e-91c0-82e114bb043f}}</a></li>
-</ul>
-</li>
+<li>input과 간단한 script 하나를 추가해두고 breakpoint를 걸었을 때, 세벌식의 경우 먼저 글자가 나타난다</li>
 <li><code>html\n    &lt;input /&gt;\n    \n    &lt;script&gt;\n        onkeydown = (event) =&gt; {\n            console.log(event);\n        };\n    &lt;/script&gt;</code></li>
 </ul>
 <ol start="2">
