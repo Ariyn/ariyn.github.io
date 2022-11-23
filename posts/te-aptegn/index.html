@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>Codemasters F1 2021 시각화 프로젝트 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="Codemasters F1 2021 시각화 프로젝트" />
+<meta property="og:description" content="프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다. 이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다. 예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/te-aptegn/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-22T16:00:50+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
+
+
+  
+  <meta itemprop="name" content="Codemasters F1 2021 시각화 프로젝트">
+<meta itemprop="description" content="프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다. 이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다. 예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다."><meta itemprop="datePublished" content="2022-11-22T16:00:50+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="526">
+<meta itemprop="keywords" content="게임,개발," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Codemasters F1 2021 시각화 프로젝트"/>
+<meta name="twitter:description" content="프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다. 이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다. 예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다."/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/te-aptegn/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "Codemasters F1 2021 시각화 프로젝트",
+    "headline": "Codemasters F1 2021 시각화 프로젝트",
+    "alternativeHeadline": "",
+    "description": "프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다. 이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다. 예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/te-aptegn\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-11-22T16:00:50.00Z",
+    "datePublished": "2022-11-22T16:00:50.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/te-aptegn\/",
+    "wordCount" : "526",
+    "genre" : [ "게임" , "개발" ],
+    "keywords" : [ "게임" , "개발" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">Codemasters F1 2021 시각화 프로젝트</h2>
+      <ul>
+<li>프로젝트 <a href="https://github.com/Ariyn/F1-2021-game-udp">레포지토리</a></li>
+<li><a href="https://www.codemasters.com/game/f1-2021/">Codemasters F1 2021</a>는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다.
+<ul>
+<li>이 데이터는 현재 게임의 <code>시간</code>, <code>몇바퀴 돌았는지</code>, <code>내가 어떤 플레이어인지</code>와 같은 게임적인 데이터부터, <code>차의 현재 위치</code>, <code>차의 가속도</code>, <code>핸들의 각도</code>와 같은 Telemetry와 같은 데이터도 전송해준다.</li>
+<li>Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다.
+<ul>
+<li>예를들어 <code>네 바퀴의 회전 속도</code>는 전달하지만, <code>게임에서 계산한 각 바퀴의 마찰력</code>은 전달하지 않는다.</li>
+<li>이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다.
+<ul>
+<li>예를들어 게임에서 차가 견딜 수 있는것보다 빠른 속도로 코너를 돌면 차가 스핀한다.</li>
+<li>그렇기에 각 바퀴의 마찰력은 계산되고 게임에서 사용되고 있을 것이다.</li>
+</ul>
+</li>
+<li>따라서 단순히 기록계가 아닌 좀 더 사용하기 좋은 데이터는 &ldquo;게임에서 제공하는 1차적인 정보&quot;를 조합해서 얻어야 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>게임을 하면서 가끔씩 <code>아 이번 코너는 정말 최적으로 돌았다</code>라던지, <code>아 이게 아닌데!</code>하면서 스핀하는 경우가 있다.
+<ul>
+<li>그러나 게임 자체가 너무 긴박하게 흘러가다보니, 정확히 &ldquo;왜 이번 코너에서 돌았는지&quot;를 학습하기 어려웠다.</li>
+<li>따라서 &ldquo;실제 F1에서 보는것 처럼 Telemetry를 시각화&quot;하는 것을 통해서 실력을 빠른 시간내에 키울 수 있지 않을까 생각했다.</li>
+</ul>
+</li>
+<li>프로젝트는 총 2가지 시스템으로 구성되어 있다.
+<ul>
+<li>첫번째는 UDP서버로 게임에서 전송한 데이터를 받고, 나중에 가공하기 쉬운 형식으로 저장한다.</li>
+<li>두번째는 시각화 내지는 계산 시스템으로, 저장해둔 데이터를 사용해 원하는 데이터를 가져오는 시스템이다.</li>
+</ul>
+</li>
+<li>UDP 서버
+<ul>
+<li>게임에서 전달하는 정보는 json과 같은 데이터가 아닌 <a href="https://forums.codemasters.com/topic/80231-f1-2021-udp-specification/">인코딩된 정보</a>가 전달된다.
+<ul>
+<li>스펙에 따라 <code>몇비트가 특정 값이면 특정 데이터 형식으로 디코딩</code>하는 과정이 필요하다</li>
+</ul>
+</li>
+<li>UDP서버는 전달받은 데이터를 알맞은 디코딩 고루틴으로 보내 디코딩하고, 사용하기 쉽게 jsonl 파일로 저장한다.</li>
+</ul>
+</li>
+<li>시각화 시스템
+<ul>
+<li>시각화 시스템은 저장된 파일을 불러와 해당 차의 그래프를 그린다.</li>
+<li>차의 그래프는 <a href="https://scarbsf1.wordpress.com/2011/08/18/telemetry-and-data-analysis-introduction/">실제로 사용된 F1의 그래프</a>와 비슷하게 그렸다
+<ul>
+<li>속도, 가속도, 핸들 회전 각도, 악셀, 브레이크</li>
+<li>코너에서 차가 스핀한 대부분의 경우, <code>핸들을 너무 강하게 틀었거나, 브레이크를 너무 늦게 밟았거나, 악셀을 너무 일찍 혹은 너무 강하게 밟았기 때문</code>에 이정도로도 괜찮은 학습이 이루어졌다.</li>
+</ul>
+</li>
+<li>한 랩당 한 개의 그래프를 그리며, 두개 이상의 랩을 겹쳐서 랜더링 할 수 있다.
+<ul>
+<li>이렇게 해서, &ldquo;코너를 도는데 성공한 랩&quot;과 &ldquo;실패한 랩&quot;의 차이를 분석하기 쉽다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>결과만 놓고 본다면 나쁘지 않았다.
+<ul>
+<li>&ldquo;그닥 어려운것도 아닌데 왜 그렇게 브레이킹 포인트를 못잡겠던&rdquo; 레드불링 1번 코너를 옆 차와 싸우면서도 잘 돌게 되었다.</li>
+</ul>
+</li>
+<li>아쉬운점은 물론 있다.
+<ul>
+<li>타이어의 접지력을 계산했으면 좋았겠으나 지식의 한계로 인해서 정확한 계산이 불가능했다.
+<ul>
+<li>도저히&hellip; 공식을 이해할 수가 없었다&hellip;</li>
+<li>몇가지 차의 측정값이 필요 했으나, 게임의 한계로 이 수치들에 대한 &ldquo;확신&quot;이 없었다.
+<ul>
+<li>타이어의 너비가 과연 F1차와 동일하게 되어 있는가?</li>
+<li>연료의 무게는 보여주었지만, 차의 무게는 데이터에 포함되어있지 않았다&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>비교 데이터가 너무 빈약했다
+<ul>
+<li>나보다 잘한 선수의 데이터가 있으면 비교해볼 수 있었겠지만, AI 선수들의 데이터는 무조건 직각으로 꺾여있었다.
+<ul>
+<li>즉 최적 타이밍에 순간적으로 100으로 브레이크를 밟는다던지, 핸들의 회전 각도도 30도에서 45도로 올라가고&hellip; 비교하기엔 엉망진창이었다</li>
+</ul>
+</li>
+<li>멀티에서 데이터를 뽑을 생각도 했지만, 이 데이터는 이 빠진 구석이 너무 많았다
+<ul>
+<li>네트워크 딜레이로 인해서 일부 데이터가 빠진 것 같다.</li>
+<li>직접 보간하고 다시 분석하려니, 데이터의 정확도를 신뢰하기 어려웠다</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>드라이빙 스킬 이외의 것을 분석하지 못했다.
+<ul>
+<li>전체적인 레이싱의 흐름이라던지, 선수간 페이스의 차이라던지 분석해보고 싶었다.</li>
+<li>하지만 &ldquo;어디까지나 게임이다보니, 관능적으로 학습할 수 있는 정보&quot;여서, 큰 모티베이션이 되지 못했다</li>
+</ul>
+</li>
+<li>어디까지나 &ldquo;내가 사용하는것&quot;이 목적이다보니 코드적으로 아쉬운 점도 많았다
+<ul>
+<li>초당 60번씩 나오는 데이터에 jsonl 파일을 사용하니 용량이 너무 커졌다.</li>
+<li>시각화 시스템을 개선해서, 필요한 계산식을 구현하기 쉽게 만들면 어떨까 하는 아쉬움이 있다.</li>
+</ul>
+</li>
+<li>아마 나중에 F1 2023을 플레이 할 때, 아쉬운 점들을 다시 해보지 않을까 싶다
+<ul>
+<li>각 타이어의 접지력은 꼭 구해보고 싶다</li>
+<li>실시간으로 선수의 페이스를 분석해서, &ldquo;네가 이대로 가다간 추월당한다&quot;와 같은 알람을 주면 재밌을 것 같다.
+<ul>
+<li>혹은 &ldquo;이번 랩에 피트인 해야 추월할 수 있다&quot;와 같은 정보라던지</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>그래도 재밌었다.</li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/%EA%B2%8C%EC%9E%84'>게임</a>, <a href='/tags/%EA%B0%9C%EB%B0%9C'>개발</a></div>
+</main>
+</body>
+</html>

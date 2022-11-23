@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>임베디드 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C/</link>
+    <description>Recent content in 임베디드 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Oct 2022 00:51:56 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>아두이노와 [esp01 모듈](https://www.devicemart.co.kr/goods/view?no=1279338)을 사용해 http get 요청 보내기</title>
+      <link>https://ariyn.github.io/posts/3hfvpiz21/</link>
+      <pubDate>Sat, 29 Oct 2022 00:51:56 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/3hfvpiz21/</guid>
+      <description>AT+CIPSTART 명령어를 사용해서 서버에 접속 AT+CIPSTART=&amp;quot;TCP&amp;quot;,&amp;quot;ADDRESS&amp;quot;,POST AT+CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시 AT+CIPSEND=BYTE_SIZE 이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 +2 해줘야 한다 이후에 OK &amp;gt;가 나오면 데이터를 입력한다. 이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&amp;lt;/br&amp;gt;로 16바이트이다. 전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다 AT+CIPCLOSE 명령어를 사용해서 접속을 종료 여러개의 접속을 사용하면 link-id를 입력해야 한다. 지금은 한개의 접속만 존재하기 때문에 상관없다 시리얼 모니터로 직접 명령어를 전송한 기록 javascript\n 00:47:38.</description>
+    </item>
+    
+  </channel>
+</rss>

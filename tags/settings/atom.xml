@@ -6,11 +6,11 @@
     <description>Recent content in settings on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/settings/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 17:39:32 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/settings/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>jaeger를 production환경에서 사용하기</title>
       <link>https://ariyn.github.io/posts/awkde_8b-/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Dec 2021 17:39:32 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/awkde_8b-/</guid>
       <description> all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯 https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼 prometheus도 하나의 인스턴스에서 동작하지 않는가 단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함 https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch 컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함 -e SPAN_STORAGE_TYPE=elasticsearch 비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin] -e ES_SERVER_URLS=&amp;lt;...&amp;gt; 콤마로 분리된 형식이라고 한다 docker run jaegertracing/all-in-one:latest --help를 하면, 파라미터를 전부 볼 수 있음 </description>

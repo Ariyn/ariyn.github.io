@@ -8,22 +8,22 @@
   <title>file write가 안되는 경우 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="file write가 안되는 경우" />
-<meta property="og:description" content="문제의 코드 javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt; panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지." />
+<meta property="og:description" content="문제의 코드 javascript\n f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &quot;test&quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/294uvuols/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-12-09T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-12-09T17:51:08+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
 
 
   
   <meta itemprop="name" content="file write가 안되는 경우">
-<meta itemprop="description" content="문제의 코드 javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt; panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지."><meta itemprop="datePublished" content="2021-12-09T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-12-09T00:00:00+00:00" />
-<meta itemprop="wordCount" content="233">
+<meta itemprop="description" content="문제의 코드 javascript\n f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &quot;test&quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지."><meta itemprop="datePublished" content="2021-12-09T17:51:08+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="245">
 <meta itemprop="keywords" content="개발,golang,linux,TIL," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="file write가 안되는 경우"/>
-<meta name="twitter:description" content="문제의 코드 javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt; panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지."/>
+<meta name="twitter:description" content="문제의 코드 javascript\n f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &quot;test&quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지."/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/294uvuols/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "file write가 안되는 경우",
     "headline": "file write가 안되는 경우",
     "alternativeHeadline": "",
-    "description": "문제의 코드 javascript\u0026lt;\/br\u0026gt;f, err := os.OpenFile(\u0026quot;\/tmp\/test\u0026quot;, os.Append, 0755)\u0026lt;\/br\u0026gt;if err != nil {\u0026lt;\/br\u0026gt; panic(err)\u0026lt;\/br\u0026gt;}\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;fmt.Fprintln(f, \u0026quot;test\u0026quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read\/write, respectively. https:\/\/man7.org\/linux\/man-pages\/man2\/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.",
+    "description": "문제의 코드 javascript\\n f, err := os.OpenFile(\u0026quot;\/tmp\/test\u0026quot;, os.Append, 0755)\\n if err != nil {\\n panic(err)\\n }\\n \\n fmt.Fprintln(f, \u0026quot;test\u0026quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read\/write, respectively. https:\/\/man7.org\/linux\/man-pages\/man2\/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -67,9 +67,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2021",
-    "dateCreated": "2021-12-09T00:00:00.00Z",
-    "datePublished": "2021-12-09T00:00:00.00Z",
-    "dateModified": "2021-12-09T00:00:00.00Z",
+    "dateCreated": "2021-12-09T17:51:08.00Z",
+    "datePublished": "2021-12-09T17:51:08.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",
@@ -83,7 +83,7 @@
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/294uvuols\/",
-    "wordCount" : "233",
+    "wordCount" : "245",
     "genre" : [ "개발" , "golang" , "linux" , "TIL" ],
     "keywords" : [ "개발" , "golang" , "linux" , "TIL" ]
 }
@@ -109,7 +109,7 @@
       <ul>
 <li>문제의 코드
 <ul>
-<li><code>javascript&lt;/br&gt;f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)&lt;/br&gt;if err != nil {&lt;/br&gt;  panic(err)&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;fmt.Fprintln(f, &quot;test&quot;)</code></li>
+<li><code>javascript\n    f, err := os.OpenFile(&quot;/tmp/test&quot;, os.Append, 0755)\n    if err != nil {\n      panic(err)\n    }\n    \n    fmt.Fprintln(f, &quot;test&quot;)</code></li>
 </ul>
 </li>
 <li>그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.
@@ -133,13 +133,13 @@
 </li>
 <li>각각의 플래그의 값은 이렇다.
 <ul>
-<li><code>javascript&lt;/br&gt;O_RDONLY                          = 0x0&lt;/br&gt;O_WRONLY                          = 0x1&lt;/br&gt;O_RDWR                            = 0x2&lt;/br&gt;O_APPEND                          = 0x8</code></li>
+<li><code>javascript\n    O_RDONLY                          = 0x0\n    O_WRONLY                          = 0x1\n    O_RDWR                            = 0x2\n    O_APPEND                          = 0x8</code></li>
 <li>따라서 O_APPEND만 사용하면 <code>0x8</code>이 되는데, 첫번째 비트가 0이기 때문에, <code>O_RDONLY</code>로 열리게 되는 것.</li>
 </ul>
 </li>
 <li>추가로 golang에서 파일을 열 때 사용할 수 있는 플래그는 아래와 같다.
 <ul>
-<li><code>javascript&lt;/br&gt;golang/src/os/file.go&lt;/br&gt;const (&lt;/br&gt;	// Exactly one of O_RDONLY, O_WRONLY, or O_RDWR must be specified.&lt;/br&gt;	O_RDONLY int = syscall.O_RDONLY // open the file read-only.&lt;/br&gt;	O_WRONLY int = syscall.O_WRONLY // open the file write-only.&lt;/br&gt;	O_RDWR   int = syscall.O_RDWR   // open the file read-write.&lt;/br&gt;	// The remaining values may be or'ed in to control behavior.&lt;/br&gt;	O_APPEND int = syscall.O_APPEND // append data to the file when writing.&lt;/br&gt;	O_CREATE int = syscall.O_CREAT  // create a new file if none exists.&lt;/br&gt;	O_EXCL   int = syscall.O_EXCL   // used with O_CREATE, file must not exist.&lt;/br&gt;	O_SYNC   int = syscall.O_SYNC   // open for synchronous I/O.&lt;/br&gt;	O_TRUNC  int = syscall.O_TRUNC  // truncate regular writable file when opened.&lt;/br&gt;)</code></li>
+<li><code>javascript\n    golang/src/os/file.go\n    const (\n    	// Exactly one of O_RDONLY, O_WRONLY, or O_RDWR must be specified.\n    	O_RDONLY int = syscall.O_RDONLY // open the file read-only.\n    	O_WRONLY int = syscall.O_WRONLY // open the file write-only.\n    	O_RDWR   int = syscall.O_RDWR   // open the file read-write.\n    	// The remaining values may be or'ed in to control behavior.\n    	O_APPEND int = syscall.O_APPEND // append data to the file when writing.\n    	O_CREATE int = syscall.O_CREAT  // create a new file if none exists.\n    	O_EXCL   int = syscall.O_EXCL   // used with O_CREATE, file must not exist.\n    	O_SYNC   int = syscall.O_SYNC   // open for synchronous I/O.\n    	O_TRUNC  int = syscall.O_TRUNC  // truncate regular writable file when opened.\n    )</code></li>
 <li>확인해보니 주석으로도 세개중 하나를 반드시 사용하라고 되어 있다&hellip;</li>
 </ul>
 </li>

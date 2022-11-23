@@ -8,22 +8,22 @@
   <title>golang으로 lambda 함수를 만들때 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="golang으로 lambda 함수를 만들때" />
-<meta property="og:description" content=" api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript&lt;/br&gt;func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능&lt;/br&gt;func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript&lt;/br&gt;{&lt;/br&gt; &quot;body&quot;:&quot;...&quot;,&lt;/br&gt; &quot;uri&quot; :&quot;...&quot;,&lt;/br&gt; ...&lt;/br&gt;} " />
+<meta property="og:description" content=" api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\n func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능\n func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\n {\n &quot;body&quot;:&quot;...&quot;,\n &quot;uri&quot; :&quot;...&quot;,\n ...\n } " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/qm8yip9td/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-12-01T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-12-01T22:43:03+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
 
 
   
   <meta itemprop="name" content="golang으로 lambda 함수를 만들때">
-<meta itemprop="description" content=" api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript&lt;/br&gt;func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능&lt;/br&gt;func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript&lt;/br&gt;{&lt;/br&gt; &quot;body&quot;:&quot;...&quot;,&lt;/br&gt; &quot;uri&quot; :&quot;...&quot;,&lt;/br&gt; ...&lt;/br&gt;} "><meta itemprop="datePublished" content="2021-12-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-12-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="45">
+<meta itemprop="description" content=" api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\n func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능\n func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\n {\n &quot;body&quot;:&quot;...&quot;,\n &quot;uri&quot; :&quot;...&quot;,\n ...\n } "><meta itemprop="datePublished" content="2021-12-01T22:43:03+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="49">
 <meta itemprop="keywords" content="TIL,golang,lambda," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="golang으로 lambda 함수를 만들때"/>
-<meta name="twitter:description" content=" api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript&lt;/br&gt;func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능&lt;/br&gt;func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript&lt;/br&gt;{&lt;/br&gt; &quot;body&quot;:&quot;...&quot;,&lt;/br&gt; &quot;uri&quot; :&quot;...&quot;,&lt;/br&gt; ...&lt;/br&gt;} "/>
+<meta name="twitter:description" content=" api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\n func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능\n func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\n {\n &quot;body&quot;:&quot;...&quot;,\n &quot;uri&quot; :&quot;...&quot;,\n ...\n } "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/qm8yip9td/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "golang으로 lambda 함수를 만들때",
     "headline": "golang으로 lambda 함수를 만들때",
     "alternativeHeadline": "",
-    "description": " api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\u0026lt;\/br\u0026gt;func handler(myModel MyModel) {} \u0026gt; lambda proxy를 안쓸경우 사용가능\u0026lt;\/br\u0026gt;func handler(proxyModel events.APIGatewayProxyRequest) \u0026gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\u0026lt;\/br\u0026gt;{\u0026lt;\/br\u0026gt; \u0026quot;body\u0026quot;:\u0026quot;...\u0026quot;,\u0026lt;\/br\u0026gt; \u0026quot;uri\u0026quot; :\u0026quot;...\u0026quot;,\u0026lt;\/br\u0026gt; ...\u0026lt;\/br\u0026gt;} ",
+    "description": " api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\\n func handler(myModel MyModel) {} \u0026gt; lambda proxy를 안쓸경우 사용가능\\n func handler(proxyModel events.APIGatewayProxyRequest) \u0026gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\\n {\\n \u0026quot;body\u0026quot;:\u0026quot;...\u0026quot;,\\n \u0026quot;uri\u0026quot; :\u0026quot;...\u0026quot;,\\n ...\\n } ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -67,9 +67,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2021",
-    "dateCreated": "2021-12-01T00:00:00.00Z",
-    "datePublished": "2021-12-01T00:00:00.00Z",
-    "dateModified": "2021-12-01T00:00:00.00Z",
+    "dateCreated": "2021-12-01T22:43:03.00Z",
+    "datePublished": "2021-12-01T22:43:03.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",
@@ -83,7 +83,7 @@
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/qm8yip9td\/",
-    "wordCount" : "45",
+    "wordCount" : "49",
     "genre" : [ "TIL" , "golang" , "lambda" ],
     "keywords" : [ "TIL" , "golang" , "lambda" ]
 }
@@ -108,10 +108,10 @@
       <h2 class="post">golang으로 lambda 함수를 만들때</h2>
       <ul>
 <li>api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다.</li>
-<li><code>javascript&lt;/br&gt;func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능&lt;/br&gt;func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요</code></li>
+<li><code>javascript\n    func handler(myModel MyModel) {} &gt; lambda proxy를 안쓸경우 사용가능\n    func handler(proxyModel events.APIGatewayProxyRequest) &gt; lambda proxy를 사용할경우 필요</code></li>
 <li>아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다.
 <ul>
-<li><code>javascript&lt;/br&gt;{&lt;/br&gt;  &quot;body&quot;:&quot;...&quot;,&lt;/br&gt;  &quot;uri&quot; :&quot;...&quot;,&lt;/br&gt;  ...&lt;/br&gt;}</code></li>
+<li><code>javascript\n    {\n      &quot;body&quot;:&quot;...&quot;,\n      &quot;uri&quot; :&quot;...&quot;,\n      ...\n    }</code></li>
 </ul>
 </li>
 </ul>

@@ -6,14 +6,14 @@
     <description>Recent content in osx on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/osx/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 22:26:33 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/osx/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>맥에서 swift로 window들의 정보를 가져오는 방법</title>
       <link>https://ariyn.github.io/posts/epmnjjhnk/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 22:26:33 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/epmnjjhnk/</guid>
-      <description>swift&amp;lt;/br&amp;gt;import Cocoa&amp;lt;/br&amp;gt;import Quartz&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)&amp;lt;/br&amp;gt;let relativeToWindow: CGWindowID = kCGNullWindowID&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;struct WindowData:Codable {&amp;lt;/br&amp;gt; let processName: String&amp;lt;/br&amp;gt; let windowName: String&amp;lt;/br&amp;gt; let x: Int&amp;lt;/br&amp;gt; let y: Int&amp;lt;/br&amp;gt; let width: Int&amp;lt;/br&amp;gt; let height: Int&amp;lt;/br&amp;gt;}&amp;lt;/br&amp;gt;var collectedInfo: [WindowData] = []&amp;lt;/br&amp;gt;for info in infos as! [NSDictionary] {&amp;lt;/br&amp;gt; let bound:NSDictionary = info[&amp;quot;kCGWindowBounds&amp;quot;] as! NSDictionary&amp;lt;/br&amp;gt; let processName:String = info[&amp;quot;kCGWindowOwnerName&amp;quot;] as? String ?? &amp;quot;&amp;quot;&amp;lt;/br&amp;gt; let windowName:String = info[&amp;quot;kCGWindowName&amp;quot;] as? String ?? &amp;quot;&amp;quot;&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt; collectedInfo.append(WindowData(&amp;lt;/br&amp;gt; processName: processName.</description>
+      <description>swift\n import Cocoa\n import Quartz\n \n let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\n let relativeToWindow: CGWindowID = kCGNullWindowID\n \n let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\n \n struct WindowData:Codable {\n let processName: String\n let windowName: String\n let x: Int\n let y: Int\n let width: Int\n let height: Int\n }\n var collectedInfo: [WindowData] = []\n for info in infos as! [NSDictionary] {\n let bound:NSDictionary = info[&amp;quot;kCGWindowBounds&amp;quot;] as! NSDictionary\n let processName:String = info[&amp;quot;kCGWindowOwnerName&amp;quot;] as? String ?</description>
     </item>
     
   </channel>

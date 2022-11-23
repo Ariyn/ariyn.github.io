@@ -6,11 +6,20 @@
     <description>Recent content in bash on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/bash/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 16:52:31 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/bash/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`jq -R . | jq -s`</title>
+      <link>https://ariyn.github.io/posts/ttfqiummz/</link>
+      <pubDate>Wed, 20 Jul 2022 16:52:31 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ttfqiummz/</guid>
+      <description> 여러줄로 나오는 결과를 json array 형태로 변환시키는 방법 </description>
+    </item>
+    
     <item>
       <title>`alias=rm=&#39;rm -i --preserve-root&#39;`</title>
       <link>https://ariyn.github.io/posts/e_dds4p1r/</link>
-      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 May 2022 15:50:12 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/e_dds4p1r/</guid>
       <description> root의 삭제를 막도록 alias를 만드는 명령어 .bashrc에 저장해두자 --preserve-root do not remove &amp;lsquo;/&amp;rsquo; -i prompt before every removal </description>
@@ -19,55 +28,55 @@
     <item>
       <title>aws cli 자동완성을 zsh에서 사용하는 방법</title>
       <link>https://ariyn.github.io/posts/tdj1-h9ev/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 23:31:02 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tdj1-h9ev/</guid>
-      <description> ~/.zshrc에 아래의 세 줄을 추가 javascript&amp;lt;/br&amp;gt;autoload bashcompinit &amp;amp;&amp;amp; bashcompinit&amp;lt;/br&amp;gt;autoload -Uz compinit &amp;amp;&amp;amp; compinit&amp;lt;/br&amp;gt;&amp;lt;/br&amp;gt;complete -C &amp;quot;$(which aws_completer)&amp;quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 </description>
+      <description> ~/.zshrc에 아래의 세 줄을 추가 javascript\n autoload bashcompinit &amp;amp;&amp;amp; bashcompinit\n autoload -Uz compinit &amp;amp;&amp;amp; compinit\n \n complete -C &amp;quot;$(which aws_completer)&amp;quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 </description>
     </item>
     
     <item>
       <title>inotifywait</title>
       <link>https://ariyn.github.io/posts/u7q_7bk1f/</link>
-      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Nov 2021 14:24:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/u7q_7bk1f/</guid>
-      <description> 파일의 inode 이벤트에 따라 커맨드를 실행시키기 위한 커맨드 javascript&amp;lt;/br&amp;gt;while inotifywait -e close_write ./file.ext; do&amp;lt;/br&amp;gt; do something;&amp;lt;/br&amp;gt;done https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes inotify-tools에 포함된 명령어로 보인다 </description>
+      <description> 파일의 inode 이벤트에 따라 커맨드를 실행시키기 위한 커맨드 javascript\n while inotifywait -e close_write ./file.ext; do\n do something;\n done https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes inotify-tools에 포함된 명령어로 보인다 </description>
     </item>
     
     <item>
       <title>ssl 인증서 확인하기</title>
       <link>https://ariyn.github.io/posts/i720z9kdf/</link>
-      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Oct 2021 10:00:30 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i720z9kdf/</guid>
-      <description> shell&amp;lt;/br&amp;gt;echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text </description>
+      <description> shell\n echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text </description>
     </item>
     
     <item>
       <title>docker에서 chromium을 설치할 때, timezone을 물어보는 input이 나올때</title>
       <link>https://ariyn.github.io/posts/a40q4vdgs/</link>
-      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 26 Oct 2021 21:19:35 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/a40q4vdgs/</guid>
-      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자 javascript&amp;lt;/br&amp;gt;ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime 혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정 debian, ubuntu만 가능함 javascript&amp;lt;/br&amp;gt;ENV DEBIAN_FRONTEND=noninteractive 단 추천하지는 않는다고 한다 https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args </description>
+      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자 javascript\n ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime 혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정 debian, ubuntu만 가능함 javascript\n ENV DEBIAN_FRONTEND=noninteractive 단 추천하지는 않는다고 한다 https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args </description>
     </item>
     
     <item>
       <title>bash에서 첫번째 문자를 대문자로 만들기</title>
       <link>https://ariyn.github.io/posts/tmxow28ey/</link>
-      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Oct 2021 23:27:38 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tmxow28ey/</guid>
-      <description> 왜 이렇게 가능한지 나중에 공부하기 javascript&amp;lt;/br&amp;gt;file=&amp;quot;$(tr &#39;[:lower:]&#39; &#39;[:upper:]&#39; &amp;lt;&amp;lt;&amp;lt; ${file:0:1})${file:1}&amp;quot; 출처 https://stackoverflow.com/questions/12487424/uppercase-first-character-in-a-variable-with-bash </description>
+      <description> 왜 이렇게 가능한지 나중에 공부하기 javascript\n file=&amp;quot;$(tr &#39;[:lower:]&#39; &#39;[:upper:]&#39; &amp;lt;&amp;lt;&amp;lt; ${file:0:1})${file:1}&amp;quot; 출처 https://stackoverflow.com/questions/12487424/uppercase-first-character-in-a-variable-with-bash </description>
     </item>
     
     <item>
       <title>editor없이 crontab에 추가하는 방법</title>
       <link>https://ariyn.github.io/posts/zqor-g1mw/</link>
-      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Sep 2021 09:40:32 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zqor-g1mw/</guid>
-      <description> javascript&amp;lt;/br&amp;gt;crontab -l &amp;gt; /tmp/cron&amp;lt;/br&amp;gt;echo &amp;quot;* * * * * echo hello&amp;quot; &amp;gt;&amp;gt; /tmp/cron&amp;lt;/br&amp;gt;crontab /tmp/cron&amp;lt;/br&amp;gt;rm /tmp/cron crontab file 파일을 읽어서 crontab에 설치함 (덮어쓰기됨) 출처:https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor </description>
+      <description> javascript\n crontab -l &amp;gt; /tmp/cron\n echo &amp;quot;* * * * * echo hello&amp;quot; &amp;gt;&amp;gt; /tmp/cron\n crontab /tmp/cron\n rm /tmp/cron crontab file 파일을 읽어서 crontab에 설치함 (덮어쓰기됨) 출처:https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor </description>
     </item>
     
   </channel>

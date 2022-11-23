@@ -6,11 +6,11 @@
     <description>Recent content in 구글시트 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B5%AC%EA%B8%80%EC%8B%9C%ED%8A%B8/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 11:46:36 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B5%AC%EA%B8%80%EC%8B%9C%ED%8A%B8/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>구글 조건부 서식에서 한 행 전체에 적용하기</title>
       <link>https://ariyn.github.io/posts/xftpjyp2f/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Nov 2022 11:46:36 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/xftpjyp2f/</guid>
       <description> 색을 적용할 전체 범위를 지정해주고, 맞춤 수식에 =$A1=TODAY()와 같은식으로 적는다 이때 첫번째 열이 $로 표시 되어야 하고, 첫번째 행은 일반 숫자로 들어가야 한다. 열 전체에 적용하려면, =A$1=TODAY()와 갈은식으로 열이 아니라 행 번호에 $가 들어가야 한다 </description>
@@ -19,7 +19,7 @@
     <item>
       <title>구글 시트에서 시트에 수식이 들어가 있다면 COUNTIF가 제대로 동작하지 않는다.</title>
       <link>https://ariyn.github.io/posts/z9p08nlhr/</link>
-      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Nov 2022 20:53:20 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/z9p08nlhr/</guid>
       <description> A열에는 IF(B=0, &amp;quot;&amp;quot;, B) 이런식으로 빈칸이 들어가게 만들었다. COUNTIF(A:A, &amp;quot;=&amp;quot;)으로 계산했을때 수식으로 인해서 빈칸이 들어간 경우는 숫자를 세지 않는다 IF(B=0, &amp;quot; &amp;quot;, B)와 COUNTIF(A:A, &amp;quot;= &amp;quot;) 이런식으로 공백을 사용하면 정상적으로 카운트된다. 아무래도 COUNTIF의 계산식이 조금 애매하게 동작하는 것 같다. </description>

@@ -8,22 +8,22 @@
   <title>맥에서 swift로 window들의 정보를 가져오는 방법 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="맥에서 swift로 window들의 정보를 가져오는 방법" />
-<meta property="og:description" content="swift&lt;/br&gt;import Cocoa&lt;/br&gt;import Quartz&lt;/br&gt;&lt;/br&gt;let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)&lt;/br&gt;let relativeToWindow: CGWindowID = kCGNullWindowID&lt;/br&gt;&lt;/br&gt;let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)&lt;/br&gt;&lt;/br&gt;struct WindowData:Codable {&lt;/br&gt; let processName: String&lt;/br&gt; let windowName: String&lt;/br&gt; let x: Int&lt;/br&gt; let y: Int&lt;/br&gt; let width: Int&lt;/br&gt; let height: Int&lt;/br&gt;}&lt;/br&gt;var collectedInfo: [WindowData] = []&lt;/br&gt;for info in infos as! [NSDictionary] {&lt;/br&gt; let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary&lt;/br&gt; let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?? &quot;&quot;&lt;/br&gt; let windowName:String = info[&quot;kCGWindowName&quot;] as? String ?? &quot;&quot;&lt;/br&gt;&lt;/br&gt; collectedInfo.append(WindowData(&lt;/br&gt; processName: processName." />
+<meta property="og:description" content="swift\n import Cocoa\n import Quartz\n \n let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\n let relativeToWindow: CGWindowID = kCGNullWindowID\n \n let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\n \n struct WindowData:Codable {\n let processName: String\n let windowName: String\n let x: Int\n let y: Int\n let width: Int\n let height: Int\n }\n var collectedInfo: [WindowData] = []\n for info in infos as! [NSDictionary] {\n let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary\n let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/epmnjjhnk/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-12-01T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-12-01T22:26:33+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
 
 
   
   <meta itemprop="name" content="맥에서 swift로 window들의 정보를 가져오는 방법">
-<meta itemprop="description" content="swift&lt;/br&gt;import Cocoa&lt;/br&gt;import Quartz&lt;/br&gt;&lt;/br&gt;let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)&lt;/br&gt;let relativeToWindow: CGWindowID = kCGNullWindowID&lt;/br&gt;&lt;/br&gt;let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)&lt;/br&gt;&lt;/br&gt;struct WindowData:Codable {&lt;/br&gt; let processName: String&lt;/br&gt; let windowName: String&lt;/br&gt; let x: Int&lt;/br&gt; let y: Int&lt;/br&gt; let width: Int&lt;/br&gt; let height: Int&lt;/br&gt;}&lt;/br&gt;var collectedInfo: [WindowData] = []&lt;/br&gt;for info in infos as! [NSDictionary] {&lt;/br&gt; let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary&lt;/br&gt; let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?? &quot;&quot;&lt;/br&gt; let windowName:String = info[&quot;kCGWindowName&quot;] as? String ?? &quot;&quot;&lt;/br&gt;&lt;/br&gt; collectedInfo.append(WindowData(&lt;/br&gt; processName: processName."><meta itemprop="datePublished" content="2021-12-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-12-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="218">
+<meta itemprop="description" content="swift\n import Cocoa\n import Quartz\n \n let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\n let relativeToWindow: CGWindowID = kCGNullWindowID\n \n let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\n \n struct WindowData:Codable {\n let processName: String\n let windowName: String\n let x: Int\n let y: Int\n let width: Int\n let height: Int\n }\n var collectedInfo: [WindowData] = []\n for info in infos as! [NSDictionary] {\n let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary\n let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?"><meta itemprop="datePublished" content="2021-12-01T22:26:33+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="238">
 <meta itemprop="keywords" content="TIL,swift,osx," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="맥에서 swift로 window들의 정보를 가져오는 방법"/>
-<meta name="twitter:description" content="swift&lt;/br&gt;import Cocoa&lt;/br&gt;import Quartz&lt;/br&gt;&lt;/br&gt;let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)&lt;/br&gt;let relativeToWindow: CGWindowID = kCGNullWindowID&lt;/br&gt;&lt;/br&gt;let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)&lt;/br&gt;&lt;/br&gt;struct WindowData:Codable {&lt;/br&gt; let processName: String&lt;/br&gt; let windowName: String&lt;/br&gt; let x: Int&lt;/br&gt; let y: Int&lt;/br&gt; let width: Int&lt;/br&gt; let height: Int&lt;/br&gt;}&lt;/br&gt;var collectedInfo: [WindowData] = []&lt;/br&gt;for info in infos as! [NSDictionary] {&lt;/br&gt; let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary&lt;/br&gt; let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?? &quot;&quot;&lt;/br&gt; let windowName:String = info[&quot;kCGWindowName&quot;] as? String ?? &quot;&quot;&lt;/br&gt;&lt;/br&gt; collectedInfo.append(WindowData(&lt;/br&gt; processName: processName."/>
+<meta name="twitter:description" content="swift\n import Cocoa\n import Quartz\n \n let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\n let relativeToWindow: CGWindowID = kCGNullWindowID\n \n let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\n \n struct WindowData:Codable {\n let processName: String\n let windowName: String\n let x: Int\n let y: Int\n let width: Int\n let height: Int\n }\n var collectedInfo: [WindowData] = []\n for info in infos as! [NSDictionary] {\n let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary\n let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?"/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/epmnjjhnk/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "맥에서 swift로 window들의 정보를 가져오는 방법",
     "headline": "맥에서 swift로 window들의 정보를 가져오는 방법",
     "alternativeHeadline": "",
-    "description": "swift\u0026lt;\/br\u0026gt;import Cocoa\u0026lt;\/br\u0026gt;import Quartz\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\u0026lt;\/br\u0026gt;let relativeToWindow: CGWindowID = kCGNullWindowID\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt;struct WindowData:Codable {\u0026lt;\/br\u0026gt; let processName: String\u0026lt;\/br\u0026gt; let windowName: String\u0026lt;\/br\u0026gt; let x: Int\u0026lt;\/br\u0026gt; let y: Int\u0026lt;\/br\u0026gt; let width: Int\u0026lt;\/br\u0026gt; let height: Int\u0026lt;\/br\u0026gt;}\u0026lt;\/br\u0026gt;var collectedInfo: [WindowData] = []\u0026lt;\/br\u0026gt;for info in infos as! [NSDictionary] {\u0026lt;\/br\u0026gt; let bound:NSDictionary = info[\u0026quot;kCGWindowBounds\u0026quot;] as! NSDictionary\u0026lt;\/br\u0026gt; let processName:String = info[\u0026quot;kCGWindowOwnerName\u0026quot;] as? String ?? \u0026quot;\u0026quot;\u0026lt;\/br\u0026gt; let windowName:String = info[\u0026quot;kCGWindowName\u0026quot;] as? String ?? \u0026quot;\u0026quot;\u0026lt;\/br\u0026gt;\u0026lt;\/br\u0026gt; collectedInfo.append(WindowData(\u0026lt;\/br\u0026gt; processName: processName.",
+    "description": "swift\\n import Cocoa\\n import Quartz\\n \\n let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\\n let relativeToWindow: CGWindowID = kCGNullWindowID\\n \\n let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\\n \\n struct WindowData:Codable {\\n let processName: String\\n let windowName: String\\n let x: Int\\n let y: Int\\n let width: Int\\n let height: Int\\n }\\n var collectedInfo: [WindowData] = []\\n for info in infos as! [NSDictionary] {\\n let bound:NSDictionary = info[\u0026quot;kCGWindowBounds\u0026quot;] as! NSDictionary\\n let processName:String = info[\u0026quot;kCGWindowOwnerName\u0026quot;] as? String ?",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -67,9 +67,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2021",
-    "dateCreated": "2021-12-01T00:00:00.00Z",
-    "datePublished": "2021-12-01T00:00:00.00Z",
-    "dateModified": "2021-12-01T00:00:00.00Z",
+    "dateCreated": "2021-12-01T22:26:33.00Z",
+    "datePublished": "2021-12-01T22:26:33.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",
@@ -83,7 +83,7 @@
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/epmnjjhnk\/",
-    "wordCount" : "218",
+    "wordCount" : "238",
     "genre" : [ "TIL" , "swift" , "osx" ],
     "keywords" : [ "TIL" , "swift" , "osx" ]
 }
@@ -107,7 +107,7 @@
         
       <h2 class="post">맥에서 swift로 window들의 정보를 가져오는 방법</h2>
       <ul>
-<li><code>swift&lt;/br&gt;import Cocoa&lt;/br&gt;import Quartz&lt;/br&gt;&lt;/br&gt;let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)&lt;/br&gt;let relativeToWindow: CGWindowID = kCGNullWindowID&lt;/br&gt;&lt;/br&gt;let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)&lt;/br&gt;&lt;/br&gt;struct WindowData:Codable {&lt;/br&gt;    let processName: String&lt;/br&gt;    let windowName: String&lt;/br&gt;    let x: Int&lt;/br&gt;    let y: Int&lt;/br&gt;    let width: Int&lt;/br&gt;    let height: Int&lt;/br&gt;}&lt;/br&gt;var collectedInfo: [WindowData] = []&lt;/br&gt;for info in infos as! [NSDictionary] {&lt;/br&gt;    let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary&lt;/br&gt;    let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?? &quot;&quot;&lt;/br&gt;    let windowName:String = info[&quot;kCGWindowName&quot;] as? String ?? &quot;&quot;&lt;/br&gt;&lt;/br&gt;    collectedInfo.append(WindowData(&lt;/br&gt;        processName: processName.replacingOccurrences(of: &quot;,&quot;, with:&quot;\\,&quot;),&lt;/br&gt;        windowName: windowName.replacingOccurrences(of: &quot;,&quot;, with:&quot;\\,&quot;),&lt;/br&gt;        x:bound[&quot;X&quot;] as? Int ?? -10000,&lt;/br&gt;        y:bound[&quot;Y&quot;] as? Int ?? -10000,&lt;/br&gt;        width:bound[&quot;width&quot;] as? Int ?? -10000,&lt;/br&gt;        height:bound[&quot;hwight&quot;] as? Int ?? -10000&lt;/br&gt;    ))&lt;/br&gt;}&lt;/br&gt;&lt;/br&gt;if let jsonData = try? JSONEncoder().encode(collectedInfo), let jsonString = String(data: jsonData, encoding: .utf8) {&lt;/br&gt;    print(jsonString)&lt;/br&gt;}</code></li>
+<li><code>swift\n    import Cocoa\n    import Quartz\n    \n    let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)\n    let relativeToWindow: CGWindowID = kCGNullWindowID\n    \n    let infos = CGWindowListCopyWindowInfo(options, relativeToWindow)\n    \n    struct WindowData:Codable {\n        let processName: String\n        let windowName: String\n        let x: Int\n        let y: Int\n        let width: Int\n        let height: Int\n    }\n    var collectedInfo: [WindowData] = []\n    for info in infos as! [NSDictionary] {\n        let bound:NSDictionary = info[&quot;kCGWindowBounds&quot;] as! NSDictionary\n        let processName:String = info[&quot;kCGWindowOwnerName&quot;] as? String ?? &quot;&quot;\n        let windowName:String = info[&quot;kCGWindowName&quot;] as? String ?? &quot;&quot;\n    \n        collectedInfo.append(WindowData(\n            processName: processName.replacingOccurrences(of: &quot;,&quot;, with:&quot;\\,&quot;),\n            windowName: windowName.replacingOccurrences(of: &quot;,&quot;, with:&quot;\\,&quot;),\n            x:bound[&quot;X&quot;] as? Int ?? -10000,\n            y:bound[&quot;Y&quot;] as? Int ?? -10000,\n            width:bound[&quot;width&quot;] as? Int ?? -10000,\n            height:bound[&quot;hwight&quot;] as? Int ?? -10000\n        ))\n    }\n    \n    if let jsonData = try? JSONEncoder().encode(collectedInfo), let jsonString = String(data: jsonData, encoding: .utf8) {\n        print(jsonString)\n    }</code></li>
 <li>이후에 환경설정 &gt; 보안 &gt; 화면 기록에서 터미널을 추가 &amp; 터미널 재시작 해줘야 한다.
 <ul>
 <li>안할경우 kCGWindowName (각 위도우별 제목)이 안뜸</li>
@@ -115,7 +115,7 @@
 </li>
 <li>CGWindowListCopyWindowInfo가 리턴하는 형식
 <ul>
-<li><code>swift&lt;/br&gt;[&lt;/br&gt;  {&lt;/br&gt;    kCGWindowAlpha = 0;&lt;/br&gt;    kCGWindowBounds =     {&lt;/br&gt;        Height = 0;&lt;/br&gt;        Width = 0;&lt;/br&gt;        X = 0;&lt;/br&gt;        Y = 0;&lt;/br&gt;    };&lt;/br&gt;    kCGWindowIsOnscreen = 0;&lt;/br&gt;    kCGWindowLayer = 0;&lt;/br&gt;    kCGWindowMemoryUsage = 1232;&lt;/br&gt;    kCGWindowName = &quot;utf-8 encoded string&quot;;&lt;/br&gt;    kCGWindowNumber = 1884;&lt;/br&gt;    kCGWindowOwnerName = &quot;utf-8 encoded string&quot;;&lt;/br&gt;    kCGWindowOwnerPID = 2895;&lt;/br&gt;    kCGWindowSharingState = 1;&lt;/br&gt;    kCGWindowStoreType = 1;&lt;/br&gt;}&lt;/br&gt;]</code></li>
+<li><code>swift\n    [\n      {\n        kCGWindowAlpha = 0;\n        kCGWindowBounds =     {\n            Height = 0;\n            Width = 0;\n            X = 0;\n            Y = 0;\n        };\n        kCGWindowIsOnscreen = 0;\n        kCGWindowLayer = 0;\n        kCGWindowMemoryUsage = 1232;\n        kCGWindowName = &quot;utf-8 encoded string&quot;;\n        kCGWindowNumber = 1884;\n        kCGWindowOwnerName = &quot;utf-8 encoded string&quot;;\n        kCGWindowOwnerPID = 2895;\n        kCGWindowSharingState = 1;\n        kCGWindowStoreType = 1;\n    }\n    ]</code></li>
 </ul>
 </li>
 <li>추가적으로 할 일

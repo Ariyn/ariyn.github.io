@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다" />
+<meta property="og:description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&hellip; 뭘까&hellip; 출처 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/cguajqax-/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-02T22:06:25+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
+
+
+  
+  <meta itemprop="name" content="아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다">
+<meta itemprop="description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&hellip; 뭘까&hellip; 출처 "><meta itemprop="datePublished" content="2022-11-02T22:06:25+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="56">
+<meta itemprop="keywords" content="TIL,아두이노," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다"/>
+<meta name="twitter:description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&hellip; 뭘까&hellip; 출처 "/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/cguajqax-/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다",
+    "headline": "아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다",
+    "alternativeHeadline": "",
+    "description": " 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데\u0026hellip; 뭘까\u0026hellip; 출처 ",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/cguajqax-\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-11-02T22:06:25.00Z",
+    "datePublished": "2022-11-02T22:06:25.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/cguajqax-\/",
+    "wordCount" : "56",
+    "genre" : [ "TIL" , "아두이노" ],
+    "keywords" : [ "TIL" , "아두이노" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다</h2>
+      <ul>
+<li>어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다</li>
+<li>rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다.
+<ul>
+<li>레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다.</li>
+</ul>
+</li>
+<li><a href="https://docs.arduino.cc/learn/built-in-libraries/software-serial#:~:text=Not%20all%20pins%20on%20the%20Mega%20and%20Mega%202560%20boards%20support%20change%20interrupts">출처</a></li>
+<li>다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다
+<ul>
+<li>근데 나는 안되던데&hellip; 뭘까&hellip;</li>
+<li><a href="https://forum.arduino.cc/t/arduino-pro-micro-wont-do-softwareserial/447166/4#:~:text=Unlike%20other%20Arduino%20boards%2C%20pins%200%20and%201%20on%20the%20Pro%20Micro%20is%20Serial1%2C%20not%20Serial.%20That%20means%20you%20can%20use%20hardware%20serial%20on%20those%20pins%20without%20interfering%20with%20your%20use%20of%20Serial%20to%20communicate%20with%20the%20computer%20or%20upload%20sketches.">출처</a></li>
+</ul>
+</li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/til'>Til</a>, <a href='/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8'>아두이노</a></div>
+</main>
+</body>
+</html>

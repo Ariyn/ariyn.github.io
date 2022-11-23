@@ -6,11 +6,11 @@
     <description>Recent content in lets encrypt on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ariyn.github.io/tags/lets-encrypt/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 22:36:24 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/lets-encrypt/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>--preferred-challenges dns</title>
       <link>https://ariyn.github.io/posts/aavgzfyyr/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Dec 2021 22:36:24 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/aavgzfyyr/</guid>
       <description> certbot에서 도메인 네임으로 인증하는 옵션 설치된 플러그인에 따라 인증 방법을 지원할 수도, 안할수도 있다. http, dns </description>

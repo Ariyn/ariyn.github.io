@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것" />
+<meta property="og:description" content="경고 지표는 언제나 사고 전에 존재한다 그러나 시스템이 경고 지표를 무시하도록 강요한다 장애를 분석하는데 있어서 &ldquo;개인적 요소&quot;는 큰 영향을 주지 않을 것 만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다. 반대로 모든 장애는 &ldquo;시스템적 요소&quot;가 숨어있다 이로인한 &ldquo;개인적 요소&quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &ldquo;프로그래머의 귀찮아 하는 성격&quot;을 수정해서는 효과가 없다. 프로그래머가 경고를 보고 수정하면, 수정 시간이 벌로 느껴짐 자신이 하고 싶어하는 일을 하지 못하기 때문에 프로그래머가 경고를 보고 수정해도 &ldquo;수정 이후에 장애가 없음&quot;이 보상으로 느껴지지 않음 장애 없음이 &ldquo;자신의 수정 덕분&quot;인지 &ldquo;그냥 버그가 없었던 순간&quot;인지 명확한 피드백이 없기 때문에 프로그래머가 경고를 보고 무시하면 &ldquo;자신의 시간을 벌게됨&rdquo; 무시한 경고로 인해서 장애가 일어나도, 이는 피드백의 시간이 길어져서 &ldquo;경고를 무시한 벌&quot;이라고 느껴지지 않음 피드백의 시간이 너무 나중이라, &ldquo;그냥 언젠가 일어날 일&quot;정도로 느껴짐." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/_pfl4fz-b/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-19T11:34:13+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
+
+
+  
+  <meta itemprop="name" content="경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것">
+<meta itemprop="description" content="경고 지표는 언제나 사고 전에 존재한다 그러나 시스템이 경고 지표를 무시하도록 강요한다 장애를 분석하는데 있어서 &ldquo;개인적 요소&quot;는 큰 영향을 주지 않을 것 만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다. 반대로 모든 장애는 &ldquo;시스템적 요소&quot;가 숨어있다 이로인한 &ldquo;개인적 요소&quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &ldquo;프로그래머의 귀찮아 하는 성격&quot;을 수정해서는 효과가 없다. 프로그래머가 경고를 보고 수정하면, 수정 시간이 벌로 느껴짐 자신이 하고 싶어하는 일을 하지 못하기 때문에 프로그래머가 경고를 보고 수정해도 &ldquo;수정 이후에 장애가 없음&quot;이 보상으로 느껴지지 않음 장애 없음이 &ldquo;자신의 수정 덕분&quot;인지 &ldquo;그냥 버그가 없었던 순간&quot;인지 명확한 피드백이 없기 때문에 프로그래머가 경고를 보고 무시하면 &ldquo;자신의 시간을 벌게됨&rdquo; 무시한 경고로 인해서 장애가 일어나도, 이는 피드백의 시간이 길어져서 &ldquo;경고를 무시한 벌&quot;이라고 느껴지지 않음 피드백의 시간이 너무 나중이라, &ldquo;그냥 언젠가 일어날 일&quot;정도로 느껴짐."><meta itemprop="datePublished" content="2022-11-19T11:34:13+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="345">
+<meta itemprop="keywords" content="아이디어,안티프래질,개발," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것"/>
+<meta name="twitter:description" content="경고 지표는 언제나 사고 전에 존재한다 그러나 시스템이 경고 지표를 무시하도록 강요한다 장애를 분석하는데 있어서 &ldquo;개인적 요소&quot;는 큰 영향을 주지 않을 것 만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다. 반대로 모든 장애는 &ldquo;시스템적 요소&quot;가 숨어있다 이로인한 &ldquo;개인적 요소&quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &ldquo;프로그래머의 귀찮아 하는 성격&quot;을 수정해서는 효과가 없다. 프로그래머가 경고를 보고 수정하면, 수정 시간이 벌로 느껴짐 자신이 하고 싶어하는 일을 하지 못하기 때문에 프로그래머가 경고를 보고 수정해도 &ldquo;수정 이후에 장애가 없음&quot;이 보상으로 느껴지지 않음 장애 없음이 &ldquo;자신의 수정 덕분&quot;인지 &ldquo;그냥 버그가 없었던 순간&quot;인지 명확한 피드백이 없기 때문에 프로그래머가 경고를 보고 무시하면 &ldquo;자신의 시간을 벌게됨&rdquo; 무시한 경고로 인해서 장애가 일어나도, 이는 피드백의 시간이 길어져서 &ldquo;경고를 무시한 벌&quot;이라고 느껴지지 않음 피드백의 시간이 너무 나중이라, &ldquo;그냥 언젠가 일어날 일&quot;정도로 느껴짐."/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/_pfl4fz-b/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것",
+    "headline": "경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것",
+    "alternativeHeadline": "",
+    "description": "경고 지표는 언제나 사고 전에 존재한다 그러나 시스템이 경고 지표를 무시하도록 강요한다 장애를 분석하는데 있어서 \u0026ldquo;개인적 요소\u0026quot;는 큰 영향을 주지 않을 것 만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다. 반대로 모든 장애는 \u0026ldquo;시스템적 요소\u0026quot;가 숨어있다 이로인한 \u0026ldquo;개인적 요소\u0026quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 \u0026ldquo;프로그래머의 귀찮아 하는 성격\u0026quot;을 수정해서는 효과가 없다. 프로그래머가 경고를 보고 수정하면, 수정 시간이 벌로 느껴짐 자신이 하고 싶어하는 일을 하지 못하기 때문에 프로그래머가 경고를 보고 수정해도 \u0026ldquo;수정 이후에 장애가 없음\u0026quot;이 보상으로 느껴지지 않음 장애 없음이 \u0026ldquo;자신의 수정 덕분\u0026quot;인지 \u0026ldquo;그냥 버그가 없었던 순간\u0026quot;인지 명확한 피드백이 없기 때문에 프로그래머가 경고를 보고 무시하면 \u0026ldquo;자신의 시간을 벌게됨\u0026rdquo; 무시한 경고로 인해서 장애가 일어나도, 이는 피드백의 시간이 길어져서 \u0026ldquo;경고를 무시한 벌\u0026quot;이라고 느껴지지 않음 피드백의 시간이 너무 나중이라, \u0026ldquo;그냥 언젠가 일어날 일\u0026quot;정도로 느껴짐.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/_pfl4fz-b\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-11-19T11:34:13.00Z",
+    "datePublished": "2022-11-19T11:34:13.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/_pfl4fz-b\/",
+    "wordCount" : "345",
+    "genre" : [ "아이디어" , "안티프래질" , "개발" ],
+    "keywords" : [ "아이디어" , "안티프래질" , "개발" ]
+}
+</script>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>This.ismin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것</h2>
+      <ul>
+<li>경고 지표는 언제나 사고 전에 존재한다
+<ul>
+<li>그러나 시스템이 경고 지표를 무시하도록 강요한다
+<ul>
+<li>장애를 분석하는데 있어서 &ldquo;개인적 요소&quot;는 큰 영향을 주지 않을 것
+<ul>
+<li>만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다.</li>
+</ul>
+</li>
+<li>반대로 모든 장애는 &ldquo;시스템적 요소&quot;가 숨어있다
+<ul>
+<li>이로인한 &ldquo;개인적 요소&quot;는 무시되어야 한다.</li>
+<li>예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &ldquo;프로그래머의 귀찮아 하는 성격&quot;을 수정해서는 효과가 없다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>프로그래머가 경고를 보고 수정하면, 수정 시간이 벌로 느껴짐</li>
+</ol>
+<ul>
+<li>자신이 하고 싶어하는 일을 하지 못하기 때문에</li>
+</ul>
+<ol start="2">
+<li>프로그래머가 경고를 보고 수정해도 &ldquo;수정 이후에 장애가 없음&quot;이 보상으로 느껴지지 않음</li>
+</ol>
+<ul>
+<li>장애 없음이 &ldquo;자신의 수정 덕분&quot;인지 &ldquo;그냥 버그가 없었던 순간&quot;인지 명확한 피드백이 없기 때문에</li>
+</ul>
+<ol start="3">
+<li>프로그래머가 경고를 보고 무시하면 &ldquo;자신의 시간을 벌게됨&rdquo;</li>
+<li>무시한 경고로 인해서 장애가 일어나도, 이는 피드백의 시간이 길어져서 &ldquo;경고를 무시한 벌&quot;이라고 느껴지지 않음</li>
+</ol>
+<ul>
+<li>피드백의 시간이 너무 나중이라, &ldquo;그냥 언젠가 일어날 일&quot;정도로 느껴짐.</li>
+<li>직접적인 연관을 느끼기 힘들 것</li>
+</ul>
+</li>
+<li>따라서 <code>프로그래머가 경고 지표를 보고 무시하면 벌을 주고, 무시하지 않는다면 상을 주어야</code>한다
+<ul>
+<li>단순한 보상과 벌로는 안된다 #재미이론
+<ul>
+<li>그러나 벌이 <code>벌금</code>, <code>연차 자르기</code>등으로 이루어 진다면 정말 최악의 벌</li>
+<li>마찬가지로 보상도 <code>상금</code> 혹은 <code>추가적인 연차</code>등으로 이루어 지는것도 최악의 보상</li>
+<li><a href="/404.html">f324_buvu</a>
+<ul>
+<li>재미이론에서 &ldquo;보스를 쓰러뜨린 보상은 아이템이 아니라 다시 도전할 수 있는 다음 스테이지&quot;라고 표현했다</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>프로그래머에게 보상이란 <code>더 프로그래밍 할 수 있는</code>것이 되어야 하고, 벌은 <code>더 프로그래밍 할 수 없는</code>것이 되어야 한다
+<ul>
+<li>모르겠다. 더 명확한 상벌이 있을까?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>따라서 버그 리포팅 시스템이 어느정도 해결책이 될 수 있을 것
+<ul>
+<li>찜찜함 것부터 실제 확인한 버그까지 모든것이 버그 리포팅 시스템에 추가 되어야 한다</li>
+<li>그리고 장애가 일어난 경우 &ldquo;버그 리포팅 시스템의 어떠한 것으로 인해서&rdquo; 일어난 것인지 명시적으로 피드백한다
+<ul>
+<li>이경우 피드백의 시간은 길지만, 명확하게 피드백이 될 것</li>
+</ul>
+</li>
+<li>반대로 새로운 기능을 추가한 경우 &ldquo;버그 리포팅 시스템의 어떠한 것을 수정했기 때문에&quot;가능 했는지 명시적으로 피드백한다.</li>
+</ul>
+</li>
+<li>버그 리포팅 시스템을 관리하는 사람이 있어야 하고, 최소한의 강제적인 상벌은 필요할 것
+<ul>
+<li>문화가 정착할 때 까지는 &ldquo;버그 리포팅에 없는 버그로 인해서 장애가 일어난 경우&quot;에 회의를 해서 왜 없었는지, 왜 못찾았는지 등의 피드백을 주어야 한다</li>
+<li>또 버그 리포팅 시스템을 관리하는 사람을 두어서, 이 시스템을 사용하는데 있어서 부담을 줄여야 할 것
+<ul>
+<li>어떤 조직이던 이런거 추가적으로 관리하면서 희열을 느끼는 나같은 변태들이 있을것이다.</li>
+<li>물론 이들의 소모 또한 막아야 하는데, 이 또한 시스템적 영역과 #[[재미이론]]의 관점에서 해결되어야 할 것이다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4'>아이디어</a>, <a href='/tags/%EC%95%88%ED%8B%B0%ED%94%84%EB%9E%98%EC%A7%88'>안티프래질</a>, <a href='/tags/%EA%B0%9C%EB%B0%9C'>개발</a></div>
+</main>
+</body>
+</html>
