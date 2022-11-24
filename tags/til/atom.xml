@@ -292,7 +292,7 @@
       <pubDate>Thu, 16 Jun 2022 11:06:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gc-4ykvrt/</guid>
-      <description> 프로메테우스 docker로 사용하고 있었다 껏다가 켜니까, 3일짜리 저장된 데이터가 날아갔다 더 늦게 일어날 수도 있었음 유닛테스트를 해보는 이유처럼, 도커를 만들고 나면 모든 프로세스를 한번씩 해보자 강제로 꺼보거나, 재부팅하거나, 재빌드하거나 그리고 그 과정에서 문제가 없는지 확인하고, 있다면 기록해두자 나중에 훨씬 편한 마음으로 작업할 수 있을것 어떤 부분들을 테스트해야 하는지 general하게 정리할 수 있을까? #생각 #[[할 것]] </description>
+      <description> 프로메테우스 docker로 사용하고 있었다 껏다가 켜니까, 3일짜리 저장된 데이터가 날아갔다 더 늦게 일어날 수도 있었음 유닛테스트를 해보는 이유처럼, 도커를 만들고 나면 모든 프로세스를 한번씩 해보자 강제로 꺼보거나, 재부팅하거나, 재빌드하거나 그리고 그 과정에서 문제가 없는지 확인하고, 있다면 기록해두자 나중에 훨씬 편한 마음으로 작업할 수 있을것 어떤 부분들을 테스트해야 하는지 general하게 정리할 수 있을까? #생각 할 것 </description>
     </item>
     
     <item>
@@ -563,7 +563,7 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       <pubDate>Thu, 31 Mar 2022 23:36:16 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mpow-ysfu/</guid>
-      <description> 이를 단형상화 (monomorphization)이라 부른다 즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다 타입 언어이다보니 가능한 마법으로 보인다 만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? #[[찾아볼 것]] </description>
+      <description> 이를 단형상화 (monomorphization)이라 부른다 즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다 타입 언어이다보니 가능한 마법으로 보인다 만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것 </description>
     </item>
     
     <item>
@@ -662,7 +662,7 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       <pubDate>Wed, 23 Mar 2022 23:53:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8xiypu_hf/</guid>
-      <description> https://groups.google.com/g/golang-nuts/c/7qgSDWPIh_E regexp 라이브러리가 현재 O(n)을 준수하도록 작성되고 있음 그러나 #[[russ cox]]는 O(n)을 준수하면서 negative lookahead를 구현하는 방법을 모른다고 한다 ㅜㅜ </description>
+      <description> https://groups.google.com/g/golang-nuts/c/7qgSDWPIh_E regexp 라이브러리가 현재 O(n)을 준수하도록 작성되고 있음 그러나 russ cox는 O(n)을 준수하면서 negative lookahead를 구현하는 방법을 모른다고 한다 ㅜㅜ </description>
     </item>
     
     <item>
@@ -689,7 +689,7 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       <pubDate>Mon, 14 Mar 2022 15:14:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zqovtpvt7/</guid>
-      <description> 결과에 집중하지 않고, 그 과정과 원리에 집중하는 것이 원래 목표 이제 TIL을 쓰는 것이 나름 손에 익었으니, 과정과 원리에 집중하는 TIL을 하나씩 써보자 #[[할 것]] </description>
+      <description> 결과에 집중하지 않고, 그 과정과 원리에 집중하는 것이 원래 목표 이제 TIL을 쓰는 것이 나름 손에 익었으니, 과정과 원리에 집중하는 TIL을 하나씩 써보자 할 것 </description>
     </item>
     
     <item>
@@ -833,7 +833,7 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       <pubDate>Sun, 13 Feb 2022 13:06:15 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_2kdy2fpq/</guid>
-      <description> https://ko.wikipedia.org/wiki/%EC%A0%95%EB%8F%99_(%EC%8B%AC%EB%A6%AC%ED%95%99) 심리학에서 감정이나 정서, 기분에 관련된 용어 사람의 마음을 이야기 하는 느낌 기분, 감정과 비슷하지만 조금 더 심리학적으로 정제된 용어 #[[질 들뢰즈]]가 꽤 자세하게 설명하는듯 </description>
+      <description> https://ko.wikipedia.org/wiki/%EC%A0%95%EB%8F%99_(%EC%8B%AC%EB%A6%AC%ED%95%99) 심리학에서 감정이나 정서, 기분에 관련된 용어 사람의 마음을 이야기 하는 느낌 기분, 감정과 비슷하지만 조금 더 심리학적으로 정제된 용어 질 들뢰즈가 꽤 자세하게 설명하는듯 </description>
     </item>
     
     <item>
@@ -1526,7 +1526,7 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       <pubDate>Tue, 26 Oct 2021 14:51:15 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/auipikogx/</guid>
-      <description> Personal Knowledge management 개인 지식 저장소 위키나, 개인 블로그나, 롬 리서치, 노션, 에버노트 등등 이렇게 개인이 지식을 저장하는 것에대한 개념인 듯 하위 개념들 commonplace book (비망록) #[[zettelkasten]] </description>
+      <description> Personal Knowledge management 개인 지식 저장소 위키나, 개인 블로그나, 롬 리서치, 노션, 에버노트 등등 이렇게 개인이 지식을 저장하는 것에대한 개념인 듯 하위 개념들 commonplace book (비망록) zettelkasten </description>
     </item>
     
     <item>

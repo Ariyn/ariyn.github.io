@@ -40,7 +40,7 @@
       <pubDate>Wed, 23 Mar 2022 23:53:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8xiypu_hf/</guid>
-      <description> https://groups.google.com/g/golang-nuts/c/7qgSDWPIh_E regexp 라이브러리가 현재 O(n)을 준수하도록 작성되고 있음 그러나 #[[russ cox]]는 O(n)을 준수하면서 negative lookahead를 구현하는 방법을 모른다고 한다 ㅜㅜ </description>
+      <description> https://groups.google.com/g/golang-nuts/c/7qgSDWPIh_E regexp 라이브러리가 현재 O(n)을 준수하도록 작성되고 있음 그러나 russ cox는 O(n)을 준수하면서 negative lookahead를 구현하는 방법을 모른다고 한다 ㅜㅜ </description>
     </item>
     
     <item>
