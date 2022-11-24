@@ -6,11 +6,11 @@
     <description>Recent content in rust on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 11:08:46 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/rust/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 11:08:33 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/rust/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rust의 소유권중 이해가 안가는 부분</title>
       <link>https://ariyn.github.io/posts/lhkgkxni9/</link>
-      <pubDate>Sun, 10 Apr 2022 11:08:46 +0700</pubDate>
+      <pubDate>Sun, 10 Apr 2022 11:08:33 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/lhkgkxni9/</guid>
       <description> javascript\n // let mut children_iter = (*one).borrow_mut().children.clone().iter();\n let children = (*one).borrow_mut().children.clone();\n let mut children_iter = children.iter(); 왜 위쪽은 (*one).borrow_mut()가 임시 변수가 되어서 사용이 안되고, 아랫쪽은 사용이 가능할까? 큰 차이가 없어보이는데&amp;hellip;. </description>
@@ -19,7 +19,7 @@
     <item>
       <title>rust와 lifetime</title>
       <link>https://ariyn.github.io/posts/rk80bywhx/</link>
-      <pubDate>Sun, 10 Apr 2022 10:41:53 +0700</pubDate>
+      <pubDate>Sun, 10 Apr 2022 10:29:59 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/rk80bywhx/</guid>
       <description>rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다 이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함 다만 가장 짧은 lifetime에 맞춰짐 rust\n fn longest&amp;lt;&#39;a&amp;gt; (x: &amp;amp;&#39;a str, y: &amp;amp;&#39;a str) -&amp;gt; &amp;amp;&#39;a str {\n if x.len() &amp;gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &amp;quot;123&amp;quot;;\n {\n let y = &amp;quot;1&amp;quot;;\n result = longest(x, y);\n \n println!</description>
@@ -28,7 +28,7 @@
     <item>
       <title>todo!(&#39;&#39;)</title>
       <link>https://ariyn.github.io/posts/7maqul3bc/</link>
-      <pubDate>Wed, 06 Apr 2022 00:24:20 +0700</pubDate>
+      <pubDate>Wed, 06 Apr 2022 00:24:01 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/7maqul3bc/</guid>
       <description> todo!(&amp;lsquo;make!&amp;rsquo;)으로 해 놓고 실행하게 되면 not yet implemented: make!처럼 오류가 뜨게 된다 </description>
@@ -37,7 +37,7 @@
     <item>
       <title>rust의 usize는 플랫폼에 따라 다르게 동작할 수 있음</title>
       <link>https://ariyn.github.io/posts/tlhkbsz_c/</link>
-      <pubDate>Tue, 05 Apr 2022 22:35:56 +0700</pubDate>
+      <pubDate>Tue, 05 Apr 2022 22:35:40 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tlhkbsz_c/</guid>
       <description> 공식 문서에도 pointer-sized unsigned integer type이라 되어 있음 i32나 i64와 같이 고정된 값을 함부로 캐스팅하면, 잘못된 값이 저장될 가능성이 있음 2038년까지 이제 16년 남았다&amp;hellip; rust 커뮤니티 화이팅! https://doc.rust-lang.org/std/primitive.usize.html </description>
@@ -46,7 +46,7 @@
     <item>
       <title>trait 구현하기</title>
       <link>https://ariyn.github.io/posts/2y_pj6syo/</link>
-      <pubDate>Thu, 31 Mar 2022 23:41:39 +0700</pubDate>
+      <pubDate>Thu, 31 Mar 2022 23:40:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/2y_pj6syo/</guid>
       <description> impl 뒤에 {trait_name} for를 추가하면 된다 rust\n impl {trait} for {structure} {\n fn ...\n } 기본 구현이라는 방법이 있다 트레잇에서 함수의 원형뿐만 아니라 body까지 구현하고, impl시에 비어있는 중괄호를 사용하면 기본 구현을 자동으로 사용한다. rust\n pub trait Sample {\n fn sample() string {\n String::from(&amp;quot;Hello&amp;quot;)\n }\n }\n \n impl Sample for s {} </description>
@@ -55,7 +55,7 @@
     <item>
       <title>trait은 동작을 공유할 수 있게 해준다</title>
       <link>https://ariyn.github.io/posts/oyd5_fkvf/</link>
-      <pubDate>Thu, 31 Mar 2022 23:39:33 +0700</pubDate>
+      <pubDate>Thu, 31 Mar 2022 23:39:02 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/oyd5_fkvf/</guid>
       <description> 아무래도 Generic Type T라고만 받으면 문제가 생길 수 있다보니, trait을 만든 것 같다 함수 내부에 사용되는 동작들에 대해, 명시적으로 동작함을 가르쳐 줘야 한다 ducktyping과 interface 형식과 비슷하다 scope에 따라서 trait 구현이 가능할 수도, 아닐수도 있다 외부의 타입에 대해 외부의 trait을 구현할 수는 없다 (golang에서 interface를 외부에서 구현할 수 없는것 처럼) trait 혹은 타입중 하나가 내부에서 정의되었다면 문제 없다 이는 타입이론에서 고아규칙이라 부르는 것과 관련 있다고 한다 </description>
@@ -64,7 +64,7 @@
     <item>
       <title>generic은 컴파일 타임에 지정된 타입으로 변환된다</title>
       <link>https://ariyn.github.io/posts/mpow-ysfu/</link>
-      <pubDate>Thu, 31 Mar 2022 23:36:43 +0700</pubDate>
+      <pubDate>Thu, 31 Mar 2022 23:36:16 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mpow-ysfu/</guid>
       <description> 이를 단형상화 (monomorphization)이라 부른다 즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다 타입 언어이다보니 가능한 마법으로 보인다 만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? #[[찾아볼 것]] </description>
@@ -73,34 +73,34 @@
     <item>
       <title>generic은 여러개 쓸 수 있다</title>
       <link>https://ariyn.github.io/posts/aloeqidvp/</link>
-      <pubDate>Thu, 31 Mar 2022 23:35:41 +0700</pubDate>
+      <pubDate>Thu, 31 Mar 2022 23:30:37 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/aloeqidvp/</guid>
       <description> 단 너무 많이 쓰면 문제의 신호일 수 있을것 rust\n struct Foo&amp;lt;T,U&amp;gt; {\n x: T,\n y: U,\n } </description>
     </item>
     
     <item>
-      <title>[2. 함수가 다시 변수를 반환해서 동일한 값에 저장](kiHuWQQIZ)</title>
-      <link>https://ariyn.github.io/posts/ssnhdg8k8/</link>
-      <pubDate>Tue, 29 Mar 2022 22:34:56 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/ssnhdg8k8/</guid>
-      <description> 직접 해보니 토나오게 어렵다 뭔가 작업을 하려고 함수의 parameter로 받는것인데, 이경우 type이 &amp;amp;mut T가 되어야 한다 근데 &amp;amp;mut T에서 다시 원래 T로 바꾸는 방법을 아직 잘 모르겠다. 따라서 범용성을 생각해보면, 그냥 &amp;amp;연산자를 사용해서 함수의 파라미터로 넘기는게 제일 속편할 것 </description>
-    </item>
-    
-    <item>
       <title>rust에서 튜플로 할당과 리턴하기</title>
       <link>https://ariyn.github.io/posts/bi33mqwg4/</link>
-      <pubDate>Tue, 29 Mar 2022 22:23:05 +0700</pubDate>
+      <pubDate>Tue, 29 Mar 2022 22:22:46 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/bi33mqwg4/</guid>
       <description> rust\n let (a, b) = sample();\n \n fn sample() -&amp;gt; (i32, i32) {\n (1, 2)\n } </description>
     </item>
     
     <item>
+      <title>[2. 함수가 다시 변수를 반환해서 동일한 값에 저장](kiHuWQQIZ)</title>
+      <link>https://ariyn.github.io/posts/ssnhdg8k8/</link>
+      <pubDate>Tue, 29 Mar 2022 22:18:27 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ssnhdg8k8/</guid>
+      <description> 직접 해보니 토나오게 어렵다 뭔가 작업을 하려고 함수의 parameter로 받는것인데, 이경우 type이 &amp;amp;mut T가 되어야 한다 근데 &amp;amp;mut T에서 다시 원래 T로 바꾸는 방법을 아직 잘 모르겠다. 따라서 범용성을 생각해보면, 그냥 &amp;amp;연산자를 사용해서 함수의 파라미터로 넘기는게 제일 속편할 것 </description>
+    </item>
+    
+    <item>
       <title>rust의 소유권</title>
       <link>https://ariyn.github.io/posts/s0kpvhium/</link>
-      <pubDate>Tue, 29 Mar 2022 22:12:22 +0700</pubDate>
+      <pubDate>Tue, 29 Mar 2022 21:22:55 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/s0kpvhium/</guid>
       <description>기본 rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨 할당과 관련된 골치아픈 경우 rust\n let x = String::from(&amp;quot;hello&amp;quot;);\n let y = x; 이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴 이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함 만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 rust\n let x = String::from(&amp;quot;hello&amp;quot;);\n let y = x;\n \n println!</description>
@@ -109,7 +109,7 @@
     <item>
       <title>러스트의 모든 변수는 불변이다</title>
       <link>https://ariyn.github.io/posts/yk5yxyntn/</link>
-      <pubDate>Mon, 28 Mar 2022 23:36:35 +0700</pubDate>
+      <pubDate>Mon, 28 Mar 2022 23:35:25 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/yk5yxyntn/</guid>
       <description> 따라서 변경할 수 있는 변수를 선언하기 위해서는 mut를 붙여줘야 한다 심지어 포인터 &amp;amp;도 불변이다 변경할 수 있는 포인터 변수는 &amp;amp;mut a가 되어야 한다 rust\n let a = 1 // 불변\n let mut b = 2 //변경 가능\n \n &amp;amp;a // 불변\n &amp;amp;mut b // 변경 가능\n \n &amp;amp;mut a // 사용 불가. 불변으로 선언된 변수를 변경가능하게 바꿀 수 없음 흐음&amp;hellip; 만에하나 불변으로 선언한 변수를 변경해야하는 일이 생기면 어떻게 될까? </description>
@@ -118,7 +118,7 @@
     <item>
       <title>`::`의 의미</title>
       <link>https://ariyn.github.io/posts/4b82d7mwc/</link>
-      <pubDate>Mon, 28 Mar 2022 23:34:45 +0700</pubDate>
+      <pubDate>Mon, 28 Mar 2022 16:46:22 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/4b82d7mwc/</guid>
       <description> 이는 인스턴스가 아닌, 타입을 바라보는 연산자 즉 type x에 선언되어 있는 static함수를 바라본다고 봐도 될 듯 </description>

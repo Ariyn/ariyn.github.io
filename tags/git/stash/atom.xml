@@ -9,7 +9,7 @@
     <item>
       <title>git에서 특정 파일들만 stash하기  /stash</title>
       <link>https://ariyn.github.io/posts/jbz107kko/</link>
-      <pubDate>Fri, 12 Nov 2021 14:45:13 +0700</pubDate>
+      <pubDate>Fri, 12 Nov 2021 14:43:54 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/jbz107kko/</guid>
       <description> stash push 뒤에 파일들 입력하면 됨 shell\n git stash push -m &amp;quot;stash message&amp;quot; [files ...] </description>

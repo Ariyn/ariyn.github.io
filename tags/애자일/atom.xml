@@ -6,23 +6,14 @@
     <description>Recent content in 애자일 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 May 2022 12:11:47 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 12:10:00 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>상대적인 시간들은 약속으로 사용하지 말자</title>
       <link>https://ariyn.github.io/posts/zilrntlh3/</link>
-      <pubDate>Fri, 13 May 2022 12:11:47 +0700</pubDate>
+      <pubDate>Fri, 13 May 2022 12:10:00 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zilrntlh3/</guid>
       <description> 모두가 다른 개념을 가지고 있을 가능성이 높다 특히나 처음 나온 시간 개념이라면 이번 스프린트 3일차 는 언제인가? 스프린트 회의가 끝난 뒤 두 번의 밤이 지나고 난 뒤? 세 번의 밤이 지나고 난 뒤? 개발이 시작되는 날로부터 3일차? 절대적인 시간을 기준으로 잡는 상대적인 시간만 사용하자 스프린트 개발 3일차 : 스프린트 개발을 시작하고 3번째 날 혹은 미리미리 상대적인 개념들을 정리할 수 있겠으나, 매번 새로운 시간이 나올때마다 합의를 보는 것은 어렵다 차라리 안티프래질하게 행동하자 </description>
-    </item>
-    
-    <item>
-      <title>팀이 함께 무엇인가를 해야한다.</title>
-      <link>https://ariyn.github.io/posts/5yv_6pkpp/</link>
-      <pubDate>Wed, 01 Dec 2021 22:56:48 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/5yv_6pkpp/</guid>
-      <description> 개인의 실패가 팀의 실패로 이어지지 않게 미리미리 실패하는 팀원이 있지 않도록 확인하고, 팀이 버퍼역할을 할 수 있도록 개인의 성공이 팀원 모두의 성공으로 이어지게 개인의 성공의 핵심이 팀원 모두가 공감하고 배울 수 있는 방식으로 전해져야 함 개인에게 의존하지 않게 되는것이 핵심 </description>
     </item>
     
     <item>
@@ -32,6 +23,15 @@
       
       <guid>https://ariyn.github.io/posts/af2wyqmg5/</guid>
       <description> http://agile.egloos.com/5774862 안티프래질에서도 비슷한 이야기를 함 {{[[embed]]: 6Qy7d9A4W}} </description>
+    </item>
+    
+    <item>
+      <title>팀이 함께 무엇인가를 해야한다.</title>
+      <link>https://ariyn.github.io/posts/5yv_6pkpp/</link>
+      <pubDate>Thu, 09 Sep 2021 22:05:41 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/5yv_6pkpp/</guid>
+      <description> 개인의 실패가 팀의 실패로 이어지지 않게 미리미리 실패하는 팀원이 있지 않도록 확인하고, 팀이 버퍼역할을 할 수 있도록 개인의 성공이 팀원 모두의 성공으로 이어지게 개인의 성공의 핵심이 팀원 모두가 공감하고 배울 수 있는 방식으로 전해져야 함 개인에게 의존하지 않게 되는것이 핵심 </description>
     </item>
     
   </channel>

@@ -6,11 +6,11 @@
     <description>Recent content in golang on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jul 2022 17:37:14 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/golang/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 17:37:03 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/golang/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>고랭의 함수 콜을 정리하는 방법</title>
       <link>https://ariyn.github.io/posts/gutceotzk/</link>
-      <pubDate>Wed, 20 Jul 2022 17:37:14 +0700</pubDate>
+      <pubDate>Wed, 20 Jul 2022 17:37:03 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gutceotzk/</guid>
       <description> shell\n &amp;gt; callgraph -format digraph {package} &amp;gt; /tmp/package.di\n \n &amp;gt; cat /tmp/package.di | digraph nodes | grep {package} &amp;gt; /tmp/package_only.di\n \n &amp;gt; while read node; do\n echo &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;$node\&amp;quot;, \&amp;quot;calls\&amp;quot;: $(cat /tmp/package.di | digraph forward &amp;quot;$node&amp;quot; | jq -R | jq -s) }&amp;quot; &amp;gt;&amp;gt; /tmp/nodes.json;\n done &amp;lt; /tmp/package_only.di </description>
@@ -19,7 +19,7 @@
     <item>
       <title>https://pkg.go.dev/golang.org/x</title>
       <link>https://ariyn.github.io/posts/r03y4rmzg/</link>
-      <pubDate>Thu, 19 May 2022 11:12:01 +0700</pubDate>
+      <pubDate>Thu, 19 May 2022 11:04:14 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/r03y4rmzg/</guid>
       <description> golang 프로젝트의 일부이지만, 메인 tree에서는 벗어나 있다고 한다 그래서 조금 더 느슨하게 관리되는 이점이 있는듯 하다 </description>
@@ -28,7 +28,7 @@
     <item>
       <title>{{[[DONE]]}} gophernotes에서 import를 어떻게 사용하는지 확인 필요</title>
       <link>https://ariyn.github.io/posts/tz3zkdcgu/</link>
-      <pubDate>Wed, 11 May 2022 10:12:18 +0700</pubDate>
+      <pubDate>Tue, 10 May 2022 18:45:34 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tz3zkdcgu/</guid>
       <description> gophernotes에서는 gomacro를 사용해서 interpreting하고 있다 따라서 gomacro에서 어떻게 import하는지 확인이 필요하다 gomacro에서는 매번 go get을 사용해서 소스를 가져온다 이후 자신들이 사용하기 편리한 방법으로 컴파일 해 놓는다 이는 $GOPATH/src/gomacro.imports/하위에 위치한다 </description>
@@ -37,7 +37,7 @@
     <item>
       <title>golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다</title>
       <link>https://ariyn.github.io/posts/8xiypu_hf/</link>
-      <pubDate>Wed, 23 Mar 2022 23:54:00 +0700</pubDate>
+      <pubDate>Wed, 23 Mar 2022 23:53:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8xiypu_hf/</guid>
       <description> https://groups.google.com/g/golang-nuts/c/7qgSDWPIh_E regexp 라이브러리가 현재 O(n)을 준수하도록 작성되고 있음 그러나 #[[russ cox]]는 O(n)을 준수하면서 negative lookahead를 구현하는 방법을 모른다고 한다 ㅜㅜ </description>
@@ -46,7 +46,7 @@
     <item>
       <title>golang에서 실행할 때, 로컬 파일을 참조하도록 설정</title>
       <link>https://ariyn.github.io/posts/zzw4tfjgn/</link>
-      <pubDate>Sun, 13 Mar 2022 15:57:43 +0700</pubDate>
+      <pubDate>Sun, 13 Mar 2022 15:57:10 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zzw4tfjgn/</guid>
       <description> javascript\n go mod edit -replace example.com/greetings=../greetings 이렇게 하면, example.com/greetings에 대해서는 로컬의 파일을 참조하게 됨 이경우 example.com/greetings에 대해서만 동작하고, example.com/greetings/test 처럼 하위 프로젝트에 대해서는 동작 안함 단 greetings에 go.mod가 있다면, 아래의 폴더들은 하위 프로젝트로 잡힘 https://go.dev/doc/tutorial/call-module-code </description>
@@ -55,7 +55,7 @@
     <item>
       <title>golang의 struct에서 멤버의 이름은 두개 이상 동시에 선언할 수 있다</title>
       <link>https://ariyn.github.io/posts/gseloejgr/</link>
-      <pubDate>Tue, 22 Feb 2022 00:29:38 +0700</pubDate>
+      <pubDate>Tue, 22 Feb 2022 00:26:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gseloejgr/</guid>
       <description>javascript\n type foo struct {\n bar, bar2 int\n }\n \n f := foo {\n bar: 1,\n bar2: 2,\n } 마치 함수 파라미터에서 두개 이상 받을 수 있는것 처럼 그래서인지 ast의 Field를 보면, Names가 list로 되어있음 javascript\n // A Field represents a Field declaration list in a struct type,\n // a method list in an interface type, or a parameter/result declaration\n // in a signature.\n // Field.Names is nil for unnamed parameters (parameter lists which only contain types)\n // and embedded struct fields.</description>
@@ -64,7 +64,7 @@
     <item>
       <title>GOTO문은 하나의 함수 안에서만 사용이 가능하다</title>
       <link>https://ariyn.github.io/posts/pw2fcfbyq/</link>
-      <pubDate>Thu, 20 Jan 2022 14:12:56 +0700</pubDate>
+      <pubDate>Thu, 20 Jan 2022 11:35:54 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/pw2fcfbyq/</guid>
       <description> javascript\n func main() {\n \n dest1:\n fmt.Println(&amp;quot;Hello, playground&amp;quot;)\n goto dest1\n \n // goto dest2 -&amp;gt; dest2 not defined error\n }\n \n func x() {\n // dest2: -&amp;gt; dest2 defined and not used error\n return \n } </description>
@@ -73,52 +73,16 @@
     <item>
       <title>file write가 안되는 경우</title>
       <link>https://ariyn.github.io/posts/294uvuols/</link>
-      <pubDate>Thu, 09 Dec 2021 17:51:08 +0700</pubDate>
+      <pubDate>Thu, 09 Dec 2021 17:50:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
       <description>문제의 코드 javascript\n f, err := os.OpenFile(&amp;quot;/tmp/test&amp;quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &amp;quot;test&amp;quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.</description>
     </item>
     
     <item>
-      <title>golang에서 이름이 붙은 리턴 변수들은 `Named return values`로 부른다.</title>
-      <link>https://ariyn.github.io/posts/drr0-8t4y/</link>
-      <pubDate>Wed, 08 Dec 2021 00:06:58 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/drr0-8t4y/</guid>
-      <description> 막상 써야 할 때 튀어나오지 않는 단어 2순위&amp;hellip; </description>
-    </item>
-    
-    <item>
-      <title>beanstalk에서 golang을 사용할 때 주의할 점</title>
-      <link>https://ariyn.github.io/posts/zfvgtxxdo/</link>
-      <pubDate>Wed, 01 Dec 2021 23:24:54 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/zfvgtxxdo/</guid>
-      <description> golang을 사용할 때, 몇가지 옵션을 사용할 수 있다. Buildfile을 사용한 빌드 application.go를 자동으로 빌드 bin/application 바이너리를 사용 root에 Procfile이 필수 이때 주의할 점은, 앞에서 하나라도 만족되면 이후 것들이 진행되지 않는다. 따라서 application.go가 있다면, Procfile에서 bin/application을 실행하라고 해도 실행되지 않는다. 로그에서 확인 할 것 no Buildfile found, checking application.go file 이런식으로 계속 있을것. 어디까지 로그가 찍혀 있는지 확인필요 </description>
-    </item>
-    
-    <item>
-      <title>golang으로 lambda 함수를 만들때</title>
-      <link>https://ariyn.github.io/posts/qm8yip9td/</link>
-      <pubDate>Wed, 01 Dec 2021 22:43:03 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/qm8yip9td/</guid>
-      <description> api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\n func handler(myModel MyModel) {} &amp;gt; lambda proxy를 안쓸경우 사용가능\n func handler(proxyModel events.APIGatewayProxyRequest) &amp;gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\n {\n &amp;quot;body&amp;quot;:&amp;quot;...&amp;quot;,\n &amp;quot;uri&amp;quot; :&amp;quot;...&amp;quot;,\n ...\n } </description>
-    </item>
-    
-    <item>
-      <title>golang roundtripper</title>
-      <link>https://ariyn.github.io/posts/n1rdunmkx/</link>
-      <pubDate>Wed, 01 Dec 2021 22:28:19 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/n1rdunmkx/</guid>
-      <description> 고랭에서 http.RoundTripper를 통해 포워딩해줄 수 있다. 특정 api만 내쪽으로 돌리고, 나머지는 원본으로 돌릴 수도 있지 않을까? javascript\n /etc/hosts\n x.x.x.x localhost:8080\n \n main.go\n listen(8080)\n \n if url != &amp;quot;xxxx&amp;quot; {\n return RoundTripper(url)\n }\n \n return custom response\n } </description>
-    </item>
-    
-    <item>
       <title>var _ CustomInterface = CustomType{} 의 의미</title>
       <link>https://ariyn.github.io/posts/sj7yffqll/</link>
-      <pubDate>Tue, 16 Nov 2021 14:39:23 +0700</pubDate>
+      <pubDate>Tue, 16 Nov 2021 14:38:54 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/sj7yffqll/</guid>
       <description> 이경우 컴파일 시간에, CustomType이 CustomInterface를 구현했는지 체크할 수 있다고 함 생각해보면 구현체만 존재하고, 사용하지 않는경우 컴파일 체크가 불가능함. 따라서 명시적으로 var _ CustomInterface = CustomType{}라는 코드를 통해 체크가 가능. 출처: https://stackoverflow.com/questions/13194272/what-does-an-underscore-and-interface-name-after-keyword-var-mean </description>
@@ -127,7 +91,7 @@
     <item>
       <title>unaddressable value문제</title>
       <link>https://ariyn.github.io/posts/ubfwpramn/</link>
-      <pubDate>Sat, 13 Nov 2021 17:22:43 +0700</pubDate>
+      <pubDate>Sat, 13 Nov 2021 17:21:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ubfwpramn/</guid>
       <description> reflect: reflect.Value.Set using unaddressable value db.Create(v)에서 v가 값으로 복사되는지 확인하자. pointer가 들어가야 한다. 올바른 예: db.Create(&amp;amp;v) 잘못된 예: db.Create(v) </description>
@@ -136,7 +100,7 @@
     <item>
       <title>golang에서 time의 timezone을 변경하기</title>
       <link>https://ariyn.github.io/posts/ayrbw1hun/</link>
-      <pubDate>Sun, 31 Oct 2021 10:31:52 +0700</pubDate>
+      <pubDate>Sun, 31 Oct 2021 09:47:06 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ayrbw1hun/</guid>
       <description> time.In(*time.Location) javascript\n t := time.Date(2001, 01, 02, 15, 04, 05, 06, time.UTC)\n t.In(time.Local) </description>
@@ -145,7 +109,7 @@
     <item>
       <title>golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것</title>
       <link>https://ariyn.github.io/posts/lf-2qqmwv/</link>
-      <pubDate>Tue, 26 Oct 2021 23:01:07 +0700</pubDate>
+      <pubDate>Tue, 26 Oct 2021 23:00:00 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/lf-2qqmwv/</guid>
       <description> 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n } 해당 부분의 코드를 보면 &amp;amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림 javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&amp;quot;custom&amp;quot;)\n default:\n fmt.Println(&amp;quot;default&amp;quot;)\n } 이와같은 경우, default로 통과됨 </description>
@@ -154,7 +118,7 @@
     <item>
       <title>golang marshalJson 사용시 주의할 점</title>
       <link>https://ariyn.github.io/posts/syl4e5dxv/</link>
-      <pubDate>Sun, 24 Oct 2021 17:49:34 +0700</pubDate>
+      <pubDate>Sun, 24 Oct 2021 17:49:18 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/syl4e5dxv/</guid>
       <description> 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n } 따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n } </description>
@@ -163,28 +127,64 @@
     <item>
       <title>goland에서 go fmt가 동작 안할때</title>
       <link>https://ariyn.github.io/posts/os3uqbwsq/</link>
-      <pubDate>Sun, 24 Oct 2021 15:41:41 +0700</pubDate>
+      <pubDate>Sun, 24 Oct 2021 15:41:10 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/os3uqbwsq/</guid>
       <description> file watcher에서 go fmt를 활성화 go fmt의 설정에서 program: /path/to/go/gofmt arguments : -w $FilePath$ output path to refresh: $FilePath$ 임을 확인할 것 </description>
     </item>
     
     <item>
+      <title>beanstalk에서 golang을 사용할 때 주의할 점</title>
+      <link>https://ariyn.github.io/posts/zfvgtxxdo/</link>
+      <pubDate>Fri, 01 Oct 2021 12:07:36 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/zfvgtxxdo/</guid>
+      <description> golang을 사용할 때, 몇가지 옵션을 사용할 수 있다. Buildfile을 사용한 빌드 application.go를 자동으로 빌드 bin/application 바이너리를 사용 root에 Procfile이 필수 이때 주의할 점은, 앞에서 하나라도 만족되면 이후 것들이 진행되지 않는다. 따라서 application.go가 있다면, Procfile에서 bin/application을 실행하라고 해도 실행되지 않는다. 로그에서 확인 할 것 no Buildfile found, checking application.go file 이런식으로 계속 있을것. 어디까지 로그가 찍혀 있는지 확인필요 </description>
+    </item>
+    
+    <item>
       <title>golang에서 regexp를 사용할 때, 여러 라인에 걸쳐 읽으려면 `(?s)`를 붙여 줘야 한다.</title>
       <link>https://ariyn.github.io/posts/hcgnzjtrl/</link>
-      <pubDate>Fri, 17 Sep 2021 10:04:02 +0700</pubDate>
+      <pubDate>Fri, 10 Sep 2021 22:36:56 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/hcgnzjtrl/</guid>
       <description> javascript\n regexp.MustCompile(`(?s)START(.*?)STOP`) 만약 (?m)과 함께 쓰려면? javascript\n `(?sm)START(.*?)STOP` </description>
     </item>
     
     <item>
+      <title>golang으로 lambda 함수를 만들때</title>
+      <link>https://ariyn.github.io/posts/qm8yip9td/</link>
+      <pubDate>Thu, 26 Aug 2021 17:40:07 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/qm8yip9td/</guid>
+      <description> api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. javascript\n func handler(myModel MyModel) {} &amp;gt; lambda proxy를 안쓸경우 사용가능\n func handler(proxyModel events.APIGatewayProxyRequest) &amp;gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. javascript\n {\n &amp;quot;body&amp;quot;:&amp;quot;...&amp;quot;,\n &amp;quot;uri&amp;quot; :&amp;quot;...&amp;quot;,\n ...\n } </description>
+    </item>
+    
+    <item>
       <title>golang에서 stdin을 한줄씩 읽는방법</title>
       <link>https://ariyn.github.io/posts/leeky5kqv/</link>
-      <pubDate>Sun, 12 Sep 2021 16:28:34 +0700</pubDate>
+      <pubDate>Fri, 20 Aug 2021 18:13:50 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/leeky5kqv/</guid>
       <description> javascript\n scanner := bufio.NewScanner(os.Stdin)\n for scanner.Scan() {\n fmt.Println(scanner.Text())\n } </description>
+    </item>
+    
+    <item>
+      <title>golang roundtripper</title>
+      <link>https://ariyn.github.io/posts/n1rdunmkx/</link>
+      <pubDate>Thu, 12 Aug 2021 16:00:13 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/n1rdunmkx/</guid>
+      <description> 고랭에서 http.RoundTripper를 통해 포워딩해줄 수 있다. 특정 api만 내쪽으로 돌리고, 나머지는 원본으로 돌릴 수도 있지 않을까? javascript\n /etc/hosts\n x.x.x.x localhost:8080\n \n main.go\n listen(8080)\n \n if url != &amp;quot;xxxx&amp;quot; {\n return RoundTripper(url)\n }\n \n return custom response\n } </description>
+    </item>
+    
+    <item>
+      <title>golang에서 이름이 붙은 리턴 변수들은 `Named return values`로 부른다.</title>
+      <link>https://ariyn.github.io/posts/drr0-8t4y/</link>
+      <pubDate>Tue, 10 Aug 2021 16:45:36 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/drr0-8t4y/</guid>
+      <description> 막상 써야 할 때 튀어나오지 않는 단어 2순위&amp;hellip; </description>
     </item>
     
   </channel>

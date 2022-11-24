@@ -6,11 +6,11 @@
     <description>Recent content in 회고 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jun 2022 14:54:10 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%ED%9A%8C%EA%B3%A0/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jun 2022 11:06:42 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%ED%9A%8C%EA%B3%A0/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>도커를 실행시켰다면, 반드시 껐다 켜보자</title>
       <link>https://ariyn.github.io/posts/gc-4ykvrt/</link>
-      <pubDate>Thu, 16 Jun 2022 14:54:10 +0700</pubDate>
+      <pubDate>Thu, 16 Jun 2022 11:06:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gc-4ykvrt/</guid>
       <description> 프로메테우스 docker로 사용하고 있었다 껏다가 켜니까, 3일짜리 저장된 데이터가 날아갔다 더 늦게 일어날 수도 있었음 유닛테스트를 해보는 이유처럼, 도커를 만들고 나면 모든 프로세스를 한번씩 해보자 강제로 꺼보거나, 재부팅하거나, 재빌드하거나 그리고 그 과정에서 문제가 없는지 확인하고, 있다면 기록해두자 나중에 훨씬 편한 마음으로 작업할 수 있을것 어떤 부분들을 테스트해야 하는지 general하게 정리할 수 있을까? #생각 #[[할 것]] </description>
@@ -19,7 +19,7 @@
     <item>
       <title>TIL 회고</title>
       <link>https://ariyn.github.io/posts/ztj6o7_cw/</link>
-      <pubDate>Tue, 28 Dec 2021 20:47:30 +0700</pubDate>
+      <pubDate>Tue, 28 Dec 2021 20:47:21 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ztj6o7_cw/</guid>
       <description>최초 til은 6/25에 공병우 박사님에 관련된 til {{[[embed]]: 공병우 박사님은 1907년생이다. #TIL}} 오늘 (12/28)까지 187일동안 til 작성 그동안 작성한 til은 총 148개 하루에 약 0.8개씩 작성 타입별 개발관련 86개 비 개발 62개 태그별 shell이 20개로 가장 많다. til 태그가 달린 파일들의 정성적 분석 필요 각 태그별 그래프 태그 한 개도 많다. 이말은 아직 태그를 다는 방법이 정립되지 않았다는 뜻 오랜 기간 관심을 가지고 공부하는 것이 적다는 뜻 TIL을 작성한 이유 블로그를 쉽게 작성하기 위해서 기계인간의 블로그를 보면서 느꼈다.</description>
@@ -28,7 +28,7 @@
     <item>
       <title>회고 항목을 작성할 때</title>
       <link>https://ariyn.github.io/posts/y5x284ahm/</link>
-      <pubDate>Tue, 26 Oct 2021 22:52:01 +0700</pubDate>
+      <pubDate>Tue, 26 Oct 2021 22:51:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/y5x284ahm/</guid>
       <description> 작업한 아이템 브랜치 PR 노션 카드 트렐로 카드 포스트잇 커뮤니케이션 히스토리 메일 슬랙 개인 기록 일기 (혹은 멋지게 &amp;ldquo;데일리 회고&amp;rdquo;) 트렐로 카드 PKM (롬 리서치) </description>

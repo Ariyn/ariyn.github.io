@@ -6,11 +6,11 @@
     <description>Recent content in PS on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Aug 2022 13:10:28 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/ps/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Aug 2022 13:07:19 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/ps/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>비교가 가능한 클래스</title>
       <link>https://ariyn.github.io/posts/hwv9m7prs/</link>
-      <pubDate>Tue, 23 Aug 2022 13:10:28 +0700</pubDate>
+      <pubDate>Tue, 23 Aug 2022 13:07:19 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/hwv9m7prs/</guid>
       <description>클래스 함수에서 eq, le, lt, ge, gt 등을 구현하면 된다 javascript\n class Job:\n def __init__(self, request_at, elapse_time):\n self.request_at = request_at\n self.elapse_time = elapse_time\n \n def __value__(self):\n return self.elapse_time - self.request_at\n \n def __lt__(self, other):\n return self.__value__() &amp;lt; other.__value__()\n \n def __le__(self, other):\n return self.__value__() &amp;lt;= other.__value__()\n \n def __gt__(self, other):\n return self.__value__() &amp;gt; other.__value__()\n \n def __ge__(self, other):\n return self.__value__() &amp;lt;= other.__value__()\n \n def __eq__(self, other):\n return self.__value__() == other.</description>

@@ -6,11 +6,11 @@
     <description>Recent content in roam research on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Dec 2021 11:23:55 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/roam-research/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 11:23:09 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/roam-research/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>태그를 만들 때는, 한글과 영어를 서로 만들어주자</title>
       <link>https://ariyn.github.io/posts/-_nrj3y1z/</link>
-      <pubDate>Wed, 01 Dec 2021 11:23:55 +0700</pubDate>
+      <pubDate>Wed, 01 Dec 2021 11:23:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/-_nrj3y1z/</guid>
       <description> 영어로 치다가 한글로 치고, 다시 영어로 변환하는 과정은 너무 고통스럽다. 이경우 한글과 영어태그는 본문에 서로를 포함해야 한다 한글 태그의 본문에는 영어 태그가, 영어 태그의 본문에는 한글태그가 들어가 있어야 한다. 이 둘을 통해서 연결시킴 </description>

@@ -6,11 +6,11 @@
     <description>Recent content in nodejs on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Dec 2021 22:30:40 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/nodejs/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 22:56:57 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/nodejs/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>node js 설치</title>
       <link>https://ariyn.github.io/posts/biggmfjwt/</link>
-      <pubDate>Wed, 01 Dec 2021 22:30:40 +0700</pubDate>
+      <pubDate>Mon, 16 Aug 2021 22:56:57 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/biggmfjwt/</guid>
       <description> https://github.com/nodesource/distributions/blob/master/README.md javascript\n curl -fsSL https://deb.nodesource.com/setup_16.x | bash -\n apt-get install -y nodejs </description>

@@ -6,11 +6,11 @@
     <description>Recent content in jq on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Mar 2022 16:49:37 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/jq/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Mar 2022 16:30:25 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/jq/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리</title>
       <link>https://ariyn.github.io/posts/lt3ulhspz/</link>
-      <pubDate>Tue, 15 Mar 2022 16:49:37 +0700</pubDate>
+      <pubDate>Tue, 15 Mar 2022 16:30:25 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/lt3ulhspz/</guid>
       <description> public ip로 검색하는 방법 shell\n aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &amp;quot;123.123.123.123&amp;quot;)&#39; </description>
@@ -19,7 +19,7 @@
     <item>
       <title>jq에서 tsv로 출력하기</title>
       <link>https://ariyn.github.io/posts/l4eizon09/</link>
-      <pubDate>Tue, 28 Dec 2021 20:54:03 +0700</pubDate>
+      <pubDate>Thu, 09 Dec 2021 18:42:01 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/l4eizon09/</guid>
       <description> jq &#39;[] | @tsv&#39; </description>
@@ -28,7 +28,7 @@
     <item>
       <title>여러개의 필드를 한번에 선택하기</title>
       <link>https://ariyn.github.io/posts/kqyf2ir4f/</link>
-      <pubDate>Wed, 01 Dec 2021 22:58:50 +0700</pubDate>
+      <pubDate>Fri, 10 Sep 2021 12:29:29 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/kqyf2ir4f/</guid>
       <description> javascript\n jq &#39;.lists[] | &amp;quot;\(.first)&amp;quot; &amp;quot;\(.last)&amp;quot;&#39; </description>
@@ -37,7 +37,7 @@
     <item>
       <title>jq에서 $로 시작하는 필드 선택하기</title>
       <link>https://ariyn.github.io/posts/_1jobgcfi/</link>
-      <pubDate>Thu, 09 Sep 2021 20:21:11 +0700</pubDate>
+      <pubDate>Thu, 09 Sep 2021 20:20:56 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_1jobgcfi/</guid>
       <description> javascript\n jq &#39;.&amp;quot;$id&amp;quot;&#39; </description>
