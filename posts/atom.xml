@@ -6,16 +6,7 @@
     <description>Recent content in Posts on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Nov 2022 18:59:15 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>버트런드 러셀은 생각보다 오래 살았다.</title>
-      <link>https://ariyn.github.io/posts/xpcyokjw2/</link>
-      <pubDate>Tue, 22 Nov 2022 18:59:15 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/xpcyokjw2/</guid>
-      <description> 1872 ~ 1970 무려 97세를 살았다 </description>
-    </item>
-    
+    <lastBuildDate>Mon, 21 Nov 2022 11:17:30 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Codemasters F1 2021 시각화 프로젝트</title>
       <link>https://ariyn.github.io/posts/te-aptegn/</link>
@@ -323,30 +314,12 @@
     </item>
     
     <item>
-      <title>in memory cache를 사용할 때는 주의하자</title>
-      <link>https://ariyn.github.io/posts/835gvfcrw/</link>
-      <pubDate>Mon, 11 Jul 2022 17:08:35 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/835gvfcrw/</guid>
-      <description> in memory cache에 expiring date를 담아두고, 그때까지 캐시가 남아 있으면 삭제하는 로직이 있다. 그런데 정상적으로 캐시된 date가 삭제 되었음에도 불구하고, 삭제 로직이 실행되는 케이스가 있었다. 확인해보니, process가 2개 돌고 있었고, load balancing에 의해서 어느쪽이 실행될 지 모르는 상황. 그래서 process 1에서 캐시되고, process 2에서 삭제 로직이 돌았다면, 서로 자신의 메모리만 참조하게 됨&amp;hellip; 아이고 머리야&amp;hellip; 생각해보면 당연한 내용인데, 왜 일찍 깨닫지 못했을까 #생각 #개선 #[[할 것]] </description>
-    </item>
-    
-    <item>
       <title>전문성의 전이 가능성</title>
       <link>https://ariyn.github.io/posts/1nnzfyejl/</link>
       <pubDate>Mon, 11 Jul 2022 12:32:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/1nnzfyejl/</guid>
       <description>https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001234379 4. 전문성의 전이 가능성부분을 보면, 전문성은 특정 내용 분야나 영역에 한정되어 있는 것으로 다른 영역으로 쉽게 전이되지 않는다고 보고 있다라고 되어 있다. 다만 단순히 여기서 끝내기는 어려운게, 적절한 교육을 통해 전문성을 전이시킬 수 있다는 연구또한 존재하며, 전이되지 않는 전문성은 일반 전문성이 아닌, 특수 전문성이라는 주장 또한 존재한다. 대부분의 연구들이 아주 정확한 결론을 내리지는 못하고, 가능성에 대해서만 논하는 단계로 보인다. 따라서 아직까지는 전문성이 다른 영역으로 쉽게 전이될 수 있다는 강력한 증거는 발견되지 않았다정도가 가장 올바른 요약이지 않을까?</description>
-    </item>
-    
-    <item>
-      <title>CPU utilization - CPU 사용 시간</title>
-      <link>https://ariyn.github.io/posts/bpxggzudw/</link>
-      <pubDate>Mon, 11 Jul 2022 11:51:38 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/bpxggzudw/</guid>
-      <description> https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization </description>
     </item>
     
     <item>
@@ -990,15 +963,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>사족을 넣을때 인용문구로 넣기</title>
-      <link>https://ariyn.github.io/posts/49xpxgief/</link>
-      <pubDate>Thu, 03 Feb 2022 11:32:31 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/49xpxgief/</guid>
-      <description> 애매하기는 하지만 인용문구로 넣고, 색을 연하게 하니까 나름 보기 괘찮다 https://tech.inflab.com/202201-event-postmortem/ </description>
-    </item>
-    
-    <item>
       <title>chrome에서 사용자 변경 단축키</title>
       <link>https://ariyn.github.io/posts/brdsgnnih/</link>
       <pubDate>Tue, 25 Jan 2022 11:47:40 +0700</pubDate>
@@ -1026,15 +990,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>하이데거는 한나 아렌트와 바람난 사이였다</title>
-      <link>https://ariyn.github.io/posts/i5nfcsaj4/</link>
-      <pubDate>Mon, 17 Jan 2022 13:53:06 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/i5nfcsaj4/</guid>
-      <description> 하이데거는 나치였고, 한나 아렌트는 전체주의의 기원을 썼음에도 불구하고&amp;hellip; https://www.hani.co.kr/arti/culture/culture_general/153322.html 한나 아렌트와 하이데거에 대해 어렵게 쓴 글 철학과 교수가 쓴 글 </description>
-    </item>
-    
-    <item>
       <title>메논의 역설</title>
       <link>https://ariyn.github.io/posts/_z87fdhcl/</link>
       <pubDate>Sun, 16 Jan 2022 19:33:40 +0700</pubDate>
@@ -1059,15 +1014,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       
       <guid>https://ariyn.github.io/posts/mworbbdq9/</guid>
       <description> 현대 컨테이너의 아버지 트럭의 짐칸을 떼어 내서 화물선에 실는 방법을 고안함 당시 미국 법에는 트럭이 바다를 이동하면 안된다는 법이 있었음 이 법을 피하기 위해 트럭의 일부(=짐칸)만 화물선에 선적함 유조선을 개조해서 테스트를 했고, 11m의 철제 컨테이너를 만듬 오늘날까지 사용되는 12m 철제 컨테이너의 규격이 탄생 본격적으로 서비스를 시작하자 상/하역 비용은 36배나 낮아짐 1톤당 5.86$에서 16센트로 낮아짐 맥린은 씨랜드 서비스라는 운송회사를 설립하였다 씨랜드는 30년간 사업을 하다가, 99년 머스크에 합병됨 The BOX 책이 컨테이너와 그의 이야기를 다룬 책 #책 #읽을꺼리 </description>
-    </item>
-    
-    <item>
-      <title>Pay wall</title>
-      <link>https://ariyn.github.io/posts/5fouwod_c/</link>
-      <pubDate>Thu, 13 Jan 2022 11:00:36 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/5fouwod_c/</guid>
-      <description> 돈을 내야지 보이도록 하는 그 기능을 의미함 </description>
     </item>
     
     <item>
@@ -1242,15 +1188,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>`문화는 시간이 지나면 양식만 남게된다. 정신을 남겨야 한다.`</title>
-      <link>https://ariyn.github.io/posts/5exswqyxc/</link>
-      <pubDate>Wed, 08 Dec 2021 00:06:24 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/5exswqyxc/</guid>
-      <description> 배민에서 했다고 한다. 하지만 출처를 찾을 수 없다. </description>
-    </item>
-    
-    <item>
       <title>sed에서 숫자를 검색하는 방법</title>
       <link>https://ariyn.github.io/posts/qfc_bozqa/</link>
       <pubDate>Tue, 07 Dec 2021 23:58:34 +0700</pubDate>
@@ -1341,24 +1278,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>이거 왜 하는거에요?</title>
-      <link>https://ariyn.github.io/posts/8dnzhakuh/</link>
-      <pubDate>Wed, 01 Dec 2021 22:56:35 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/8dnzhakuh/</guid>
-      <description> 결국엔 이 질문이 가장 애자일하고, 중요한 질문이 아닐까? </description>
-    </item>
-    
-    <item>
-      <title>리눅스 타임존 설정방법</title>
-      <link>https://ariyn.github.io/posts/2iswtcvab/</link>
-      <pubDate>Wed, 01 Dec 2021 22:40:50 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/2iswtcvab/</guid>
-      <description> timedatectl set-timezone Asia/Seoul ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime </description>
-    </item>
-    
-    <item>
       <title>롬 리서치에서 피하면 좋을 행동들</title>
       <link>https://ariyn.github.io/posts/u8qsqcsgg/</link>
       <pubDate>Wed, 01 Dec 2021 15:00:35 +0700</pubDate>
@@ -1413,15 +1332,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>https://www.youtube.com/watch?v=37c1wTzHgFw&amp;ab_channel=%EB%8B%AC%EB%A6%AC%5BSBS%EA%B5%90%EC%96%91%EA%B3%B5%EC%8B%9D%EC%B1%84%EB%84%90%5D</title>
-      <link>https://ariyn.github.io/posts/y5wqinhqm/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/y5wqinhqm/</guid>
-      <description> 센터는 권위를 상징 카메라 중앙에 서있는 중문을 캐릭터가 열고 들어옴 </description>
-    </item>
-    
-    <item>
       <title>vscode를 터미널에서 실행시키고, 그 결과값을 받기위해 기다리는 법</title>
       <link>https://ariyn.github.io/posts/0rj_ue7ch/</link>
       <pubDate>Tue, 30 Nov 2021 16:30:13 +0700</pubDate>
@@ -1440,30 +1350,12 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>산불과 전쟁</title>
-      <link>https://ariyn.github.io/posts/8qrdfbodd/</link>
-      <pubDate>Sat, 27 Nov 2021 17:47:50 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/8qrdfbodd/</guid>
-      <description>주기적으로 작은 산불이 일어나지 않으면 인화물질이 쌓여, 큰 불이된다는 이야기에는 쉽게 공감할 수 있음 그러나 주기적으로 작은 전쟁이 일어나야한다는 주장에는 쉽게 동의하기 어려움 왜? 단순히 전쟁의 비용이 크기 때문인가? 전쟁이 컨트롤하기 어렵기 때문인가? 그렇다면 이 주장은 &amp;ldquo;가정은 옳지만, 방법이 틀린&amp;quot;명제인가? 작은 전쟁이 주기적으로 일어나지 않으면, 큰 전쟁의 인화물질이 쌓인다는 가정 전쟁의 방법이 틀렸다면, 화재의 방법 또한 틀린것인가? 안정 부채 현재 안정적이기 위해, 마지막에는 프래질해지는 비용 이자까지 쳐서 갚아야 한다 기술 부채와 동일함 그러나 이것이 부채라면, 부채를 관리하는 쪽으로 가야 하는가?</description>
-    </item>
-    
-    <item>
       <title>godot에서 타일셋의 콜리젼이 안보이거나 선택이 안될때</title>
       <link>https://ariyn.github.io/posts/fjuhqhcxv/</link>
       <pubDate>Sat, 27 Nov 2021 16:45:43 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/fjuhqhcxv/</guid>
       <description> 스크롤을 키웠다 내려보자 단순히 고도 엔진의 버그로 보임 </description>
-    </item>
-    
-    <item>
-      <title>실수는 예방하는 것이 아니라 관리하는 것</title>
-      <link>https://ariyn.github.io/posts/af2wyqmg5/</link>
-      <pubDate>Thu, 25 Nov 2021 11:37:18 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/af2wyqmg5/</guid>
-      <description> http://agile.egloos.com/5774862 안티프래질에서도 비슷한 이야기를 함 {{[[embed]]: 6Qy7d9A4W}} </description>
     </item>
     
     <item>
@@ -1494,39 +1386,12 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>hey</title>
-      <link>https://ariyn.github.io/posts/5pfsno3vm/</link>
-      <pubDate>Tue, 23 Nov 2021 16:43:40 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/5pfsno3vm/</guid>
-      <description> network benchmark </description>
-    </item>
-    
-    <item>
       <title>한글 문서를 찾아보자</title>
       <link>https://ariyn.github.io/posts/43bucqp2-/</link>
       <pubDate>Tue, 23 Nov 2021 14:23:43 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/43bucqp2-/</guid>
       <description> 보통 영어 문서를 찾아보는 편 그쪽이 조금 더 공식적이고, 정확할 확률이 높기 때문 어딘가의 블로그에 적힌 내용은, 언제 적힌것인지도 파악이 어렵고, 이게 맞는지도 파악이 어렵다 덤으로 영어 공부나, 부담감도 줄이는 연습삼아서 하지만 golang의 커뮤니티를 찾아보다 꼭 그러지는 않아도 되는것을 발견함 이제는 공식 문서를 한국어로 번역하는 커뮤니티나 프로젝트도 간간히 보임 반대로 한글 문서를 찾아볼때의 장점은 쉽고 빠르게 읽을 수 있다 아무리 영어와 친해도, 모국어만큼의 속독과 문맥파악은 어렵다 공부하는게 아니라 특정 내용을 빠르게 확인해야 할때, 모국어로 훨씬 쉽게 가능 커뮤니티를 발견할 수 있다 이게 중요한것인데, 한국어로 번역하는 과정은 쉬운게 아님 그 언어/프레임워크/라이브러리/서비스에 애정을 가진 커뮤니티에서 시도해볼만한 프로젝트임 따라서 이 커뮤니티를 찾는것이 한국어 문서를 찾는 이유 혹은 커뮤니티가 아니더라도, 이런식의 프로젝트를 진행한 사람은 해당 도메인에 지식이 깊을 가능성 높음 모국어로 편하게 물어보기 쉬움 </description>
-    </item>
-    
-    <item>
-      <title>개발블로그의 글들만 모아서 검색하고 싶다</title>
-      <link>https://ariyn.github.io/posts/1urdyaul5/</link>
-      <pubDate>Wed, 17 Nov 2021 14:44:46 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/1urdyaul5/</guid>
-      <description> mysql 마이그레이션 aws -&amp;quot;aws.amazon.com&amp;quot; -&amp;quot;docs.microsoft.com&amp;quot; -&amp;quot;cloudmt.co.kr&amp;quot; 이정도 했더니, 일단은 docs는 빠지고, 개발 블로그 글들이 많이 나온다. </description>
-    </item>
-    
-    <item>
-      <title>내가 이 대화에서 무엇을 결정할 것인가를 먼저 정해야 한다.</title>
-      <link>https://ariyn.github.io/posts/iydtlx7t2/</link>
-      <pubDate>Tue, 16 Nov 2021 17:52:36 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/iydtlx7t2/</guid>
-      <description> 그래야 그 대화에서 유익한 것을 얻어낼 수 있음. </description>
     </item>
     
     <item>
@@ -1584,30 +1449,12 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>https://crmn.tistory.com/22</title>
-      <link>https://ariyn.github.io/posts/9uentgkmn/</link>
-      <pubDate>Wed, 10 Nov 2021 16:41:30 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/9uentgkmn/</guid>
-      <description> 프로세스가 꺼졌을때, 커널단위에서 킬 했는지 로그 확인법 </description>
-    </item>
-    
-    <item>
       <title>한영 전환을 하는 법</title>
       <link>https://ariyn.github.io/posts/u7hbzx9hz/</link>
       <pubDate>Sat, 06 Nov 2021 18:30:37 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/u7hbzx9hz/</guid>
       <description>javascript\n send, {vk15sc138} vk 0x15 IME 한글 모드 https://docs.microsoft.com/ko-kr/windows/win32/inputdev/virtual-key-codes sc 138 ctrl - ins 정확하게 확인이 안된다. 101키/104키 호환인 경우, 한영키의 sc는 0xE0, 38 103키/106키인 경우, 한영키의 sc는 0xF2 표준 101키/103키에서 한영 + 한자 총 2개의 키가 추가된 버전 아무래도 현대의 모든 키보드는 101키/104키 호환인 것 같은데, E038이 왜 138로 바뀌는지 잘 모르겠다. vk는 Virtual Keycode os가 가지고 있는, 가상의 코드 하나의 스캔코드는 여러개의 가상 키코드로 맵핑될 수 있다. 넘락이 켜져있을때, 텐키는 숫자로 동작함 하지만 넘락이 꺼져 있다면 텐키는 화살표로 동작함 scan code는 변하지 않았지만, vk가 바뀐 경우 sc는 Scan Code 스캔 코드는 키보드가 os로 보내는 데이터 각각의 키에는 고유한 스캔코드가 존재한다.</description>
-    </item>
-    
-    <item>
-      <title>한영 전환을 맥과 동일하게</title>
-      <link>https://ariyn.github.io/posts/4x92ludtk/</link>
-      <pubDate>Sat, 06 Nov 2021 18:30:36 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/4x92ludtk/</guid>
-      <description> javascript\n +space::\n send, {vk15sc138} </description>
     </item>
     
     <item>
@@ -1854,15 +1701,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
     </item>
     
     <item>
-      <title>beanstalk에서 nginx 설정을 바꾸는 방법</title>
-      <link>https://ariyn.github.io/posts/7ynbsztwg/</link>
-      <pubDate>Thu, 14 Oct 2021 10:56:45 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/7ynbsztwg/</guid>
-      <description> .ebextensions 폴더는 legacy .platform 폴더를 사용해야 함 https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions https://mystria.github.io/archivers/fail-case-timeout-free-on-aws https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk </description>
-    </item>
-    
-    <item>
       <title>베블런 효과</title>
       <link>https://ariyn.github.io/posts/oqbknng9j/</link>
       <pubDate>Mon, 11 Oct 2021 13:04:00 +0700</pubDate>
@@ -2013,15 +1851,6 @@ logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이
       
       <guid>https://ariyn.github.io/posts/mu4oltbad/</guid>
       <description> 대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다 javascript\n could not use snapshotter aufs in metadata plugin&amp;quot; error=&amp;quot;modprobe aufs failed: &amp;quot;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin 이경우 iptables를 legacy 모드로 바꿔줘야 함 javascript\n sudo update-alternatives --set iptables /usr/sbin/iptables-legacy\n sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 출처 https://github.com/WhitewaterFoundry/Pengwin/issues/485 </description>
-    </item>
-    
-    <item>
-      <title>회의를 잡을때</title>
-      <link>https://ariyn.github.io/posts/cqhdmssva/</link>
-      <pubDate>Wed, 15 Sep 2021 11:29:00 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/cqhdmssva/</guid>
-      <description> 어떤 사람들이 들어와야 하는지 물어보자 캘린더를 보고, 들어오는 사람들의 시간을 확인하자 다같이 가능한 시간 대역을 알려주자 </description>
     </item>
     
     <item>

@@ -6,16 +6,7 @@
     <description>Recent content in beanstalk on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 10:56:45 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/beanstalk/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>beanstalk에서 nginx 설정을 바꾸는 방법</title>
-      <link>https://ariyn.github.io/posts/7ynbsztwg/</link>
-      <pubDate>Thu, 14 Oct 2021 10:56:45 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/7ynbsztwg/</guid>
-      <description> .ebextensions 폴더는 legacy .platform 폴더를 사용해야 함 https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions https://mystria.github.io/archivers/fail-case-timeout-free-on-aws https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk </description>
-    </item>
-    
+    <lastBuildDate>Tue, 05 Oct 2021 18:32:42 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/beanstalk/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>beanstalk 설정들</title>
       <link>https://ariyn.github.io/posts/yo8d67xqr/</link>

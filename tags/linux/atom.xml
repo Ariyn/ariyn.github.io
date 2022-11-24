@@ -6,16 +6,7 @@
     <description>Recent content in linux on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jul 2022 11:51:38 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/linux/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CPU utilization - CPU 사용 시간</title>
-      <link>https://ariyn.github.io/posts/bpxggzudw/</link>
-      <pubDate>Mon, 11 Jul 2022 11:51:38 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/bpxggzudw/</guid>
-      <description> https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization </description>
-    </item>
-    
+    <lastBuildDate>Tue, 26 Apr 2022 11:20:03 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/linux/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>golang에서 mysql로 연결할 때 `unknown time zone: Asia/Seoul`이라는 오류가 계속 뜸</title>
       <link>https://ariyn.github.io/posts/gzpnb8tcn/</link>
@@ -59,24 +50,6 @@
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
       <description>문제의 코드 javascript\n f, err := os.OpenFile(&amp;quot;/tmp/test&amp;quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &amp;quot;test&amp;quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.</description>
-    </item>
-    
-    <item>
-      <title>리눅스 타임존 설정방법</title>
-      <link>https://ariyn.github.io/posts/2iswtcvab/</link>
-      <pubDate>Wed, 01 Dec 2021 22:40:50 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/2iswtcvab/</guid>
-      <description> timedatectl set-timezone Asia/Seoul ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime </description>
-    </item>
-    
-    <item>
-      <title>https://crmn.tistory.com/22</title>
-      <link>https://ariyn.github.io/posts/9uentgkmn/</link>
-      <pubDate>Wed, 10 Nov 2021 16:41:30 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/9uentgkmn/</guid>
-      <description> 프로세스가 꺼졌을때, 커널단위에서 킬 했는지 로그 확인법 </description>
     </item>
     
     <item>

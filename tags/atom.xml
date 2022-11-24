@@ -6,25 +6,7 @@
     <description>Recent content in Tags on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Nov 2022 18:59:15 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>TIL</title>
-      <link>https://ariyn.github.io/tags/til/</link>
-      <pubDate>Tue, 22 Nov 2022 18:59:15 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/til/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>철학자</title>
-      <link>https://ariyn.github.io/tags/%EC%B2%A0%ED%95%99%EC%9E%90/</link>
-      <pubDate>Tue, 22 Nov 2022 18:59:15 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EC%B2%A0%ED%95%99%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 21 Nov 2022 11:17:30 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>개발</title>
       <link>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
@@ -112,6 +94,15 @@
       <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TIL</title>
+      <link>https://ariyn.github.io/tags/til/</link>
+      <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/til/</guid>
       <description></description>
     </item>
     
@@ -323,24 +314,6 @@
     </item>
     
     <item>
-      <title>실수</title>
-      <link>https://ariyn.github.io/tags/%EC%8B%A4%EC%88%98/</link>
-      <pubDate>Mon, 11 Jul 2022 17:08:35 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EC%8B%A4%EC%88%98/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://ariyn.github.io/tags/linux/</link>
-      <pubDate>Mon, 11 Jul 2022 11:51:38 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>prometheus</title>
       <link>https://ariyn.github.io/tags/prometheus/</link>
       <pubDate>Sat, 02 Jul 2022 12:57:59 +0700</pubDate>
@@ -454,6 +427,15 @@
       <pubDate>Wed, 27 Apr 2022 15:51:26 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://ariyn.github.io/tags/linux/</link>
+      <pubDate>Tue, 26 Apr 2022 11:20:03 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -620,15 +602,6 @@
     </item>
     
     <item>
-      <title>글쓰기</title>
-      <link>https://ariyn.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</link>
-      <pubDate>Thu, 03 Feb 2022 11:32:31 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>github</title>
       <link>https://ariyn.github.io/tags/github/</link>
       <pubDate>Mon, 03 Jan 2022 15:28:57 +0700</pubDate>
@@ -710,15 +683,6 @@
     </item>
     
     <item>
-      <title>인용</title>
-      <link>https://ariyn.github.io/tags/%EC%9D%B8%EC%9A%A9/</link>
-      <pubDate>Wed, 08 Dec 2021 00:06:24 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EC%9D%B8%EC%9A%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>jaeger</title>
       <link>https://ariyn.github.io/tags/jaeger/</link>
       <pubDate>Mon, 06 Dec 2021 17:33:44 +0700</pubDate>
@@ -773,29 +737,11 @@
     </item>
     
     <item>
-      <title>timezone</title>
-      <link>https://ariyn.github.io/tags/timezone/</link>
-      <pubDate>Wed, 01 Dec 2021 22:40:50 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/timezone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>roam research</title>
       <link>https://ariyn.github.io/tags/roam-research/</link>
       <pubDate>Wed, 01 Dec 2021 11:23:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/roam-research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>연출</title>
-      <link>https://ariyn.github.io/tags/%EC%97%B0%EC%B6%9C/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EC%97%B0%EC%B6%9C/</guid>
       <description></description>
     </item>
     
@@ -818,38 +764,11 @@
     </item>
     
     <item>
-      <title>관리와 예방</title>
-      <link>https://ariyn.github.io/tags/%EA%B4%80%EB%A6%AC%EC%99%80-%EC%98%88%EB%B0%A9/</link>
-      <pubDate>Sat, 27 Nov 2021 17:47:50 +0700</pubDate>
+      <title>연출</title>
+      <link>https://ariyn.github.io/tags/%EC%97%B0%EC%B6%9C/</link>
+      <pubDate>Thu, 25 Nov 2021 10:09:56 +0700</pubDate>
       
-      <guid>https://ariyn.github.io/tags/%EA%B4%80%EB%A6%AC%EC%99%80-%EC%98%88%EB%B0%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>benchmark</title>
-      <link>https://ariyn.github.io/tags/benchmark/</link>
-      <pubDate>Tue, 23 Nov 2021 16:43:40 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/benchmark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network</title>
-      <link>https://ariyn.github.io/tags/network/</link>
-      <pubDate>Tue, 23 Nov 2021 16:43:40 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>google</title>
-      <link>https://ariyn.github.io/tags/google/</link>
-      <pubDate>Wed, 17 Nov 2021 14:44:46 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/google/</guid>
+      <guid>https://ariyn.github.io/tags/%EC%97%B0%EC%B6%9C/</guid>
       <description></description>
     </item>
     
@@ -868,15 +787,6 @@
       <pubDate>Sat, 06 Nov 2021 18:30:37 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/keyboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>windows2mac</title>
-      <link>https://ariyn.github.io/tags/windows2mac/</link>
-      <pubDate>Sat, 06 Nov 2021 18:30:36 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/windows2mac/</guid>
       <description></description>
     </item>
     
@@ -989,15 +899,6 @@
     </item>
     
     <item>
-      <title>beanstalk</title>
-      <link>https://ariyn.github.io/tags/beanstalk/</link>
-      <pubDate>Thu, 14 Oct 2021 10:56:45 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/beanstalk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>유능감</title>
       <link>https://ariyn.github.io/tags/%EC%9C%A0%EB%8A%A5%EA%B0%90/</link>
       <pubDate>Mon, 11 Oct 2021 11:35:40 +0700</pubDate>
@@ -1039,6 +940,15 @@
       <pubDate>Sun, 10 Oct 2021 17:14:02 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>beanstalk</title>
+      <link>https://ariyn.github.io/tags/beanstalk/</link>
+      <pubDate>Tue, 05 Oct 2021 18:32:42 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/beanstalk/</guid>
       <description></description>
     </item>
     

@@ -7,23 +7,10 @@
     
     <language>en</language>
     <copyright>Copyright 2022, Ronalds Vilcins</copyright>
-    <lastBuildDate>Tue, 22 Nov 2022 18:59:15 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 21 Nov 2022 11:17:30 +0700</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
-    
-    <item>
-      <title>버트런드 러셀은 생각보다 오래 살았다.</title>
-      <link>https://ariyn.github.io/posts/xpcyokjw2/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;1872 ~ 1970&lt;/li&gt;
-&lt;li&gt;무려 97세를 살았다&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/xpcyokjw2/</guid>
-      <pubDate>Tue, 22 Nov 2022 18:59:15 +0700</pubDate>
-    </item>
     
     <item>
       <title>Codemasters F1 2021 시각화 프로젝트</title>
@@ -1390,22 +1377,6 @@
     </item>
     
     <item>
-      <title>in memory cache를 사용할 때는 주의하자</title>
-      <link>https://ariyn.github.io/posts/835gvfcrw/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;in memory cache에 expiring date를 담아두고, 그때까지 캐시가 남아 있으면 삭제하는 로직이 있다.&lt;/li&gt;
-&lt;li&gt;그런데 정상적으로 캐시된 date가 삭제 되었음에도 불구하고, 삭제 로직이 실행되는 케이스가 있었다.&lt;/li&gt;
-&lt;li&gt;확인해보니, process가 2개 돌고 있었고, load balancing에 의해서 어느쪽이 실행될 지 모르는 상황.&lt;/li&gt;
-&lt;li&gt;그래서 process 1에서 캐시되고, process 2에서 삭제 로직이 돌았다면, 서로 자신의 메모리만 참조하게 됨&amp;hellip;&lt;/li&gt;
-&lt;li&gt;아이고 머리야&amp;hellip; 생각해보면 당연한 내용인데, 왜 일찍 깨닫지 못했을까 #생각 #개선 #[[할 것]]&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/835gvfcrw/</guid>
-      <pubDate>Mon, 11 Jul 2022 17:08:35 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>전문성의 전이 가능성</title>
       <link>https://ariyn.github.io/posts/1nnzfyejl/</link>
       <description>&lt;ul&gt;
@@ -1431,18 +1402,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/1nnzfyejl/</guid>
       <pubDate>Mon, 11 Jul 2022 12:32:13 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>CPU utilization - CPU 사용 시간</title>
-      <link>https://ariyn.github.io/posts/bpxggzudw/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization&#34;&gt;https://www.ibm.com/docs/en/linux-on-systems?topic=tests-understanding-cpu-utilization&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/bpxggzudw/</guid>
-      <pubDate>Mon, 11 Jul 2022 11:51:38 +0700</pubDate>
     </item>
     
     <item>
@@ -2845,19 +2804,6 @@
     </item>
     
     <item>
-      <title>사족을 넣을때 인용문구로 넣기</title>
-      <link>https://ariyn.github.io/posts/49xpxgief/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;애매하기는 하지만 인용문구로 넣고, 색을 연하게 하니까 나름 보기 괘찮다&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tech.inflab.com/202201-event-postmortem/&#34;&gt;https://tech.inflab.com/202201-event-postmortem/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/49xpxgief/</guid>
-      <pubDate>Thu, 03 Feb 2022 11:32:31 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>chrome에서 사용자 변경 단축키</title>
       <link>https://ariyn.github.io/posts/brdsgnnih/</link>
       <description>&lt;ul&gt;
@@ -2897,24 +2843,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/pw2fcfbyq/</guid>
       <pubDate>Thu, 20 Jan 2022 11:35:54 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>하이데거는 한나 아렌트와 바람난 사이였다</title>
-      <link>https://ariyn.github.io/posts/i5nfcsaj4/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;하이데거는 나치였고, 한나 아렌트는 &lt;code&gt;전체주의의 기원&lt;/code&gt;을 썼음에도 불구하고&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.hani.co.kr/arti/culture/culture_general/153322.html&#34;&gt;https://www.hani.co.kr/arti/culture/culture_general/153322.html&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;한나 아렌트와 하이데거에 대해 어렵게 쓴 글&lt;/li&gt;
-&lt;li&gt;철학과 교수가 쓴 글&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/i5nfcsaj4/</guid>
-      <pubDate>Mon, 17 Jan 2022 13:53:06 +0700</pubDate>
     </item>
     
     <item>
@@ -3005,18 +2933,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/mworbbdq9/</guid>
       <pubDate>Sun, 16 Jan 2022 19:01:28 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>Pay wall</title>
-      <link>https://ariyn.github.io/posts/5fouwod_c/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;돈을 내야지 보이도록 하는 그 기능을 의미함&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/5fouwod_c/</guid>
-      <pubDate>Thu, 13 Jan 2022 11:00:36 +0700</pubDate>
     </item>
     
     <item>
@@ -3554,19 +3470,6 @@
     </item>
     
     <item>
-      <title>`문화는 시간이 지나면 양식만 남게된다. 정신을 남겨야 한다.`</title>
-      <link>https://ariyn.github.io/posts/5exswqyxc/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;배민에서 했다고 한다.&lt;/li&gt;
-&lt;li&gt;하지만 출처를 찾을 수 없다.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/5exswqyxc/</guid>
-      <pubDate>Wed, 08 Dec 2021 00:06:24 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>sed에서 숫자를 검색하는 방법</title>
       <link>https://ariyn.github.io/posts/qfc_bozqa/</link>
       <description>&lt;ul&gt;
@@ -3743,31 +3646,6 @@
     </item>
     
     <item>
-      <title>이거 왜 하는거에요?</title>
-      <link>https://ariyn.github.io/posts/8dnzhakuh/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;결국엔 이 질문이 가장 애자일하고, 중요한 질문이 아닐까?&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/8dnzhakuh/</guid>
-      <pubDate>Wed, 01 Dec 2021 22:56:35 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>리눅스 타임존 설정방법</title>
-      <link>https://ariyn.github.io/posts/2iswtcvab/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;timedatectl set-timezone Asia/Seoul&lt;/li&gt;
-&lt;li&gt;ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/2iswtcvab/</guid>
-      <pubDate>Wed, 01 Dec 2021 22:40:50 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>롬 리서치에서 피하면 좋을 행동들</title>
       <link>https://ariyn.github.io/posts/u8qsqcsgg/</link>
       <description>&lt;ul&gt;
@@ -3899,19 +3777,6 @@
     </item>
     
     <item>
-      <title>https://www.youtube.com/watch?v=37c1wTzHgFw&amp;ab_channel=%EB%8B%AC%EB%A6%AC%5BSBS%EA%B5%90%EC%96%91%EA%B3%B5%EC%8B%9D%EC%B1%84%EB%84%90%5D</title>
-      <link>https://ariyn.github.io/posts/y5wqinhqm/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;센터는 권위를 상징&lt;/li&gt;
-&lt;li&gt;카메라 중앙에 서있는 중문을 캐릭터가 열고 들어옴&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/y5wqinhqm/</guid>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-    </item>
-    
-    <item>
       <title>vscode를 터미널에서 실행시키고, 그 결과값을 받기위해 기다리는 법</title>
       <link>https://ariyn.github.io/posts/0rj_ue7ch/</link>
       <description>&lt;ul&gt;
@@ -3941,45 +3806,6 @@
     </item>
     
     <item>
-      <title>산불과 전쟁</title>
-      <link>https://ariyn.github.io/posts/8qrdfbodd/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;주기적으로 작은 산불이 일어나지 않으면 인화물질이 쌓여, 큰 불이된다는 이야기에는 쉽게 공감할 수 있음&lt;/li&gt;
-&lt;li&gt;그러나 주기적으로 작은 전쟁이 일어나야한다는 주장에는 쉽게 동의하기 어려움&lt;/li&gt;
-&lt;li&gt;왜?
-&lt;ul&gt;
-&lt;li&gt;단순히 전쟁의 비용이 크기 때문인가?&lt;/li&gt;
-&lt;li&gt;전쟁이 컨트롤하기 어렵기 때문인가?&lt;/li&gt;
-&lt;li&gt;그렇다면 이 주장은 &amp;ldquo;가정은 옳지만, 방법이 틀린&amp;quot;명제인가?
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;작은 전쟁이 주기적으로 일어나지 않으면, 큰 전쟁의 인화물질이 쌓인다는&lt;/code&gt; 가정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;전쟁의 방법이 틀렸다면, 화재의 방법 또한 틀린것인가?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;안정 부채
-&lt;ul&gt;
-&lt;li&gt;현재 안정적이기 위해, 마지막에는 프래질해지는 비용
-&lt;ul&gt;
-&lt;li&gt;이자까지 쳐서 갚아야 한다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;기술 부채와 동일함
-&lt;ul&gt;
-&lt;li&gt;그러나 이것이 부채라면, 부채를 관리하는 쪽으로 가야 하는가?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/8qrdfbodd/</guid>
-      <pubDate>Sat, 27 Nov 2021 17:47:50 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>godot에서 타일셋의 콜리젼이 안보이거나 선택이 안될때</title>
       <link>https://ariyn.github.io/posts/fjuhqhcxv/</link>
       <description>&lt;ul&gt;
@@ -3990,23 +3816,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/fjuhqhcxv/</guid>
       <pubDate>Sat, 27 Nov 2021 16:45:43 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>실수는 예방하는 것이 아니라 관리하는 것</title>
-      <link>https://ariyn.github.io/posts/af2wyqmg5/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://agile.egloos.com/5774862&#34;&gt;http://agile.egloos.com/5774862&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;안티프래질에서도 비슷한 이야기를 함
-&lt;ul&gt;
-&lt;li&gt;{{[[embed]]: &lt;a href=&#34;https://ariyn.github.io/404.html&#34;&gt;6Qy7d9A4W&lt;/a&gt;}}&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/af2wyqmg5/</guid>
-      <pubDate>Thu, 25 Nov 2021 11:37:18 +0700</pubDate>
     </item>
     
     <item>
@@ -4056,18 +3865,6 @@
     </item>
     
     <item>
-      <title>hey</title>
-      <link>https://ariyn.github.io/posts/5pfsno3vm/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;network benchmark&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/5pfsno3vm/</guid>
-      <pubDate>Tue, 23 Nov 2021 16:43:40 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>한글 문서를 찾아보자</title>
       <link>https://ariyn.github.io/posts/43bucqp2-/</link>
       <description>&lt;ul&gt;
@@ -4110,34 +3907,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/43bucqp2-/</guid>
       <pubDate>Tue, 23 Nov 2021 14:23:43 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>개발블로그의 글들만 모아서 검색하고 싶다</title>
-      <link>https://ariyn.github.io/posts/1urdyaul5/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mysql 마이그레이션 aws -&amp;quot;aws.amazon.com&amp;quot; -&amp;quot;docs.microsoft.com&amp;quot; -&amp;quot;cloudmt.co.kr&amp;quot;&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;이정도 했더니, 일단은 docs는 빠지고, 개발 블로그 글들이 많이 나온다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/1urdyaul5/</guid>
-      <pubDate>Wed, 17 Nov 2021 14:44:46 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>내가 이 대화에서 무엇을 결정할 것인가를 먼저 정해야 한다.</title>
-      <link>https://ariyn.github.io/posts/iydtlx7t2/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;그래야 그 대화에서 유익한 것을 얻어낼 수 있음.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/iydtlx7t2/</guid>
-      <pubDate>Tue, 16 Nov 2021 17:52:36 +0700</pubDate>
     </item>
     
     <item>
@@ -4234,18 +4003,6 @@
     </item>
     
     <item>
-      <title>https://crmn.tistory.com/22</title>
-      <link>https://ariyn.github.io/posts/9uentgkmn/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;프로세스가 꺼졌을때, 커널단위에서 킬 했는지 로그 확인법&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/9uentgkmn/</guid>
-      <pubDate>Wed, 10 Nov 2021 16:41:30 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>한영 전환을 하는 법</title>
       <link>https://ariyn.github.io/posts/u7hbzx9hz/</link>
       <description>&lt;ul&gt;
@@ -4306,18 +4063,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/u7hbzx9hz/</guid>
       <pubDate>Sat, 06 Nov 2021 18:30:37 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>한영 전환을 맥과 동일하게</title>
-      <link>https://ariyn.github.io/posts/4x92ludtk/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;javascript\n    +space::\n    send, {vk15sc138}&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/4x92ludtk/</guid>
-      <pubDate>Sat, 06 Nov 2021 18:30:36 +0700</pubDate>
     </item>
     
     <item>
@@ -5089,27 +4834,6 @@
     </item>
     
     <item>
-      <title>beanstalk에서 nginx 설정을 바꾸는 방법</title>
-      <link>https://ariyn.github.io/posts/7ynbsztwg/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;.ebextensions 폴더는 legacy
-&lt;ul&gt;
-&lt;li&gt;.platform 폴더를 사용해야 함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions&#34;&gt;https://stackoverflow.com/questions/61580965/beanstalk-deployment-ignores-my-nginx-configuration-files-in-ebextensions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mystria.github.io/archivers/fail-case-timeout-free-on-aws&#34;&gt;https://mystria.github.io/archivers/fail-case-timeout-free-on-aws&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf&#34;&gt;https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/security-configuration/https-redirect/golang/nginx/conf.d/elasticbeanstalk/00_application.conf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html&#34;&gt;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/configuring-https-httpredirect.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk&#34;&gt;https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/7ynbsztwg/</guid>
-      <pubDate>Thu, 14 Oct 2021 10:56:45 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>베블런 효과</title>
       <link>https://ariyn.github.io/posts/oqbknng9j/</link>
       <description>&lt;ul&gt;
@@ -5560,23 +5284,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/mu4oltbad/</guid>
       <pubDate>Thu, 16 Sep 2021 00:04:04 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>회의를 잡을때</title>
-      <link>https://ariyn.github.io/posts/cqhdmssva/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;어떤 사람들이 들어와야 하는지 물어보자&lt;/li&gt;
-&lt;li&gt;캘린더를 보고, 들어오는 사람들의 시간을 확인하자
-&lt;ul&gt;
-&lt;li&gt;다같이 가능한 시간 대역을 알려주자&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/cqhdmssva/</guid>
-      <pubDate>Wed, 15 Sep 2021 11:29:00 +0700</pubDate>
     </item>
     
     <item>

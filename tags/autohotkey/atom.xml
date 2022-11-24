@@ -16,14 +16,5 @@
       <description>javascript\n send, {vk15sc138} vk 0x15 IME 한글 모드 https://docs.microsoft.com/ko-kr/windows/win32/inputdev/virtual-key-codes sc 138 ctrl - ins 정확하게 확인이 안된다. 101키/104키 호환인 경우, 한영키의 sc는 0xE0, 38 103키/106키인 경우, 한영키의 sc는 0xF2 표준 101키/103키에서 한영 + 한자 총 2개의 키가 추가된 버전 아무래도 현대의 모든 키보드는 101키/104키 호환인 것 같은데, E038이 왜 138로 바뀌는지 잘 모르겠다. vk는 Virtual Keycode os가 가지고 있는, 가상의 코드 하나의 스캔코드는 여러개의 가상 키코드로 맵핑될 수 있다. 넘락이 켜져있을때, 텐키는 숫자로 동작함 하지만 넘락이 꺼져 있다면 텐키는 화살표로 동작함 scan code는 변하지 않았지만, vk가 바뀐 경우 sc는 Scan Code 스캔 코드는 키보드가 os로 보내는 데이터 각각의 키에는 고유한 스캔코드가 존재한다.</description>
     </item>
     
-    <item>
-      <title>한영 전환을 맥과 동일하게</title>
-      <link>https://ariyn.github.io/posts/4x92ludtk/</link>
-      <pubDate>Sat, 06 Nov 2021 18:30:36 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/4x92ludtk/</guid>
-      <description> javascript\n +space::\n send, {vk15sc138} </description>
-    </item>
-    
   </channel>
 </rss>
