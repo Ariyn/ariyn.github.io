@@ -529,7 +529,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;OdyrFLFr4&#34;&gt;나는 왜 롬 리서치를 사용하는가 #[[블로그]] #published&lt;/a&gt;에도 초기 내 생각을 적어 두었다.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ariyn.github.io/posts/odyrflfr4&#34;&gt;나는 왜 롬 리서치를 사용하는가 #[[블로그]] #published&lt;/a&gt;에도 초기 내 생각을 적어 두었다.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
@@ -827,7 +827,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;초기에 생각했던 &lt;a href=&#34;nxTCa5EBC&#34;&gt;블로그를 쉽게 쓰는 방법에 대해 #[[블로그]] #published&lt;/a&gt; 글에 기반하고 있다.&lt;/li&gt;
+&lt;li&gt;초기에 생각했던 &lt;a href=&#34;https://ariyn.github.io/posts/nxtca5ebc&#34;&gt;블로그를 쉽게 쓰는 방법에 대해 #[[블로그]] #published&lt;/a&gt; 글에 기반하고 있다.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
@@ -1177,7 +1177,7 @@
       <title>auto load를 적용한 스크립트는 _ready 이후에서만 인식된다</title>
       <link>https://ariyn.github.io/posts/8kd_rq31s/</link>
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;vt01h5M2Z&#34;&gt;export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://ariyn.github.io/posts/vt01h5m2z&#34;&gt;export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;이 내용과 동일함.&lt;/li&gt;
 &lt;/ul&gt;
@@ -2165,7 +2165,7 @@
     </item>
     
     <item>
-      <title>[2. 함수가 다시 변수를 반환해서 동일한 값에 저장](kiHuWQQIZ)</title>
+      <title>[2. 함수가 다시 변수를 반환해서 동일한 값에 저장](/posts/kihuwqqiz)</title>
       <link>https://ariyn.github.io/posts/ssnhdg8k8/</link>
       <description>&lt;ul&gt;
 &lt;li&gt;직접 해보니 토나오게 어렵다&lt;/li&gt;
@@ -2331,7 +2331,7 @@
 &lt;/li&gt;
 &lt;li&gt;보통 golang 공식 포럼이나 메일링 리스트에서 이사람의 말이 가장 권위가 있는듯
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;8XIyPU_hf&#34;&gt;golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다 #TIL #golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ariyn.github.io/posts/8xiypu_hf&#34;&gt;golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다 #TIL #golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://swtch.com/~rsc/&#34;&gt;https://swtch.com/~rsc/&lt;/a&gt;&lt;/li&gt;
@@ -3020,7 +3020,7 @@
       <description>&lt;ul&gt;
 &lt;li&gt;최초 til은 6/25에 공병우 박사님에 관련된 til
 &lt;ul&gt;
-&lt;li&gt;{{[[embed]]: &lt;a href=&#34;WcI_vPRx5&#34;&gt;공병우 박사님은 1907년생이다. #TIL&lt;/a&gt;}}&lt;/li&gt;
+&lt;li&gt;{{[[embed]]: &lt;a href=&#34;https://ariyn.github.io/posts/wci_vprx5&#34;&gt;공병우 박사님은 1907년생이다. #TIL&lt;/a&gt;}}&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;오늘 (12/28)까지 187일동안 til 작성
