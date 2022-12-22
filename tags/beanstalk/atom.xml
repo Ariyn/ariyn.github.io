@@ -13,7 +13,7 @@
       <pubDate>Tue, 05 Oct 2021 18:32:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/yo8d67xqr/</guid>
-      <description> 설정이 개판이다. 여러대의 인스턴스를 사용하도록 설정 구성 &amp;gt; 용량 &amp;gt; 인스턴스 미니멈 instance size를 1에서 2로 옮김 health check의 패스를 변경 구성 &amp;gt; 로드밸런서 &amp;gt; 프로세스 &amp;gt; 상태 검사 경로 프로세스의 경우, 내부에서 어떤 포트를 사용해 프로세스에 요청할 것인지 설정 리스너는 외부에 어떤 포트를 열 것인지 설정 </description>
+      <description> 설정이 개판이다. 여러대의 인스턴스를 사용하도록 설정  구성 &amp;gt; 용량 &amp;gt; 인스턴스 미니멈 instance size를 1에서 2로 옮김   health check의 패스를 변경  구성 &amp;gt; 로드밸런서 &amp;gt; 프로세스 &amp;gt; 상태 검사 경로 프로세스의 경우, 내부에서 어떤 포트를 사용해 프로세스에 요청할 것인지 설정 리스너는 외부에 어떤 포트를 열 것인지 설정    </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 05 Oct 2021 18:29:53 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mzsmfdhir/</guid>
-      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 javascript\n command:\n echo &#39;127.0.0.1 hostname&#39; &amp;gt;&amp;gt; /etc/hosts https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825 </description>
+      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가  javascript\n command:\n echo &#39;127.0.0.1 hostname&#39; &amp;gt;&amp;gt; /etc/hosts https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Fri, 01 Oct 2021 12:07:36 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zfvgtxxdo/</guid>
-      <description> golang을 사용할 때, 몇가지 옵션을 사용할 수 있다. Buildfile을 사용한 빌드 application.go를 자동으로 빌드 bin/application 바이너리를 사용 root에 Procfile이 필수 이때 주의할 점은, 앞에서 하나라도 만족되면 이후 것들이 진행되지 않는다. 따라서 application.go가 있다면, Procfile에서 bin/application을 실행하라고 해도 실행되지 않는다. 로그에서 확인 할 것 no Buildfile found, checking application.go file 이런식으로 계속 있을것. 어디까지 로그가 찍혀 있는지 확인필요 </description>
+      <description> golang을 사용할 때, 몇가지 옵션을 사용할 수 있다.  Buildfile을 사용한 빌드 application.go를 자동으로 빌드 bin/application 바이너리를 사용  root에 Procfile이 필수     이때 주의할 점은, 앞에서 하나라도 만족되면 이후 것들이 진행되지 않는다.  따라서 application.go가 있다면, Procfile에서 bin/application을 실행하라고 해도 실행되지 않는다.   로그에서 확인 할 것  no Buildfile found, checking application.go file 이런식으로 계속 있을것. 어디까지 로그가 찍혀 있는지 확인필요    </description>
     </item>
     
   </channel>

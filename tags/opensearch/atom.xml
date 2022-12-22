@@ -13,7 +13,7 @@
       <pubDate>Thu, 04 Nov 2021 22:41:22 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/njo_ltxgb/</guid>
-      <description> https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다 문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다 업데이트가 안된 버전임 결국 삭제후 재 설치해야 함 javascript\n bin/logstash-plugin uninstall logstash-output-opensearch\n bin/logstash-plugin install logstash-output-opensearch 생명의 구원자 https://githubmemory.com/@arianitu </description>
+      <description> https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다 문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다  업데이트가 안된 버전임 결국 삭제후 재 설치해야 함 javascript\n bin/logstash-plugin uninstall logstash-output-opensearch\n bin/logstash-plugin install logstash-output-opensearch   생명의 구원자  https://githubmemory.com/@arianitu    </description>
     </item>
     
   </channel>

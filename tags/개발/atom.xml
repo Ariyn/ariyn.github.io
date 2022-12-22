@@ -13,7 +13,7 @@
       <pubDate>Mon, 21 Nov 2022 11:17:30 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/te-aptegn/</guid>
-      <description>프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다. 이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다. 예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다.</description>
+      <description>프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다.  이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다.  예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sat, 19 Nov 2022 11:25:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_pfl4fz-b/</guid>
-      <description>경고 지표는 언제나 사고 전에 존재한다 그러나 시스템이 경고 지표를 무시하도록 강요한다 장애를 분석하는데 있어서 &amp;ldquo;개인적 요소&amp;quot;는 큰 영향을 주지 않을 것 만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다. 반대로 모든 장애는 &amp;ldquo;시스템적 요소&amp;quot;가 숨어있다 이로인한 &amp;ldquo;개인적 요소&amp;quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &amp;ldquo;프로그래머의 귀찮아 하는 성격&amp;quot;을 수정해서는 효과가 없다. 프로그래머가 경고를 보고 수정하면, 수정 시간이 벌로 느껴짐 자신이 하고 싶어하는 일을 하지 못하기 때문에 프로그래머가 경고를 보고 수정해도 &amp;ldquo;수정 이후에 장애가 없음&amp;quot;이 보상으로 느껴지지 않음 장애 없음이 &amp;ldquo;자신의 수정 덕분&amp;quot;인지 &amp;ldquo;그냥 버그가 없었던 순간&amp;quot;인지 명확한 피드백이 없기 때문에 프로그래머가 경고를 보고 무시하면 &amp;ldquo;자신의 시간을 벌게됨&amp;rdquo; 무시한 경고로 인해서 장애가 일어나도, 이는 피드백의 시간이 길어져서 &amp;ldquo;경고를 무시한 벌&amp;quot;이라고 느껴지지 않음 피드백의 시간이 너무 나중이라, &amp;ldquo;그냥 언젠가 일어날 일&amp;quot;정도로 느껴짐.</description>
+      <description>경고 지표는 언제나 사고 전에 존재한다  그러나 시스템이 경고 지표를 무시하도록 강요한다  장애를 분석하는데 있어서 &amp;ldquo;개인적 요소&amp;quot;는 큰 영향을 주지 않을 것  만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다.   반대로 모든 장애는 &amp;ldquo;시스템적 요소&amp;quot;가 숨어있다  이로인한 &amp;ldquo;개인적 요소&amp;quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &amp;ldquo;프로그래머의 귀찮아 하는 성격&amp;quot;을 수정해서는 효과가 없다.</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Tue, 08 Nov 2022 19:51:25 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/uwtveejtm/</guid>
-      <description>프로젝트 레포지토리 내 블로그는 롬 리서치를 기반으로 한다. 롬 리서치에 특정한 태그를 작성하면, 자동으로 블로그에 올라간다. 이미 롬 리서치는 매일 쓰고 있었기 때문에 이 구조를 선택했다. 그리고 블로그를 위해서 다른 툴을 사용하는 것은 본말전도라고 생각했다 핵심은 &amp;ldquo;큰 부담 없이 롬 리서치의 글을 가져가 블로그용으로 다듬고 발행하는 것&amp;quot;이였다. 이를 위해서 블로그는 &amp;ldquo;손쉽게 만들 수 있으며&amp;rdquo;, &amp;ldquo;자동으로 발행될 수 있는 구조&amp;quot;여야 했다. 브런치나 네이버 블로그 같은것은 아웃 미디엄도 api를 배워야 했기 때문에 아웃 따라서 푸시만 하면 되는 github.</description>
+      <description>프로젝트 레포지토리 내 블로그는 롬 리서치를 기반으로 한다.  롬 리서치에 특정한 태그를 작성하면, 자동으로 블로그에 올라간다. 이미 롬 리서치는 매일 쓰고 있었기 때문에 이 구조를 선택했다.  그리고 블로그를 위해서 다른 툴을 사용하는 것은 본말전도라고 생각했다     핵심은 &amp;ldquo;큰 부담 없이 롬 리서치의 글을 가져가 블로그용으로 다듬고 발행하는 것&amp;quot;이였다.  이를 위해서 블로그는 &amp;ldquo;손쉽게 만들 수 있으며&amp;rdquo;, &amp;ldquo;자동으로 발행될 수 있는 구조&amp;quot;여야 했다.  브런치나 네이버 블로그 같은것은 아웃 미디엄도 api를 배워야 했기 때문에 아웃 따라서 푸시만 하면 되는 github.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Thu, 30 Dec 2021 20:36:19 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/l_v01_w8q/</guid>
-      <description> -A 옵션 curl -A &amp;quot;Mozilla&amp;quot; </description>
+      <description> -A 옵션  curl -A &amp;quot;Mozilla&amp;quot;    </description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Tue, 14 Dec 2021 22:38:58 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/sa3nzeqjc/</guid>
-      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000 </description>
+      <description> MOTO_ACCOUNT_ID을 environment로 주어서 테스트 MOTO_ACCOUNT_ID=12345 moto_server -p3000  </description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 13 Dec 2021 11:06:56 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/k6ofqb7vp/</guid>
-      <description> MIME Encoded-Word라고 한다. RFC 2047에 명시되어 있는 규격 전체 포맷은 =?Charset?Encoding?Encoded Text?= Charset IANA에 등록된 캐릭터 셋 보통은 UTF-8이 나오게 됨 Encoding Q인경우 Q-encoding B인경우 base64 인코딩 Encoded Text Encoding에 명시된 방법으로 인코딩된 텍스트 간혹 이메일을 통채로 열어보았을때, 이런 문자가 나오는데, 아무래도 이메일의 메타 정보가 MIME으로 작성되어 있다보니 그런 것 같다. 좀 더 정확히는 MIME가 이메일의 정보를 기술하기 위해 만들어진 포맷 (Multipurpose Internet Mail Extensions) </description>
+      <description> MIME Encoded-Word라고 한다.  RFC 2047에 명시되어 있는 규격 전체 포맷은 =?Charset?Encoding?Encoded Text?=   Charset  IANA에 등록된 캐릭터 셋 보통은 UTF-8이 나오게 됨   Encoding  Q인경우 Q-encoding B인경우 base64 인코딩   Encoded Text  Encoding에 명시된 방법으로 인코딩된 텍스트   간혹 이메일을 통채로 열어보았을때, 이런 문자가 나오는데, 아무래도 이메일의 메타 정보가 MIME으로 작성되어 있다보니 그런 것 같다.  좀 더 정확히는 MIME가 이메일의 정보를 기술하기 위해 만들어진 포맷 (Multipurpose Internet Mail Extensions)    </description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <pubDate>Thu, 09 Dec 2021 17:50:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
-      <description>문제의 코드 javascript\n f, err := os.OpenFile(&amp;quot;/tmp/test&amp;quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &amp;quot;test&amp;quot;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.</description>
+      <description>문제의 코드  javascript\n f, err := os.OpenFile(&amp;quot;/tmp/test&amp;quot;, os.Append, 0755)\n if err != nil {\n panic(err)\n }\n \n fmt.Fprintln(f, &amp;quot;test&amp;quot;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@
       <pubDate>Tue, 23 Nov 2021 14:23:43 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/43bucqp2-/</guid>
-      <description> 보통 영어 문서를 찾아보는 편 그쪽이 조금 더 공식적이고, 정확할 확률이 높기 때문 어딘가의 블로그에 적힌 내용은, 언제 적힌것인지도 파악이 어렵고, 이게 맞는지도 파악이 어렵다 덤으로 영어 공부나, 부담감도 줄이는 연습삼아서 하지만 golang의 커뮤니티를 찾아보다 꼭 그러지는 않아도 되는것을 발견함 이제는 공식 문서를 한국어로 번역하는 커뮤니티나 프로젝트도 간간히 보임 반대로 한글 문서를 찾아볼때의 장점은 쉽고 빠르게 읽을 수 있다 아무리 영어와 친해도, 모국어만큼의 속독과 문맥파악은 어렵다 공부하는게 아니라 특정 내용을 빠르게 확인해야 할때, 모국어로 훨씬 쉽게 가능 커뮤니티를 발견할 수 있다 이게 중요한것인데, 한국어로 번역하는 과정은 쉬운게 아님 그 언어/프레임워크/라이브러리/서비스에 애정을 가진 커뮤니티에서 시도해볼만한 프로젝트임 따라서 이 커뮤니티를 찾는것이 한국어 문서를 찾는 이유 혹은 커뮤니티가 아니더라도, 이런식의 프로젝트를 진행한 사람은 해당 도메인에 지식이 깊을 가능성 높음 모국어로 편하게 물어보기 쉬움 </description>
+      <description> 보통 영어 문서를 찾아보는 편  그쪽이 조금 더 공식적이고, 정확할 확률이 높기 때문 어딘가의 블로그에 적힌 내용은, 언제 적힌것인지도 파악이 어렵고, 이게 맞는지도 파악이 어렵다 덤으로 영어 공부나, 부담감도 줄이는 연습삼아서   하지만 golang의 커뮤니티를 찾아보다 꼭 그러지는 않아도 되는것을 발견함  이제는 공식 문서를 한국어로 번역하는 커뮤니티나 프로젝트도 간간히 보임   반대로 한글 문서를 찾아볼때의 장점은  쉽고 빠르게 읽을 수 있다  아무리 영어와 친해도, 모국어만큼의 속독과 문맥파악은 어렵다 공부하는게 아니라 특정 내용을 빠르게 확인해야 할때, 모국어로 훨씬 쉽게 가능   커뮤니티를 발견할 수 있다  이게 중요한것인데, 한국어로 번역하는 과정은 쉬운게 아님 그 언어/프레임워크/라이브러리/서비스에 애정을 가진 커뮤니티에서 시도해볼만한 프로젝트임 따라서 이 커뮤니티를 찾는것이 한국어 문서를 찾는 이유  혹은 커뮤니티가 아니더라도, 이런식의 프로젝트를 진행한 사람은 해당 도메인에 지식이 깊을 가능성 높음 모국어로 편하게 물어보기 쉬움        </description>
     </item>
     
   </channel>

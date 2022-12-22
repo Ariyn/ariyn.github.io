@@ -13,7 +13,7 @@
       <pubDate>Thu, 08 Sep 2022 12:46:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8kd_rq31s/</guid>
-      <description> export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL 이 내용과 동일함. 따라서 사용하려면 _ready 내부에서 사용해야 한다 javascript\n class X:\n var other: other.Class;\n \n func _init(name):\n self.other = other.Class.new()\n \n ._init();\n \n var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다.\n \n func _ready():\n var x = X.new() # autoload되었기 때문에, 문제없이 동작한다. </description>
+      <description> export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL  이 내용과 동일함.   따라서 사용하려면 _ready 내부에서 사용해야 한다  javascript\n class X:\n var other: other.Class;\n \n func _init(name):\n self.other = other.Class.new()\n \n ._init();\n \n var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다.\n \n func _ready():\n var x = X.new() # autoload되었기 때문에, 문제없이 동작한다.    </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sun, 04 Sep 2022 13:28:53 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/vt01h5m2z/</guid>
-      <description> export한 변수를 _ready가 아닌, 스크립트의 최상단에서 사용해보면, null로 나온다. 따라서 이런 변수들은 _ready에서 사용해야 제대로 동작함 </description>
+      <description> export한 변수를 _ready가 아닌, 스크립트의 최상단에서 사용해보면, null로 나온다. 따라서 이런 변수들은 _ready에서 사용해야 제대로 동작함  </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 22 Aug 2022 14:20:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/-l9aj4nwj/</guid>
-      <description> RigidBody2D의 설정에서 contact monitoring을 켜줘야 한다. 출처 </description>
+      <description> RigidBody2D의 설정에서 contact monitoring을 켜줘야 한다. 출처  </description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Mon, 22 Aug 2022 14:13:53 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/czilir72l/</guid>
-      <description> 일반적인 변수는 var index;처럼 타입 없이 사용이 가능하다. 그러나 export하는 변수는 타입이 명확해야 함. 명시적 타입으로 export 하는 방법 export var index = 1; export(int) var index; </description>
+      <description> 일반적인 변수는 var index;처럼 타입 없이 사용이 가능하다.  그러나 export하는 변수는 타입이 명확해야 함.   명시적 타입으로 export 하는 방법  export var index = 1; export(int) var index;    </description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Mon, 22 Aug 2022 13:59:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/7l8fr_oh2/</guid>
-      <description> Node2D/TileMap으로 검색했을때 나오지 않았다. godot에서 절대경로로 검색할때는, /root에서 시작해야 하는듯 하다. 출처 참고 부분을 확인할 것 따라서 /root/Node2D/TileMap으로 검색하니 나온다. 이전에는 root를 붙여주지 않아도 나왔던것으로 기억 하는데, 이에 대해서는 확인이 필요하다. 설정이 잘못되었거나 뭔가 더 필요한게 있을듯 </description>
+      <description> Node2D/TileMap으로 검색했을때 나오지 않았다. godot에서 절대경로로 검색할때는, /root에서 시작해야 하는듯 하다.  출처 참고 부분을 확인할 것 따라서 /root/Node2D/TileMap으로 검색하니 나온다.   이전에는 root를 붙여주지 않아도 나왔던것으로 기억 하는데, 이에 대해서는 확인이 필요하다.  설정이 잘못되었거나 뭔가 더 필요한게 있을듯    </description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Sat, 27 Nov 2021 16:45:43 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/fjuhqhcxv/</guid>
-      <description> 스크롤을 키웠다 내려보자 단순히 고도 엔진의 버그로 보임 </description>
+      <description> 스크롤을 키웠다 내려보자 단순히 고도 엔진의 버그로 보임  </description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <pubDate>Wed, 24 Nov 2021 21:51:52 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/napcywbps/</guid>
-      <description> javascript\n signal my_signal(value, value2) </description>
+      <description> javascript\n signal my_signal(value, value2)  </description>
     </item>
     
   </channel>

@@ -13,7 +13,7 @@
       <pubDate>Mon, 25 Oct 2021 14:22:15 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/bbae78lgw/</guid>
-      <description> sudo su jenkins를 통해서 jenkins로 유저를 바꾸고, ~/.ssh/known_hosts에 호스트의 fingerprint를 추가해주자 </description>
+      <description> sudo su jenkins를 통해서 jenkins로 유저를 바꾸고, ~/.ssh/known_hosts에 호스트의 fingerprint를 추가해주자  </description>
     </item>
     
   </channel>

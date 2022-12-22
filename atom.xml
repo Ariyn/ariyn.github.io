@@ -7,10 +7,192 @@
     
     <language>en</language>
     <copyright>Copyright 2022, Ronalds Vilcins</copyright>
-    <lastBuildDate>Mon, 21 Nov 2022 11:17:30 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 22 Dec 2022 14:33:09 +0700</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
+    
+    <item>
+      <title>무엇이 재앙을 만드는가</title>
+      <link>https://ariyn.github.io/posts/buzva0x2w/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;스리마일섬은 사고 분석 이야기에 상당히 자주 나오는 이야기인데, 정상 사고도 이 사고에서 영감을 얻어 썼다고 알려져있다.
+&lt;ul&gt;
+&lt;li&gt;당시 스리마일섬 원자력 발전소는 최신식 시설이었다.&lt;/li&gt;
+&lt;li&gt;따라서 사고가 일어난것도 놀랍지만, 그 사고가 고작 &amp;ldquo;밸브 고장&amp;quot;과 &amp;ldquo;인력 교대시 전달사항을 빠뜨린 것&amp;rdquo; 그리고 &amp;ldquo;계기판이 고장난 것&amp;quot;으로 인해서 그 거대한 시스템이 무력화된 것이 충격적이었던 것 같다.&lt;/li&gt;
+&lt;li&gt;찰스 페로는 &amp;ldquo;사소한 것들의 시너지가 일어나면서 수많은 안전장치를 무력화시키고 거대한 시스템을 고장나게 만들었다&amp;quot;라고 평가했다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;이 대목에서 장상 사고의 핵심이 드러난다. 그것은 직접적인 작동 순서에 속하지 않은 다발적 장애의 상호작용이다.&lt;/code&gt; p. 38&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;정상사고라는 단어는 &amp;ldquo;사고의 발생이 이상한 것이 아닌 정상적인 것&amp;quot;이라는 의미로 사용된다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;상호 작용성 복잡성과 긴밀한 연계성이라는 시스템의 속성에 따라 불가피하게 발생하는 사고를 &amp;quot;정상 사고&amp;quot; 혹은 &amp;quot;시스템 사고&amp;quot;라고 한다. 정상 사고라는 개념은 언뜻 이상하게 보이지만 시스템의 속성상 예상치 못한 다발적 장애의 상호작용이 불가피하다는 의미를 담고 있다.&lt;/code&gt; p.14
+&lt;ul&gt;
+&lt;li&gt;즉 시스템 자체가 가지고 있는 속성으로 인해 발생하는 장애를 의미한다.&lt;/li&gt;
+&lt;li&gt;다만 사소한 장애를 정상사고라 부르지는 않는다.
+&lt;ul&gt;
+&lt;li&gt;찰스페로는 사소한 사고의 경우 &amp;ldquo;요소 장애 사고&amp;quot;라고 불렀다.&lt;/li&gt;
+&lt;li&gt;요소 장애 사고가 모여 예상치 못한 상호작용을 하고, 이로 인해서 상위 시스템이 맛이 가는 경우 &amp;ldquo;정상 사고&amp;quot;가 된다&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;개별적 장애는 사소하고 비상수단이나 여분 경로를 지니지만 다른 장애와 상호작용을 일으킬 경우 문제가 악화된다. 사고는 다발적 장애의 상호작용에 기인한다. (...) 그러나 이 모든 일들이 한꺼번에 일어나리란 예상은 못한다.&lt;/code&gt; p.17&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;이러한 사고의 발생이 정상인 이유는 잦거나 예측 가능하기 때문이 아니다. 정상 사고는 드물게 일어나고 예측하기 어렵다. 그래서 정상 사고가 발생하면 혼란에 빠질 수밖에 없다. 이러한 사고는 시스템의 내재적 속성이 때로 일정한 상호작용을 일으킨다는 점에서 정상이다.&lt;/code&gt; p.17
+&lt;ul&gt;
+&lt;li&gt;운석이 떨어졌다면 이것은 정상 사고가 아니다.&lt;/li&gt;
+&lt;li&gt;계기판이 고장나서 잘못된 판단을 하는 것은 다분히 &amp;ldquo;정상적&amp;quot;이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;정상 사고를 일으켰던 공통적 요소들
+&lt;ul&gt;
+&lt;li&gt;연계성
+&lt;ul&gt;
+&lt;li&gt;요소 A와 B가 서로 연관되어 있다면 연계성이 성립된다.&lt;/li&gt;
+&lt;li&gt;만약 B가 A의 동작에 의존적이라면 (A가 고장났을때 B도 고장난다면) &amp;ldquo;긴밀한 연계&amp;quot;라고 부른다 p.137 ~ p.139
+&lt;ul&gt;
+&lt;li&gt;긴밀한 연계는 언제나 동일한 결과를 내며 &lt;strong&gt;변동성이 적다&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;좋게 말하면 안정적이지만, 나쁘게 말하면 변화에 취약하다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;긴밀한 연계는 공정의 순서가 바뀌지 않으며 &lt;strong&gt;한방향으로만 진행&lt;/strong&gt;된다
+&lt;ul&gt;
+&lt;li&gt;초기에 디자인한 방법으로만 동작한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;긴밀한 연계는 &lt;strong&gt;느슨한 부분이 없다&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;한 부분을 바꾸기 위해서는 전체 부분에 대한 고민이 필요하다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;긴밀한 연계는 &lt;strong&gt;시간에 의존적&lt;/strong&gt;이다.
+&lt;ul&gt;
+&lt;li&gt;시간에 따라서 동작이 바뀌어야 한다.&lt;/li&gt;
+&lt;li&gt;컨베이어 벨트위의 제품은 시간에 의존적이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;만약 B가 A의 동작에 의존적이지 않다면 &amp;ldquo;느슨한 연계&amp;quot;라고 부른다
+&lt;ul&gt;
+&lt;li&gt;느슨한 연계에서는 &lt;strong&gt;B없이 제품이 완성&lt;/strong&gt;될 수 있다.
+&lt;ul&gt;
+&lt;li&gt;나쁘게 보면 미완의 제품이 나올 수 있지만, 반대로 유연함을 가진다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A가 지연된다고 해도 B의 동작에 문제가 없다&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;시간에 의존적이지 않다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;입력값이 바뀌어도 전체 시스템을 바꾸지 않고 동작한다
+&lt;ul&gt;
+&lt;li&gt;화력 발전소는 석탄이나 석유나 그 인터페이스만 교체하면 동작한다.&lt;/li&gt;
+&lt;li&gt;원자력 발전소에 석유를 쓰기 위해서는 상당한 고민이 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;한 부분이 고장나더라도 다른 부품으로 교체될 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;전통적인 Server-DB의 관계는 &amp;ldquo;긴밀하다&amp;quot;라고 할 수 있으며, Message queue를 사용해서 구현한 경우 &amp;ldquo;느슨한 연계의 성격&amp;quot;을 띄게 될 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;상호작용의 복잡성
+&lt;ul&gt;
+&lt;li&gt;구성 요소들이 늘어나면서 복잡성도 늘어난다.&lt;/li&gt;
+&lt;li&gt;복잡성이 늘어나는것은 문제가 아니지만, &amp;ldquo;예측할 수 없는 복잡성&amp;quot;이 언제나 정상 사고의 원인이 된다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;단선적 상호작용은 정상적인 생산 순서에 따라 근접한 시스템의 요소들 사이에 발생하고, 복잡한 상호작용은 정상적인 생산 순서를 벗어난 요소들 사이에 발생한다.&lt;/code&gt; p.116
+&lt;ul&gt;
+&lt;li&gt;책에서의 설명은 &amp;ldquo;파이프가 고장나 물이 새는데 하필 그 옆에 있던 전선을 누전시키는 경우&amp;quot;와 같은 상황을 설명한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;하지만 SW에서도 동일한 상황은 언제나 생기기 마련이다.
+&lt;ul&gt;
+&lt;li&gt;예를들어서 복구 스크립트를 만들어 두었지만, 하필 그게 꺼진 서버에 있었다면?
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;이 모든 일들이 한꺼번에 일어나리란 예상은 못한다.&lt;/code&gt; p.17&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;이번 카카오의 상황도 충분히 정상사고의 범주에 속한다고 설명할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;상호작용의 복잡성은 사람의 실수를 유발하기도 좋다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;저는 우리가 훈련받은 것과 다른 상황에 직면했다는 것을 깨달았지만 매번 이미 알고 있는 대로 결정을 내렸습니다. 가령 압력이 낮았지만 증기 발생기의 급수 밸브를 신속하게 열었습니다. 지금 돌이켜보면 잘못된 판단임을 알 수 있지만 당시에는 대부분의 행동이 나름의 논리를 따른 것이었습니다.&lt;/code&gt; p.44&lt;/li&gt;
+&lt;li&gt;당시 가지고 있던 정보만 보면 밸브를 여는것은 올바른 판단이었지만, 나중에 전체 상황을 보면 잘못된 판단이었다.&lt;/li&gt;
+&lt;li&gt;원전의 복잡한 상호작용으로 인해 정상 사고 도중 누구도 &amp;ldquo;현재 상황&amp;quot;을 파악하지 못해서 벌어진 일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;따라서 상호작용의 복잡성은 지양해야 한다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;결과적으로 우리가 복잡한 시스템을 만드는 이유는 단선적 시스템을 통해 필요한 생산물을 얻는 방법을 모르기 때문이다. 그러나 복잡한 시스템이 참사를 일으킬 위험을 안고 있다면 다른 방법을 찾거나 생산물을 완전히 포기하는 것을 고려해야 한다.&lt;/code&gt; p.131&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;정상사고를 줄이기 위해서는 &amp;ldquo;느슨한 연계&amp;quot;와 &amp;ldquo;단선적인 상호작용&amp;quot;을 달성해야 한다.
+&lt;ul&gt;
+&lt;li&gt;느슨한 연계에서는 시간에 의존적이지 않기 때문에, 사고가 전파되지 않는다.
+&lt;ul&gt;
+&lt;li&gt;즉 잠시 장애가 나도 전체 시스템에는 문제가 생기지 않는다&lt;/li&gt;
+&lt;li&gt;이 시간을 통해서 사고를 해결할 여유를 가질 수 있게된다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;단선적인 상호작용에서는 &amp;ldquo;예상치 못한 상호작용&amp;quot;을 막을 수 있다
+&lt;ul&gt;
+&lt;li&gt;C에서 포인터가 얼마나 많은 오류를 불러 일으키는지, 반대로 러스트가 왜 메모리 safe한 방식을 취했는지 생각해보면 이해가 된다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;정상 사고는 절대로 운용자의 오류로 결론지어져서는 안된다
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;그렇다고 해도 운용자 오류는 너무나 쉽게 사고 원인으로 지목된다. 진정한 문제는 생산이 중단되어서는 안 된다는 압력 때문에 위험을 감수해야만 하는 작업 환경에 있다.&lt;/code&gt; p.361&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;실수 유발 시스템이라는 개념 자체가 복잡성과 연계성에서 도출되었다.&lt;/code&gt; p.259&lt;/li&gt;
+&lt;li&gt;정상 사고로 결론지어지면 근본적인 원인을 분석할 수 없고, 이로인해서 &amp;ldquo;실수 유발 시스템&amp;quot;이 그대로 유지된다.
+&lt;ul&gt;
+&lt;li&gt;문제 없다는 자신감과 여전히 실수를 유발하는 시스템 그리고 더 빡빡해진 관리 절차로 인해 우리는 더 위험한 시스템을 운영하게 된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;정상 사고의 한 가운데서는 그 무엇도 알수 없기 때문에 정상 사고를 최대한 약화시켜야한다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;운용자가 예상치 못한 다발적 장애 사이의 상호작용과 마주칠 경우 사후에야 올바른 대처법을 파악할 수 있다. 정상 사고의 와중에는 누구도 어떤 일이 벌어지는지, 어떻게 대처해야 하는지 알 수 없다.&lt;/code&gt; p.19&lt;/li&gt;
+&lt;li&gt;이는 &amp;ldquo;느슨한 연계&amp;quot;를 통해서 달성할 수 있다.
+&lt;ul&gt;
+&lt;li&gt;시간에 대한 의존성이 없기 때문에, 일부 시스템이 멈추어도 전체 시스템에는 큰 영향이 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;긴밀한 연계에서 느슨한 연계로 이어지는 이 흐름은, 마치 절차지향에서 객체 지향으로, 모노리딕에서 MSA로 이어지는 느낌이다.
+&lt;ul&gt;
+&lt;li&gt;MSA 혹은 객체지향을 단순히 지향해서는 안될 것이다.
+&lt;ul&gt;
+&lt;li&gt;이 개념들에 매몰되었을때 발생하는 폐해는 생각보다 크다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;그러니 &amp;ldquo;느슨한 연계&amp;quot;를 달성하기 위해 MSA와 객체지향이 사용되어야 하는 느낌이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/buzva0x2w/</guid>
+      <pubDate>Thu, 22 Dec 2022 14:33:09 +0700</pubDate>
+    </item>
     
     <item>
       <title>Codemasters F1 2021 시각화 프로젝트</title>
@@ -1974,19 +2156,6 @@
     </item>
     
     <item>
-      <title>rust의 소유권중 이해가 안가는 부분</title>
-      <link>https://ariyn.github.io/posts/lhkgkxni9/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;javascript\n    // let mut children_iter = (*one).borrow_mut().children.clone().iter();\n    let children = (*one).borrow_mut().children.clone();\n    let mut children_iter = children.iter();&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;왜 위쪽은 (*one).borrow_mut()가 임시 변수가 되어서 사용이 안되고, 아랫쪽은 사용이 가능할까? 큰 차이가 없어보이는데&amp;hellip;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/lhkgkxni9/</guid>
-      <pubDate>Sun, 10 Apr 2022 11:08:33 +0700</pubDate>
-    </item>
-    
-    <item>
       <title>rust와 lifetime</title>
       <link>https://ariyn.github.io/posts/rk80bywhx/</link>
       <description>&lt;ul&gt;
@@ -2029,7 +2198,7 @@
       <title>todo!(&#39;&#39;)</title>
       <link>https://ariyn.github.io/posts/7maqul3bc/</link>
       <description>&lt;ul&gt;
-&lt;li&gt;todo!(&amp;lsquo;make!&amp;rsquo;)으로 해 놓고 실행하게 되면 &lt;code&gt;not yet implemented: make!&lt;/code&gt;처럼 오류가 뜨게 된다&lt;/li&gt;
+&lt;li&gt;todo!(&amp;lsquo;make!&#39;)으로 해 놓고 실행하게 되면 &lt;code&gt;not yet implemented: make!&lt;/code&gt;처럼 오류가 뜨게 된다&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
@@ -2883,7 +3052,7 @@
 &lt;li&gt;전세계 모든 세관은 BIC에서 정보를 조회함&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;길이는 10&amp;rsquo;(피트), 20&amp;rsquo;, 40&amp;rsquo;, 45&amp;rsquo;가 있으며 폭은 8피트로 동일하다
+&lt;li&gt;길이는 10&#39;(피트), 20&#39;, 40&#39;, 45&amp;rsquo;가 있으며 폭은 8피트로 동일하다
 &lt;ul&gt;
 &lt;li&gt;높이의 경우 8피트 6인치가 가장 많으나, 종류에 따라 다른것도 있는 듯&lt;/li&gt;
 &lt;/ul&gt;
@@ -3583,22 +3752,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/t2dhxvlum/</guid>
       <pubDate>Thu, 02 Dec 2021 23:11:49 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>인슐린 저항성</title>
-      <link>https://ariyn.github.io/posts/aev36ilz5/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;인슐린 저항성이 높을 경우, 인체는 이미 포도당이 충분함에도 불구하고 인슐린에 의해 포도당의 축적이나 포도당 생성이 조절되어야 함에도 불구하고 계속해서 인슐린을 만들어 내고 그로 인해 췌장에서 인슐린을 만들어내는 베타세포는 과부하로 결국 그 기능을 못하고 대미지를 입게 되기도 한다.&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;출처 &lt;a href=&#34;https://ko.wikipedia.org/wiki/%EC%9D%B8%EC%8A%90%EB%A6%B0_%EC%A0%80%ED%95%AD%EC%84%B1&#34;&gt;위키&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/aev36ilz5/</guid>
-      <pubDate>Thu, 02 Dec 2021 22:38:43 +0700</pubDate>
     </item>
     
     <item>
@@ -5209,25 +5362,6 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/s2vhxiq02/</guid>
       <pubDate>Sun, 19 Sep 2021 21:03:42 +0700</pubDate>
-    </item>
-    
-    <item>
-      <title>회의가 길어질때</title>
-      <link>https://ariyn.github.io/posts/xst4xskra/</link>
-      <description>&lt;ul&gt;
-&lt;li&gt;다시 원점으로 돌아가자. 우리가 왜 이 이야기를 하는가?&lt;/li&gt;
-&lt;li&gt;어디서부터 이야기가 나왔는가?&lt;/li&gt;
-&lt;li&gt;이야기가 섞여있을 가능성이 높음.
-&lt;ul&gt;
-&lt;li&gt;그것을 분리하고 필요한 이야기들을 먼저 하고, 나머지를 나중에 끝내자.&lt;/li&gt;
-&lt;li&gt;(다음번에 또 이야기 해봅시다)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
-      <guid>https://ariyn.github.io/posts/xst4xskra/</guid>
-      <pubDate>Thu, 16 Sep 2021 17:04:00 +0700</pubDate>
     </item>
     
     <item>

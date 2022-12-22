@@ -13,7 +13,7 @@
       <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ypcno-aru/</guid>
-      <description> yield는 syntax sugar라고 한다. 실제로 아래의 문법으로 변환되서 실행된다고 한다 javascript\n for( x &amp;lt;- c ) yield {...}\n \n c.map(x =&amp;gt; {....}) 생각보다 많은곳에서 사용할 수 있는것 같다. 좀 더 공부가 필요할 듯 출처 </description>
+      <description> yield는 syntax sugar라고 한다.  실제로 아래의 문법으로 변환되서 실행된다고 한다 javascript\n for( x &amp;lt;- c ) yield {...}\n \n c.map(x =&amp;gt; {....})   생각보다 많은곳에서 사용할 수 있는것 같다.  좀 더 공부가 필요할 듯   출처  </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Thu, 10 Nov 2022 16:45:37 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/qfmg7znbf/</guid>
-      <description> Expression Oriented Programming 모든 표현식이 결과를 반환하는 경우, EOP라고 한다 즉 함수가 pure functional한 경우, side effect가 없는 경우를 부르는 듯 적당히 이해는 되지만, 아직 좋은 사용법이나 필요성에 대해서는 공감하기 어렸다. </description>
+      <description> Expression Oriented Programming  모든 표현식이 결과를 반환하는 경우, EOP라고 한다 즉 함수가 pure functional한 경우, side effect가 없는 경우를 부르는 듯   적당히 이해는 되지만, 아직 좋은 사용법이나 필요성에 대해서는 공감하기 어렸다.  </description>
     </item>
     
   </channel>

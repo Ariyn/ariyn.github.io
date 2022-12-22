@@ -8,7 +8,7 @@
   <title>golang에서 mysql로 연결할 때 `unknown time zone: Asia/Seoul`이라는 오류가 계속 뜸 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="golang에서 mysql로 연결할 때 `unknown time zone: Asia/Seoul`이라는 오류가 계속 뜸" />
-<meta property="og:description" content="이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&hellip; 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&hellip; 코드 golang\n \n // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451\n // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\n case &quot;loc&quot;:\n if value, err = url.QueryUnescape(value); err != nil {\n return\n }\n cfg.Loc, err = time.LoadLocation(value)\n if err != nil {\n return\n } golang\n \n // time/zoneinfo_read.go:529\n // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다." />
+<meta property="og:description" content="이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&hellip;  어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&hellip;   코드  golang\n \n // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451\n // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\n case &quot;loc&quot;:\n if value, err = url.QueryUnescape(value); err != nil {\n return\n }\n cfg.Loc, err = time.LoadLocation(value)\n if err != nil {\n return\n } golang\n \n // time/zoneinfo_read.go:529\n // parserDSNParams의 time." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/gzpnb8tcn/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-26T11:20:03+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="golang에서 mysql로 연결할 때 `unknown time zone: Asia/Seoul`이라는 오류가 계속 뜸">
-<meta itemprop="description" content="이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&hellip; 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&hellip; 코드 golang\n \n // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451\n // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\n case &quot;loc&quot;:\n if value, err = url.QueryUnescape(value); err != nil {\n return\n }\n cfg.Loc, err = time.LoadLocation(value)\n if err != nil {\n return\n } golang\n \n // time/zoneinfo_read.go:529\n // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다."><meta itemprop="datePublished" content="2022-04-26T11:20:03+07:00" />
+<meta itemprop="description" content="이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&hellip;  어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&hellip;   코드  golang\n \n // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451\n // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\n case &quot;loc&quot;:\n if value, err = url.QueryUnescape(value); err != nil {\n return\n }\n cfg.Loc, err = time.LoadLocation(value)\n if err != nil {\n return\n } golang\n \n // time/zoneinfo_read.go:529\n // parserDSNParams의 time."><meta itemprop="datePublished" content="2022-04-26T11:20:03+07:00" />
 <meta itemprop="dateModified" content="2022-04-26T11:20:32+07:00" />
 <meta itemprop="wordCount" content="207">
 <meta itemprop="keywords" content="TIL,linux," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="golang에서 mysql로 연결할 때 `unknown time zone: Asia/Seoul`이라는 오류가 계속 뜸"/>
-<meta name="twitter:description" content="이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&hellip; 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&hellip; 코드 golang\n \n // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451\n // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\n case &quot;loc&quot;:\n if value, err = url.QueryUnescape(value); err != nil {\n return\n }\n cfg.Loc, err = time.LoadLocation(value)\n if err != nil {\n return\n } golang\n \n // time/zoneinfo_read.go:529\n // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다."/>
+<meta name="twitter:description" content="이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&hellip;  어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&hellip;   코드  golang\n \n // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451\n // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\n case &quot;loc&quot;:\n if value, err = url.QueryUnescape(value); err != nil {\n return\n }\n cfg.Loc, err = time.LoadLocation(value)\n if err != nil {\n return\n } golang\n \n // time/zoneinfo_read.go:529\n // parserDSNParams의 time."/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/gzpnb8tcn/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "golang에서 mysql로 연결할 때 `unknown time zone: Asia\/Seoul`이라는 오류가 계속 뜸",
     "headline": "golang에서 mysql로 연결할 때 `unknown time zone: Asia\/Seoul`이라는 오류가 계속 뜸",
     "alternativeHeadline": "",
-    "description": "이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia\/Seoul zone info가 없어서 발생한 문제였음\u0026hellip; 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니\u0026hellip; 코드 golang\\n \\n \/\/ github.com\/go-sql-driver\/mysql@v1.5.0\/dsn.go:451\\n \/\/ connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\\n case \u0026quot;loc\u0026quot;:\\n if value, err = url.QueryUnescape(value); err != nil {\\n return\\n }\\n cfg.Loc, err = time.LoadLocation(value)\\n if err != nil {\\n return\\n } golang\\n \\n \/\/ time\/zoneinfo_read.go:529\\n \/\/ parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다.",
+    "description": "이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia\/Seoul zone info가 없어서 발생한 문제였음\u0026hellip;  어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니\u0026hellip;   코드  golang\\n \\n \/\/ github.com\/go-sql-driver\/mysql@v1.5.0\/dsn.go:451\\n \/\/ connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams\\n case \u0026quot;loc\u0026quot;:\\n if value, err = url.QueryUnescape(value); err != nil {\\n return\\n }\\n cfg.Loc, err = time.LoadLocation(value)\\n if err != nil {\\n return\\n } golang\\n \\n \/\/ time\/zoneinfo_read.go:529\\n \/\/ parserDSNParams의 time.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

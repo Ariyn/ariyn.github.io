@@ -13,7 +13,7 @@
       <pubDate>Tue, 24 May 2022 10:55:20 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/f2acvd0ts/</guid>
-      <description> 젠킨스는 별도의 유저(jenkins)를 사용하며, 도커로 실행중이라면 도커의 인스턴스에 등록되어있는지 확인이 필요하다 </description>
+      <description> 젠킨스는 별도의 유저(jenkins)를 사용하며, 도커로 실행중이라면 도커의 인스턴스에 등록되어있는지 확인이 필요하다  </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 25 Oct 2021 14:23:18 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gpyn_hla5/</guid>
-      <description> log에서 깃헙 푸시 오는지 확인 만약 no matching repository라면, gitscm에 등록해둔 url이 로그의 push에 존재 하는지 확인 없다면, sshUrl에 들어있는 그 값으로 바꿔줄 것 (private에 ssh로 접속하는 경우에는 user, .git suffix 등등의 설정이 조금 다른듯) </description>
+      <description> log에서 깃헙 푸시 오는지 확인 만약 no matching repository라면, gitscm에 등록해둔 url이 로그의 push에 존재 하는지 확인  없다면, sshUrl에 들어있는 그 값으로 바꿔줄 것 (private에 ssh로 접속하는 경우에는 user, .git suffix 등등의 설정이 조금 다른듯)    </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 25 Oct 2021 14:22:15 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/bbae78lgw/</guid>
-      <description> sudo su jenkins를 통해서 jenkins로 유저를 바꾸고, ~/.ssh/known_hosts에 호스트의 fingerprint를 추가해주자 </description>
+      <description> sudo su jenkins를 통해서 jenkins로 유저를 바꾸고, ~/.ssh/known_hosts에 호스트의 fingerprint를 추가해주자  </description>
     </item>
     
   </channel>

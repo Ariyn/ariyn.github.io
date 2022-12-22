@@ -8,7 +8,7 @@
   <title>아두이노와 esp01 모듈을 사용해 http get 요청 보내기 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="아두이노와 esp01 모듈을 사용해 http get 요청 보내기" />
-<meta property="og:description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속 AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시 AT&#43;CIPSEND=BYTE_SIZE 이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다 이후에 OK &gt;가 나오면 데이터를 입력한다. 이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다. 전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다 AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료 여러개의 접속을 사용하면 link-id를 입력해야 한다. 지금은 한개의 접속만 존재하기 때문에 상관없다 시리얼 모니터로 직접 명령어를 전송한 기록 plain text\n 00:47:38." />
+<meta property="og:description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속  AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST   AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/3hfvpiz21/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-29T00:50:59+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="아두이노와 esp01 모듈을 사용해 http get 요청 보내기">
-<meta itemprop="description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속 AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시 AT&#43;CIPSEND=BYTE_SIZE 이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다 이후에 OK &gt;가 나오면 데이터를 입력한다. 이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다. 전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다 AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료 여러개의 접속을 사용하면 link-id를 입력해야 한다. 지금은 한개의 접속만 존재하기 때문에 상관없다 시리얼 모니터로 직접 명령어를 전송한 기록 plain text\n 00:47:38."><meta itemprop="datePublished" content="2022-10-29T00:50:59+07:00" />
+<meta itemprop="description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속  AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST   AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다."><meta itemprop="datePublished" content="2022-10-29T00:50:59+07:00" />
 <meta itemprop="dateModified" content="2022-11-24T16:11:34+07:00" />
 <meta itemprop="wordCount" content="164">
 <meta itemprop="keywords" content="TIL,아두이노,임베디드," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="아두이노와 esp01 모듈을 사용해 http get 요청 보내기"/>
-<meta name="twitter:description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속 AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시 AT&#43;CIPSEND=BYTE_SIZE 이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다 이후에 OK &gt;가 나오면 데이터를 입력한다. 이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다. 전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다 AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료 여러개의 접속을 사용하면 link-id를 입력해야 한다. 지금은 한개의 접속만 존재하기 때문에 상관없다 시리얼 모니터로 직접 명령어를 전송한 기록 plain text\n 00:47:38."/>
+<meta name="twitter:description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속  AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST   AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다."/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/3hfvpiz21/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "아두이노와 esp01 모듈을 사용해 http get 요청 보내기",
     "headline": "아두이노와 esp01 모듈을 사용해 http get 요청 보내기",
     "alternativeHeadline": "",
-    "description": "사용한 esp01 모듈 AT\u002bCIPSTART 명령어를 사용해서 서버에 접속 AT\u002bCIPSTART=\u0026quot;TCP\u0026quot;,\u0026quot;ADDRESS\u0026quot;,POST AT\u002bCIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시 AT\u002bCIPSEND=BYTE_SIZE 이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 \u002b2 해줘야 한다 이후에 OK \u0026gt;가 나오면 데이터를 입력한다. 이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET \/ HTTP\/1.1\\r\u0026lt;\/br\u0026gt;로 16바이트이다. 전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다 AT\u002bCIPCLOSE 명령어를 사용해서 접속을 종료 여러개의 접속을 사용하면 link-id를 입력해야 한다. 지금은 한개의 접속만 존재하기 때문에 상관없다 시리얼 모니터로 직접 명령어를 전송한 기록 plain text\\n 00:47:38.",
+    "description": "사용한 esp01 모듈 AT\u002bCIPSTART 명령어를 사용해서 서버에 접속  AT\u002bCIPSTART=\u0026quot;TCP\u0026quot;,\u0026quot;ADDRESS\u0026quot;,POST   AT\u002bCIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT\u002bCIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 \u002b2 해줘야 한다   이후에 OK \u0026gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET \/ HTTP\/1.1\\r\u0026lt;\/br\u0026gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT\u002bCIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

@@ -13,7 +13,7 @@
       <pubDate>Mon, 24 Oct 2022 22:26:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/clcbfob1c/</guid>
-      <description> javascript\n sed -i &#39;s/aaa/bbb/g&#39; test.md 아닌경우 stdout에 출력한다 커맨드의 이름에서 알수 있는데, sed는 Stream Editor의 약자이다 아마도 pipe를 통해서 출력물의 결과를 바꾸는 것이 최초의 사용법이였던듯 물론 이제와서 pipe를 통한 변경은 awk나 python으로 직접 작성하는게 훨씬 편하지만&amp;hellip; </description>
+      <description> javascript\n sed -i &#39;s/aaa/bbb/g&#39; test.md 아닌경우 stdout에 출력한다 커맨드의 이름에서 알수 있는데, sed는 Stream Editor의 약자이다  아마도 pipe를 통해서 출력물의 결과를 바꾸는 것이 최초의 사용법이였던듯 물론 이제와서 pipe를 통한 변경은 awk나 python으로 직접 작성하는게 훨씬 편하지만&amp;hellip;    </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 07 Dec 2021 23:58:34 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/qfc_bozqa/</guid>
-      <description> [[:digit:]] </description>
+      <description> [[:digit:]]  </description>
     </item>
     
   </channel>

@@ -8,7 +8,7 @@
   <title>golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것" />
-<meta property="og:description" content=" 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n } 해당 부분의 코드를 보면 &amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림 javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&quot;custom&quot;)\n default:\n fmt.Println(&quot;default&quot;)\n } 이와같은 경우, default로 통과됨 " />
+<meta property="og:description" content=" 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n }  해당 부분의 코드를 보면 &amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림   javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&quot;custom&quot;)\n default:\n fmt.Println(&quot;default&quot;)\n }  이와같은 경우, default로 통과됨    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/lf-2qqmwv/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-10-26T23:00:00+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것">
-<meta itemprop="description" content=" 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n } 해당 부분의 코드를 보면 &amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림 javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&quot;custom&quot;)\n default:\n fmt.Println(&quot;default&quot;)\n } 이와같은 경우, default로 통과됨 "><meta itemprop="datePublished" content="2021-10-26T23:00:00+07:00" />
+<meta itemprop="description" content=" 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n }  해당 부분의 코드를 보면 &amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림   javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&quot;custom&quot;)\n default:\n fmt.Println(&quot;default&quot;)\n }  이와같은 경우, default로 통과됨    "><meta itemprop="datePublished" content="2021-10-26T23:00:00+07:00" />
 <meta itemprop="dateModified" content="2021-10-26T23:01:07+07:00" />
 <meta itemprop="wordCount" content="63">
 <meta itemprop="keywords" content="TIL,golang," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것"/>
-<meta name="twitter:description" content=" 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n } 해당 부분의 코드를 보면 &amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림 javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&quot;custom&quot;)\n default:\n fmt.Println(&quot;default&quot;)\n } 이와같은 경우, default로 통과됨 "/>
+<meta name="twitter:description" content=" 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https://github.com/pkg/errors/blob/v0.9.1/errors.go#L145 javascript\n func WithStack(err error) error {\n if err == nil {\n return nil\n }\n return &amp;withStack{\n err,\n callers(),\n }\n }\n \n type withStack struct {\n error\n *stack\n }  해당 부분의 코드를 보면 &amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림   javascript\n switch err.(type) {\n case ErrCustom:\n fmt.Println(&quot;custom&quot;)\n default:\n fmt.Println(&quot;default&quot;)\n }  이와같은 경우, default로 통과됨    "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/lf-2qqmwv/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것",
     "headline": "golang에서 custom error 구조체를 사용하는 경우 errors.WithStack을 사용하지 말 것",
     "alternativeHeadline": "",
-    "description": " 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https:\/\/github.com\/pkg\/errors\/blob\/v0.9.1\/errors.go#L145 javascript\\n func WithStack(err error) error {\\n if err == nil {\\n return nil\\n }\\n return \u0026amp;withStack{\\n err,\\n callers(),\\n }\\n }\\n \\n type withStack struct {\\n error\\n *stack\\n } 해당 부분의 코드를 보면 \u0026amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림 javascript\\n switch err.(type) {\\n case ErrCustom:\\n fmt.Println(\u0026quot;custom\u0026quot;)\\n default:\\n fmt.Println(\u0026quot;default\u0026quot;)\\n } 이와같은 경우, default로 통과됨 ",
+    "description": " 이경우 type이 error으로 바뀌기 때문에, type체크가 통과가 안된다 https:\/\/github.com\/pkg\/errors\/blob\/v0.9.1\/errors.go#L145 javascript\\n func WithStack(err error) error {\\n if err == nil {\\n return nil\\n }\\n return \u0026amp;withStack{\\n err,\\n callers(),\\n }\\n }\\n \\n type withStack struct {\\n error\\n *stack\\n }  해당 부분의 코드를 보면 \u0026amp;withStack{error}을 리턴하는데, 이로 인해서 withStack타입 혹은 error타입으로 인식되버림   javascript\\n switch err.(type) {\\n case ErrCustom:\\n fmt.Println(\u0026quot;custom\u0026quot;)\\n default:\\n fmt.Println(\u0026quot;default\u0026quot;)\\n }  이와같은 경우, default로 통과됨    ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

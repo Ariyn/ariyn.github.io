@@ -13,7 +13,7 @@
       <pubDate>Sat, 02 Jul 2022 12:57:59 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/d9ufw-0zj/</guid>
-      <description> 둘은 동일하지만, CounterVec의 경우 변수 라벨들에 따라 다른 값을 가지는 경우에 사용한다고 한다. 실제로 NewCounter와 NewCounterVec는 labels []string이 있는지 없는지만 다르다. 실제로 사용할 때, CounterVec.WithLabelValues()를 하면 Counter 타입이 나온다. 아마도 사용하는 순간에 라벨에 따라 다른 값을 넣을 수 있게 하는 용도로 보인다 </description>
+      <description> 둘은 동일하지만, CounterVec의 경우 변수 라벨들에 따라 다른 값을 가지는 경우에 사용한다고 한다. 실제로 NewCounter와 NewCounterVec는 labels []string이 있는지 없는지만 다르다. 실제로 사용할 때, CounterVec.WithLabelValues()를 하면 Counter 타입이 나온다.  아마도 사용하는 순간에 라벨에 따라 다른 값을 넣을 수 있게 하는 용도로 보인다    </description>
     </item>
     
   </channel>

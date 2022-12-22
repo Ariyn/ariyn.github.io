@@ -8,7 +8,7 @@
   <title>rust와 lifetime | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="rust와 lifetime" />
-<meta property="og:description" content="rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다 이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함 다만 가장 짧은 lifetime에 맞춰짐 rust\n fn longest&lt;&#39;a&gt; (x: &amp;&#39;a str, y: &amp;&#39;a str) -&gt; &amp;&#39;a str {\n if x.len() &gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &quot;123&quot;;\n {\n let y = &quot;1&quot;;\n result = longest(x, y);\n \n println!" />
+<meta property="og:description" content="rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다  이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함  다만 가장 짧은 lifetime에 맞춰짐     rust\n fn longest&lt;&#39;a&gt; (x: &amp;&#39;a str, y: &amp;&#39;a str) -&gt; &amp;&#39;a str {\n if x.len() &gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &quot;123&quot;;\n {\n let y = &quot;1&quot;;\n result = longest(x, y);\n \n println!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/rk80bywhx/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-10T10:29:59+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="rust와 lifetime">
-<meta itemprop="description" content="rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다 이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함 다만 가장 짧은 lifetime에 맞춰짐 rust\n fn longest&lt;&#39;a&gt; (x: &amp;&#39;a str, y: &amp;&#39;a str) -&gt; &amp;&#39;a str {\n if x.len() &gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &quot;123&quot;;\n {\n let y = &quot;1&quot;;\n result = longest(x, y);\n \n println!"><meta itemprop="datePublished" content="2022-04-10T10:29:59+07:00" />
+<meta itemprop="description" content="rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다  이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함  다만 가장 짧은 lifetime에 맞춰짐     rust\n fn longest&lt;&#39;a&gt; (x: &amp;&#39;a str, y: &amp;&#39;a str) -&gt; &amp;&#39;a str {\n if x.len() &gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &quot;123&quot;;\n {\n let y = &quot;1&quot;;\n result = longest(x, y);\n \n println!"><meta itemprop="datePublished" content="2022-04-10T10:29:59+07:00" />
 <meta itemprop="dateModified" content="2022-04-10T10:41:53+07:00" />
 <meta itemprop="wordCount" content="107">
 <meta itemprop="keywords" content="rust,TIL," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="rust와 lifetime"/>
-<meta name="twitter:description" content="rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다 이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함 다만 가장 짧은 lifetime에 맞춰짐 rust\n fn longest&lt;&#39;a&gt; (x: &amp;&#39;a str, y: &amp;&#39;a str) -&gt; &amp;&#39;a str {\n if x.len() &gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &quot;123&quot;;\n {\n let y = &quot;1&quot;;\n result = longest(x, y);\n \n println!"/>
+<meta name="twitter:description" content="rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다  이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함  다만 가장 짧은 lifetime에 맞춰짐     rust\n fn longest&lt;&#39;a&gt; (x: &amp;&#39;a str, y: &amp;&#39;a str) -&gt; &amp;&#39;a str {\n if x.len() &gt; y.len() {\n x\n } else {\n y\n }\n }\n \n fn main() {\n let result;\n let x = &quot;123&quot;;\n {\n let y = &quot;1&quot;;\n result = longest(x, y);\n \n println!"/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/rk80bywhx/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "rust와 lifetime",
     "headline": "rust와 lifetime",
     "alternativeHeadline": "",
-    "description": "rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다 이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함 다만 가장 짧은 lifetime에 맞춰짐 rust\\n fn longest\u0026lt;\u0027a\u0026gt; (x: \u0026amp;\u0027a str, y: \u0026amp;\u0027a str) -\u0026gt; \u0026amp;\u0027a str {\\n if x.len() \u0026gt; y.len() {\\n x\\n } else {\\n y\\n }\\n }\\n \\n fn main() {\\n let result;\\n let x = \u0026quot;123\u0026quot;;\\n {\\n let y = \u0026quot;1\u0026quot;;\\n result = longest(x, y);\\n \\n println!",
+    "description": "rust는 함수의 파라미터, 구조체의 필드에 lifetime을 명시 해 줘야 한다  이는 함수의 소유권이 유효한 시간을 의미함 동일한 lifetime동안 모든 파라미터를 사용할 수 있도록 보장함  다만 가장 짧은 lifetime에 맞춰짐     rust\\n fn longest\u0026lt;\u0027a\u0026gt; (x: \u0026amp;\u0027a str, y: \u0026amp;\u0027a str) -\u0026gt; \u0026amp;\u0027a str {\\n if x.len() \u0026gt; y.len() {\\n x\\n } else {\\n y\\n }\\n }\\n \\n fn main() {\\n let result;\\n let x = \u0026quot;123\u0026quot;;\\n {\\n let y = \u0026quot;1\u0026quot;;\\n result = longest(x, y);\\n \\n println!",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
