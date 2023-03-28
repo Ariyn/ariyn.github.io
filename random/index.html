@@ -1,0 +1,13 @@
+<script src="/dist/jquery.js"></script>
+<script>
+  const posts = "/posts.json"
+
+  $.get( posts, function(posts) {
+    console.log(posts)
+    const nextPostId = posts[Math.floor(Math.random()*posts.length)];
+
+    window.location.href = window.location.origin + "/posts/"+nextPostId+"/"
+  }).fail(function() {
+    history.back()
+  })
+</script>
