@@ -13,7 +13,7 @@
       <pubDate>Wed, 20 Jul 2022 15:40:34 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ttfqiummz/</guid>
-      <description> 여러줄로 나오는 결과를 json array 형태로 변환시키는 방법  </description>
+      <description> 여러줄로 나오는 결과를 json array 형태로 변환시키는 방법 </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 10 May 2022 15:26:53 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/e_dds4p1r/</guid>
-      <description> root의 삭제를 막도록 alias를 만드는 명령어 .bashrc에 저장해두자 --preserve-root  do not remove &amp;lsquo;/&amp;rsquo;   -i  prompt before every removal    </description>
+      <description> root의 삭제를 막도록 alias를 만드는 명령어 .bashrc에 저장해두자 --preserve-root do not remove &amp;lsquo;/&amp;rsquo; -i prompt before every removal </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Sat, 06 Nov 2021 16:04:35 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/u7q_7bk1f/</guid>
-      <description> 파일의 inode 이벤트에 따라 커맨드를 실행시키기 위한 커맨드 javascript\n while inotifywait -e close_write ./file.ext; do\n do something;\n done https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes inotify-tools에 포함된 명령어로 보인다  </description>
+      <description> 파일의 inode 이벤트에 따라 커맨드를 실행시키기 위한 커맨드 javascript\n while inotifywait -e close_write ./file.ext; do\n do something;\n done https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes inotify-tools에 포함된 명령어로 보인다 </description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Thu, 28 Oct 2021 17:23:00 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i720z9kdf/</guid>
-      <description> shell\n echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text  </description>
+      <description> shell\n echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text </description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Tue, 26 Oct 2021 21:19:11 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/a40q4vdgs/</guid>
-      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자  javascript\n ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime   혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정  debian, ubuntu만 가능함 javascript\n ENV DEBIAN_FRONTEND=noninteractive 단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
+      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자 javascript\n ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime 혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정 debian, ubuntu만 가능함 javascript\n ENV DEBIAN_FRONTEND=noninteractive 단 추천하지는 않는다고 한다 https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args </description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 25 Oct 2021 23:26:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tmxow28ey/</guid>
-      <description> 왜 이렇게 가능한지 나중에 공부하기 javascript\n file=&amp;quot;$(tr &#39;[:lower:]&#39; &#39;[:upper:]&#39; &amp;lt;&amp;lt;&amp;lt; ${file:0:1})${file:1}&amp;quot; 출처 https://stackoverflow.com/questions/12487424/uppercase-first-character-in-a-variable-with-bash  </description>
+      <description> 왜 이렇게 가능한지 나중에 공부하기 javascript\n file=&amp;quot;$(tr &#39;[:lower:]&#39; &#39;[:upper:]&#39; &amp;lt;&amp;lt;&amp;lt; ${file:0:1})${file:1}&amp;quot; 출처 https://stackoverflow.com/questions/12487424/uppercase-first-character-in-a-variable-with-bash </description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <pubDate>Mon, 11 Oct 2021 11:18:40 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tdj1-h9ev/</guid>
-      <description> ~/.zshrc에 아래의 세 줄을 추가  javascript\n autoload bashcompinit &amp;amp;&amp;amp; bashcompinit\n autoload -Uz compinit &amp;amp;&amp;amp; compinit\n \n complete -C &amp;quot;$(which aws_completer)&amp;quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      </description>
+      <description> ~/.zshrc에 아래의 세 줄을 추가 javascript\n autoload bashcompinit &amp;amp;&amp;amp; bashcompinit\n autoload -Uz compinit &amp;amp;&amp;amp; compinit\n \n complete -C &amp;quot;$(which aws_completer)&amp;quot; aws https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html autoload의 역할 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh auto complete 방법 https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용 man complete로는 나오지 않는다. 인터넷에서 찾을 것 </description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@
       <pubDate>Thu, 16 Sep 2021 09:40:01 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zqor-g1mw/</guid>
-      <description> javascript\n crontab -l &amp;gt; /tmp/cron\n echo &amp;quot;* * * * * echo hello&amp;quot; &amp;gt;&amp;gt; /tmp/cron\n crontab /tmp/cron\n rm /tmp/cron crontab file  파일을 읽어서 crontab에 설치함 (덮어쓰기됨)   출처:https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor  </description>
+      <description> javascript\n crontab -l &amp;gt; /tmp/cron\n echo &amp;quot;* * * * * echo hello&amp;quot; &amp;gt;&amp;gt; /tmp/cron\n crontab /tmp/cron\n rm /tmp/cron crontab file 파일을 읽어서 crontab에 설치함 (덮어쓰기됨) 출처:https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor </description>
     </item>
     
   </channel>

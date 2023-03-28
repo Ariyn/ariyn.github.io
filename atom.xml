@@ -6,8 +6,8 @@
     <link>https://ariyn.github.io/</link>
     
     <language>en</language>
-    <copyright>Copyright 2022, Ronalds Vilcins</copyright>
-    <lastBuildDate>Thu, 22 Dec 2022 14:33:09 +0700</lastBuildDate>
+    <copyright>Copyright 2023, Ronalds Vilcins</copyright>
+    <lastBuildDate>Mon, 26 Dec 2022 04:52:25 +0700</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
@@ -191,7 +191,7 @@
 </description>
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/buzva0x2w/</guid>
-      <pubDate>Thu, 22 Dec 2022 14:33:09 +0700</pubDate>
+      <pubDate>Mon, 26 Dec 2022 04:52:25 +0700</pubDate>
     </item>
     
     <item>
@@ -2198,7 +2198,7 @@
       <title>todo!(&#39;&#39;)</title>
       <link>https://ariyn.github.io/posts/7maqul3bc/</link>
       <description>&lt;ul&gt;
-&lt;li&gt;todo!(&amp;lsquo;make!&#39;)으로 해 놓고 실행하게 되면 &lt;code&gt;not yet implemented: make!&lt;/code&gt;처럼 오류가 뜨게 된다&lt;/li&gt;
+&lt;li&gt;todo!(&amp;lsquo;make!&amp;rsquo;)으로 해 놓고 실행하게 되면 &lt;code&gt;not yet implemented: make!&lt;/code&gt;처럼 오류가 뜨게 된다&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
@@ -3052,7 +3052,7 @@
 &lt;li&gt;전세계 모든 세관은 BIC에서 정보를 조회함&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;길이는 10&#39;(피트), 20&#39;, 40&#39;, 45&amp;rsquo;가 있으며 폭은 8피트로 동일하다
+&lt;li&gt;길이는 10&amp;rsquo;(피트), 20&amp;rsquo;, 40&amp;rsquo;, 45&amp;rsquo;가 있으며 폭은 8피트로 동일하다
 &lt;ul&gt;
 &lt;li&gt;높이의 경우 8피트 6인치가 가장 많으나, 종류에 따라 다른것도 있는 듯&lt;/li&gt;
 &lt;/ul&gt;

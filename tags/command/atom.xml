@@ -13,7 +13,7 @@
       <pubDate>Fri, 10 Dec 2021 13:45:29 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/2zz5za7g0/</guid>
-      <description> split 커맨드를 사용하면 됨  $PWD에 xa로 시작하는 파일들이 생기기 때문에, 주의해서 사용해야 한다.   split -l 2000 filename 출처  </description>
+      <description> split 커맨드를 사용하면 됨 $PWD에 xa로 시작하는 파일들이 생기기 때문에, 주의해서 사용해야 한다. split -l 2000 filename 출처 </description>
     </item>
     
   </channel>

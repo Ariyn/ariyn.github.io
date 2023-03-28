@@ -13,7 +13,7 @@
       <pubDate>Tue, 10 May 2022 18:45:34 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tz3zkdcgu/</guid>
-      <description> gophernotes에서는 gomacro를 사용해서 interpreting하고 있다  따라서 gomacro에서 어떻게 import하는지 확인이 필요하다   gomacro에서는 매번 go get을 사용해서 소스를 가져온다  이후 자신들이 사용하기 편리한 방법으로 컴파일 해 놓는다 이는 $GOPATH/src/gomacro.imports/하위에 위치한다    </description>
+      <description> gophernotes에서는 gomacro를 사용해서 interpreting하고 있다 따라서 gomacro에서 어떻게 import하는지 확인이 필요하다 gomacro에서는 매번 go get을 사용해서 소스를 가져온다 이후 자신들이 사용하기 편리한 방법으로 컴파일 해 놓는다 이는 $GOPATH/src/gomacro.imports/하위에 위치한다 </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 03 May 2022 13:47:11 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/cj-fhisku/</guid>
-      <description> 실행시 &amp;ndash;ip 파라미터를 준다 jupyter-lab --ip &amp;quot;*&amp;quot;  </description>
+      <description> 실행시 &amp;ndash;ip 파라미터를 준다 jupyter-lab --ip &amp;quot;*&amp;quot; </description>
     </item>
     
   </channel>

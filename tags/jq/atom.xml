@@ -13,7 +13,7 @@
       <pubDate>Tue, 15 Mar 2022 16:30:25 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/lt3ulhspz/</guid>
-      <description> public ip로 검색하는 방법  shell\n aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &amp;quot;123.123.123.123&amp;quot;)&#39;    </description>
+      <description> public ip로 검색하는 방법 shell\n aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &amp;quot;123.123.123.123&amp;quot;)&#39; </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Thu, 09 Dec 2021 18:42:01 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/l4eizon09/</guid>
-      <description> jq &#39;[] | @tsv&#39;  </description>
+      <description> jq &#39;[] | @tsv&#39; </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Fri, 10 Sep 2021 12:29:29 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/kqyf2ir4f/</guid>
-      <description> javascript\n jq &#39;.lists[] | &amp;quot;\(.first)&amp;quot; &amp;quot;\(.last)&amp;quot;&#39;  </description>
+      <description> javascript\n jq &#39;.lists[] | &amp;quot;\(.first)&amp;quot; &amp;quot;\(.last)&amp;quot;&#39; </description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Thu, 09 Sep 2021 20:20:56 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_1jobgcfi/</guid>
-      <description> javascript\n jq &#39;.&amp;quot;$id&amp;quot;&#39;  </description>
+      <description> javascript\n jq &#39;.&amp;quot;$id&amp;quot;&#39; </description>
     </item>
     
   </channel>

@@ -8,7 +8,7 @@
   <title>golang marshalJson 사용시 주의할 점 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="golang marshalJson 사용시 주의할 점" />
-<meta property="og:description" content=" 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함  javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n }   따라서 아래와 같이 임시 타입을 생성해서 진행해야 함  javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n }    " />
+<meta property="og:description" content=" 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n } 따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n } " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/syl4e5dxv/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-10-24T17:49:18+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="golang marshalJson 사용시 주의할 점">
-<meta itemprop="description" content=" 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함  javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n }   따라서 아래와 같이 임시 타입을 생성해서 진행해야 함  javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n }    "><meta itemprop="datePublished" content="2021-10-24T17:49:18+07:00" />
+<meta itemprop="description" content=" 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n } 따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n } "><meta itemprop="datePublished" content="2021-10-24T17:49:18+07:00" />
 <meta itemprop="dateModified" content="2021-10-24T17:49:34+07:00" />
 <meta itemprop="wordCount" content="45">
 <meta itemprop="keywords" content="TIL,golang," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="golang marshalJson 사용시 주의할 점"/>
-<meta name="twitter:description" content=" 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함  javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n }   따라서 아래와 같이 임시 타입을 생성해서 진행해야 함  javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n }    "/>
+<meta name="twitter:description" content=" 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(s)\n } 따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 javascript\n func (s Strc) MarshalJson() ([]byte, error) {\n data, err := json.Marshal(struct {\n Strc\n }{Strc: s})\n } "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/syl4e5dxv/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "golang marshalJson 사용시 주의할 점",
     "headline": "golang marshalJson 사용시 주의할 점",
     "alternativeHeadline": "",
-    "description": " 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함  javascript\\n func (s Strc) MarshalJson() ([]byte, error) {\\n data, err := json.Marshal(s)\\n }   따라서 아래와 같이 임시 타입을 생성해서 진행해야 함  javascript\\n func (s Strc) MarshalJson() ([]byte, error) {\\n data, err := json.Marshal(struct {\\n Strc\\n }{Strc: s})\\n }    ",
+    "description": " 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 javascript\\n func (s Strc) MarshalJson() ([]byte, error) {\\n data, err := json.Marshal(s)\\n } 따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 javascript\\n func (s Strc) MarshalJson() ([]byte, error) {\\n data, err := json.Marshal(struct {\\n Strc\\n }{Strc: s})\\n } ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

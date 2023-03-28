@@ -12,7 +12,7 @@
       <pubDate>Fri, 12 Nov 2021 14:43:54 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/jbz107kko/</guid>
-      <description> stash push 뒤에 파일들 입력하면 됨 shell\n git stash push -m &amp;quot;stash message&amp;quot; [files ...]  </description>
+      <description> stash push 뒤에 파일들 입력하면 됨 shell\n git stash push -m &amp;quot;stash message&amp;quot; [files ...] </description>
     </item>
     
   </channel>

@@ -8,7 +8,7 @@
   <title>jaeger를 production환경에서 사용하기 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="jaeger를 production환경에서 사용하기" />
-<meta property="og:description" content="all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯  https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼  prometheus도 하나의 인스턴스에서 동작하지 않는가     단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함  https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch   컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함  -e SPAN_STORAGE_TYPE=elasticsearch  비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin]   -e ES_SERVER_URLS=&lt;." />
+<meta property="og:description" content=" all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯 https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼 prometheus도 하나의 인스턴스에서 동작하지 않는가 단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함 https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch 컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함 -e SPAN_STORAGE_TYPE=elasticsearch 비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin] -e ES_SERVER_URLS=&lt;...&gt; 콤마로 분리된 형식이라고 한다 docker run jaegertracing/all-in-one:latest --help를 하면, 파라미터를 전부 볼 수 있음 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/awkde_8b-/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-12-06T17:33:44+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="jaeger를 production환경에서 사용하기">
-<meta itemprop="description" content="all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯  https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼  prometheus도 하나의 인스턴스에서 동작하지 않는가     단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함  https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch   컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함  -e SPAN_STORAGE_TYPE=elasticsearch  비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin]   -e ES_SERVER_URLS=&lt;."><meta itemprop="datePublished" content="2021-12-06T17:33:44+07:00" />
+<meta itemprop="description" content=" all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯 https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼 prometheus도 하나의 인스턴스에서 동작하지 않는가 단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함 https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch 컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함 -e SPAN_STORAGE_TYPE=elasticsearch 비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin] -e ES_SERVER_URLS=&lt;...&gt; 콤마로 분리된 형식이라고 한다 docker run jaegertracing/all-in-one:latest --help를 하면, 파라미터를 전부 볼 수 있음 "><meta itemprop="datePublished" content="2021-12-06T17:33:44+07:00" />
 <meta itemprop="dateModified" content="2021-12-06T17:39:32+07:00" />
 <meta itemprop="wordCount" content="74">
 <meta itemprop="keywords" content="TIL,jaeger,production,settings," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="jaeger를 production환경에서 사용하기"/>
-<meta name="twitter:description" content="all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯  https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼  prometheus도 하나의 인스턴스에서 동작하지 않는가     단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함  https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch   컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함  -e SPAN_STORAGE_TYPE=elasticsearch  비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin]   -e ES_SERVER_URLS=&lt;."/>
+<meta name="twitter:description" content=" all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯 https://github.com/jaegertracing/jaeger/issues/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼 prometheus도 하나의 인스턴스에서 동작하지 않는가 단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함 https://www.jaegertracing.io/docs/1.29/deployment/#elasticsearch 컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함 -e SPAN_STORAGE_TYPE=elasticsearch 비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin] -e ES_SERVER_URLS=&lt;...&gt; 콤마로 분리된 형식이라고 한다 docker run jaegertracing/all-in-one:latest --help를 하면, 파라미터를 전부 볼 수 있음 "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/awkde_8b-/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -46,7 +46,7 @@
     "name": "jaeger를 production환경에서 사용하기",
     "headline": "jaeger를 production환경에서 사용하기",
     "alternativeHeadline": "",
-    "description": "all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯  https:\/\/github.com\/jaegertracing\/jaeger\/issues\/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼  prometheus도 하나의 인스턴스에서 동작하지 않는가     단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함  https:\/\/www.jaegertracing.io\/docs\/1.29\/deployment\/#elasticsearch   컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함  -e SPAN_STORAGE_TYPE=elasticsearch  비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin]   -e ES_SERVER_URLS=\u0026lt;.",
+    "description": " all-in-one을 프로덕션 환경에서 사용해도 괜찮은 듯 https:\/\/github.com\/jaegertracing\/jaeger\/issues\/551 이경우 scale out은 불가능하지만, 어차피 작은 서비스에서는 빠르게 jaeger를 적용하는 이점이 더 큼 prometheus도 하나의 인스턴스에서 동작하지 않는가 단 storage를 기본인 in-memory에서 실제의 다른것으로 변경해야 함 https:\/\/www.jaegertracing.io\/docs\/1.29\/deployment\/#elasticsearch 컨테이너를 실행할 때 아래의 옵션을 넣어줘야 함 -e SPAN_STORAGE_TYPE=elasticsearch 비워두고 실행하면, 가능한 옵션을 모두 볼 수 있다 [cassandra opensearch elasticsearch memory kafka badger grpc-plugin] -e ES_SERVER_URLS=\u0026lt;...\u0026gt; 콤마로 분리된 형식이라고 한다 docker run jaegertracing\/all-in-one:latest --help를 하면, 파라미터를 전부 볼 수 있음 ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

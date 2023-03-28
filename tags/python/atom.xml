@@ -13,7 +13,7 @@
       <pubDate>Fri, 28 Oct 2022 20:50:50 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ht0l7dbo-/</guid>
-      <description> python\n print(4+1j, 5+2J) 왜 i가 아닌 j가 사용되었는지에 대한 기록이 있다.  i가 너무 일반적으로 사용되는 변수이며, 또한 엔지니어링에서 전통적으로 j를 허수로 사용했기 때문에.  엔지니어링에서 j를 사용하는 이유  대충 이해는 되는데, 가슴 깊이 와닿지는 않는다&amp;hellip;     https://stackoverflow.com/questions/24812444/why-are-complex-numbers-in-python-denoted-with-j-instead-of-i https://bugs.python.org/issue10562    </description>
+      <description> python\n print(4+1j, 5+2J) 왜 i가 아닌 j가 사용되었는지에 대한 기록이 있다. i가 너무 일반적으로 사용되는 변수이며, 또한 엔지니어링에서 전통적으로 j를 허수로 사용했기 때문에. 엔지니어링에서 j를 사용하는 이유 대충 이해는 되는데, 가슴 깊이 와닿지는 않는다&amp;hellip; https://stackoverflow.com/questions/24812444/why-are-complex-numbers-in-python-denoted-with-j-instead-of-i https://bugs.python.org/issue10562 </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Wed, 13 Apr 2022 00:02:47 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/h2ynvd5bu/</guid>
-      <description> __all__, __version__ 이런 변수들 double underbar니까 dunder variable이라 이름 지어진 것으로 보인다.  2002년 파이썬 메일링리스트에 언더바 두개인 변수는 어떻게 발음하는가에 대한 질문이 올라왔다 두명이 비슷한 시각에 &amp;ldquo;dunder&amp;quot;이라는 이름을 제안했다.  https://mail.python.org/pipermail/python-list/2002-September/155836.html https://mail.python.org/pipermail/python-list/2002-September/157561.html   출처   PEP8에는 &amp;ldquo;두개의 언더바로 시작하며, 두개의 언더바로 끝나는 이름들&amp;quot;을 &amp;ldquo;dunders&amp;quot;라고 부른다고 한다.  </description>
+      <description> __all__, __version__ 이런 변수들 double underbar니까 dunder variable이라 이름 지어진 것으로 보인다. 2002년 파이썬 메일링리스트에 언더바 두개인 변수는 어떻게 발음하는가에 대한 질문이 올라왔다 두명이 비슷한 시각에 &amp;ldquo;dunder&amp;quot;이라는 이름을 제안했다. https://mail.python.org/pipermail/python-list/2002-September/155836.html https://mail.python.org/pipermail/python-list/2002-September/157561.html 출처 PEP8에는 &amp;ldquo;두개의 언더바로 시작하며, 두개의 언더바로 끝나는 이름들&amp;quot;을 &amp;ldquo;dunders&amp;quot;라고 부른다고 한다. </description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Sun, 19 Sep 2021 21:03:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/s2vhxiq02/</guid>
-      <description> static webserver를 띄우기 위해서는, 해당 폴더에서 javascript\n python3 -m http.server 80  </description>
+      <description> static webserver를 띄우기 위해서는, 해당 폴더에서 javascript\n python3 -m http.server 80 </description>
     </item>
     
   </channel>
