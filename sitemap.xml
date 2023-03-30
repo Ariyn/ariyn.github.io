@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ariyn.github.io/tags/ieee-754/</loc>
+    <lastmod>1970-01-01T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ariyn.github.io/posts/qrhubde6m/</loc>
+    <lastmod>1970-01-01T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ariyn.github.io/posts/</loc>
     <lastmod>2022-11-24T16:11:34+07:00</lastmod>
   </url>
@@ -14,6 +24,11 @@
   
   <url>
     <loc>https://ariyn.github.io/</loc>
+    <lastmod>2022-11-24T16:11:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ariyn.github.io/tags/til/</loc>
     <lastmod>2022-11-24T16:11:34+07:00</lastmod>
   </url>
   
@@ -34,6 +49,16 @@
   
   <url>
     <loc>https://ariyn.github.io/tags/%EC%A0%95%EC%83%81-%EC%82%AC%EA%B3%A0/</loc>
+    <lastmod>1970-01-01T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ariyn.github.io/tags/%EB%AC%B8%ED%99%94/</loc>
+    <lastmod>1970-01-01T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ariyn.github.io/posts/d_ztniezr/</loc>
     <lastmod>1970-01-01T00:00:00+07:00</lastmod>
   </url>
   
@@ -115,11 +140,6 @@
   <url>
     <loc>https://ariyn.github.io/posts/ypcno-aru/</loc>
     <lastmod>2022-11-12T21:58:26+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ariyn.github.io/tags/til/</loc>
-    <lastmod>2022-11-24T16:11:34+07:00</lastmod>
   </url>
   
   <url>
@@ -1558,16 +1578,6 @@
   </url>
   
   <url>
-    <loc>https://ariyn.github.io/tags/communication/</loc>
-    <lastmod>2021-09-16T18:04:02+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ariyn.github.io/posts/hosrbeq6c/</loc>
-    <lastmod>2021-09-16T18:04:02+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ariyn.github.io/tags/crontab/</loc>
     <lastmod>2021-09-16T09:40:32+07:00</lastmod>
   </url>
@@ -1920,11 +1930,6 @@
   <url>
     <loc>https://ariyn.github.io/posts/wci_vprx5/</loc>
     <lastmod>2021-08-07T17:18:55+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ariyn.github.io/posts/fhrw_aadr/</loc>
-    <lastmod>2021-12-01T18:17:49+07:00</lastmod>
   </url>
   
   <url>

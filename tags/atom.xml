@@ -6,7 +6,25 @@
     <description>Recent content in Tags on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Dec 2022 04:52:25 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2023 05:20:06 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ieee 754</title>
+      <link>https://ariyn.github.io/tags/ieee-754/</link>
+      <pubDate>Sun, 19 Feb 2023 05:20:06 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/ieee-754/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TIL</title>
+      <link>https://ariyn.github.io/tags/til/</link>
+      <pubDate>Sun, 19 Feb 2023 05:20:06 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>독후감</title>
       <link>https://ariyn.github.io/tags/%EB%8F%85%ED%9B%84%EA%B0%90/</link>
@@ -31,6 +49,15 @@
       <pubDate>Mon, 26 Dec 2022 04:52:25 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EC%A0%95%EC%83%81-%EC%82%AC%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>문화</title>
+      <link>https://ariyn.github.io/tags/%EB%AC%B8%ED%99%94/</link>
+      <pubDate>Sun, 25 Dec 2022 05:26:16 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EB%AC%B8%ED%99%94/</guid>
       <description></description>
     </item>
     
@@ -112,15 +139,6 @@
       <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://ariyn.github.io/tags/til/</link>
-      <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/til/</guid>
       <description></description>
     </item>
     
@@ -976,15 +994,6 @@
       <pubDate>Mon, 04 Oct 2021 19:11:46 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/wido/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>communication</title>
-      <link>https://ariyn.github.io/tags/communication/</link>
-      <pubDate>Thu, 16 Sep 2021 17:03:39 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/communication/</guid>
       <description></description>
     </item>
     
