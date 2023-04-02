@@ -6,7 +6,16 @@
     <description>Recent content in Posts on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Feb 2023 05:20:06 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 12:24:15 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mediapipe를 사용해 모션캡쳐하기</title>
+      <link>https://ariyn.github.io/posts/vebrp0jjn/</link>
+      <pubDate>Sun, 02 Apr 2023 12:24:15 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/vebrp0jjn/</guid>
+      <description>mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다. 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다. python, android, ios, C++ 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다. 현재는 ML이 적용된 새로운 버전이 나오고 있다. 일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다.</description>
+    </item>
+    
     <item>
       <title>ieee 754는 sign bit, exponent와 mantissa로 이루어진다.</title>
       <link>https://ariyn.github.io/posts/qrhubde6m/</link>
@@ -212,6 +221,15 @@
       
       <guid>https://ariyn.github.io/posts/ht0l7dbo-/</guid>
       <description> python\n print(4+1j, 5+2J) 왜 i가 아닌 j가 사용되었는지에 대한 기록이 있다. i가 너무 일반적으로 사용되는 변수이며, 또한 엔지니어링에서 전통적으로 j를 허수로 사용했기 때문에. 엔지니어링에서 j를 사용하는 이유 대충 이해는 되는데, 가슴 깊이 와닿지는 않는다&amp;hellip; https://stackoverflow.com/questions/24812444/why-are-complex-numbers-in-python-denoted-with-j-instead-of-i https://bugs.python.org/issue10562 </description>
+    </item>
+    
+    <item>
+      <title>pump demi bold</title>
+      <link>https://ariyn.github.io/posts/hkk7ahvil/</link>
+      <pubDate>Wed, 26 Oct 2022 08:44:20 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/hkk7ahvil/</guid>
+      <description> 70년대 유행했던 미래 지향적 폰트 이렇게 생겼다 사용처는 에일리언 1에서 점퍼의 로고에 등장함 </description>
     </item>
     
     <item>

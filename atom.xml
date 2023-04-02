@@ -7,10 +7,103 @@
     
     <language>en</language>
     <copyright>Copyright 2023, Ronalds Vilcins</copyright>
-    <lastBuildDate>Sun, 19 Feb 2023 05:20:06 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 02 Apr 2023 12:24:15 +0700</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
+    
+    <item>
+      <title>mediapipe를 사용해 모션캡쳐하기</title>
+      <link>https://ariyn.github.io/posts/vebrp0jjn/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/mediapipe&#34;&gt;mediapipe&lt;/a&gt;는 구글에서 만든 모션 캡쳐 라이브러리다.
+&lt;ul&gt;
+&lt;li&gt;기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다.
+&lt;ul&gt;
+&lt;li&gt;python, android, ios, C++ 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다.&lt;/li&gt;
+&lt;li&gt;Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;현재는 ML이 적용된 새로운 버전이 나오고 있다.
+&lt;ul&gt;
+&lt;li&gt;일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;필요 라이브러리
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;plain text\n    numpy\n    opencv-python\n    mediapipe&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;사용방법
+&lt;ul&gt;
+&lt;li&gt;Legacy와 새로운 버전에 따라 사용방법이 조금 다르다&lt;/li&gt;
+&lt;li&gt;legacy 버전 사용 방법 (pose)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python\n    import cv2\n    import mediapipe as mp\n    from mediapipe.python.solutions import drawing_utils as mp_drawing\n    from mediapipe.python.solutions import pose as mp_pose\n    \n    image = mp.Image.create_from_file(&amp;quot;image.jpg&amp;quot;)\n    \n    with mp_pose.Pose() as pose_tracker:\n      result = pose_tracker.process(image=image)\n    \n    overlay_image = image.copy()\n    pl = result.pose_landmarks\n    \n    mp_drawing.draw_landmarks(\n        image=overlay_image,\n        landmark_list=pl,\n        connections=mp_pose.POSE_CONNECTIONS)\n    \n    cv2.imwrite(path, cv2.cvtColor(overlay_image, cv2.COLOR_RGB2BGR))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/mediapipe/solutions/examples&#34;&gt;신버전&lt;/a&gt; 사용 방법
+&lt;ul&gt;
+&lt;li&gt;신 버전은 model을 다운받아야 하며, 아직까지 Hand, Object Detection등 제한된 기능만 가능하다. &lt;a href=&#34;https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/hand_landmarker/python/hand_landmarker.ipynb#scrollTo=Iy4r2_ePylIa&#34;&gt;출처&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python\n    # STEP 1: Import the necessary modules.\n    import mediapipe as mp\n    from mediapipe.tasks import python\n    from mediapipe.tasks.python import vision\n    \n    # STEP 2: Create an ImageClassifier object.\n    base_options = python.BaseOptions(model_asset_path=&#39;hand_landmarker.task&#39;)\n    options = vision.HandLandmarkerOptions(base_options=base_options,\n                                           num_hands=2)\n    detector = vision.HandLandmarker.create_from_options(options)\n    \n    # STEP 3: Load the input image.\n    image = mp.Image.create_from_file(&amp;quot;image.jpg&amp;quot;)\n    \n    # STEP 4: Detect hand landmarks from the input image.\n    detection_result = detector.detect(image)\n    \n    # STEP 5: Process the classification result. In this case, visualize it.\n    annotated_image = draw_landmarks_on_image(image.numpy_view(), detection_result)\n    cv2_imshow(cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;동영상의 경우, 프레임 단위로 이미지를 분리한 뒤 모든 이미지에 대해 동일하게 사용하면 된다.&lt;/li&gt;
+&lt;li&gt;결과물의 landmark를 사용해서 모션캡쳐 데이터를 가져올 수 있다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python\n    result = pose_tracker.process(image=image) # Legacy version\n    result = detector.detect(image) # New version\n    \n    print(result.hand_landmarks)\n    &amp;gt; [[NormalizedLandmark(x=0.3925739526748657, y=0.7065041661262512, z=-3.275009419212438e-07, visibility=0.0, presence=0.0), NormalizedLandmark(x=0.3429622948169708, y=0.7502768039703369, z=-0.01981717348098755, visibility=0.0, presence=0.0), ...], [NormalizedLandmark(x=0.3925739526748657, y=0.7065041661262512, z=-3.275009419212438e-07, visibility=0.0, presence=0.0), NormalizedLandmark(x=0.3429622948169708, y=0.7502768039703369, z=-0.01981717348098755, visibility=0.0, presence=0.0), ...]]\n    \n    print(result.handness)\n    &amp;gt; [[Category(index=1, score=0.9360456466674805, display_name=&#39;Right&#39;, category_name=&#39;Right&#39;)], [Category(index=0, score=0.9622023105621338, display_name=&#39;Left&#39;, category_name=&#39;Left&#39;)]]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Hand Detection의 경우 아래와 같이 landmark가 배열되어 있다.
+&lt;ul&gt;
+&lt;li&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PoseDetection의 경우 아래와 같다.
+&lt;ul&gt;
+&lt;li&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;landmark만 가져와서 간단히 처리하고 Unity3D에서 돌리는 모습
+&lt;ul&gt;
+&lt;li&gt;{{[[video]]: &lt;a href=&#34;https://youtu.be/1ra58BYm72s%7D%7D&#34;&gt;https://youtu.be/1ra58BYm72s}}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;아직 Z축 검사가 잘 안되는것이 아쉽다.
+&lt;ul&gt;
+&lt;li&gt;실제로는 팔을 앞뒤로 열심히 흔들었지만, 캡쳐된 모습은 좌우로만 흔드는 모습이다.
+&lt;ul&gt;
+&lt;li&gt;{{[[video]]: &lt;a href=&#34;https://youtu.be/Q3NlGVuWVuc%7D%7D&#34;&gt;https://youtu.be/Q3NlGVuWVuc}}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;지금은 소프트웨어적으로 처리하는 듯 하다.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mdpi.com/2076-3417/13/4/2700&#34;&gt;Human Pose Estimation Using MediaPipe Pose and Optimization Method Based on a Humanoid Model&lt;/a&gt; 동아대학교에서 소프트웨어적으로 z 축을 계산한 논문&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;신 버전에서는 이를 개선하기위해 작업중이라고&amp;hellip; &lt;a href=&#34;https://google.github.io/mediapipe/solutions/pose_classification.html#future-work&#34;&gt;문서&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;카메라를 두 대 설치하고, 각각 정면, 측면을 촬영해서 하면 어떨까? 싶지만&amp;hellip;
+&lt;ul&gt;
+&lt;li&gt;테스트삼아 측면으로 찍었을 때 왼팔, 오른팔의 구분이 잘 안되는 문제가 있었다.&lt;/li&gt;
+&lt;li&gt;그리고 두 개의 카메라의 싱크를 맞추는 것도, 꽤 난이도가 있을것으로 생각된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/vebrp0jjn/</guid>
+      <pubDate>Sun, 02 Apr 2023 12:24:15 +0700</pubDate>
+    </item>
     
     <item>
       <title>ieee 754는 sign bit, exponent와 mantissa로 이루어진다.</title>
@@ -1438,6 +1531,32 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/ht0l7dbo-/</guid>
       <pubDate>Fri, 28 Oct 2022 20:50:50 +0700</pubDate>
+    </item>
+    
+    <item>
+      <title>pump demi bold</title>
+      <link>https://ariyn.github.io/posts/hkk7ahvil/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;70년대 유행했던 미래 지향적 폰트&lt;/li&gt;
+&lt;li&gt;이렇게 생겼다
+&lt;ul&gt;
+&lt;li&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;사용처는 에일리언 1에서 점퍼의 로고에 등장함
+&lt;ul&gt;
+&lt;li&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/hkk7ahvil/</guid>
+      <pubDate>Wed, 26 Oct 2022 08:44:20 +0700</pubDate>
     </item>
     
     <item>

@@ -6,7 +6,25 @@
     <description>Recent content in Tags on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Feb 2023 05:20:06 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 12:24:15 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mediapipe</title>
+      <link>https://ariyn.github.io/tags/mediapipe/</link>
+      <pubDate>Sun, 02 Apr 2023 12:24:15 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/mediapipe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발</title>
+      <link>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
+      <pubDate>Sun, 02 Apr 2023 12:24:15 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ieee 754</title>
       <link>https://ariyn.github.io/tags/ieee-754/</link>
@@ -58,15 +76,6 @@
       <pubDate>Sun, 25 Dec 2022 05:26:16 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/%EB%AC%B8%ED%99%94/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>개발</title>
-      <link>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
-      <pubDate>Mon, 21 Nov 2022 11:17:30 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/tags/%EA%B0%9C%EB%B0%9C/</guid>
       <description></description>
     </item>
     
@@ -247,6 +256,15 @@
       <pubDate>Fri, 28 Oct 2022 20:50:50 +0700</pubDate>
       
       <guid>https://ariyn.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>디자인</title>
+      <link>https://ariyn.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8/</link>
+      <pubDate>Wed, 26 Oct 2022 08:44:20 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8/</guid>
       <description></description>
     </item>
     
