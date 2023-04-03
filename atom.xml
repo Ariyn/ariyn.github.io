@@ -7,7 +7,7 @@
     
     <language>en</language>
     <copyright>Copyright 2023, Ronalds Vilcins</copyright>
-    <lastBuildDate>Sun, 02 Apr 2023 12:24:15 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 02 Apr 2023 21:24:15 +0700</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
@@ -32,28 +32,70 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;필요 라이브러리
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;plain text\n    numpy\n    opencv-python\n    mediapipe&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;numpy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;opencv-python
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mediapipe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;사용방법
 &lt;ul&gt;
 &lt;li&gt;Legacy와 새로운 버전에 따라 사용방법이 조금 다르다&lt;/li&gt;
 &lt;li&gt;legacy 버전 사용 방법 (pose)
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;python\n    import cv2\n    import mediapipe as mp\n    from mediapipe.python.solutions import drawing_utils as mp_drawing\n    from mediapipe.python.solutions import pose as mp_pose\n    \n    image = mp.Image.create_from_file(&amp;quot;image.jpg&amp;quot;)\n    \n    with mp_pose.Pose() as pose_tracker:\n      result = pose_tracker.process(image=image)\n    \n    overlay_image = image.copy()\n    pl = result.pose_landmarks\n    \n    mp_drawing.draw_landmarks(\n        image=overlay_image,\n        landmark_list=pl,\n        connections=mp_pose.POSE_CONNECTIONS)\n    \n    cv2.imwrite(path, cv2.cvtColor(overlay_image, cv2.COLOR_RGB2BGR))&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; cv2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; mediapipe &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; mp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; mediapipe.python.solutions &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; drawing_utils &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; mp_drawing
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; mediapipe.python.solutions &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pose &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; mp_pose
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;image &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_from_file(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;image.jpg&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; mp_pose&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Pose() &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; pose_tracker:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pose_tracker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;process(image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;image)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;overlay_image &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;copy()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pl &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; result&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pose_landmarks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mp_drawing&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;draw_landmarks(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;overlay_image,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    landmark_list&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;pl,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    connections&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mp_pose&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;POSE_CONNECTIONS)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cv2&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;imwrite(path, cv2&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cvtColor(overlay_image, cv2&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;COLOR_RGB2BGR))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://developers.google.com/mediapipe/solutions/examples&#34;&gt;신버전&lt;/a&gt; 사용 방법
 &lt;ul&gt;
 &lt;li&gt;신 버전은 model을 다운받아야 하며, 아직까지 Hand, Object Detection등 제한된 기능만 가능하다. &lt;a href=&#34;https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/hand_landmarker/python/hand_landmarker.ipynb#scrollTo=Iy4r2_ePylIa&#34;&gt;출처&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;python\n    # STEP 1: Import the necessary modules.\n    import mediapipe as mp\n    from mediapipe.tasks import python\n    from mediapipe.tasks.python import vision\n    \n    # STEP 2: Create an ImageClassifier object.\n    base_options = python.BaseOptions(model_asset_path=&#39;hand_landmarker.task&#39;)\n    options = vision.HandLandmarkerOptions(base_options=base_options,\n                                           num_hands=2)\n    detector = vision.HandLandmarker.create_from_options(options)\n    \n    # STEP 3: Load the input image.\n    image = mp.Image.create_from_file(&amp;quot;image.jpg&amp;quot;)\n    \n    # STEP 4: Detect hand landmarks from the input image.\n    detection_result = detector.detect(image)\n    \n    # STEP 5: Process the classification result. In this case, visualize it.\n    annotated_image = draw_landmarks_on_image(image.numpy_view(), detection_result)\n    cv2_imshow(cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR))&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# STEP 1: Import the necessary modules.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; mediapipe &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; mp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; mediapipe.tasks &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; python
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; mediapipe.tasks.python &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; vision
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# STEP 2: Create an ImageClassifier object.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;base_options &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; python&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;BaseOptions(model_asset_path&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hand_landmarker.task&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;options &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; vision&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;HandLandmarkerOptions(base_options&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;base_options,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                       num_hands&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;detector &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; vision&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;HandLandmarker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_from_options(options)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# STEP 3: Load the input image.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;image &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_from_file(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;image.jpg&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# STEP 4: Detect hand landmarks from the input image.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;detection_result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; detector&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;detect(image)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# STEP 5: Process the classification result. In this case, visualize it.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;annotated_image &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; draw_landmarks_on_image(image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;numpy_view(), detection_result)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cv2_imshow(cv2&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cvtColor(annotated_image, cv2&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;COLOR_RGB2BGR))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;동영상의 경우, 프레임 단위로 이미지를 분리한 뒤 모든 이미지에 대해 동일하게 사용하면 된다.&lt;/li&gt;
 &lt;li&gt;결과물의 landmark를 사용해서 모션캡쳐 데이터를 가져올 수 있다.
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;python\n    result = pose_tracker.process(image=image) # Legacy version\n    result = detector.detect(image) # New version\n    \n    print(result.hand_landmarks)\n    &amp;gt; [[NormalizedLandmark(x=0.3925739526748657, y=0.7065041661262512, z=-3.275009419212438e-07, visibility=0.0, presence=0.0), NormalizedLandmark(x=0.3429622948169708, y=0.7502768039703369, z=-0.01981717348098755, visibility=0.0, presence=0.0), ...], [NormalizedLandmark(x=0.3925739526748657, y=0.7065041661262512, z=-3.275009419212438e-07, visibility=0.0, presence=0.0), NormalizedLandmark(x=0.3429622948169708, y=0.7502768039703369, z=-0.01981717348098755, visibility=0.0, presence=0.0), ...]]\n    \n    print(result.handness)\n    &amp;gt; [[Category(index=1, score=0.9360456466674805, display_name=&#39;Right&#39;, category_name=&#39;Right&#39;)], [Category(index=0, score=0.9622023105621338, display_name=&#39;Left&#39;, category_name=&#39;Left&#39;)]]&lt;/code&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pose_tracker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;process(image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;image) &lt;span style=&#34;color:#75715e&#34;&gt;# Legacy version&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; detector&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;detect(image) &lt;span style=&#34;color:#75715e&#34;&gt;# New version&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(result&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;hand_landmarks)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; [[NormalizedLandmark(x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.3925739526748657&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.7065041661262512&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.275009419212438e-07&lt;/span&gt;, visibility&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;, presence&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;), NormalizedLandmark(x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.3429622948169708&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.7502768039703369&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01981717348098755&lt;/span&gt;, visibility&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;, presence&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;], [NormalizedLandmark(x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.3925739526748657&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.7065041661262512&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.275009419212438e-07&lt;/span&gt;, visibility&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;, presence&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;), NormalizedLandmark(x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.3429622948169708&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.7502768039703369&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01981717348098755&lt;/span&gt;, visibility&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;, presence&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(result&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;handness)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; [[Category(index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, score&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.9360456466674805&lt;/span&gt;, display_name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Right&amp;#39;&lt;/span&gt;, category_name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Right&amp;#39;&lt;/span&gt;)], [Category(index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, score&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.9622023105621338&lt;/span&gt;, display_name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Left&amp;#39;&lt;/span&gt;, category_name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Left&amp;#39;&lt;/span&gt;)]]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Hand Detection의 경우 아래와 같이 landmark가 배열되어 있다.
 &lt;ul&gt;
 &lt;li&gt;
@@ -73,16 +115,12 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;landmark만 가져와서 간단히 처리하고 Unity3D에서 돌리는 모습
-&lt;ul&gt;
-&lt;li&gt;{{[[video]]: &lt;a href=&#34;https://youtu.be/1ra58BYm72s%7D%7D&#34;&gt;https://youtu.be/1ra58BYm72s}}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+ &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://youtube.com/embed/1ra58BYm72s&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/li&gt;
 &lt;li&gt;아직 Z축 검사가 잘 안되는것이 아쉽다.
 &lt;ul&gt;
 &lt;li&gt;실제로는 팔을 앞뒤로 열심히 흔들었지만, 캡쳐된 모습은 좌우로만 흔드는 모습이다.
-&lt;ul&gt;
-&lt;li&gt;{{[[video]]: &lt;a href=&#34;https://youtu.be/Q3NlGVuWVuc%7D%7D&#34;&gt;https://youtu.be/Q3NlGVuWVuc}}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+ &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://youtube.com/embed/Q3NlGVuWVuc&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/li&gt;
 &lt;li&gt;지금은 소프트웨어적으로 처리하는 듯 하다.
 &lt;ul&gt;
@@ -102,7 +140,7 @@
 </description>
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/vebrp0jjn/</guid>
-      <pubDate>Sun, 02 Apr 2023 12:24:15 +0700</pubDate>
+      <pubDate>Sun, 02 Apr 2023 21:24:15 +0700</pubDate>
     </item>
     
     <item>
@@ -187,6 +225,64 @@
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://ariyn.github.io/posts/qrhubde6m/</guid>
       <pubDate>Sun, 19 Feb 2023 05:20:06 +0700</pubDate>
+    </item>
+    
+    <item>
+      <title>스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점</title>
+      <link>https://ariyn.github.io/posts/y-c3qqp6f/</link>
+      <description>&lt;ul&gt;
+&lt;li&gt;정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;org.springframework.web.filter.OncePerRequestFilter&lt;/code&gt;를 상속받아, &lt;code&gt;doFilterInternal&lt;/code&gt;을 구현하고, 인증이 되었다면 &lt;code&gt;SecurityContextHolder&lt;/code&gt;에 authentication을 추가해주면 되는 간단한 작업이었다.
+&lt;ul&gt;
+&lt;li&gt;authentication은 &lt;code&gt;org.springframework.security.authentication.UsernamePasswordAuthenticationToken&lt;/code&gt;을 사용했다
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;java\n    UsernamePasswordAuthenticationToken(userDetails, null)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.toptal.com/spring/spring-security-tutorial&#34;&gt;출처&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;그러나 403 forbidden만 뜨면서 진행이 안된다&lt;/li&gt;
+&lt;li&gt;수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;java\n    org/springframework/security/web/access/intercept/AuthorizationFilter.java:95\n    try {\n      AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request);\n      ...\n    \n    ---\n      inspector\n    decision = AuthorizationDecision [granted=false]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;java\n    public UsernamePasswordAuthenticationToken(Object principal, Object credentials) {\n        super(null);\n        this.principal = principal;\n        this.credentials = credentials;\n        setAuthenticated(false);\n    }\n    \n    public UsernamePasswordAuthenticationToken(Object principal, Object credentials,\n    			Collection&amp;lt;? extends GrantedAuthority&amp;gt; authorities) {\n        super(authorities);\n        this.principal = principal;\n        this.credentials = credentials;\n        super.setAuthenticated(true); // must use super, as we override\n    }\n    \n    public static UsernamePasswordAuthenticationToken authenticated(Object principal, Object credentials,\n            Collection&amp;lt;? extends GrantedAuthority&amp;gt; authorities) {\n        return new UsernamePasswordAuthenticationToken(principal, credentials, authorities);\n    }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;마지막의 authorities가 없이 호출한다면 &lt;code&gt;isAuthenticated = false&lt;/code&gt;로 설정되어서 진행이 안된 것이었다.
+&lt;ul&gt;
+&lt;li&gt;참고로 외부에서 함부로 setAuthenticated를 호출한다면 아래와 같은 로그 메시지를 받는다&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java\n    Cannot set this token to trusted - use constructor which takes a GrantedAuthority list instead\n    \n    org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java:112\n    @Override\n    public void setAuthenticated(boolean isAuthenticated) throws IllegalArgumentException {\n        Assert.isTrue(!isAuthenticated,\n                &amp;quot;Cannot set this token to trusted - use constructor which takes a GrantedAuthority list instead&amp;quot;);\n        super.setAuthenticated(false);\n    }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;UsernamePasswordAuthenticationToken은 authorities를 함께 넣어주어야 하는구나. 스프링의 세계는 참 신묘하고 깊다는 것을 알게되었다&amp;hellip;. 가 아니지. 이 무슨 개판인 구현인지 모르겠다.
+&lt;ul&gt;
+&lt;li&gt;authenticationToken이 사실은 authenticated되지 않았다니!
+&lt;ul&gt;
+&lt;li&gt;일반적으로 authenticationToken을 만들었다면, authenticated된 것으로 간주할 것이라고 생각하지 않을까?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;물론 UsernamePasswordAuthenticationToken의 주석에 명시되어 있긴 하지만, 모든 함수 하나하나 주석을 읽어볼 수는 없는 노릇 아닌가
+&lt;ul&gt;
+&lt;li&gt;이름이라도 특별하게 만들어 놓던지&lt;/li&gt;
+&lt;li&gt;차라리 생성자 없이 static 함수로만 구현되어 있었다면, 오히려 괜찮았을 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;회사에서 자주 &amp;ldquo;이거 이름이랑 동작이 조금 달라요. 놀람 최소화 원칙에 따라 이름이나 구현을 조금 바꿔주세요&amp;quot;라고 했는데, UsernamePasswordAuthenticationToken에 비하면 애교 수준이었던 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://ariyn.github.io/posts/y-c3qqp6f/</guid>
+      <pubDate>Sun, 22 Jan 2023 12:31:53 +0700</pubDate>
     </item>
     
     <item>

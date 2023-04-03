@@ -11,15 +11,15 @@
 <meta property="og:description" content="mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다. 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다. python, android, ios, C&#43;&#43; 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다. 현재는 ML이 적용된 새로운 버전이 나오고 있다. 일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/vebrp0jjn/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-02T12:24:15+07:00" />
-<meta property="article:modified_time" content="1970-01-01T00:00:00+07:00" />
+<meta property="article:published_time" content="2023-04-02T21:24:15+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
 
 
   
   <meta itemprop="name" content="mediapipe를 사용해 모션캡쳐하기">
-<meta itemprop="description" content="mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다. 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다. python, android, ios, C&#43;&#43; 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다. 현재는 ML이 적용된 새로운 버전이 나오고 있다. 일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다."><meta itemprop="datePublished" content="2023-04-02T12:24:15+07:00" />
-<meta itemprop="dateModified" content="1970-01-01T00:00:00+07:00" />
-<meta itemprop="wordCount" content="413">
+<meta itemprop="description" content="mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다. 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다. python, android, ios, C&#43;&#43; 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다. 현재는 ML이 적용된 새로운 버전이 나오고 있다. 일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다."><meta itemprop="datePublished" content="2023-04-02T21:24:15+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="393">
 <meta itemprop="keywords" content="개발,mediapipe," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="mediapipe를 사용해 모션캡쳐하기"/>
@@ -68,9 +68,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2023",
-    "dateCreated": "2023-04-02T12:24:15.00Z",
-    "datePublished": "2023-04-02T12:24:15.00Z",
-    "dateModified": "1970-01-01T00:00:00.00Z",
+    "dateCreated": "2023-04-02T21:24:15.00Z",
+    "datePublished": "2023-04-02T21:24:15.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",
@@ -84,7 +84,7 @@
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/vebrp0jjn\/",
-    "wordCount" : "413",
+    "wordCount" : "393",
     "genre" : [ "개발" , "mediapipe" ],
     "keywords" : [ "개발" , "mediapipe" ]
 }
@@ -125,28 +125,70 @@
 </ul>
 </li>
 <li>필요 라이브러리
-<ul>
-<li><code>plain text\n    numpy\n    opencv-python\n    mediapipe</code></li>
-</ul>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>numpy
+</span></span><span style="display:flex;"><span>opencv-python
+</span></span><span style="display:flex;"><span>mediapipe
+</span></span></code></pre></div></li>
 <li>사용방법
 <ul>
 <li>Legacy와 새로운 버전에 따라 사용방법이 조금 다르다</li>
 <li>legacy 버전 사용 방법 (pose)
-<ul>
-<li><code>python\n    import cv2\n    import mediapipe as mp\n    from mediapipe.python.solutions import drawing_utils as mp_drawing\n    from mediapipe.python.solutions import pose as mp_pose\n    \n    image = mp.Image.create_from_file(&quot;image.jpg&quot;)\n    \n    with mp_pose.Pose() as pose_tracker:\n      result = pose_tracker.process(image=image)\n    \n    overlay_image = image.copy()\n    pl = result.pose_landmarks\n    \n    mp_drawing.draw_landmarks(\n        image=overlay_image,\n        landmark_list=pl,\n        connections=mp_pose.POSE_CONNECTIONS)\n    \n    cv2.imwrite(path, cv2.cvtColor(overlay_image, cv2.COLOR_RGB2BGR))</code></li>
-</ul>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> cv2
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> mediapipe <span style="color:#66d9ef">as</span> mp
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mediapipe.python.solutions <span style="color:#f92672">import</span> drawing_utils <span style="color:#66d9ef">as</span> mp_drawing
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mediapipe.python.solutions <span style="color:#f92672">import</span> pose <span style="color:#66d9ef">as</span> mp_pose
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>image <span style="color:#f92672">=</span> mp<span style="color:#f92672">.</span>Image<span style="color:#f92672">.</span>create_from_file(<span style="color:#e6db74">&#34;image.jpg&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> mp_pose<span style="color:#f92672">.</span>Pose() <span style="color:#66d9ef">as</span> pose_tracker:
+</span></span><span style="display:flex;"><span>  result <span style="color:#f92672">=</span> pose_tracker<span style="color:#f92672">.</span>process(image<span style="color:#f92672">=</span>image)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>overlay_image <span style="color:#f92672">=</span> image<span style="color:#f92672">.</span>copy()
+</span></span><span style="display:flex;"><span>pl <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span>pose_landmarks
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mp_drawing<span style="color:#f92672">.</span>draw_landmarks(
+</span></span><span style="display:flex;"><span>    image<span style="color:#f92672">=</span>overlay_image,
+</span></span><span style="display:flex;"><span>    landmark_list<span style="color:#f92672">=</span>pl,
+</span></span><span style="display:flex;"><span>    connections<span style="color:#f92672">=</span>mp_pose<span style="color:#f92672">.</span>POSE_CONNECTIONS)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cv2<span style="color:#f92672">.</span>imwrite(path, cv2<span style="color:#f92672">.</span>cvtColor(overlay_image, cv2<span style="color:#f92672">.</span>COLOR_RGB2BGR))
+</span></span></code></pre></div></li>
 <li><a href="https://developers.google.com/mediapipe/solutions/examples">신버전</a> 사용 방법
 <ul>
 <li>신 버전은 model을 다운받아야 하며, 아직까지 Hand, Object Detection등 제한된 기능만 가능하다. <a href="https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/hand_landmarker/python/hand_landmarker.ipynb#scrollTo=Iy4r2_ePylIa">출처</a></li>
-<li><code>python\n    # STEP 1: Import the necessary modules.\n    import mediapipe as mp\n    from mediapipe.tasks import python\n    from mediapipe.tasks.python import vision\n    \n    # STEP 2: Create an ImageClassifier object.\n    base_options = python.BaseOptions(model_asset_path='hand_landmarker.task')\n    options = vision.HandLandmarkerOptions(base_options=base_options,\n                                           num_hands=2)\n    detector = vision.HandLandmarker.create_from_options(options)\n    \n    # STEP 3: Load the input image.\n    image = mp.Image.create_from_file(&quot;image.jpg&quot;)\n    \n    # STEP 4: Detect hand landmarks from the input image.\n    detection_result = detector.detect(image)\n    \n    # STEP 5: Process the classification result. In this case, visualize it.\n    annotated_image = draw_landmarks_on_image(image.numpy_view(), detection_result)\n    cv2_imshow(cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR))</code></li>
 </ul>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># STEP 1: Import the necessary modules.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> mediapipe <span style="color:#66d9ef">as</span> mp
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mediapipe.tasks <span style="color:#f92672">import</span> python
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mediapipe.tasks.python <span style="color:#f92672">import</span> vision
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># STEP 2: Create an ImageClassifier object.</span>
+</span></span><span style="display:flex;"><span>base_options <span style="color:#f92672">=</span> python<span style="color:#f92672">.</span>BaseOptions(model_asset_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;hand_landmarker.task&#39;</span>)
+</span></span><span style="display:flex;"><span>options <span style="color:#f92672">=</span> vision<span style="color:#f92672">.</span>HandLandmarkerOptions(base_options<span style="color:#f92672">=</span>base_options,
+</span></span><span style="display:flex;"><span>                                       num_hands<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>detector <span style="color:#f92672">=</span> vision<span style="color:#f92672">.</span>HandLandmarker<span style="color:#f92672">.</span>create_from_options(options)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># STEP 3: Load the input image.</span>
+</span></span><span style="display:flex;"><span>image <span style="color:#f92672">=</span> mp<span style="color:#f92672">.</span>Image<span style="color:#f92672">.</span>create_from_file(<span style="color:#e6db74">&#34;image.jpg&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># STEP 4: Detect hand landmarks from the input image.</span>
+</span></span><span style="display:flex;"><span>detection_result <span style="color:#f92672">=</span> detector<span style="color:#f92672">.</span>detect(image)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># STEP 5: Process the classification result. In this case, visualize it.</span>
+</span></span><span style="display:flex;"><span>annotated_image <span style="color:#f92672">=</span> draw_landmarks_on_image(image<span style="color:#f92672">.</span>numpy_view(), detection_result)
+</span></span><span style="display:flex;"><span>cv2_imshow(cv2<span style="color:#f92672">.</span>cvtColor(annotated_image, cv2<span style="color:#f92672">.</span>COLOR_RGB2BGR))
+</span></span></code></pre></div></li>
 <li>동영상의 경우, 프레임 단위로 이미지를 분리한 뒤 모든 이미지에 대해 동일하게 사용하면 된다.</li>
 <li>결과물의 landmark를 사용해서 모션캡쳐 데이터를 가져올 수 있다.
-<ul>
-<li><code>python\n    result = pose_tracker.process(image=image) # Legacy version\n    result = detector.detect(image) # New version\n    \n    print(result.hand_landmarks)\n    &gt; [[NormalizedLandmark(x=0.3925739526748657, y=0.7065041661262512, z=-3.275009419212438e-07, visibility=0.0, presence=0.0), NormalizedLandmark(x=0.3429622948169708, y=0.7502768039703369, z=-0.01981717348098755, visibility=0.0, presence=0.0), ...], [NormalizedLandmark(x=0.3925739526748657, y=0.7065041661262512, z=-3.275009419212438e-07, visibility=0.0, presence=0.0), NormalizedLandmark(x=0.3429622948169708, y=0.7502768039703369, z=-0.01981717348098755, visibility=0.0, presence=0.0), ...]]\n    \n    print(result.handness)\n    &gt; [[Category(index=1, score=0.9360456466674805, display_name='Right', category_name='Right')], [Category(index=0, score=0.9622023105621338, display_name='Left', category_name='Left')]]</code></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result <span style="color:#f92672">=</span> pose_tracker<span style="color:#f92672">.</span>process(image<span style="color:#f92672">=</span>image) <span style="color:#75715e"># Legacy version</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> detector<span style="color:#f92672">.</span>detect(image) <span style="color:#75715e"># New version</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(result<span style="color:#f92672">.</span>hand_landmarks)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> [[NormalizedLandmark(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3925739526748657</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7065041661262512</span>, z<span style="color:#f92672">=-</span><span style="color:#ae81ff">3.275009419212438e-07</span>, visibility<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, presence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>), NormalizedLandmark(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3429622948169708</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7502768039703369</span>, z<span style="color:#f92672">=-</span><span style="color:#ae81ff">0.01981717348098755</span>, visibility<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, presence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>), <span style="color:#f92672">...</span>], [NormalizedLandmark(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3925739526748657</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7065041661262512</span>, z<span style="color:#f92672">=-</span><span style="color:#ae81ff">3.275009419212438e-07</span>, visibility<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, presence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>), NormalizedLandmark(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3429622948169708</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7502768039703369</span>, z<span style="color:#f92672">=-</span><span style="color:#ae81ff">0.01981717348098755</span>, visibility<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, presence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>), <span style="color:#f92672">...</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(result<span style="color:#f92672">.</span>handness)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> [[Category(index<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, score<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9360456466674805</span>, display_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Right&#39;</span>, category_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Right&#39;</span>)], [Category(index<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, score<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9622023105621338</span>, display_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Left&#39;</span>, category_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Left&#39;</span>)]]
+</span></span></code></pre></div><ul>
 <li>Hand Detection의 경우 아래와 같이 landmark가 배열되어 있다.
 <ul>
 <li>
@@ -166,16 +208,12 @@
 </ul>
 </li>
 <li>landmark만 가져와서 간단히 처리하고 Unity3D에서 돌리는 모습
-<ul>
-<li>{{[[video]]: <a href="https://youtu.be/1ra58BYm72s%7D%7D">https://youtu.be/1ra58BYm72s}}</a></li>
-</ul>
+ <iframe width="560" height="315" src="https://youtube.com/embed/1ra58BYm72s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 <li>아직 Z축 검사가 잘 안되는것이 아쉽다.
 <ul>
 <li>실제로는 팔을 앞뒤로 열심히 흔들었지만, 캡쳐된 모습은 좌우로만 흔드는 모습이다.
-<ul>
-<li>{{[[video]]: <a href="https://youtu.be/Q3NlGVuWVuc%7D%7D">https://youtu.be/Q3NlGVuWVuc}}</a></li>
-</ul>
+ <iframe width="560" height="315" src="https://youtube.com/embed/Q3NlGVuWVuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </li>
 <li>지금은 소프트웨어적으로 처리하는 듯 하다.
 <ul>

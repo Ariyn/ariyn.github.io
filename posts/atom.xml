@@ -6,11 +6,11 @@
     <description>Recent content in Posts on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Apr 2023 12:24:15 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 21:24:15 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mediapipe를 사용해 모션캡쳐하기</title>
       <link>https://ariyn.github.io/posts/vebrp0jjn/</link>
-      <pubDate>Sun, 02 Apr 2023 12:24:15 +0700</pubDate>
+      <pubDate>Sun, 02 Apr 2023 21:24:15 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/vebrp0jjn/</guid>
       <description>mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다. 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다. python, android, ios, C++ 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다. 현재는 ML이 적용된 새로운 버전이 나오고 있다. 일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다.</description>
@@ -23,6 +23,15 @@
       
       <guid>https://ariyn.github.io/posts/qrhubde6m/</guid>
       <description>exponentiation는 거듭제곱을 의미하는데, 이때 $$a^b$$인 경우에, a는 밑(base), b는 지수 (exponent or power)로 부른다 ieee754에서 exponent는 &amp;ldquo;floating point로 표현할 수를 정규화했을때, 2의 지수&amp;quot;이므로 거의 동일한 의미를 지닌다 mantissa의 경우 이 단어에 대한 정확한 어원은 모르는듯 하다 (출처) 그러나 상용로그에서의 mantissa(가수)를 가져온 것으로 보이는데, 이는 상용로그의 가수와 ieee754의 가수가 비슷한 역할을 하고있기 때문으로 보인다 일반적으로 어떤 수 A를 $$A = a * 10^n$$로 표현할 수 있고, 이에 상용로그를 취해주면 $$log A = log a + n$$이 된다 이때 n을 지표, $$loga$$를 가수(假數)라 부른다 (출처) 마찬가지로 2진법에서 어떤 수 A는 $$A = a * 2^n$$으로 표기될 수 있고, 이를 ieee754에서는 $$(-1)^s * (Mantissa) * 2^{Exponent}$$로 정규화해서 표현한다.</description>
+    </item>
+    
+    <item>
+      <title>스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점</title>
+      <link>https://ariyn.github.io/posts/y-c3qqp6f/</link>
+      <pubDate>Sun, 22 Jan 2023 12:31:53 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/y-c3qqp6f/</guid>
+      <description>정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다 org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다. authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 java\n UsernamePasswordAuthenticationToken(userDetails, null) 출처 그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. java\n org/springframework/security/web/access/intercept/AuthorizationFilter.java:95\n try {\n AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request);\n ...\n \n ---\n inspector\n decision = AuthorizationDecision [granted=false] 원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.</description>
     </item>
     
     <item>
