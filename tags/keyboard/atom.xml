@@ -6,23 +6,23 @@
     <description>Recent content in keyboard on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Nov 2021 18:30:37 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/keyboard/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>한영 전환을 하는 법</title>
-      <link>https://ariyn.github.io/posts/u7hbzx9hz/</link>
-      <pubDate>Sat, 06 Nov 2021 18:30:37 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/u7hbzx9hz/</guid>
-      <description>javascript\n send, {vk15sc138} vk 0x15 IME 한글 모드 https://docs.microsoft.com/ko-kr/windows/win32/inputdev/virtual-key-codes sc 138 ctrl - ins 정확하게 확인이 안된다. 101키/104키 호환인 경우, 한영키의 sc는 0xE0, 38 103키/106키인 경우, 한영키의 sc는 0xF2 표준 101키/103키에서 한영 + 한자 총 2개의 키가 추가된 버전 아무래도 현대의 모든 키보드는 101키/104키 호환인 것 같은데, E038이 왜 138로 바뀌는지 잘 모르겠다. vk는 Virtual Keycode os가 가지고 있는, 가상의 코드 하나의 스캔코드는 여러개의 가상 키코드로 맵핑될 수 있다. 넘락이 켜져있을때, 텐키는 숫자로 동작함 하지만 넘락이 꺼져 있다면 텐키는 화살표로 동작함 scan code는 변하지 않았지만, vk가 바뀐 경우 sc는 Scan Code 스캔 코드는 키보드가 os로 보내는 데이터 각각의 키에는 고유한 스캔코드가 존재한다.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 07 Nov 2021 14:25:02 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/keyboard/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>프로그램을 작성할 때 오타를 줄이는 법</title>
       <link>https://ariyn.github.io/posts/lpwiy07go/</link>
-      <pubDate>Sat, 06 Nov 2021 18:11:16 +0700</pubDate>
+      <pubDate>Sun, 07 Nov 2021 14:25:02 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/lpwiy07go/</guid>
       <description> 일반적인 타이핑에서는 오타가 많지 않음 그런데 프로그램 코드를 작성할 때, 오타율이 올라감 원인은 특수키들이 우측에 붙어있다는 것 ()-=[]\;&#39;,./ &amp;lt;R-shift&amp;gt; &amp;lt;enter&amp;gt; &amp;lt;backspace&amp;gt; &amp;lt;arrow&amp;gt; 사실 코드를 작성할 때는, 괄호의 사용량이 z보다 많지 않을까? 백스페이스를 쓸 때, 습관이 오른손 네번째 손가락으로 누르는 습관이 있음. 새끼로 누르기에는 너무 멀고, 불편하고, 무거움 이후에 오른손 검지가 j로 돌아와서 다음 키를 눌러야 함. 그런데 습관적으로 바로 누르려 하기 때문에, 해당 위치에 돌아가지 못하고, 다른 키를 누르게 됨 심각하다 해결책은&amp;hellip; split 키보드를 구매해서, 오른손 검지에 여러 키를 넣는 법 특수키가 가운데에 있는 키보드를 구매 XD75라는 키보드가 이러한 형태임 auto hotkey를 사용해서, 오른손 검지가 j에서 벗어나지 않도록 특수키를 맵핑함 ctrl + Y = - ctrl + U = = </description>
+    </item>
+    
+    <item>
+      <title>한영 전환을 하는 법</title>
+      <link>https://ariyn.github.io/posts/u7hbzx9hz/</link>
+      <pubDate>Sat, 06 Nov 2021 18:52:08 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/u7hbzx9hz/</guid>
+      <description>send, {vk15sc138} * vk 0x15 * IME 한글 모드 * https://docs.microsoft.com/ko-kr/windows/win32/inputdev/virtual-key-codes * sc 138 * ctrl - ins * 정확하게 확인이 안된다. * 101키/104키 호환인 경우, 한영키의 sc는 0xE0, 38 * 103키/106키인 경우, 한영키의 sc는 0xF2 * 표준 101키/103키에서 `한영` + `한자` 총 2개의 키가 추가된 버전 * 아무래도 현대의 모든 키보드는 101키/104키 호환인 것 같은데, E038이 왜 138로 바뀌는지 잘 모르겠다. vk는 Virtual Keycode os가 가지고 있는, 가상의 코드 하나의 스캔코드는 여러개의 가상 키코드로 맵핑될 수 있다.</description>
     </item>
     
   </channel>

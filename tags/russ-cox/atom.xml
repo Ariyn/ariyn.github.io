@@ -6,11 +6,11 @@
     <description>Recent content in russ cox on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 23:56:21 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/russ-cox/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:26 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/russ-cox/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://ariyn.github.io/posts/euq3mp2zg/</link>
-      <pubDate>Wed, 23 Mar 2022 23:56:21 +0700</pubDate>
+      <pubDate>Thu, 24 Mar 2022 00:00:26 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/euq3mp2zg/</guid>
       <description> 고랭 구현에 핵심 인물중 한명으로 보임 golang github의 contributors를 보면, russ cox가 200만 라인의 기여를 한 것을 볼 수 있다&amp;hellip; 보통 golang 공식 포럼이나 메일링 리스트에서 이사람의 말이 가장 권위가 있는듯 golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다 #TIL #golang https://swtch.com/~rsc/ </description>

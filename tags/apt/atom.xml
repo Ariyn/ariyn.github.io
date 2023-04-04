@@ -6,11 +6,11 @@
     <description>Recent content in apt on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Aug 2021 21:55:45 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/apt/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 22:39:50 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/apt/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>apt가 설치할 때 yes를 물어보는 경우</title>
       <link>https://ariyn.github.io/posts/aflryfrwt/</link>
-      <pubDate>Sat, 21 Aug 2021 21:55:45 +0700</pubDate>
+      <pubDate>Wed, 01 Dec 2021 22:39:50 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/aflryfrwt/</guid>
       <description> 대충 짐작으로 &amp;ldquo;추가 패키지가 딸려오는 경우&amp;quot;로만 생각했었는데, AskUbuntu에 따르면 3가지 경우가 있다고 한다. 추가적인 패키지가 딸려오는 경우 시스템에 필수적인 패키지를 지우는 경우 과거버전으로 명시한 패키지를 바꾸는 경우 이중 시스템에 필수적인 패키지를 지우는 경우에는 -y옵션을 주어도 꼭 물어본다고 한다. 출처: https://askubuntu.com/questions/441793/why-apt-get-does-not-ask-permission-to-continue-before-installing-small-packages </description>

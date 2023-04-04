@@ -6,11 +6,11 @@
     <description>Recent content in 프로그래밍 언어 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Nov 2022 16:45:37 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 16:45:50 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EOP</title>
       <link>https://ariyn.github.io/posts/qfmg7znbf/</link>
-      <pubDate>Thu, 10 Nov 2022 16:45:37 +0700</pubDate>
+      <pubDate>Thu, 10 Nov 2022 16:45:50 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/qfmg7znbf/</guid>
       <description> Expression Oriented Programming 모든 표현식이 결과를 반환하는 경우, EOP라고 한다 즉 함수가 pure functional한 경우, side effect가 없는 경우를 부르는 듯 적당히 이해는 되지만, 아직 좋은 사용법이나 필요성에 대해서는 공감하기 어렸다. </description>

@@ -8,22 +8,22 @@
   <title>aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리" />
-<meta property="og:description" content=" public ip로 검색하는 방법 shell\n aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &quot;123.123.123.123&quot;)&#39; " />
+<meta property="og:description" content=" public ip로 검색하는 방법 aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &#34;123.123.123.123&#34;)&#39; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/lt3ulhspz/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-15T16:30:25+07:00" />
-<meta property="article:modified_time" content="2022-03-15T16:49:37+07:00" />
+<meta property="article:published_time" content="2022-03-15T16:49:37+07:00" />
+<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
 
 
   
   <meta itemprop="name" content="aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리">
-<meta itemprop="description" content=" public ip로 검색하는 방법 shell\n aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &quot;123.123.123.123&quot;)&#39; "><meta itemprop="datePublished" content="2022-03-15T16:30:25+07:00" />
-<meta itemprop="dateModified" content="2022-03-15T16:49:37+07:00" />
-<meta itemprop="wordCount" content="16">
+<meta itemprop="description" content=" public ip로 검색하는 방법 aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &#34;123.123.123.123&#34;)&#39; "><meta itemprop="datePublished" content="2022-03-15T16:49:37+07:00" />
+<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="wordCount" content="15">
 <meta itemprop="keywords" content="TIL,jq," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리"/>
-<meta name="twitter:description" content=" public ip로 검색하는 방법 shell\n aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &quot;123.123.123.123&quot;)&#39; "/>
+<meta name="twitter:description" content=" public ip로 검색하는 방법 aws ec2 describe-instances | jq -r &#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &#34;123.123.123.123&#34;)&#39; "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/lt3ulhspz/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -47,7 +47,7 @@
     "name": "aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리",
     "headline": "aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리",
     "alternativeHeadline": "",
-    "description": " public ip로 검색하는 방법 shell\\n aws ec2 describe-instances | jq -r \u0027.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == \u0026quot;123.123.123.123\u0026quot;)\u0027 ",
+    "description": " public ip로 검색하는 방법 aws ec2 describe-instances | jq -r \u0026#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == \u0026#34;123.123.123.123\u0026#34;)\u0026#39; ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -68,9 +68,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2022",
-    "dateCreated": "2022-03-15T16:30:25.00Z",
-    "datePublished": "2022-03-15T16:30:25.00Z",
-    "dateModified": "2022-03-15T16:49:37.00Z",
+    "dateCreated": "2022-03-15T16:49:37.00Z",
+    "datePublished": "2022-03-15T16:49:37.00Z",
+    "dateModified": "1970-01-01T09:00:00.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",
@@ -84,7 +84,7 @@
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/lt3ulhspz\/",
-    "wordCount" : "16",
+    "wordCount" : "15",
     "genre" : [ "TIL" , "jq" ],
     "keywords" : [ "TIL" , "jq" ]
 }
@@ -110,10 +110,8 @@
       <h2 class="post">aws ec2 describe-instances 결과에서 원하는 값을 가져오기 위한 jq 쿼리</h2>
       <ul>
 <li>public ip로 검색하는 방법
-<ul>
-<li><code>shell\n    aws ec2 describe-instances | jq -r '.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &quot;123.123.123.123&quot;)'</code></li>
-</ul>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>aws ec2 describe-instances | jq -r <span style="color:#e6db74">&#39;.Reservations[].Instances[] | select(.NetworkInterfaces[].Association.PublicIp == &#34;123.123.123.123&#34;)&#39;</span>
+</span></span></code></pre></div></li>
 </ul>
 
       

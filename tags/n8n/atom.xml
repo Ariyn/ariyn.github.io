@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>n8n on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/n8n/</link>
+    <description>Recent content in n8n on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Nov 2022 12:31:40 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/n8n/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>n8n에서 스프레드 시트를 사용해서 데이터를 불러오는 경우, 첫번째 행에 값이 있어야 한다</title>
+      <link>https://ariyn.github.io/posts/h1og-nsb0/</link>
+      <pubDate>Wed, 09 Nov 2022 12:31:40 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/h1og-nsb0/</guid>
+      <description> 버그라는 느낌이 들긴 한다 만약 첫번째 행에 값이 없다면, 이후 행에 값이 있다 하더라도 데이터가 나오지 않는다 </description>
+    </item>
+    
+  </channel>
+</rss>

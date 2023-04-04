@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Nov 2022 20:57:44 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/markdown/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wkhtmltopdf에서 page break를 사용하는 방법</title>
+      <link>https://ariyn.github.io/posts/q7htrgcb-/</link>
+      <pubDate>Mon, 14 Nov 2022 20:57:44 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/q7htrgcb-/</guid>
+      <description> 스타일 시트에 아래와 같은 코드를 넣고, markdown에서 &amp;lt;p class=&amp;quot;break-before&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;와 같이 사용한다. .keep-together { page-break-inside: avoid; } .break-before { page-break-before: always; } .break-after { page-break-after: always; } https://stackoverflow.com/questions/42005819/how-to-insert-a-page-break-in-html-so-wkhtmltopdf-parses-it </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,11 +6,11 @@
     <description>Recent content in 인물 on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 May 2022 11:32:24 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%9D%B8%EB%AC%BC/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 11:33:57 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EC%9D%B8%EB%AC%BC/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>책 `Effective java`는 조슈아 블로크가 썼다</title>
       <link>https://ariyn.github.io/posts/hkyhbz3br/</link>
-      <pubDate>Wed, 11 May 2022 11:32:24 +0700</pubDate>
+      <pubDate>Wed, 11 May 2022 11:33:57 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/hkyhbz3br/</guid>
       <description> 조슈아 블로크는 썬과 구글에서 자바 엔지니어 및 시스템 설계자로 일했었다(출처) 현재는 CMU에서 교수로 일하고 있는 듯 </description>
@@ -19,7 +19,7 @@
     <item>
       <title></title>
       <link>https://ariyn.github.io/posts/euq3mp2zg/</link>
-      <pubDate>Wed, 23 Mar 2022 23:56:21 +0700</pubDate>
+      <pubDate>Thu, 24 Mar 2022 00:00:26 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/euq3mp2zg/</guid>
       <description> 고랭 구현에 핵심 인물중 한명으로 보임 golang github의 contributors를 보면, russ cox가 200만 라인의 기여를 한 것을 볼 수 있다&amp;hellip; 보통 golang 공식 포럼이나 메일링 리스트에서 이사람의 말이 가장 권위가 있는듯 golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다 #TIL #golang https://swtch.com/~rsc/ </description>
@@ -28,7 +28,7 @@
     <item>
       <title>말콤 맥린</title>
       <link>https://ariyn.github.io/posts/mworbbdq9/</link>
-      <pubDate>Sun, 16 Jan 2022 19:01:28 +0700</pubDate>
+      <pubDate>Sun, 16 Jan 2022 19:14:24 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mworbbdq9/</guid>
       <description> 현대 컨테이너의 아버지 트럭의 짐칸을 떼어 내서 화물선에 실는 방법을 고안함 당시 미국 법에는 트럭이 바다를 이동하면 안된다는 법이 있었음 이 법을 피하기 위해 트럭의 일부(=짐칸)만 화물선에 선적함 유조선을 개조해서 테스트를 했고, 11m의 철제 컨테이너를 만듬 오늘날까지 사용되는 12m 철제 컨테이너의 규격이 탄생 본격적으로 서비스를 시작하자 상/하역 비용은 36배나 낮아짐 1톤당 5.86$에서 16센트로 낮아짐 맥린은 씨랜드 서비스라는 운송회사를 설립하였다 씨랜드는 30년간 사업을 하다가, 99년 머스크에 합병됨 The BOX 책이 컨테이너와 그의 이야기를 다룬 책 #책 #읽을꺼리 </description>

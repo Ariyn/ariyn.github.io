@@ -6,14 +6,14 @@
     <description>Recent content in terraform on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 17:14:02 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/terraform/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 23:30:18 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/terraform/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tf import시 이런 오류가 나올때 대처법</title>
       <link>https://ariyn.github.io/posts/klngbro30/</link>
-      <pubDate>Sun, 10 Oct 2021 17:14:02 +0700</pubDate>
+      <pubDate>Wed, 01 Dec 2021 23:30:18 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/klngbro30/</guid>
-      <description> Error: resource address &amp;quot;aws_instance.dev&amp;quot; does not exist in the configuration. .tf 파일 어디에도 resource &amp;quot;aws_instance&amp;quot; &amp;quot;dev&amp;quot;가 정의되어 있지 않기 때문에 발생 따라서 원하는 파일에 빈 리소스를 정의하면 된다. javascript\n resource &amp;quot;aws_instance&amp;quot; &amp;quot;dev&amp;quot; {} </description>
+      <description> Error: resource address &amp;quot;aws_instance.dev&amp;quot; does not exist in the configuration. .tf 파일 어디에도 resource &amp;quot;aws_instance&amp;quot; &amp;quot;dev&amp;quot;가 정의되어 있지 않기 때문에 발생 따라서 원하는 파일에 빈 리소스를 정의하면 된다. resource &amp;#34;aws_instance&amp;#34; &amp;#34;dev&amp;#34; {} </description>
     </item>
     
   </channel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logrotate on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/logrotate/</link>
+    <description>Recent content in logrotate on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Feb 2023 11:07:29 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/logrotate/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>logrotate의 실행 구조</title>
+      <link>https://ariyn.github.io/posts/afuqp7vsv/</link>
+      <pubDate>Tue, 21 Feb 2023 11:07:29 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/afuqp7vsv/</guid>
+      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다. 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다. cat /etc/crontab.daily/logrotate #!/bin/sh # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &amp;#34;ALERT exited abnormally with [$EXITVALUE]&amp;#34; fi exit $EXITVALUE cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;amp;&amp;amp; run-parts --report /etc/cron.</description>
+    </item>
+    
+  </channel>
+</rss>
