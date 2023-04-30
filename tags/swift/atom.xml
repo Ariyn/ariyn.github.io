@@ -6,11 +6,11 @@
     <description>Recent content in swift on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Dec 2021 22:26:33 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/swift/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 23:07:05 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/swift/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>맥에서 swift로 window들의 정보를 가져오는 방법</title>
       <link>https://ariyn.github.io/posts/epmnjjhnk/</link>
-      <pubDate>Wed, 01 Dec 2021 22:26:33 +0700</pubDate>
+      <pubDate>Tue, 10 Aug 2021 23:07:05 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/epmnjjhnk/</guid>
       <description>import Cocoa import Quartz let options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly) let relativeToWindow: CGWindowID = kCGNullWindowID let infos = CGWindowListCopyWindowInfo(options, relativeToWindow) struct WindowData:Codable { let processName: String let windowName: String let x: Int let y: Int let width: Int let height: Int } var collectedInfo: [WindowData] = [] for info in infos as! [NSDictionary] { let bound:NSDictionary = info[&amp;#34;kCGWindowBounds&amp;#34;] as! NSDictionary let processName:String = info[&amp;#34;kCGWindowOwnerName&amp;#34;] as? String ?? &amp;#34;&amp;#34; let windowName:String = info[&amp;#34;kCGWindowName&amp;#34;] as?</description>

@@ -6,11 +6,11 @@
     <description>Recent content in linux on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2022 11:20:32 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/linux/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Apr 2022 11:20:03 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/linux/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>golang에서 mysql로 연결할 때 `unknown time zone: Asia/Seoul`이라는 오류가 계속 뜸</title>
       <link>https://ariyn.github.io/posts/gzpnb8tcn/</link>
-      <pubDate>Tue, 26 Apr 2022 11:20:32 +0700</pubDate>
+      <pubDate>Tue, 26 Apr 2022 11:20:03 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gzpnb8tcn/</guid>
       <description>이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&amp;hellip; 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&amp;hellip; 코드 // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451 // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams case &amp;#34;loc&amp;#34;: if value, err = url.QueryUnescape(value); err != nil { return } cfg.Loc, err = time.LoadLocation(value) if err != nil { return } // time/zoneinfo_read.go:529 // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다. // 이 함수는 Asia/Seoul 형식의 타임존 이름을 파싱하고, 시스템에서 값을 불러온다.</description>
@@ -19,7 +19,7 @@
     <item>
       <title>dentry cache</title>
       <link>https://ariyn.github.io/posts/sdvv4crl9/</link>
-      <pubDate>Tue, 12 Apr 2022 12:27:21 +0700</pubDate>
+      <pubDate>Tue, 12 Apr 2022 12:27:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/sdvv4crl9/</guid>
       <description> VFS(Virtual File System)에서 사용하는 구조체 http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다. 리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체 /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다 inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음 따라서 캐싱을 해둘 필요가 있음 dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함 dentry의 d_inode가 NULL일 수 있음 이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨 </description>
@@ -28,7 +28,7 @@
     <item>
       <title>리눅스에서는 한번 검색한 디렉토리를 캐싱 해 둠</title>
       <link>https://ariyn.github.io/posts/xw6yxedth/</link>
-      <pubDate>Tue, 12 Apr 2022 12:25:44 +0700</pubDate>
+      <pubDate>Tue, 12 Apr 2022 12:24:31 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/xw6yxedth/</guid>
       <description> dentry cache라고 부름 한번 검색하고 나면 꽤 빨라서 캐싱이 있을 것으로 생각은 했지만&amp;hellip; </description>
@@ -37,7 +37,7 @@
     <item>
       <title>ubuntu에서 zlib 설치하는 법</title>
       <link>https://ariyn.github.io/posts/ckqj9nftb/</link>
-      <pubDate>Tue, 28 Dec 2021 20:53:09 +0700</pubDate>
+      <pubDate>Wed, 22 Dec 2021 23:18:25 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ckqj9nftb/</guid>
       <description> apt install zlib1g-dev 배포판을 사용할꺼면 apt install zlib1g </description>
@@ -46,52 +46,16 @@
     <item>
       <title>file write가 안되는 경우</title>
       <link>https://ariyn.github.io/posts/294uvuols/</link>
-      <pubDate>Thu, 09 Dec 2021 17:51:08 +0700</pubDate>
+      <pubDate>Thu, 09 Dec 2021 17:50:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
       <description>문제의 코드 f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;) 그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다. bad file descriptor 확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다. The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively. https://man7.org/linux/man-pages/man2/open.2.html open 커맨드의 man에 따르자면, access mode는 세가지.</description>
     </item>
     
     <item>
-      <title>필요한 라이브러리가 모두 설치되었는지 확인하는 방법</title>
-      <link>https://ariyn.github.io/posts/rek2cynej/</link>
-      <pubDate>Wed, 01 Dec 2021 23:00:08 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/rek2cynej/</guid>
-      <description>ldd &amp;lt;packege&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>리눅스를 설치하고 나서</title>
-      <link>https://ariyn.github.io/posts/ic2ao9-k-/</link>
-      <pubDate>Wed, 01 Dec 2021 22:59:13 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/ic2ao9-k-/</guid>
-      <description> zsh 설치 oh-my-zsh 설치 도중 자동으로 default shell을 zsh로 바꿔준다. 다만 -y 옵션이 먹지 않으니, 미리미리 자리에 앉아있자. (방법이 없을까?) apt install -y curl zsh sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; </description>
-    </item>
-    
-    <item>
-      <title>리눅스에서 &lt; (왼쪽 꺽쇠)</title>
-      <link>https://ariyn.github.io/posts/lo40h47du/</link>
-      <pubDate>Wed, 01 Dec 2021 22:47:23 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/lo40h47du/</guid>
-      <description>&amp;gt; awk &amp;#39;1&amp;#39; &amp;lt; /tmp/test_file test &amp;gt; cat /tmp/test_file | awk &amp;#39;1&amp;#39; test 파일의 컨텐츠를 읽어서 stdin으로 넣는것 조금 다른 경우가 있지만, cat file | command과 동일한 역할로 보임 출처: https://unix.stackexchange.com/questions/283374/what-does-the-left-chevron-triangle-bracket-do </description>
-    </item>
-    
-    <item>
-      <title>유닉스 기본 명령어들을 현대적인 명령어로 바꿔주는 프로그램들 모음</title>
-      <link>https://ariyn.github.io/posts/zwzxbsv6k/</link>
-      <pubDate>Tue, 09 Nov 2021 21:19:01 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/zwzxbsv6k/</guid>
-      <description> https://github.com/ibraheemdev/modern-unix </description>
-    </item>
-    
-    <item>
       <title>inotifywait</title>
       <link>https://ariyn.github.io/posts/u7q_7bk1f/</link>
-      <pubDate>Sun, 07 Nov 2021 14:24:48 +0700</pubDate>
+      <pubDate>Sat, 06 Nov 2021 16:04:35 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/u7q_7bk1f/</guid>
       <description> 파일의 inode 이벤트에 따라 커맨드를 실행시키기 위한 커맨드 while inotifywait -e close_write ./file.ext; do do something; done https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes inotify-tools에 포함된 명령어로 보인다 </description>
@@ -100,16 +64,52 @@
     <item>
       <title>pip로 설치한 airflow에서 webserver로 접속 했을때, 새로은 dag가 뜨지 않을때</title>
       <link>https://ariyn.github.io/posts/v8lhygvlq/</link>
-      <pubDate>Sun, 07 Nov 2021 14:24:42 +0700</pubDate>
+      <pubDate>Sat, 06 Nov 2021 15:33:41 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/v8lhygvlq/</guid>
       <description> 상태 example는 보인다. airflow dags list에서도 보인다. ~/airflow/dags에 들어 있지만, 웹서버 에서만 보이지 않음 airflow scheduler가 돌고 있는지 확인하자 dag를 모니터링 하는 녀석이 스케쥴러라고 한다. https://airflow.apache.org/docs/apache-airflow/stable/concepts/scheduler.html </description>
     </item>
     
     <item>
+      <title>필요한 라이브러리가 모두 설치되었는지 확인하는 방법</title>
+      <link>https://ariyn.github.io/posts/rek2cynej/</link>
+      <pubDate>Mon, 13 Sep 2021 23:22:33 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/rek2cynej/</guid>
+      <description>ldd &amp;lt;packege&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>리눅스를 설치하고 나서</title>
+      <link>https://ariyn.github.io/posts/ic2ao9-k-/</link>
+      <pubDate>Sun, 12 Sep 2021 16:49:36 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ic2ao9-k-/</guid>
+      <description> zsh 설치 oh-my-zsh 설치 도중 자동으로 default shell을 zsh로 바꿔준다. 다만 -y 옵션이 먹지 않으니, 미리미리 자리에 앉아있자. (방법이 없을까?) apt install -y curl zsh sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>리눅스에서 &lt; (왼쪽 꺽쇠)</title>
+      <link>https://ariyn.github.io/posts/lo40h47du/</link>
+      <pubDate>Sat, 28 Aug 2021 22:37:29 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/lo40h47du/</guid>
+      <description>&amp;gt; awk &amp;#39;1&amp;#39; &amp;lt; /tmp/test_file test &amp;gt; cat /tmp/test_file | awk &amp;#39;1&amp;#39; test 파일의 컨텐츠를 읽어서 stdin으로 넣는것 조금 다른 경우가 있지만, cat file | command과 동일한 역할로 보임 출처: https://unix.stackexchange.com/questions/283374/what-does-the-left-chevron-triangle-bracket-do </description>
+    </item>
+    
+    <item>
+      <title>유닉스 기본 명령어들을 현대적인 명령어로 바꿔주는 프로그램들 모음</title>
+      <link>https://ariyn.github.io/posts/zwzxbsv6k/</link>
+      <pubDate>Wed, 11 Aug 2021 14:47:35 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/zwzxbsv6k/</guid>
+      <description> https://github.com/ibraheemdev/modern-unix </description>
+    </item>
+    
+    <item>
       <title>do-release-upgrade -f DistUpgradeViewNonInteractive</title>
       <link>https://ariyn.github.io/posts/u68vqvxcg/</link>
-      <pubDate>Wed, 14 Jul 2021 18:18:13 +0700</pubDate>
+      <pubDate>Wed, 14 Jul 2021 18:17:22 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/u68vqvxcg/</guid>
       <description> 이렇게 하면, Non-interactive로 kernel 업그레이드 가능함. nohup 붙여서 사용하자 </description>

@@ -11,14 +11,14 @@
 <meta property="og:description" content="module default { type Station { property name -&gt; str; property line_number -&gt; int64; multi link connected -&gt; Station; } } { default::Station {name: &#39;사당&#39;, line_number: 2, connected: {}}, default::Station {name: &#39;사당&#39;, line_number: 4, connected: {}}, default::Station {name: &#39;낙성대&#39;, line_number: 4, connected: {}}, } 위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨 update Station filter .name = &#34;사당&#34; set {connected &#43;= (select Station filter .line_number = 4)}; { default::Station {name: &#39;사당&#39;, line_number: 2, connected: {}}, default::Station {name: &#39;사당&#39;, line_number: 4, connected: {default::Station {name: &#39;사당&#39;, line_number: 4}}}, default::Station {name: &#39;낙성대&#39;, line_number: 4, connected: {}}, } 다만 connected &#43;= (select filter)에서 필터된 내용에만 적용되는 것은 좀 이상하다 여튼 detached를 사용해야 한다 update Station filter ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/q9h64csxh/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-07-27T15:27:01+07:00" />
-<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
+<meta property="article:published_time" content="2022-07-27T11:13:07+07:00" />
+<meta property="article:modified_time" content="2022-07-27T15:27:01+07:00" />
 
 
   
   <meta itemprop="name" content="자기 타입을 다시 link 하려면, detached를 사용해야 한다">
-<meta itemprop="description" content="module default { type Station { property name -&gt; str; property line_number -&gt; int64; multi link connected -&gt; Station; } } { default::Station {name: &#39;사당&#39;, line_number: 2, connected: {}}, default::Station {name: &#39;사당&#39;, line_number: 4, connected: {}}, default::Station {name: &#39;낙성대&#39;, line_number: 4, connected: {}}, } 위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨 update Station filter .name = &#34;사당&#34; set {connected &#43;= (select Station filter .line_number = 4)}; { default::Station {name: &#39;사당&#39;, line_number: 2, connected: {}}, default::Station {name: &#39;사당&#39;, line_number: 4, connected: {default::Station {name: &#39;사당&#39;, line_number: 4}}}, default::Station {name: &#39;낙성대&#39;, line_number: 4, connected: {}}, } 다만 connected &#43;= (select filter)에서 필터된 내용에만 적용되는 것은 좀 이상하다 여튼 detached를 사용해야 한다 update Station filter ."><meta itemprop="datePublished" content="2022-07-27T15:27:01+07:00" />
-<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="description" content="module default { type Station { property name -&gt; str; property line_number -&gt; int64; multi link connected -&gt; Station; } } { default::Station {name: &#39;사당&#39;, line_number: 2, connected: {}}, default::Station {name: &#39;사당&#39;, line_number: 4, connected: {}}, default::Station {name: &#39;낙성대&#39;, line_number: 4, connected: {}}, } 위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨 update Station filter .name = &#34;사당&#34; set {connected &#43;= (select Station filter .line_number = 4)}; { default::Station {name: &#39;사당&#39;, line_number: 2, connected: {}}, default::Station {name: &#39;사당&#39;, line_number: 4, connected: {default::Station {name: &#39;사당&#39;, line_number: 4}}}, default::Station {name: &#39;낙성대&#39;, line_number: 4, connected: {}}, } 다만 connected &#43;= (select filter)에서 필터된 내용에만 적용되는 것은 좀 이상하다 여튼 detached를 사용해야 한다 update Station filter ."><meta itemprop="datePublished" content="2022-07-27T11:13:07+07:00" />
+<meta itemprop="dateModified" content="2022-07-27T15:27:01+07:00" />
 <meta itemprop="wordCount" content="205">
 <meta itemprop="keywords" content="edgedb,TIL," />
   <meta name="twitter:card" content="summary"/>
@@ -68,9 +68,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2022",
-    "dateCreated": "2022-07-27T15:27:01.00Z",
-    "datePublished": "2022-07-27T15:27:01.00Z",
-    "dateModified": "1970-01-01T09:00:00.00Z",
+    "dateCreated": "2022-07-27T11:13:07.00Z",
+    "datePublished": "2022-07-27T11:13:07.00Z",
+    "dateModified": "2022-07-27T15:27:01.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",

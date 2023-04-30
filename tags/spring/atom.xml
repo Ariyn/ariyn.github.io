@@ -6,11 +6,11 @@
     <description>Recent content in spring on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Jan 2023 21:31:53 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/spring/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 18:11:24 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/spring/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점</title>
       <link>https://ariyn.github.io/posts/y-c3qqp6f/</link>
-      <pubDate>Sun, 22 Jan 2023 21:31:53 +0700</pubDate>
+      <pubDate>Sun, 22 Jan 2023 18:11:24 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/y-c3qqp6f/</guid>
       <description>정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다 org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다. authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial) 그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false] 원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.</description>

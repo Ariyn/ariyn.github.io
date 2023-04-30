@@ -11,14 +11,14 @@
 <meta property="og:description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다. 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다. cat /etc/crontab.daily/logrotate #!/bin/sh # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &#34;ALERT exited abnormally with [$EXITVALUE]&#34; fi exit $EXITVALUE cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;&amp; run-parts --report /etc/cron." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/afuqp7vsv/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-02-21T11:07:29+07:00" />
-<meta property="article:modified_time" content="1970-01-01T09:00:00+07:00" />
+<meta property="article:published_time" content="2023-02-21T11:01:10+07:00" />
+<meta property="article:modified_time" content="2023-02-21T11:07:29+07:00" />
 
 
   
   <meta itemprop="name" content="logrotate의 실행 구조">
-<meta itemprop="description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다. 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다. cat /etc/crontab.daily/logrotate #!/bin/sh # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &#34;ALERT exited abnormally with [$EXITVALUE]&#34; fi exit $EXITVALUE cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;&amp; run-parts --report /etc/cron."><meta itemprop="datePublished" content="2023-02-21T11:07:29+07:00" />
-<meta itemprop="dateModified" content="1970-01-01T09:00:00+07:00" />
+<meta itemprop="description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다. 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다. cat /etc/crontab.daily/logrotate #!/bin/sh # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &#34;ALERT exited abnormally with [$EXITVALUE]&#34; fi exit $EXITVALUE cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;&amp; run-parts --report /etc/cron."><meta itemprop="datePublished" content="2023-02-21T11:01:10+07:00" />
+<meta itemprop="dateModified" content="2023-02-21T11:07:29+07:00" />
 <meta itemprop="wordCount" content="109">
 <meta itemprop="keywords" content="logrotate,bash,TIL," />
   <meta name="twitter:card" content="summary"/>
@@ -68,9 +68,9 @@
     },
     "copyrightHolder" : "this.isMin.uk",
     "copyrightYear" : "2023",
-    "dateCreated": "2023-02-21T11:07:29.00Z",
-    "datePublished": "2023-02-21T11:07:29.00Z",
-    "dateModified": "1970-01-01T09:00:00.00Z",
+    "dateCreated": "2023-02-21T11:01:10.00Z",
+    "datePublished": "2023-02-21T11:01:10.00Z",
+    "dateModified": "2023-02-21T11:07:29.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "this.isMin.uk",

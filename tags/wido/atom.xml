@@ -6,11 +6,11 @@
     <description>Recent content in WIDO on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Oct 2021 19:14:04 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/wido/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Oct 2021 19:11:46 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/wido/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2d Hexagon 거리 측정</title>
       <link>https://ariyn.github.io/posts/smonoglfz/</link>
-      <pubDate>Mon, 04 Oct 2021 19:14:04 +0700</pubDate>
+      <pubDate>Mon, 04 Oct 2021 19:11:46 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/smonoglfz/</guid>
       <description>빠르게 해야하니, 단순히 recursive하게 계산 각 depth마다, 자신 주변의 모든 타일에 대해 recursive하게 들어감 depth가 넘어가면 더이상 들어가지 않고, 주변 타일만 계산함 아마도 문제가 있을 부분 비어있는 타일이 있을경우, 그 타일때문에, 계산이 달라질 듯. 그러나 아직은 버그를 허용하고 빠르게 만드는게 목적 다음에 해야하는 일 캐릭터를 선택했을때, 현재 위치에 따라 거리를 계산 계산된 거리에 따라 타일의 색을 바꿔줌 현재는 sprite를 사용하지만, 이건 phaser3의 특성인지 바꾸기 어려운 듯. sprite를 새로 만들어야 하나?</description>

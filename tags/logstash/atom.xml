@@ -6,20 +6,11 @@
     <description>Recent content in logstash on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Dec 2021 20:57:23 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/logstash/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>logstash에서 json을 파싱할 때, root에 추가하기</title>
-      <link>https://ariyn.github.io/posts/mtkokevx0/</link>
-      <pubDate>Tue, 28 Dec 2021 20:57:23 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/mtkokevx0/</guid>
-      <description> json filter plugin을 사용하고 target을 지정하지 않으면 root로 들어가게 된다. filter { grok { match =&amp;gt; &amp;#34;test %{GREEDYDATA:jsonString}&amp;#34; } json { source =&amp;gt; &amp;#34;jsonString&amp;#34; } } https://www.elastic.co/guide/en/logstash/current/plugins-filters-json.html#plugins-filters-json-target </description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Nov 2021 23:06:14 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/logstash/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>logstash timezone 설정</title>
       <link>https://ariyn.github.io/posts/ulyzqi4mc/</link>
-      <pubDate>Thu, 04 Nov 2021 23:06:30 +0700</pubDate>
+      <pubDate>Thu, 04 Nov 2021 23:06:14 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ulyzqi4mc/</guid>
       <description>date { timezone =&amp;gt; &amp;#34;Asia/Seoul&amp;#34; } </description>
@@ -28,7 +19,7 @@
     <item>
       <title>opensearch에서 logstash-oss와 logstash-opensearch-output-plugin이 동작 안할때</title>
       <link>https://ariyn.github.io/posts/njo_ltxgb/</link>
-      <pubDate>Thu, 04 Nov 2021 22:41:54 +0700</pubDate>
+      <pubDate>Thu, 04 Nov 2021 22:41:22 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/njo_ltxgb/</guid>
       <description> https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다 문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다 업데이트가 안된 버전임 결국 삭제후 재 설치해야 함 bin/logstash-plugin uninstall logstash-output-opensearch bin/logstash-plugin install logstash-output-opensearch 생명의 구원자 https://githubmemory.com/@arianitu </description>
@@ -37,10 +28,19 @@
     <item>
       <title>logstash에서 사용하는 json, grok등등의 이름</title>
       <link>https://ariyn.github.io/posts/ygybygxfk/</link>
-      <pubDate>Wed, 03 Nov 2021 14:31:40 +0700</pubDate>
+      <pubDate>Wed, 03 Nov 2021 14:31:05 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ygybygxfk/</guid>
       <description> file input plugin, grok filter plugin 등등으로 부르는 듯 하다. https://www.elastic.co/guide/en/logstash/current/plugins-inputs-file.html https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html </description>
+    </item>
+    
+    <item>
+      <title>logstash에서 json을 파싱할 때, root에 추가하기</title>
+      <link>https://ariyn.github.io/posts/mtkokevx0/</link>
+      <pubDate>Wed, 03 Nov 2021 14:29:06 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/mtkokevx0/</guid>
+      <description> json filter plugin을 사용하고 target을 지정하지 않으면 root로 들어가게 된다. filter { grok { match =&amp;gt; &amp;#34;test %{GREEDYDATA:jsonString}&amp;#34; } json { source =&amp;gt; &amp;#34;jsonString&amp;#34; } } https://www.elastic.co/guide/en/logstash/current/plugins-filters-json.html#plugins-filters-json-target </description>
     </item>
     
   </channel>
