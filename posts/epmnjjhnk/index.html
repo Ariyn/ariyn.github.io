@@ -108,69 +108,69 @@
       
         
       <h2 class="post">맥에서 swift로 window들의 정보를 가져오는 방법</h2>
-      <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Cocoa</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Quartz</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> relativeToWindow: CGWindowID = kCGNullWindowID
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> infos = CGWindowListCopyWindowInfo(options, relativeToWindow)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">WindowData</span>:Codable {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> processName: String
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> windowName: String
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> x: Int
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> y: Int
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> width: Int
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> height: Int
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> collectedInfo: [WindowData] = []
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> info <span style="color:#66d9ef">in</span> infos <span style="color:#66d9ef">as</span>! [NSDictionary] {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> bound:NSDictionary = info[<span style="color:#e6db74">&#34;kCGWindowBounds&#34;</span>] <span style="color:#66d9ef">as</span>! NSDictionary
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> processName:String = info[<span style="color:#e6db74">&#34;kCGWindowOwnerName&#34;</span>] <span style="color:#66d9ef">as</span>? String ?? <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> windowName:String = info[<span style="color:#e6db74">&#34;kCGWindowName&#34;</span>] <span style="color:#66d9ef">as</span>? String ?? <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    collectedInfo.append(WindowData(
-</span></span><span style="display:flex;"><span>        processName: processName.replacingOccurrences(of: <span style="color:#e6db74">&#34;,&#34;</span>, with:<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">,&#34;</span>),
-</span></span><span style="display:flex;"><span>        windowName: windowName.replacingOccurrences(of: <span style="color:#e6db74">&#34;,&#34;</span>, with:<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">,&#34;</span>),
-</span></span><span style="display:flex;"><span>        x:bound[<span style="color:#e6db74">&#34;X&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>,
-</span></span><span style="display:flex;"><span>        y:bound[<span style="color:#e6db74">&#34;Y&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>,
-</span></span><span style="display:flex;"><span>        width:bound[<span style="color:#e6db74">&#34;width&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>,
-</span></span><span style="display:flex;"><span>        height:bound[<span style="color:#e6db74">&#34;hwight&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>
-</span></span><span style="display:flex;"><span>    ))
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> jsonData = <span style="color:#66d9ef">try</span>? JSONEncoder().encode(collectedInfo), <span style="color:#66d9ef">let</span> jsonString = String(data: jsonData, encoding: .utf8) {
-</span></span><span style="display:flex;"><span>    print(jsonString)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><ul>
+      <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Cocoa</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Quartz</span>
+
+<span style="color:#66d9ef">let</span> options:CGWindowListOption = CGWindowListOption(arrayLiteral: CGWindowListOption.excludeDesktopElements, CGWindowListOption.optionOnScreenOnly)
+<span style="color:#66d9ef">let</span> relativeToWindow: CGWindowID = kCGNullWindowID
+
+<span style="color:#66d9ef">let</span> infos = CGWindowListCopyWindowInfo(options, relativeToWindow)
+
+<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">WindowData</span>:Codable {
+    <span style="color:#66d9ef">let</span> processName: String
+    <span style="color:#66d9ef">let</span> windowName: String
+    <span style="color:#66d9ef">let</span> x: Int
+    <span style="color:#66d9ef">let</span> y: Int
+    <span style="color:#66d9ef">let</span> width: Int
+    <span style="color:#66d9ef">let</span> height: Int
+}
+<span style="color:#66d9ef">var</span> collectedInfo: [WindowData] = []
+<span style="color:#66d9ef">for</span> info <span style="color:#66d9ef">in</span> infos <span style="color:#66d9ef">as</span>! [NSDictionary] {
+    <span style="color:#66d9ef">let</span> bound:NSDictionary = info[<span style="color:#e6db74">&#34;kCGWindowBounds&#34;</span>] <span style="color:#66d9ef">as</span>! NSDictionary
+    <span style="color:#66d9ef">let</span> processName:String = info[<span style="color:#e6db74">&#34;kCGWindowOwnerName&#34;</span>] <span style="color:#66d9ef">as</span>? String ?? <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#66d9ef">let</span> windowName:String = info[<span style="color:#e6db74">&#34;kCGWindowName&#34;</span>] <span style="color:#66d9ef">as</span>? String ?? <span style="color:#e6db74">&#34;&#34;</span>
+
+    collectedInfo.append(WindowData(
+        processName: processName.replacingOccurrences(of: <span style="color:#e6db74">&#34;,&#34;</span>, with:<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">,&#34;</span>),
+        windowName: windowName.replacingOccurrences(of: <span style="color:#e6db74">&#34;,&#34;</span>, with:<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">,&#34;</span>),
+        x:bound[<span style="color:#e6db74">&#34;X&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>,
+        y:bound[<span style="color:#e6db74">&#34;Y&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>,
+        width:bound[<span style="color:#e6db74">&#34;width&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>,
+        height:bound[<span style="color:#e6db74">&#34;hwight&#34;</span>] <span style="color:#66d9ef">as</span>? Int ?? <span style="color:#f92672">-</span><span style="color:#ae81ff">10000</span>
+    ))
+}
+
+<span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> jsonData = <span style="color:#66d9ef">try</span>? JSONEncoder().encode(collectedInfo), <span style="color:#66d9ef">let</span> jsonString = String(data: jsonData, encoding: .utf8) {
+    print(jsonString)
+}
+</code></pre></div><ul>
 <li>이후에 환경설정 &gt; 보안 &gt; 화면 기록에서 터미널을 추가 &amp; 터미널 재시작 해줘야 한다.
 <ul>
 <li>안할경우 kCGWindowName (각 위도우별 제목)이 안뜸</li>
 </ul>
 </li>
 <li>CGWindowListCopyWindowInfo가 리턴하는 형식
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>[
-</span></span><span style="display:flex;"><span>  {
-</span></span><span style="display:flex;"><span>    kCGWindowAlpha = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowBounds =     {
-</span></span><span style="display:flex;"><span>        Height = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>        Width = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>        X = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>        Y = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    };
-</span></span><span style="display:flex;"><span>    kCGWindowIsOnscreen = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowLayer = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowMemoryUsage = <span style="color:#ae81ff">1232</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowName = <span style="color:#e6db74">&#34;utf-8 encoded string&#34;</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowNumber = <span style="color:#ae81ff">1884</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowOwnerName = <span style="color:#e6db74">&#34;utf-8 encoded string&#34;</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowOwnerPID = <span style="color:#ae81ff">2895</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowSharingState = <span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>    kCGWindowStoreType = <span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>]
-</span></span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">[
+  {
+    kCGWindowAlpha = <span style="color:#ae81ff">0</span>;
+    kCGWindowBounds =     {
+        Height = <span style="color:#ae81ff">0</span>;
+        Width = <span style="color:#ae81ff">0</span>;
+        X = <span style="color:#ae81ff">0</span>;
+        Y = <span style="color:#ae81ff">0</span>;
+    };
+    kCGWindowIsOnscreen = <span style="color:#ae81ff">0</span>;
+    kCGWindowLayer = <span style="color:#ae81ff">0</span>;
+    kCGWindowMemoryUsage = <span style="color:#ae81ff">1232</span>;
+    kCGWindowName = <span style="color:#e6db74">&#34;utf-8 encoded string&#34;</span>;
+    kCGWindowNumber = <span style="color:#ae81ff">1884</span>;
+    kCGWindowOwnerName = <span style="color:#e6db74">&#34;utf-8 encoded string&#34;</span>;
+    kCGWindowOwnerPID = <span style="color:#ae81ff">2895</span>;
+    kCGWindowSharingState = <span style="color:#ae81ff">1</span>;
+    kCGWindowStoreType = <span style="color:#ae81ff">1</span>;
+}
+]
+</code></pre></div></li>
 <li>추가적으로 할 일
 <ul>
 <li>아이콘 정보 가져오기

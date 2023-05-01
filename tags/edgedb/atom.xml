@@ -13,7 +13,7 @@
       <pubDate>Wed, 27 Jul 2022 11:13:07 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/q9h64csxh/</guid>
-      <description>module default { type Station { property name -&amp;gt; str; property line_number -&amp;gt; int64; multi link connected -&amp;gt; Station; } } { default::Station {name: &amp;#39;사당&amp;#39;, line_number: 2, connected: {}}, default::Station {name: &amp;#39;사당&amp;#39;, line_number: 4, connected: {}}, default::Station {name: &amp;#39;낙성대&amp;#39;, line_number: 4, connected: {}}, } 위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨 update Station filter .name = &amp;#34;사당&amp;#34; set {connected += (select Station filter .line_number = 4)}; { default::Station {name: &amp;#39;사당&amp;#39;, line_number: 2, connected: {}}, default::Station {name: &amp;#39;사당&amp;#39;, line_number: 4, connected: {default::Station {name: &amp;#39;사당&amp;#39;, line_number: 4}}}, default::Station {name: &amp;#39;낙성대&amp;#39;, line_number: 4, connected: {}}, } 다만 connected += (select filter)에서 필터된 내용에만 적용되는 것은 좀 이상하다 여튼 detached를 사용해야 한다 update Station filter .</description>
+      <description>module default { type Station { property name -&amp;gt; str; property line_number -&amp;gt; int64; multi link connected -&amp;gt; Station; } } { default::Station {name: &amp;#39;사당&amp;#39;, line_number: 2, connected: {}}, default::Station {name: &amp;#39;사당&amp;#39;, line_number: 4, connected: {}}, default::Station {name: &amp;#39;낙성대&amp;#39;, line_number: 4, connected: {}}, }  위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨 update Station filter .name = &amp;#34;사당&amp;#34; set {connected += (select Station filter .</description>
     </item>
     
   </channel>

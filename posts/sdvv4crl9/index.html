@@ -8,7 +8,7 @@
   <title>dentry cache | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="dentry cache" />
-<meta property="og:description" content=" VFS(Virtual File System)에서 사용하는 구조체 http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다. 리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체 /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다 inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음 따라서 캐싱을 해둘 필요가 있음 dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함 dentry의 d_inode가 NULL일 수 있음 이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨 " />
+<meta property="og:description" content=" VFS(Virtual File System)에서 사용하는 구조체  http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다.   리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체  /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다  inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음  따라서 캐싱을 해둘 필요가 있음   dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함     dentry의 d_inode가 NULL일 수 있음  이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/sdvv4crl9/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-12T12:27:09+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="dentry cache">
-<meta itemprop="description" content=" VFS(Virtual File System)에서 사용하는 구조체 http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다. 리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체 /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다 inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음 따라서 캐싱을 해둘 필요가 있음 dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함 dentry의 d_inode가 NULL일 수 있음 이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨 "><meta itemprop="datePublished" content="2022-04-12T12:27:09+07:00" />
+<meta itemprop="description" content=" VFS(Virtual File System)에서 사용하는 구조체  http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다.   리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체  /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다  inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음  따라서 캐싱을 해둘 필요가 있음   dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함     dentry의 d_inode가 NULL일 수 있음  이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨    "><meta itemprop="datePublished" content="2022-04-12T12:27:09+07:00" />
 <meta itemprop="dateModified" content="2022-04-12T12:27:21+07:00" />
 <meta itemprop="wordCount" content="75">
 <meta itemprop="keywords" content="TIL,linux," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="dentry cache"/>
-<meta name="twitter:description" content=" VFS(Virtual File System)에서 사용하는 구조체 http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다. 리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체 /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다 inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음 따라서 캐싱을 해둘 필요가 있음 dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함 dentry의 d_inode가 NULL일 수 있음 이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨 "/>
+<meta name="twitter:description" content=" VFS(Virtual File System)에서 사용하는 구조체  http://books.gigatux.nl/mirror/kerneldevelopment/0672327201/ch12lev1sec7.html Directory Entry의 약자로 보인다.   리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체  /bin/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다  inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음  따라서 캐싱을 해둘 필요가 있음   dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함     dentry의 d_inode가 NULL일 수 있음  이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨    "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/sdvv4crl9/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -47,7 +47,7 @@
     "name": "dentry cache",
     "headline": "dentry cache",
     "alternativeHeadline": "",
-    "description": " VFS(Virtual File System)에서 사용하는 구조체 http:\/\/books.gigatux.nl\/mirror\/kerneldevelopment\/0672327201\/ch12lev1sec7.html Directory Entry의 약자로 보인다. 리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체 \/bin\/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다 inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음 따라서 캐싱을 해둘 필요가 있음 dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함 dentry의 d_inode가 NULL일 수 있음 이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨 ",
+    "description": " VFS(Virtual File System)에서 사용하는 구조체  http:\/\/books.gigatux.nl\/mirror\/kerneldevelopment\/0672327201\/ch12lev1sec7.html Directory Entry의 약자로 보인다.   리눅스에서 모든 것을 파일로 다루다보니, Directory와 실제 file을 구분하지 않고 사용하기 위한 구조체  \/bin\/vim에서 bin도 vim도 모두 파일 해당 파일에 대한 정보를 가지고 있는게 dentry이다  inode가 있기는 하지만, 파일에 비해 directory는 각 디렉토리별 여러가지 작업을 해야하는 경우가 많음  따라서 캐싱을 해둘 필요가 있음   dentry는 파일로 저장되지 않고, 즉성해서 커널이 생성해서 사용함     dentry의 d_inode가 NULL일 수 있음  이경우 하드링크가 삭제된 dentry 이는 LRU로 들어가서 서서히 삭제됨    ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

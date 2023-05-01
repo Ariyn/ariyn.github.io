@@ -8,7 +8,7 @@
   <title>스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점" />
-<meta property="og:description" content="정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다 org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다. authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial) 그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false] 원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다." />
+<meta property="og:description" content="정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다  org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다.  authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial)    그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false]  원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/y-c3qqp6f/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-22T18:11:24+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점">
-<meta itemprop="description" content="정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다 org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다. authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial) 그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false] 원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다."><meta itemprop="datePublished" content="2023-01-22T18:11:24+07:00" />
+<meta itemprop="description" content="정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다  org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다.  authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial)    그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false]  원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다."><meta itemprop="datePublished" content="2023-01-22T18:11:24+07:00" />
 <meta itemprop="dateModified" content="2023-01-22T21:31:53+07:00" />
 <meta itemprop="wordCount" content="276">
 <meta itemprop="keywords" content="TIL,spring," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점"/>
-<meta name="twitter:description" content="정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다 org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다. authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial) 그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false] 원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다."/>
+<meta name="twitter:description" content="정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다  org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다.  authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial)    그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false]  원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다."/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/y-c3qqp6f/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -47,7 +47,7 @@
     "name": "스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점",
     "headline": "스프링 boot 6에서 직접 jwt token filter를 만들때의 주의점",
     "alternativeHeadline": "",
-    "description": "정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다 org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다. authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https:\/\/www.toptal.com\/spring\/spring-security-tutorial) 그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org\/springframework\/security\/web\/access\/intercept\/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false] 원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.",
+    "description": "정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다  org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다.  authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https:\/\/www.toptal.com\/spring\/spring-security-tutorial)    그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org\/springframework\/security\/web\/access\/intercept\/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false]  원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -114,57 +114,57 @@
 <li><code>org.springframework.web.filter.OncePerRequestFilter</code>를 상속받아, <code>doFilterInternal</code>을 구현하고, 인증이 되었다면 <code>SecurityContextHolder</code>에 authentication을 추가해주면 되는 간단한 작업이었다.
 <ul>
 <li>authentication은 <code>org.springframework.security.authentication.UsernamePasswordAuthenticationToken</code>을 사용했다
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>UsernamePasswordAuthenticationToken<span style="color:#f92672">(</span>userDetails<span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span><span style="color:#960050;background-color:#1e0010">```</span> 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">*</span> <span style="color:#f92672">[</span>출처<span style="color:#f92672">](</span>https<span style="color:#f92672">:</span><span style="color:#75715e">//www.toptal.com/spring/spring-security-tutorial)
-</span></span></span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">UsernamePasswordAuthenticationToken<span style="color:#f92672">(</span>userDetails<span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span><span style="color:#960050;background-color:#1e0010">```</span> 
+<span style="color:#f92672">*</span> <span style="color:#f92672">[</span>출처<span style="color:#f92672">](</span>https<span style="color:#f92672">:</span><span style="color:#75715e">//www.toptal.com/spring/spring-security-tutorial)
+</span></code></pre></div></li>
 </ul>
 </li>
 <li>그러나 403 forbidden만 뜨면서 진행이 안된다</li>
 <li>수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>org<span style="color:#f92672">/</span>springframework<span style="color:#f92672">/</span>security<span style="color:#f92672">/</span>web<span style="color:#f92672">/</span>access<span style="color:#f92672">/</span>intercept<span style="color:#f92672">/</span>AuthorizationFilter<span style="color:#f92672">.</span><span style="color:#a6e22e">java</span><span style="color:#f92672">:</span>95
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  AuthorizationDecision decision <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">authorizationManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">check</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">::</span>getAuthentication<span style="color:#f92672">,</span> request<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">---</span>
-</span></span><span style="display:flex;"><span>  inspector
-</span></span><span style="display:flex;"><span>decision <span style="color:#f92672">=</span> AuthorizationDecision <span style="color:#f92672">[</span>granted<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span><span style="color:#f92672">]</span>
-</span></span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">org<span style="color:#f92672">/</span>springframework<span style="color:#f92672">/</span>security<span style="color:#f92672">/</span>web<span style="color:#f92672">/</span>access<span style="color:#f92672">/</span>intercept<span style="color:#f92672">/</span>AuthorizationFilter<span style="color:#f92672">.</span><span style="color:#a6e22e">java</span><span style="color:#f92672">:</span>95
+<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+  AuthorizationDecision decision <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">authorizationManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">check</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">::</span>getAuthentication<span style="color:#f92672">,</span> request<span style="color:#f92672">);</span>
+  <span style="color:#f92672">...</span>
+
+<span style="color:#f92672">---</span>
+  inspector
+decision <span style="color:#f92672">=</span> AuthorizationDecision <span style="color:#f92672">[</span>granted<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span><span style="color:#f92672">]</span>
+</code></pre></div></li>
 <li>원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">UsernamePasswordAuthenticationToken</span><span style="color:#f92672">(</span>Object principal<span style="color:#f92672">,</span> Object credentials<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span><span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">principal</span> <span style="color:#f92672">=</span> principal<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">credentials</span> <span style="color:#f92672">=</span> credentials<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    setAuthenticated<span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">UsernamePasswordAuthenticationToken</span><span style="color:#f92672">(</span>Object principal<span style="color:#f92672">,</span> Object credentials<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>			Collection<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> GrantedAuthority<span style="color:#f92672">&gt;</span> authorities<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>authorities<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">principal</span> <span style="color:#f92672">=</span> principal<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">credentials</span> <span style="color:#f92672">=</span> credentials<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setAuthenticated</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span> <span style="color:#75715e">// must use super, as we override
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> UsernamePasswordAuthenticationToken <span style="color:#a6e22e">authenticated</span><span style="color:#f92672">(</span>Object principal<span style="color:#f92672">,</span> Object credentials<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>        Collection<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> GrantedAuthority<span style="color:#f92672">&gt;</span> authorities<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> UsernamePasswordAuthenticationToken<span style="color:#f92672">(</span>principal<span style="color:#f92672">,</span> credentials<span style="color:#f92672">,</span> authorities<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">UsernamePasswordAuthenticationToken</span><span style="color:#f92672">(</span>Object principal<span style="color:#f92672">,</span> Object credentials<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span><span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">principal</span> <span style="color:#f92672">=</span> principal<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">credentials</span> <span style="color:#f92672">=</span> credentials<span style="color:#f92672">;</span>
+    setAuthenticated<span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">UsernamePasswordAuthenticationToken</span><span style="color:#f92672">(</span>Object principal<span style="color:#f92672">,</span> Object credentials<span style="color:#f92672">,</span>
+			Collection<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> GrantedAuthority<span style="color:#f92672">&gt;</span> authorities<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>authorities<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">principal</span> <span style="color:#f92672">=</span> principal<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">credentials</span> <span style="color:#f92672">=</span> credentials<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setAuthenticated</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span> <span style="color:#75715e">// must use super, as we override
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> UsernamePasswordAuthenticationToken <span style="color:#a6e22e">authenticated</span><span style="color:#f92672">(</span>Object principal<span style="color:#f92672">,</span> Object credentials<span style="color:#f92672">,</span>
+        Collection<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> GrantedAuthority<span style="color:#f92672">&gt;</span> authorities<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> UsernamePasswordAuthenticationToken<span style="color:#f92672">(</span>principal<span style="color:#f92672">,</span> credentials<span style="color:#f92672">,</span> authorities<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
 <li>마지막의 authorities가 없이 호출한다면 <code>isAuthenticated = false</code>로 설정되어서 진행이 안된 것이었다.
 <ul>
 <li>참고로 외부에서 함부로 setAuthenticated를 호출한다면 아래와 같은 로그 메시지를 받는다</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Cannot set <span style="color:#66d9ef">this</span> token to trusted <span style="color:#f92672">-</span> use constructor which takes a GrantedAuthority list instead
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>org<span style="color:#f92672">/</span>springframework<span style="color:#f92672">/</span>security<span style="color:#f92672">/</span>authentication<span style="color:#f92672">/</span>UsernamePasswordAuthenticationToken<span style="color:#f92672">.</span><span style="color:#a6e22e">java</span><span style="color:#f92672">:</span>112
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAuthenticated</span><span style="color:#f92672">(</span><span style="color:#66d9ef">boolean</span> isAuthenticated<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IllegalArgumentException <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    Assert<span style="color:#f92672">.</span><span style="color:#a6e22e">isTrue</span><span style="color:#f92672">(!</span>isAuthenticated<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Cannot set this token to trusted - use constructor which takes a GrantedAuthority list instead&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setAuthenticated</span><span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Cannot set <span style="color:#66d9ef">this</span> token to trusted <span style="color:#f92672">-</span> use constructor which takes a GrantedAuthority list instead
+
+org<span style="color:#f92672">/</span>springframework<span style="color:#f92672">/</span>security<span style="color:#f92672">/</span>authentication<span style="color:#f92672">/</span>UsernamePasswordAuthenticationToken<span style="color:#f92672">.</span><span style="color:#a6e22e">java</span><span style="color:#f92672">:</span>112
+<span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAuthenticated</span><span style="color:#f92672">(</span><span style="color:#66d9ef">boolean</span> isAuthenticated<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IllegalArgumentException <span style="color:#f92672">{</span>
+    Assert<span style="color:#f92672">.</span><span style="color:#a6e22e">isTrue</span><span style="color:#f92672">(!</span>isAuthenticated<span style="color:#f92672">,</span>
+            <span style="color:#e6db74">&#34;Cannot set this token to trusted - use constructor which takes a GrantedAuthority list instead&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setAuthenticated</span><span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div></li>
 </ul>
 </li>
 </ul>

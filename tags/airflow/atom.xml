@@ -13,7 +13,7 @@
       <pubDate>Mon, 29 Nov 2021 09:59:56 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/nkbzgocvw/</guid>
-      <description> WARNING - Failed to log action with (sqlite3.OperationalError) no such table: log airflow_home이 잘 설정되어 있는지 보고, airflow db init를 하자 기본적으로는 ~/airflow로 설정되는듯 </description>
+      <description> WARNING - Failed to log action with (sqlite3.OperationalError) no such table: log airflow_home이 잘 설정되어 있는지 보고, airflow db init를 하자  기본적으로는 ~/airflow로 설정되는듯    </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sat, 06 Nov 2021 15:33:41 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/v8lhygvlq/</guid>
-      <description> 상태 example는 보인다. airflow dags list에서도 보인다. ~/airflow/dags에 들어 있지만, 웹서버 에서만 보이지 않음 airflow scheduler가 돌고 있는지 확인하자 dag를 모니터링 하는 녀석이 스케쥴러라고 한다. https://airflow.apache.org/docs/apache-airflow/stable/concepts/scheduler.html </description>
+      <description> 상태  example는 보인다. airflow dags list에서도 보인다. ~/airflow/dags에 들어 있지만, 웹서버 에서만 보이지 않음   airflow scheduler가 돌고 있는지 확인하자 dag를 모니터링 하는 녀석이 스케쥴러라고 한다.  https://airflow.apache.org/docs/apache-airflow/stable/concepts/scheduler.html </description>
     </item>
     
   </channel>

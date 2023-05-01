@@ -108,8 +108,8 @@
       
         
       <h2 class="post">ssl 인증서 확인하기</h2>
-      <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&gt;/dev/null | openssl x509 -inform pem -noout -text<span style="color:#e6db74">```</span>&lt;/br&gt;  
-</span></span></code></pre></div>
+      <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&gt;/dev/null | openssl x509 -inform pem -noout -text<span style="color:#e6db74">```</span>&lt;/br&gt;  
+</code></pre></div>
       
       
       

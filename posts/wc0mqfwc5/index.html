@@ -8,7 +8,7 @@
   <title>mac에서 brew를 통해 java를 실행한 경우, path를 설정해야 한다 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="mac에서 brew를 통해 java를 실행한 경우, path를 설정해야 한다" />
-<meta property="og:description" content=" brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다 간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다...) " />
+<meta property="og:description" content="brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다  간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까    export PATH=/opt/homebrew/opt/openjdk/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/wc0mqfwc5/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-15T17:22:53+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="mac에서 brew를 통해 java를 실행한 경우, path를 설정해야 한다">
-<meta itemprop="description" content=" brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다 간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다...) "><meta itemprop="datePublished" content="2022-03-15T17:22:53+07:00" />
+<meta itemprop="description" content="brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다  간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까    export PATH=/opt/homebrew/opt/openjdk/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다."><meta itemprop="datePublished" content="2022-03-15T17:22:53+07:00" />
 <meta itemprop="dateModified" content="2022-03-15T22:02:22+07:00" />
 <meta itemprop="wordCount" content="69">
 <meta itemprop="keywords" content="TIL,shell," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="mac에서 brew를 통해 java를 실행한 경우, path를 설정해야 한다"/>
-<meta name="twitter:description" content=" brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다 간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다...) "/>
+<meta name="twitter:description" content="brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다  간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까    export PATH=/opt/homebrew/opt/openjdk/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다."/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/wc0mqfwc5/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -47,7 +47,7 @@
     "name": "mac에서 brew를 통해 java를 실행한 경우, path를 설정해야 한다",
     "headline": "mac에서 brew를 통해 java를 실행한 경우, path를 설정해야 한다",
     "alternativeHeadline": "",
-    "description": " brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다 간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까 export PATH=\/opt\/homebrew\/opt\/openjdk\/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `\/usr\/bin\/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다...) ",
+    "description": "brew에 설정이 따로 있는지는 모르겠으나, 자동으로 path가 설정되지 않는다  간단히 찾아봤을때 자동으로 path를 추가하는 옵션은 보이지 않는다 생각해보면 path가 필요 없는 경우도 있을 것이고, 함부로 rc파일을 건드리기에는 정리되어 있는것들도 있을테니까    export PATH=\/opt\/homebrew\/opt\/openjdk\/bin:$PATH * 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다 * 기존의 path인 `\/usr\/bin\/java`에는 자바를 설치하라는 안내 문구만 나온다 * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -116,8 +116,8 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>/opt/homebrew/opt/openjdk/bin:$PATH
-</span></span></code></pre></div><pre><code>* 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span>/opt/homebrew/opt/openjdk/bin:$PATH
+</code></pre></div><pre><code>* 정확한 위치를 모르겠다면 `brew info openjdk`명령어를 통해 위치를 확인하자
 * 이때 openjdk의 path가 기존 path보다 앞으로 가야한다
   * 기존의 path인 `/usr/bin/java`에는 자바를 설치하라는 안내 문구만 나온다
   * 이 파일을 삭제하는것은 12.0.1이상에서 금지되어 있음 (sudo를 써도 안지워진다...)

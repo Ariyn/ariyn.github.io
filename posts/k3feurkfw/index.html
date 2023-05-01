@@ -108,25 +108,25 @@
       
         
       <h2 class="post">scala에서 괄호 없이 함수를 선언할 수 있다</h2>
-      <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Element</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> contents<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Array</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> height<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span> contents<span style="color:#f92672">.</span>length
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> width<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>height <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> contents<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">).</span>length
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> height <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Element</span><span style="color:#f92672">.</span>height<span style="color:#960050;background-color:#1e0010">``</span>` [출처](https://www.artima.com/pins1ed/composition-and-inheritance.html#i1343251059-1:~:text=Listing%2010.2%20%2D%20Defining%20parameterless%20methods%20width%20and%20height.)
-</span></span><span style="display:flex;"><span>* `<span style="color:#66d9ef">def</span> foo<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int`의 경우 `parameterless</span> <span style="color:#66d9ef">method`로, `def</span> <span style="color:#66d9ef">foo</span><span style="color:#f92672">()</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int`의 경우 `empty-paren</span> <span style="color:#66d9ef">methods`라고 부르는 것 같다
-</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">  * https://stackoverflow.com/questions/7600910/difference-between-function-with-parentheses-and-without
-</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">* 사이드이펙트가 있는경우 괄호가 있는 방법으로 선언해야 한다고 한다
-</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">  `</span><span style="color:#960050;background-color:#1e0010">`</span><span style="color:#66d9ef">`scala
-</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">  &#34;hello&#34;.length  // no () because no side-effect
-</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">  println()       // better to not drop the ()
-</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">  `</span><span style="color:#960050;background-color:#1e0010">``</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> <span style="color:#66d9ef">https://softwareengineering.stackexchange.com/questions/</span><span style="color:#960050;background-color:#1e0010">235925</span><span style="color:#66d9ef">/parameterless-empty-paren-methods-in-scala</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">*</span> 스택오버플로우를 읽었을때<span style="color:#f92672">,</span> 이보다 더 많은 내용이 있는 것 같다
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">*</span> 공식 튜토리얼에 이부분에 대한 내용이 나올때 좀 더 자세히 읽어야 할 듯
-</span></span></code></pre></div>
+      <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Element</span> <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">def</span> contents<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Array</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">def</span> height<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span> contents<span style="color:#f92672">.</span>length
+  <span style="color:#66d9ef">def</span> width<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>height <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> contents<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">).</span>length
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">var</span> height <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Element</span><span style="color:#f92672">.</span>height<span style="color:#960050;background-color:#1e0010">``</span>` [출처](https://www.artima.com/pins1ed/composition-and-inheritance.html#i1343251059-1:~:text=Listing%2010.2%20%2D%20Defining%20parameterless%20methods%20width%20and%20height.)
+* `<span style="color:#66d9ef">def</span> foo<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int`의 경우 `parameterless</span> <span style="color:#66d9ef">method`로, `def</span> <span style="color:#66d9ef">foo</span><span style="color:#f92672">()</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int`의 경우 `empty-paren</span> <span style="color:#66d9ef">methods`라고 부르는 것 같다
+</span><span style="color:#66d9ef">  * https://stackoverflow.com/questions/7600910/difference-between-function-with-parentheses-and-without
+</span><span style="color:#66d9ef">* 사이드이펙트가 있는경우 괄호가 있는 방법으로 선언해야 한다고 한다
+</span><span style="color:#66d9ef">  `</span><span style="color:#960050;background-color:#1e0010">`</span><span style="color:#66d9ef">`scala
+</span><span style="color:#66d9ef">  &#34;hello&#34;.length  // no () because no side-effect
+</span><span style="color:#66d9ef">  println()       // better to not drop the ()
+</span><span style="color:#66d9ef">  `</span><span style="color:#960050;background-color:#1e0010">``</span>
+  <span style="color:#66d9ef">*</span> <span style="color:#66d9ef">https://softwareengineering.stackexchange.com/questions/</span><span style="color:#960050;background-color:#1e0010">235925</span><span style="color:#66d9ef">/parameterless-empty-paren-methods-in-scala</span>
+<span style="color:#f92672">*</span> 스택오버플로우를 읽었을때<span style="color:#f92672">,</span> 이보다 더 많은 내용이 있는 것 같다
+  <span style="color:#f92672">*</span> 공식 튜토리얼에 이부분에 대한 내용이 나올때 좀 더 자세히 읽어야 할 듯
+</code></pre></div>
       
       
       

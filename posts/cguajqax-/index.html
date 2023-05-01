@@ -8,7 +8,7 @@
   <title>아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다" />
-<meta property="og:description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&hellip; 뭘까&hellip; 출처 " />
+<meta property="og:description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다.  레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다.   출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다  근데 나는 안되던데&hellip; 뭘까&hellip; 출처    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/cguajqax-/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-02T22:06:02+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다">
-<meta itemprop="description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&hellip; 뭘까&hellip; 출처 "><meta itemprop="datePublished" content="2022-11-02T22:06:02+07:00" />
+<meta itemprop="description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다.  레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다.   출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다  근데 나는 안되던데&hellip; 뭘까&hellip; 출처    "><meta itemprop="datePublished" content="2022-11-02T22:06:02+07:00" />
 <meta itemprop="dateModified" content="2022-11-02T22:06:25+07:00" />
 <meta itemprop="wordCount" content="56">
 <meta itemprop="keywords" content="TIL,아두이노," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다"/>
-<meta name="twitter:description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&hellip; 뭘까&hellip; 출처 "/>
+<meta name="twitter:description" content=" 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다.  레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다.   출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다  근데 나는 안되던데&hellip; 뭘까&hellip; 출처    "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/cguajqax-/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -47,7 +47,7 @@
     "name": "아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다",
     "headline": "아두이노에서 software serial을 사용할 경우, 아무 핀이나 rx 핀으로 사용할 수 없다",
     "alternativeHeadline": "",
-    "description": " 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데\u0026hellip; 뭘까\u0026hellip; 출처 ",
+    "description": " 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다.  레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다.   출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다  근데 나는 안되던데\u0026hellip; 뭘까\u0026hellip; 출처    ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {

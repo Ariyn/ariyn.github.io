@@ -13,7 +13,7 @@
       <pubDate>Fri, 10 Sep 2021 22:36:56 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/hcgnzjtrl/</guid>
-      <description>regexp.MustCompile(`(?s)START(.*?)STOP`) 만약 (?m)과 함께 쓰려면? `(?sm)START(.*?)STOP` </description>
+      <description>regexp.MustCompile(`(?s)START(.*?)STOP`)  만약 (?m)과 함께 쓰려면? `(?sm)START(.*?)STOP`   </description>
     </item>
     
   </channel>

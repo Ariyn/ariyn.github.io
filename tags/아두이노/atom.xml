@@ -13,7 +13,7 @@
       <pubDate>Wed, 02 Nov 2022 22:06:02 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/cguajqax-/</guid>
-      <description> 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다. 레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다. 출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다 근데 나는 안되던데&amp;hellip; 뭘까&amp;hellip; 출처 </description>
+      <description> 어쩐지 2,3을 rx, tx로 사용할 경우 문제가 발생했다 rx는 인터럽트 모드로 변경해서 사용하기 때문에, 변경 가능한 핀만 rx로 사용할 수 있다.  레오나르도, 마이크로의 경우8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI)만 가능하다.   출처 다만 아두이노 포럼에서 보니까, pro micro는 0,1이 Serial이 아니라 Serial1이라서 usb와 상관없이 사용할 수 있다고 한다  근데 나는 안되던데&amp;hellip; 뭘까&amp;hellip; 출처    </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sat, 29 Oct 2022 00:50:59 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/3hfvpiz21/</guid>
-      <description>사용한 esp01 모듈 AT+CIPSTART 명령어를 사용해서 서버에 접속 AT+CIPSTART=&amp;quot;TCP&amp;quot;,&amp;quot;ADDRESS&amp;quot;,POST AT+CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시 AT+CIPSEND=BYTE_SIZE 이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 +2 해줘야 한다 이후에 OK &amp;gt;가 나오면 데이터를 입력한다. 이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&amp;lt;/br&amp;gt;로 16바이트이다. 전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다 AT+CIPCLOSE 명령어를 사용해서 접속을 종료 여러개의 접속을 사용하면 link-id를 입력해야 한다. 지금은 한개의 접속만 존재하기 때문에 상관없다 시리얼 모니터로 직접 명령어를 전송한 기록 00:47:38.</description>
+      <description>사용한 esp01 모듈 AT+CIPSTART 명령어를 사용해서 서버에 접속  AT+CIPSTART=&amp;quot;TCP&amp;quot;,&amp;quot;ADDRESS&amp;quot;,POST   AT+CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT+CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 +2 해줘야 한다   이후에 OK &amp;gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&amp;lt;/br&amp;gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT+CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다.</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Sat, 29 Oct 2022 00:12:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/scwrasju9/</guid>
-      <description> 최초 설정인 115200으로 사용하니, esp01에서 반환하는 응답값이 깨지는 문제가 있었다. AT+CIP*UIQ�&amp;#34;TCP&amp;#34;,&amp;#34;192.168.0.100&amp;#34;,&amp;#34;8080&amp;#34; 자세히 찾아보니 아두이노에서 사용하기에 115200은 너무 빠르다 기본 Tx, Rx(0, 1)핀은 해당 baud에서 작동 하지만, 다른 핀을 소프트시리얼로 사용할 경우 문제가 생긴다 나의 경우 8,9번을 Tx, Rx로 사용해서 그런것으로 보인다. https://forum.arduino.cc/t/baud-rate-of-arduino-uno/464956 AT+UART_DEF=9600,8,1,0,0 명령어를 사용해서 변경하니, 문제없이 출력된다. 출처 </description>
+      <description> 최초 설정인 115200으로 사용하니, esp01에서 반환하는 응답값이 깨지는 문제가 있었다. AT+CIP*UIQ�&amp;quot;TCP&amp;quot;,&amp;quot;192.168.0.100&amp;quot;,&amp;quot;8080&amp;quot;  자세히 찾아보니 아두이노에서 사용하기에 115200은 너무 빠르다  기본 Tx, Rx(0, 1)핀은 해당 baud에서 작동 하지만, 다른 핀을 소프트시리얼로 사용할 경우 문제가 생긴다  나의 경우 8,9번을 Tx, Rx로 사용해서 그런것으로 보인다.   https://forum.arduino.cc/t/baud-rate-of-arduino-uno/464956   AT+UART_DEF=9600,8,1,0,0 명령어를 사용해서 변경하니, 문제없이 출력된다.  출처    </description>
     </item>
     
   </channel>

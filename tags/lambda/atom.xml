@@ -13,7 +13,7 @@
       <pubDate>Thu, 26 Aug 2021 17:40:07 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/qm8yip9td/</guid>
-      <description> api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다. func handler(myModel MyModel) {} &amp;gt; lambda proxy를 안쓸경우 사용가능 func handler(proxyModel events.APIGatewayProxyRequest) &amp;gt; lambda proxy를 사용할경우 필요 아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. { &amp;#34;body&amp;#34;:&amp;#34;...&amp;#34;, &amp;#34;uri&amp;#34; :&amp;#34;...&amp;#34;, ... } </description>
+      <description> api gateway의 lambda proxy를 사용한다면, handler를 커스텀 구조체로 받을 수 없다.  func handler(myModel MyModel) {} &amp;gt; lambda proxy를 안쓸경우 사용가능 func handler(proxyModel events.APIGatewayProxyRequest) &amp;gt; lambda proxy를 사용할경우 필요  아마도 proxy를 구현하기 위해, body를 그대로 넘겨주지 않고 맵핑하는 것이 원인인 것 같다. { &amp;#34;body&amp;#34;:&amp;#34;...&amp;#34;, &amp;#34;uri&amp;#34; :&amp;#34;...&amp;#34;, ... }   </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 24 Aug 2021 18:30:38 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/vlangm8mw/</guid>
-      <description> 설정한 숫자만큼 hot start 시켜놓는 기능 </description>
+      <description> 설정한 숫자만큼 hot start 시켜놓는 기능  </description>
     </item>
     
   </channel>

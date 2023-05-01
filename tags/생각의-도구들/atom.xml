@@ -13,7 +13,7 @@
       <pubDate>Wed, 25 May 2022 22:59:16 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/oaga2tdxd/</guid>
-      <description> 근본적인 질문에서 시작해서, 계속해서 질문을 하고 그에 대한 답을 적는 방법 https://en.wikipedia.org/wiki/Issue_tree </description>
+      <description> 근본적인 질문에서 시작해서, 계속해서 질문을 하고 그에 대한 답을 적는 방법 https://en.wikipedia.org/wiki/Issue_tree  </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Wed, 25 May 2022 22:58:44 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/um77ebipt/</guid>
-      <description> Mutually Exclusive and Collectively Exhaustive https://en.wikipedia.org/wiki/MECE_principle </description>
+      <description> Mutually Exclusive and Collectively Exhaustive https://en.wikipedia.org/wiki/MECE_principle  </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Wed, 28 Jul 2021 09:44:33 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/idkgl0jbu/</guid>
-      <description>그래야 내 생각이 내 전문성을 사용해서 뻗어나갈 수 있다. 좋은 예시) https://johngrib.github.io/wiki/cleaning-tile-cycle/ 물때를 언제 청소할 것인가에 대한 간단한 생각에서 출발한다.그러나 물때를 청소하는 것에 대한 요구사항(?)을 Threshold로 명명한다.이름을 threshold로 명명하고 나니, cs에서 사용하는 접근방법들이 같이 떠오르고, 이를 사용해서 문제를 해결한다. 자동 GC라면 기계가 되었던 사람이 되었건 항상 누군가가 대기하여 threshold를 감지하고 일정 영역을 청소할 준비를 해놔야 한다. &amp;#39;처리량(throughput)&amp;#39;과 &amp;#39;짧은 일시 정지 시간&amp;#39;이 상충한다는 GC의 상식을 떠올려본다. 나라면 &amp;ldquo;더러움에 대한 역치&amp;quot;라는 단어를 사용 했을 것이다.</description>
+      <description>그래야 내 생각이 내 전문성을 사용해서 뻗어나갈 수 있다. 좋은 예시) https://johngrib.github.io/wiki/cleaning-tile-cycle/  물때를 언제 청소할 것인가에 대한 간단한 생각에서 출발한다.그러나 물때를 청소하는 것에 대한 요구사항(?)을 Threshold로 명명한다.이름을 threshold로 명명하고 나니, cs에서 사용하는 접근방법들이 같이 떠오르고, 이를 사용해서 문제를 해결한다.  자동 GC라면 기계가 되었던 사람이 되었건 항상 누군가가 대기하여 threshold를 감지하고 일정 영역을 청소할 준비를 해놔야 한다. &amp;#39;처리량(throughput)&amp;#39;과 &amp;#39;짧은 일시 정지 시간&amp;#39;이 상충한다는 GC의 상식을 떠올려본다.  나라면 &amp;ldquo;더러움에 대한 역치&amp;quot;라는 단어를 사용 했을 것이다.</description>
     </item>
     
   </channel>

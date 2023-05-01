@@ -13,7 +13,7 @@
       <pubDate>Tue, 21 Feb 2023 11:01:10 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/afuqp7vsv/</guid>
-      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다. 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다. cat /etc/crontab.daily/logrotate #!/bin/sh # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &amp;#34;ALERT exited abnormally with [$EXITVALUE]&amp;#34; fi exit $EXITVALUE cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;amp;&amp;amp; run-parts --report /etc/cron.</description>
+      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat /etc/crontab.daily/logrotate #!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &amp;#34;ALERT exited abnormally with [$EXITVALUE]&amp;#34; fi exit $EXITVALUE  cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;amp;&amp;amp; run-parts --report /etc/cron.</description>
     </item>
     
   </channel>

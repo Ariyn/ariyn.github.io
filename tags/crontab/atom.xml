@@ -13,7 +13,7 @@
       <pubDate>Thu, 16 Sep 2021 09:40:01 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/zqor-g1mw/</guid>
-      <description>crontab -l &amp;gt; /tmp/cron echo &amp;#34;* * * * * echo hello&amp;#34; &amp;gt;&amp;gt; /tmp/cron crontab /tmp/cron rm /tmp/cron crontab file 파일을 읽어서 crontab에 설치함 (덮어쓰기됨) 출처:https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor </description>
+      <description>crontab -l &amp;gt; /tmp/cron echo &amp;#34;* * * * * echo hello&amp;#34; &amp;gt;&amp;gt; /tmp/cron crontab /tmp/cron rm /tmp/cron  crontab file  파일을 읽어서 crontab에 설치함 (덮어쓰기됨)   출처:https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor  </description>
     </item>
     
   </channel>
