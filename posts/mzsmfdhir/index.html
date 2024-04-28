@@ -8,7 +8,9 @@
   <title>beanstalk에서 /etc/hosts를 수정하는 방법 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="beanstalk에서 /etc/hosts를 수정하는 방법" />
-<meta property="og:description" content=" https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 command: echo &#39;127.0.0.1 hostname&#39; &gt;&gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    " />
+<meta property="og:description" content="  https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
+  .ebextensions에 커맨드를 추가
+command: echo &#39;127.0.0.1 hostname&#39; &gt;&gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/mzsmfdhir/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-10-05T18:29:53+07:00" />
@@ -17,13 +19,17 @@
 
   
   <meta itemprop="name" content="beanstalk에서 /etc/hosts를 수정하는 방법">
-<meta itemprop="description" content=" https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 command: echo &#39;127.0.0.1 hostname&#39; &gt;&gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    "><meta itemprop="datePublished" content="2021-10-05T18:29:53+07:00" />
+<meta itemprop="description" content="  https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
+  .ebextensions에 커맨드를 추가
+command: echo &#39;127.0.0.1 hostname&#39; &gt;&gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    "><meta itemprop="datePublished" content="2021-10-05T18:29:53+07:00" />
 <meta itemprop="dateModified" content="2021-10-05T18:31:16+07:00" />
 <meta itemprop="wordCount" content="12">
 <meta itemprop="keywords" content="TIL,aws,beanstalk," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="beanstalk에서 /etc/hosts를 수정하는 방법"/>
-<meta name="twitter:description" content=" https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 command: echo &#39;127.0.0.1 hostname&#39; &gt;&gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    "/>
+<meta name="twitter:description" content="  https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
+  .ebextensions에 커맨드를 추가
+command: echo &#39;127.0.0.1 hostname&#39; &gt;&gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/mzsmfdhir/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -31,9 +37,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -45,7 +51,7 @@
     "name": "beanstalk에서 \/etc\/hosts를 수정하는 방법",
     "headline": "beanstalk에서 \/etc\/hosts를 수정하는 방법",
     "alternativeHeadline": "",
-    "description": " https:\/\/docs.aws.amazon.com\/ko_kr\/elasticbeanstalk\/latest\/dg\/ebextensions.html .ebextensions에 커맨드를 추가 command: echo \u0026#39;127.0.0.1 hostname\u0026#39; \u0026gt;\u0026gt; \/etc\/hosts  https:\/\/stackoverflow.com\/questions\/41903297\/how-to-customize-hosts-file-in-elastic-beanstalk https:\/\/namocom.tistory.com\/825    ",
+    "description": "  https:\/\/docs.aws.amazon.com\/ko_kr\/elasticbeanstalk\/latest\/dg\/ebextensions.html\n  .ebextensions에 커맨드를 추가\ncommand: echo \u0026#39;127.0.0.1 hostname\u0026#39; \u0026gt;\u0026gt; \/etc\/hosts  https:\/\/stackoverflow.com\/questions\/41903297\/how-to-customize-hosts-file-in-elastic-beanstalk https:\/\/namocom.tistory.com\/825    ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -90,6 +96,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -107,8 +114,11 @@
         
       <h2 class="post">beanstalk에서 /etc/hosts를 수정하는 방법</h2>
       <ul>
-<li><a href="https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html">https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html</a></li>
-<li>.ebextensions에 커맨드를 추가
+<li>
+<p><a href="https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html">https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html</a></p>
+</li>
+<li>
+<p>.ebextensions에 커맨드를 추가</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">command</span><span style="color:#f92672">:</span>
   <span style="color:#a6e22e">echo</span> <span style="color:#e6db74">&#39;127.0.0.1 hostname&#39;</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#960050;background-color:#1e0010">/etc/hosts</span>
 </code></pre></div><ul>

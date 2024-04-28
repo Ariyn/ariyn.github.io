@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>published on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/published/</link>
+    <description>Recent content in published on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Jun 2023 11:18:51 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/published/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개인 슬랙 채널을 제품의 클라이언트로 사용하기</title>
+      <link>https://ariyn.github.io/posts/zbh5q2_6-/</link>
+      <pubDate>Wed, 14 Jun 2023 11:18:51 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/zbh5q2_6-/</guid>
+      <description>최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다.</description>
+    </item>
+    
+    <item>
+      <title>RSA에 대하여</title>
+      <link>https://ariyn.github.io/posts/fcpd564de/</link>
+      <pubDate>Wed, 31 May 2023 22:38:21 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/fcpd564de/</guid>
+      <description>Ron Rivest, Adi Shamir, Leonard Adleman에 의해서 만들어졌으며, 이름의 앞글자를 따서 RSA가 되었다 (c:BLUERivest, c:BLUEShamir, c:BLUEAdleman)  https://dl.acm.org/doi/pdf/10.1145/359340.359342   RSA의 제안 이유  당시에 NBS (National Breau of Standards)에서 Data Encryption Standard라는 표준을 제정함 그러나 이 방식은 비밀키 방식이라 키 교환에 안전한 통신 채널이 필요했음  비밀키 방식 = 비밀키 한 개로 암호화와 복호화를 진행함. 따라서 전화선을 감청해서 비밀키를 알아낸다면, 이후의 모든 암호화를 깰 수 있다.   따라서 &amp;ldquo;안전하지 않은 통신 채널에서 비밀키를 교환하는 방법&amp;quot;을 찾기 위해 RSA가 제안됨  공개키 방식을 사용하면 모든 대화 내용을 감청해도 복호화가 불가능하다     공개키 암호화 방식으로 공개키와 개인키 두 개의 키를 사용한다  공개키 (public key)는 모두가 알고있고 모든 사람들이 메시지를 암호화하는데 사용된다.</description>
+    </item>
+    
+    <item>
+      <title>행복의 정복에 대해서</title>
+      <link>https://ariyn.github.io/posts/jpwflromv/</link>
+      <pubDate>Tue, 25 Apr 2023 16:51:00 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/jpwflromv/</guid>
+      <description>버트런드 러셀이 1930년에 쓴 행복에 관한 에세이  100년이나 지났음에도 불구하고, 여전히 동일한 이유로 우리는 불행한것이 아닌가 하는 생각이 들었다.   아주 드문 경우를 제외하고는, 행복은 마치 무르익은 과실처럼 운 좋게 저절로 입안으로 굴러들어오는 것이 아니다. 그래서 나는 이 책에 &amp;quot;행복의 정복&amp;quot;이라는 제목을 붙였다. (...) 이런 세상에서 행복하게 살기를 원하는 사람은 개개인을 둘러싸고 있는 엄청나게 많은 불행의 원인들을 다룰 수 있는 방법을 찾아내야 한다. p.249  행복을 정복한다는 이야기가 모순으로 들릴 수 있겠으나, 러셀은 행복이 마치 무르익은 과실처럼 운 좋게 저절로 입안으로 굴러들어오는 것이 아니라고 말했다.</description>
+    </item>
+    
+    <item>
+      <title>mediapipe를 사용해 모션캡쳐하기</title>
+      <link>https://ariyn.github.io/posts/vebrp0jjn/</link>
+      <pubDate>Sun, 02 Apr 2023 20:35:02 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/vebrp0jjn/</guid>
+      <description>mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다.
+ 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다.  python, android, ios, C++ 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다.   현재는 ML이 적용된 새로운 버전이 나오고 있다.  일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다.</description>
+    </item>
+    
+    <item>
+      <title>무엇이 재앙을 만드는가</title>
+      <link>https://ariyn.github.io/posts/buzva0x2w/</link>
+      <pubDate>Mon, 12 Dec 2022 17:51:45 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/buzva0x2w/</guid>
+      <description>스리마일섬은 사고 분석 이야기에 상당히 자주 나오는 이야기인데, 정상 사고도 이 사고에서 영감을 얻어 썼다고 알려져있다.  당시 스리마일섬 원자력 발전소는 최신식 시설이었다. 따라서 사고가 일어난것도 놀랍지만, 그 사고가 고작 &amp;ldquo;밸브 고장&amp;quot;과 &amp;ldquo;인력 교대시 전달사항을 빠뜨린 것&amp;rdquo; 그리고 &amp;ldquo;계기판이 고장난 것&amp;quot;으로 인해서 그 거대한 시스템이 무력화된 것이 충격적이었던 것 같다. 찰스 페로는 &amp;ldquo;사소한 것들의 시너지가 일어나면서 수많은 안전장치를 무력화시키고 거대한 시스템을 고장나게 만들었다&amp;quot;라고 평가했다.  이 대목에서 장상 사고의 핵심이 드러난다.</description>
+    </item>
+    
+    <item>
+      <title>Codemasters F1 2021 시각화 프로젝트</title>
+      <link>https://ariyn.github.io/posts/te-aptegn/</link>
+      <pubDate>Mon, 21 Nov 2022 11:17:30 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/te-aptegn/</guid>
+      <description>프로젝트 레포지토리 Codemasters F1 2021는 현재 플레이중인 게임의 데이터를 UDP로 전송하는 기능이 있다.  이 데이터는 현재 게임의 시간, 몇바퀴 돌았는지, 내가 어떤 플레이어인지와 같은 게임적인 데이터부터, 차의 현재 위치, 차의 가속도, 핸들의 각도와 같은 Telemetry와 같은 데이터도 전송해준다. Telemetry의 경우, 실제 F1에서 가져올 수 있는것과 유사한 수준의 데이터만 전송한다.  예를들어 네 바퀴의 회전 속도는 전달하지만, 게임에서 계산한 각 바퀴의 마찰력은 전달하지 않는다. 이는 실제 세계에서는 얻을 수 없는 정보이기 때문에 사실성을 높이기 위함으로 보인다.</description>
+    </item>
+    
+    <item>
+      <title>경고 지표를 무시하지 않기 위해 버그 리포팅 시스템을 활용하는 것</title>
+      <link>https://ariyn.github.io/posts/_pfl4fz-b/</link>
+      <pubDate>Sat, 19 Nov 2022 11:25:42 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/_pfl4fz-b/</guid>
+      <description>경고 지표는 언제나 사고 전에 존재한다  그러나 시스템이 경고 지표를 무시하도록 강요한다  장애를 분석하는데 있어서 &amp;ldquo;개인적 요소&amp;quot;는 큰 영향을 주지 않을 것  만에 하나 큰 영향을 주었다고 해도, 이는 개인에 대한 교육등으로 간단하게 가능할 것이다.   반대로 모든 장애는 &amp;ldquo;시스템적 요소&amp;quot;가 숨어있다  이로인한 &amp;ldquo;개인적 요소&amp;quot;는 무시되어야 한다. 예) 수십개의 명령어를 써야지 로그를 확인할 수 있다고 했을때, 로그를 보지 않는것은 &amp;ldquo;프로그래머의 귀찮아 하는 성격&amp;quot;을 수정해서는 효과가 없다.</description>
+    </item>
+    
+    <item>
+      <title>아파치 플룸을 사용한 데이터 파이프라인</title>
+      <link>https://ariyn.github.io/posts/clx1bp1_l/</link>
+      <pubDate>Fri, 18 Nov 2022 10:39:20 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/clx1bp1_l/</guid>
+      <description>개인적으로 여러가지 데이터를 처리하고 있다.  매일매일 책을 읽은 기록 카드 사용 내역 데이터 캘랜더에 기록된 내용 기타 등등   이런 데이터를 새롭게 처리할 때 마다, 새로운 서버를 만드는 것이 꽤나 번거롭다  따라서 파일이나 리눅스 네임드 파이프를 사용해서 처리했다.  가짓수가 늘어나면서 &amp;ldquo;어떤 파일이 어떤 데이터에 사용되는가&amp;quot;를 기억하기 어려워졌다 중앙화된 하나의 파이프라인 프레임워크가 필요해졌다   개인 용도로 사용할 것이기 때문에 처리량이나 안정성보다는 &amp;ldquo;사용하기 쉬운 것&amp;quot;을 주로 찾았다  아파치 flume을 사용하기로 결정했다.</description>
+    </item>
+    
+    <item>
+      <title>패턴언어에 대하여</title>
+      <link>https://ariyn.github.io/posts/wggfvhfkl/</link>
+      <pubDate>Mon, 14 Nov 2022 17:30:33 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/wggfvhfkl/</guid>
+      <description>패턴언어는 미국의 건축가 크리스토퍼 알렉산더가 생각해낸 &amp;ldquo;건축 개념&amp;quot;이다  건축물이 고유하고 완전히 달라 보이지만, 실상은 200개 정도의 개념, 그중에서도 핵심적인 개념은 15개 안쪽으로 이루어져 있다고 한다 고유하게 보이는 이유는, &amp;ldquo;패턴이 그대로 적용되지 않고, 그 상황에 맞게 적용되기 때문&amp;quot;이라고 이야기 한다.  이는 사람이 모두 다르고, 상황이 다르기 때문에 모든 건물에 출입구가 있지만, 건물의 위치, 형태, 사용성에 따라서 모두 다르게 설계된다 그럼에도 불구하고 이 출입구는 &amp;ldquo;건물의 외부에서 건물의 내부로 이동하는, 가장 먼저 만나는 건물의 요소&amp;quot;라는 성격은 동일하다 알렉산더는 이렇게 동일한 성격을 가진 요소들을 &amp;ldquo;패턴&amp;quot;이라 이름 붙이고 일반화 시켰다   대부분의 새로운 이론들이 그렇듯이, 크리스토퍼 알렉산더의 패턴 언어 이론은 &amp;ldquo;그닥 사랑받는 이론&amp;quot;은 아니다.</description>
+    </item>
+    
+    <item>
+      <title>제텔카스텐에 대하여</title>
+      <link>https://ariyn.github.io/posts/vkiq9yxr1/</link>
+      <pubDate>Mon, 14 Nov 2022 17:10:39 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/vkiq9yxr1/</guid>
+      <description>제텔카스텐이라는 단어를 커뮤니티의 어떤 글에서 처음 읽은지 2년이 지났다.  당시에는 제 2의 뇌의 하위 개념정도로만 생각했다 지금은 제 2의 뇌가 제텔카스텐의 활용법중 하나라고 생각한다.   각각의 개념을 간단한 메모 카드로 만들고, 각 메모에 태그를 달아 쉽게 접근한다는 제텔카스텐은 상당히 흥미롭다  하나의 메모 카드에는 하나의 개념만 들어가야 한다  이로 인해서 여러개의 개념이 복잡하게 얽히는 오류를 피하기 쉽다 복잡하게 얽혀 있는 경우 다시 보았을 때 이게 어떤 내용인가를 파악하기 쉽지 않고, 거기서 파생되는 내용들도 더 복잡하게 얽히는 경우가 많다   각 메모에는 해당 내용을 설명하는 태그를 단다  태그 덕분에 접근성이 좋아진다  메모는 가끔씩(자주) Write Only일 때가 있다 이로 인해서 review가 어려워지고, 그러면 동일한 메모들이 쌓이거나 생각이 진전되지 않는 경우들이 있다 아주 일부분만 기억나는 경우에 메모를 찾기 어려우나, 태그를 관리하고 있다면 쉽게 찾을 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>영원의 건축 독후감</title>
+      <link>https://ariyn.github.io/posts/plzjlfnva/</link>
+      <pubDate>Mon, 14 Nov 2022 01:31:37 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/plzjlfnva/</guid>
+      <description>시간을 초월하는 영원한 건축법이 한 가지 있다 영원의 건축 p.27 크리스토퍼 알렉산더는 미국의 건축가로, 일종의 이단아였다.  &amp;ldquo;시간을 초월하는 영원한 건축법이 있으며, 이는 건축가의 펜 끝에서 나오지 않는다&amp;quot;라고 주장했다.  시간을 초월하는 영원한 건축법이 한 가지 있다 영원의 건축 p.27   이 건축법은 &amp;ldquo;패턴&amp;quot;을 조합하면서 나타나는 것으로, 건물, 도시 등 전체 패턴은 대략 200개 정도의 패턴이 조합된 것이라고 주장했다  그런데 이런 방식을 다양하게 적용한 건물들을 깊이 분석한 결과, 그 안에는 공통적인 요소가 있었다 영원의 건축 p.</description>
+    </item>
+    
+    <item>
+      <title>내성법은 필요하다.</title>
+      <link>https://ariyn.github.io/posts/la1uwr5xl/</link>
+      <pubDate>Thu, 10 Nov 2022 11:49:03 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/la1uwr5xl/</guid>
+      <description>내성법에 대하여  심리학의 초창기에 독일의 실험심리학자 빌헬름 분트가 주장한 방법 자신의 감정과 심리 상태, 생각에 대해서 곰곰히 생각해보는 방법  이는 일견 타당해보인다. 자신 말고 누가 &amp;ldquo;자신의 생각과 감정&amp;quot;을 대변할 수 있겠는가   그러나 내성법은 &amp;ldquo;실험 대상자의 주관성&amp;quot;에 영향을 크게 받기 때문에, 한계가 있었다.  예를들어 &amp;ldquo;조금 슬프다&amp;quot;라고 했을때, 이는 사람에 따라 아주 크게 차이가 난다. 그 사람의 경험, 사고 방식, 신념 등 모든것을 이해하지 않고서는 이 차이를 극복하기 어려울 것   이로인해서 분트의 &amp;ldquo;구성주의 심리학&amp;quot;보다 측정할 수 있는것만을 대상으로 삼는 &amp;ldquo;행동주의 심리학&amp;quot;이 대두하게 된다  어떤것을 생각하던 &amp;ldquo;행동&amp;quot;은 명확하게 측정할 수 있으니까     제랄드 와인버그는 프로그래밍 심리학에서 내성법에 대해 이야기 한다.</description>
+    </item>
+    
+    <item>
+      <title>롬 리서치를 사용한 블로그 자동 발행기</title>
+      <link>https://ariyn.github.io/posts/uwtveejtm/</link>
+      <pubDate>Tue, 08 Nov 2022 19:51:25 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/uwtveejtm/</guid>
+      <description>프로젝트 레포지토리 내 블로그는 롬 리서치를 기반으로 한다.  롬 리서치에 특정한 태그를 작성하면, 자동으로 블로그에 올라간다. 이미 롬 리서치는 매일 쓰고 있었기 때문에 이 구조를 선택했다.  그리고 블로그를 위해서 다른 툴을 사용하는 것은 본말전도라고 생각했다     핵심은 &amp;ldquo;큰 부담 없이 롬 리서치의 글을 가져가 블로그용으로 다듬고 발행하는 것&amp;quot;이였다.  이를 위해서 블로그는 &amp;ldquo;손쉽게 만들 수 있으며&amp;rdquo;, &amp;ldquo;자동으로 발행될 수 있는 구조&amp;quot;여야 했다.  브런치나 네이버 블로그 같은것은 아웃 미디엄도 api를 배워야 했기 때문에 아웃 따라서 푸시만 하면 되는 github.</description>
+    </item>
+    
+    <item>
+      <title>이방인 독후감</title>
+      <link>https://ariyn.github.io/posts/yj7udcb54/</link>
+      <pubDate>Sat, 05 Nov 2022 21:40:58 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/yj7udcb54/</guid>
+      <description>오늘, 이방인을 읽었다. 아니 어쩌면 어제. 잘 모르겠다.  이정도 소설은 써야 노벨 문학상을 받는것인가!   짧으면서도 참 많은 생각을 하게 해준 책  페스트를 읽고 18개의 메모를 남겼으나, 이방인을 읽고선 36개의 메모를 남겼다 그렇지만 반대로 이야기 하자면, 그만큼 어려운 부분도 많았다.  페스트의 경우 이해하기 어려운 부분은 한 두 부분 있었으나, 이방인의 &amp;ldquo;뫼르소의 마음 속&amp;quot;은 처음부터 끝까지 공감하면서 동시에 이해하기 어려웠다. 책 마지막에 뫼르소가 이 삶을 기억할 수 있는 그런 것이오!</description>
+    </item>
+    
+    <item>
+      <title>만약 고교야구 여자 매니저가 피터 드러커를 읽는다면 독후감</title>
+      <link>https://ariyn.github.io/posts/sxekog85b/</link>
+      <pubDate>Sat, 05 Nov 2022 21:26:27 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/sxekog85b/</guid>
+      <description>꽤나 유명한 책인데 드디어 읽어보았다  생각보다 재밌었다 라노벨 수준의 책인가 했지만, 의외로 캐릭터들이 느껴지는 부분이 있었다   전업 소설가가 아니다보니 아쉬운 부분이 많았다  캐릭터가 상당히 많은데, 이를 잘 풀어내지 못한 부분이 느껴진다 등장인물들이 많이 평면적이다&amp;hellip;  물론 몇몇 캐릭터들은 변화하기는 하지만, 여전히 &amp;ldquo;드러커의 위대함을 나타내기 위한 도구&amp;quot;라는 느낌이 강하다.     드러커가 해결해줄꺼야!로 해결되는 부분이 많은점은 조금 아쉽다  몇가지 사건들로 인해서 잘 적응할 수 있는 분위기가 된 것은 이해 한다.</description>
+    </item>
+    
+    <item>
+      <title>stephen&#39;s sausage roll</title>
+      <link>https://ariyn.github.io/posts/tjmwlyp02/</link>
+      <pubDate>Sun, 17 Oct 2021 11:42:37 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/tjmwlyp02/</guid>
+      <description>ch2 fallow earth    언듯 간단해보임 몇번 나왔던 퍼즐처럼 두번 굴리면 되지 않을까?   시도 1  소세지의 아랫쪽을 굽고, 포크로 찍어서 들고 나온 상황 그러나 윗쪽을 찍는다면, 소세지를 뺄 수 없음 따라서 아래를 찍어야 함     시도 2  시도 1과 동일한 진입부지만, 소세지를 아랫쪽을 찍으려 함 하지만 아랫쪽은 물에 의해서 막혀 있기 때문에 소세지를 찍을 수 없음 따라서 새로운 시도가 필요하다는 것을 깨달음     시도 3  전통적인 방식으로 굴려서 구워보기로 함 구운것을 빼내고      포크로 찍을 수 있는 상태를 만든다.</description>
+    </item>
+    
+    <item>
+      <title>리눅스를 설치하고 나서</title>
+      <link>https://ariyn.github.io/posts/ic2ao9-k-/</link>
+      <pubDate>Sun, 12 Sep 2021 16:49:36 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ic2ao9-k-/</guid>
+      <description> zsh 설치  oh-my-zsh 설치 도중 자동으로 default shell을 zsh로 바꿔준다. 다만 -y 옵션이 먹지 않으니, 미리미리 자리에 앉아있자.  (방법이 없을까?)    apt install -y curl zsh sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;   </description>
+    </item>
+    
+    <item>
+      <title>한주에 하나씩 새로운것을 익혀보자</title>
+      <link>https://ariyn.github.io/posts/gteknican/</link>
+      <pubDate>Thu, 19 Aug 2021 10:06:57 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/gteknican/</guid>
+      <description> 내 습관을 고치는 작업  한주씩 새로운것을 익혀서 1년이면 55가지 새로운 습관을 익힐 수 있다   분야는 삶, 지식, 행동, 코드 등 여러 분야에 걸쳐서 진행해보자.  </description>
+    </item>
+    
+    <item>
+      <title>3d 프린터의 출력물의 결과가 바뀌었다</title>
+      <link>https://ariyn.github.io/posts/ccr6obqyr/</link>
+      <pubDate>Wed, 18 Aug 2021 11:35:43 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ccr6obqyr/</guid>
+      <description>기존에는 ender3에 포함된 기본적으로 끼워져 있던 노즐을 사용했다. 이번에 노즐이 완전히 망가져서, 동봉된 다른 노즐을 사용했는데, 조금 더 작은 구경인듯 동일하게 cura에서 0.16mm으로 설정했지만, 이쪽이 월등하게 퀄리티가 높다&amp;hellip;  역시 기존에도 &amp;ldquo;노즐의 구경에 맞게 필라멘트가 나오는 것&amp;quot;이 아닌 &amp;ldquo;익스트루더가 0.16mm라면 이정도 밀면 된다&amp;quot;라고 동작하는게 맞았나보다&amp;hellip; 다만 정확한 노즐의 구경을 알아야 할 필요는 있을 듯.  출력중 기존에는 들어본적 없는 소리와 히트엔드가 덜그럭거리는&amp;hellip;. 공포스러운 소리가 나온다&amp;hellip;     지난번 노즐이 망가진 이유&amp;hellip;  히트엔드쪽을 뜯어보니, 테프론 튜브가 녹았다.</description>
+    </item>
+    
+    <item>
+      <title>나는 왜 롬 리서치를 사용하는가</title>
+      <link>https://ariyn.github.io/posts/odyrflfr4/</link>
+      <pubDate>Mon, 09 Aug 2021 14:29:05 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/odyrflfr4/</guid>
+      <description>사고의 방식이 바뀜  기존 노션이나 에버노트에서는 사고의 단위가 &amp;ldquo;문단&amp;quot;이였음  물론 tab 기능을 지원하지만, 그건 어디까지나 &amp;ldquo;부차적인 기능&amp;quot;으로 느껴짐 강제되지 않다보니, 쭈욱 적게됨  조금 부차적인 문제이지만, &amp;ldquo;어디서 문단을 나눠야 하는가&amp;quot;도 고민이 듬     roam에서는 기본 단위가 상하 관계를 가진 문장으로 제한됨  생각의 틀이 문장단위로 강제됨 오히려 이 덕분에 필요한 문장만 쓸 수 있게됨 개인적으로 &amp;ldquo;필요한 생각&amp;quot;만 적도록 연습할 수 있었음   (따라서 소설이나 비슷한 형식의 다른 문서작성은 노션이나 에버노트가 월등히 좋음.</description>
+    </item>
+    
+    <item>
+      <title>생각의 도구를 컴퓨터공학 도메인에 맞춰서 정리해야 한다</title>
+      <link>https://ariyn.github.io/posts/idkgl0jbu/</link>
+      <pubDate>Wed, 28 Jul 2021 09:44:33 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/idkgl0jbu/</guid>
+      <description>그래야 내 생각이 내 전문성을 사용해서 뻗어나갈 수 있다.
+  좋은 예시) https://johngrib.github.io/wiki/cleaning-tile-cycle/
+ 물때를 언제 청소할 것인가에 대한 간단한 생각에서 출발한다. 그러나 물때를 청소하는 것에 대한 요구사항(?)을 Threshold로 명명한다. 이름을 threshold로 명명하고 나니, cs에서 사용하는 접근방법들이 같이 떠오르고, 이를 사용해서 문제를 해결한다.  자동 GC라면 기계가 되었던 사람이 되었건 항상 누군가가 대기하여 threshold를 감지하고 일정 영역을 청소할 준비를 해놔야 한다. &amp;#39;처리량(throughput)&amp;#39;과 &amp;#39;짧은 일시 정지 시간&amp;#39;이 상충한다는 GC의 상식을 떠올려본다.</description>
+    </item>
+    
+    <item>
+      <title>블로그를 쉽게 쓰는 방법에 대해</title>
+      <link>https://ariyn.github.io/posts/nxtca5ebc/</link>
+      <pubDate>Tue, 27 Jul 2021 08:08:31 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/nxtca5ebc/</guid>
+      <description>roam research와 거의 동일한 수준으로  좀 더 이쁘게 할 수는 있을 듯 다만 글을 체계적으로 쓰는 노력을 할 수 있게 + 큰 노력을 들이지 않고 블로그 글을 쓸 수 있게 따라서 api를 이용해서 특정 태그가 걸려 있다면 자동으로 글을 업로드 해야 함  단 하면 안되는 태그가 있을경우 업로드 해서는 안됨 혹은 preview, review가 확실하게 진행 되어야 함     프로세스  롬 리서치에 글을 씀  이때 글은 새 페이지 뿐만 아니라, daily notes에 쓴 블럭도 포함됨   태그가 붙은 블럭의 하위 모든 블럭을 md로 출력  블로그에 올릴 글의 최상위 블럭에 [블로그](/tags/블로그`)와 같은 태그를 붙임 crontab을 이용해 매일 정시에 roam research의 태그를 검색 기존에 존재하지 않던 id의 블럭이 생겨 있다면, 해당 블럭을 출력 id값 저장   raw git repo에 md 파일 저장 후 push raw git repo를 기반으로 static web site 컴파일 후 push   생각해볼 기능   local환경에서 빌드하고 테스트 할 수 있도록 정리</description>
+    </item>
+    
+  </channel>
+</rss>

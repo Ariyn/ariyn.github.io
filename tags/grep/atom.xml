@@ -13,7 +13,8 @@
       <pubDate>Mon, 23 Aug 2021 11:07:07 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i7m3allfm/</guid>
-      <description> cat nohup.out | grep -e pattern -e pattern2 -e pattern3 cat nohup.out | grep -E &#39;pattern|pattern2|pattern3&#39; 참고  -E옵션을 사용하면, 정규식을 사용할 수 있게됨 -E, --extended-regexp PATTERN is an extended regular expression  따라서 -E 옵션 하나만 주로 사용하는 버릇을 들이자      </description>
+      <description> cat nohup.out | grep -e pattern -e pattern2 -e pattern3 cat nohup.out | grep -E &#39;pattern|pattern2|pattern3&#39; 참고   -E옵션을 사용하면, 정규식을 사용할 수 있게됨
+-E, --extended-regexp PATTERN is an extended regular expression  따라서 -E 옵션 하나만 주로 사용하는 버릇을 들이자      </description>
     </item>
     
   </channel>

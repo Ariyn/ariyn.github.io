@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Liste - https://ariyn.github.io/">
+  <title>개인 슬랙 채널을 제품의 클라이언트로 사용하기 | this.isMin.uk</title>
+  <meta name="description" content="Minimalistic Hugo blogging theme">
+<meta property="og:title" content="개인 슬랙 채널을 제품의 클라이언트로 사용하기" />
+<meta property="og:description" content="최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ariyn.github.io/posts/zbh5q2_6-/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-14T11:18:51+07:00" />
+<meta property="article:modified_time" content="2023-06-14T11:48:11+07:00" />
+
+
+  
+  <meta itemprop="name" content="개인 슬랙 채널을 제품의 클라이언트로 사용하기">
+<meta itemprop="description" content="최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다."><meta itemprop="datePublished" content="2023-06-14T11:18:51+07:00" />
+<meta itemprop="dateModified" content="2023-06-14T11:48:11+07:00" />
+<meta itemprop="wordCount" content="367">
+<meta itemprop="keywords" content="블로그,기술,published," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="개인 슬랙 채널을 제품의 클라이언트로 사용하기"/>
+<meta name="twitter:description" content="최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다."/>
+
+  <link rel="canonical" href="https://ariyn.github.io/posts/zbh5q2_6-/">
+  <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
+  <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "개인 슬랙 채널을 제품의 클라이언트로 사용하기",
+    "headline": "개인 슬랙 채널을 제품의 클라이언트로 사용하기",
+    "alternativeHeadline": "",
+    "description": "최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI\/UX를 신경써주고 있으니, 나쁘지 않게 나온다.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/ariyn.github.io\/posts\/zbh5q2_6-\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": ""
+    },
+    "copyrightHolder" : "this.isMin.uk",
+    "copyrightYear" : "2023",
+    "dateCreated": "2023-06-14T11:18:51.00Z",
+    "datePublished": "2023-06-14T11:18:51.00Z",
+    "dateModified": "2023-06-14T11:48:11.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "this.isMin.uk",
+        "url": "https://ariyn.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/ariyn.github.io\/",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://ariyn.github.io/",
+    "url" : "https:\/\/ariyn.github.io\/posts\/zbh5q2_6-\/",
+    "wordCount" : "367",
+    "genre" : [ "블로그" , "기술" , "published" ],
+    "keywords" : [ "블로그" , "기술" , "published" ]
+}
+</script>
+
+
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;"><a href="/"><b>this.isMin.uk</b></a></p>
+<ul style="padding: 0;margin: 0;">
+  <li><a href="/about">About</a></li> 
+  <li><a href="/random">Random</a></li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+      
+        
+      <h2 class="post">개인 슬랙 채널을 제품의 클라이언트로 사용하기</h2>
+      <ul>
+<li>최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.
+<ul>
+<li>메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나</li>
+</ul>
+</li>
+<li>대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다
+<ol>
+<li>
+<ol>
+<li>메시지 표시</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>사용자에게 표시해야 하는 경우이다.</li>
+<li>react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다</li>
+<li>슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다.
+<ul>
+<li>만약 필요한 경우, 페이지를 만들어서 링크를 걸거나 이미지로 만들어서 파일로 첨부해준다.</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<ol start="2">
+<li>유저의 설정</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>설정 같은 경우, 슬랙에서 하기에 조금 부족하다</li>
+<li>그렇지만 어차피 프로토타입의 영역에서 사용하니까 슬랙에서도 충분히 사용할 수는 있다.
+<ul>
+<li>개인적으로 슬랙 채널의 &ldquo;주제&quot;와 &ldquo;설명&rdquo; 그리고 &ldquo;채널 이름&quot;을 사용해서 간단한 설정을 해주고 있다.</li>
+<li>채널 이름에는 prefix를 붙인다던지, suffix를 붙인다던지 하는 방법으로.</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<ol start="3">
+<li>유저의 인터랙션</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>슬랙의 webhook 이벤트를 받으면 꽤 많은 것들을 할 수 있다.
+<ul>
+<li>메시지를 보내거나, 이모지를 붙이거나, 메시지를 수정하는 대부분의 이벤트를 받을 수 있다.</li>
+</ul>
+</li>
+<li>필요하다면 ephemeral 메시지와 <a href="https://api.slack.com/block-kit">block kit</a>을 사용해서 조금 더 복잡한 인터렉션이 가능하다.
+<ul>
+<li>이 경우 MessageTs를 저장하고 검색하고 사용해야 하기 때문에, 조금 더 복잡해진다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>부족한 점도 많지만, 장점이 꽤 괜찮다
+<ol>
+<li>
+<ol>
+<li>개인적으로 사용할 것들이니, 어느 정도는 타협이 가능하다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>어차피 사용법은 내가 꿰고 있으니, 그렇게까지 UX부분을 다듬을 필요는 없다.</li>
+</ul>
+<ol>
+<li>
+<ol start="2">
+<li>프로토타입에서 하고 싶은 것을 할 수 있게 된다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>물론 비주얼적인 부분을 만드는게 목적이라면 직접 만든다.</li>
+<li>개인적으로 사용하는 툴이나 아이디어의 구현은 서버쪽이 많다 보니, 오히려 필수적이지만 괴로운 프론트엔드 영역을 건너뛸 수 있는 것 같다.</li>
+</ul>
+<ol>
+<li>
+<ol start="3">
+<li>한 번 맞춰두면 꽤 범용적으로 사용할 수 있다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>의외로 슬랙을 활용하는 방법을 생각하다보면, 꽤 응용할 부분이 있다</li>
+<li>슬랙 api를 curl로도 쉽게 쓸 수 있으니까, 간단한 스크립트를 짜 두면 bash에서도 사용성이 좋다.</li>
+</ul>
+<ol>
+<li>
+<ol start="4">
+<li>모바일, 웹, 데스크톱 모두 지원이 좋다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>보통 모바일로도 사용해야 하는 경우, 디자인이 두 개가 되니까 고민되는 경우가 많다.</li>
+<li>특히 슬랙은 Noti도 되니까, 직접 구현하는 것 생각해보면 상당히 메리트가 있다.</li>
+</ul>
+</li>
+<li>단점도 있다
+<ol>
+<li>
+<ol>
+<li>커스터마이징이 불가능하다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>슬랙에 맞춰서만 사용해야 하기 때문에, 아쉬운 점이다.</li>
+<li>슬랙 채널별로 알람 사운드를 변경하거나, 리마인드 시간을 변경한다던지&hellip;</li>
+</ul>
+<ol>
+<li>
+<ol start="2">
+<li>파일 전송이 불편하다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>사용자가 파일을 올려야 하면, 슬랙의 파일 제한이 많이 아쉽다.</li>
+</ul>
+<ol>
+<li>
+<ol start="3">
+<li>채널이 많아지기 시작하면 불편하다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>딱 현재 상황인데, 이경우 모바일에서의 사용성이 떨어진다.</li>
+<li>deeplink가 있으니까 이를 홈 화면에 추가하는 방법이 있으면 좋을텐데, 그 방법을 모르겠다</li>
+</ul>
+<ol>
+<li>
+<ol start="4">
+<li>슬랙이 삽질하면 답이 없다</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>최근 자주 쓰던 기능이 사라지고 &ldquo;나중에&rdquo; 항목이 생겼는데 꽤 불편하다.
+<ul>
+<li>롤백 하는 것도 있는 것 같고, 아쉽다&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>트렐로도 사용성이 높을것이라 생각이 드는데, 이쪽은 api 구현이 조금 불편하다
+<ul>
+<li>정확한 문서화도 잘 안되고 있고&hellip; 아쉬운 부분이다.</li>
+</ul>
+</li>
+</ul>
+
+      
+      
+      
+      <a href='/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8'>블로그</a>, <a href='/tags/%EA%B8%B0%EC%88%A0'>기술</a>, <a href='/tags/published'>Published</a></div>
+</main>
+</body>
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$$', '$$'], ['\\(', '\\)']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</html>

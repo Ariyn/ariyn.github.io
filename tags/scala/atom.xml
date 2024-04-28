@@ -13,7 +13,9 @@
       <pubDate>Mon, 14 Nov 2022 01:06:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/k3feurkfw/</guid>
-      <description>abstract class Element { def contents: Array[String] def height: Int = contents.length def width: Int = if (height == 0) 0 else contents(0).length } var height = Element.height``` [출처](https://www.artima.com/pins1ed/composition-and-inheritance.html#i1343251059-1:~:text=Listing%2010.2%20%2D%20Defining%20parameterless%20methods%20width%20and%20height.) * `def foo: Int`의 경우 `parameterless method`로, `def foo(): Int`의 경우 `empty-paren methods`라고 부르는 것 같다 * https://stackoverflow.com/questions/7600910/difference-between-function-with-parentheses-and-without * 사이드이펙트가 있는경우 괄호가 있는 방법으로 선언해야 한다고 한다 ```scala &amp;#34;hello&amp;#34;.length // no () because no side-effect println() // better to not drop the () ``` * https://softwareengineering.</description>
+      <description>abstract class Element { def contents: Array[String] def height: Int = contents.length def width: Int = if (height == 0) 0 else contents(0).length } var height = Element.height``` [출처](https://www.artima.com/pins1ed/composition-and-inheritance.html#i1343251059-1:~:text=Listing%2010.2%20%2D%20Defining%20parameterless%20methods%20width%20and%20heigh   def foo: Int의 경우 parameterless method로, def foo(): Int의 경우 empty-paren methods라고 부르는 것 같다
+ https://stackoverflow.com/questions/7600910/difference-between-function-with-parentheses-and-without    사이드이펙트가 있는경우 괄호가 있는 방법으로 선언해야 한다고 한다
+&amp;#34;hello&amp;#34;.length // no () because no side-effect println() // better to not drop the ()  https://softwareengineering.</description>
     </item>
     
     <item>
@@ -22,7 +24,10 @@
       <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ypcno-aru/</guid>
-      <description> yield는 syntax sugar라고 한다.  실제로 아래의 문법으로 변환되서 실행된다고 한다  for( x &amp;lt;- c ) yield {...} c.map(x =&amp;gt; {....})  생각보다 많은곳에서 사용할 수 있는것 같다.  좀 더 공부가 필요할 듯   출처  </description>
+      <description>  yield는 syntax sugar라고 한다.
+ 실제로 아래의 문법으로 변환되서 실행된다고 한다  for( x &amp;lt;- c ) yield {...} c.map(x =&amp;gt; {....})   생각보다 많은곳에서 사용할 수 있는것 같다.
+ 좀 더 공부가 필요할 듯    출처
+  </description>
     </item>
     
     <item>
@@ -31,7 +36,8 @@
       <pubDate>Thu, 10 Nov 2022 16:53:43 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_9t8wmpbd/</guid>
-      <description>공식 문서에서 나온 방법과는 차이가 있기 때문에, 공부할때만 주로 써야할 것 같다.  이 방법으로 복잡한 코드를 실행하면 외부 라이브러리 같은 이슈가 있을 것 출처    &amp;gt; vim main.scala object HelloYou { def main(args: Array[String]) = { println(&amp;#34;Hello, World&amp;#34;) } } &amp;gt; scalac main.scala &amp;gt; scala HelloYou &amp;#34;Hello, World&amp;#34; * 자바처럼 실제로 빌드된 파일은 오브젝트의 이름을 따라간다.   main args에 파라미터를 넣는 방법도 쉽다 &amp;gt; vim main.</description>
+      <description>공식 문서에서 나온 방법과는 차이가 있기 때문에, 공부할때만 주로 써야할 것 같다.  이 방법으로 복잡한 코드를 실행하면 외부 라이브러리 같은 이슈가 있을 것 출처    &amp;gt; vim main.scala object HelloYou { def main(args: Array[String]) = { println(&amp;#34;Hello, World&amp;#34;) } } &amp;gt; scalac main.scala &amp;gt; scala HelloYou &amp;#34;Hello, World&amp;#34; * 자바처럼 실제로 빌드된 파일은 오브젝트의 이름을 따라간다.    main args에 파라미터를 넣는 방법도 쉽다
+&amp;gt; vim main.</description>
     </item>
     
     <item>

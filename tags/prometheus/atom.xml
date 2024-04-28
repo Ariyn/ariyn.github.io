@@ -6,7 +6,16 @@
     <description>Recent content in prometheus on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2022 12:57:59 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/prometheus/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jun 2023 14:58:52 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/prometheus/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prometheus에서 https 메트릭을 가져오는 방법</title>
+      <link>https://ariyn.github.io/posts/xf3ycorqp/</link>
+      <pubDate>Sat, 03 Jun 2023 14:58:52 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/xf3ycorqp/</guid>
+      <description> scheme에 https를 적어주면 된다  - job_name: &amp;#39;server&amp;#39; scheme: https static_configs: - targets: [&amp;#39;example.org&amp;#39;]  https://stackoverflow.com/questions/68435536/how-to-add-https-url-on-target-prometheus  </description>
+    </item>
+    
     <item>
       <title>golang client에서 counter와 counterVec의 차이</title>
       <link>https://ariyn.github.io/posts/d9ufw-0zj/</link>

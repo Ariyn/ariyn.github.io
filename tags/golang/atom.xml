@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>{{[[DONE]]}} gophernotes에서 import를 어떻게 사용하는지 확인 필요</title>
+      <title>{{}} gophernotes에서 import를 어떻게 사용하는지 확인 필요</title>
       <link>https://ariyn.github.io/posts/tz3zkdcgu/</link>
       <pubDate>Tue, 10 May 2022 18:45:34 +0700</pubDate>
       
@@ -85,7 +85,10 @@
       <pubDate>Thu, 09 Dec 2021 17:50:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
-      <description>문제의 코드 f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;)  그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.</description>
+      <description>문제의 코드
+f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.
+ bad file descriptor    O_APPEND는 access mode가 아니다.
+ The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7.org/linux/man-pages/man2/open.2.html   open 커맨드의 man에 따르자면, access mode는 세가지.</description>
     </item>
     
     <item>
@@ -130,7 +133,9 @@
       <pubDate>Sun, 24 Oct 2021 17:49:18 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/syl4e5dxv/</guid>
-      <description> 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(s) }  따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(struct { Strc }{Strc: s}) }   </description>
+      <description>  단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함
+func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(s) }   따라서 아래와 같이 임시 타입을 생성해서 진행해야 함
+func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(struct { Strc }{Strc: s}) }   </description>
     </item>
     
     <item>

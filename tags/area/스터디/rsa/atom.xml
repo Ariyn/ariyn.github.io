@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Area/스터디/RSA on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/area/%EC%8A%A4%ED%84%B0%EB%94%94/rsa/</link>
+    <description>Recent content in Area/스터디/RSA on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ariyn.github.io/tags/area/%EC%8A%A4%ED%84%B0%EB%94%94/rsa/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSA에 대하여</title>
+      <link>https://ariyn.github.io/posts/fcpd564de/</link>
+      <pubDate>Wed, 31 May 2023 22:38:21 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/fcpd564de/</guid>
+      <description>Ron Rivest, Adi Shamir, Leonard Adleman에 의해서 만들어졌으며, 이름의 앞글자를 따서 RSA가 되었다 (c:BLUERivest, c:BLUEShamir, c:BLUEAdleman)  https://dl.acm.org/doi/pdf/10.1145/359340.359342   RSA의 제안 이유  당시에 NBS (National Breau of Standards)에서 Data Encryption Standard라는 표준을 제정함 그러나 이 방식은 비밀키 방식이라 키 교환에 안전한 통신 채널이 필요했음  비밀키 방식 = 비밀키 한 개로 암호화와 복호화를 진행함. 따라서 전화선을 감청해서 비밀키를 알아낸다면, 이후의 모든 암호화를 깰 수 있다.   따라서 &amp;ldquo;안전하지 않은 통신 채널에서 비밀키를 교환하는 방법&amp;quot;을 찾기 위해 RSA가 제안됨  공개키 방식을 사용하면 모든 대화 내용을 감청해도 복호화가 불가능하다     공개키 암호화 방식으로 공개키와 개인키 두 개의 키를 사용한다  공개키 (public key)는 모두가 알고있고 모든 사람들이 메시지를 암호화하는데 사용된다.</description>
+    </item>
+    
+  </channel>
+</rss>

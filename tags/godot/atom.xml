@@ -13,7 +13,7 @@
       <pubDate>Thu, 08 Sep 2022 12:46:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8kd_rq31s/</guid>
-      <description> export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL  이 내용과 동일함.   따라서 사용하려면 _ready 내부에서 사용해야 한다 class X: var other: other.Class; func _init(name): self.other = other.Class.new() ._init(); var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다. func _ready(): var x = X.new() # autoload되었기 때문에, 문제없이 동작한다.   </description>
+      <description> [export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. godotTIL(/posts/vt01h5M2Z)  이 내용과 동일함.   따라서 사용하려면 _ready 내부에서 사용해야 한다 class X: var other: other.Class; func _init(name): self.other = other.Class.new() ._init(); var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다. func _ready(): var x = X.new() # autoload되었기 때문에, 문제없이 동작한다.   </description>
     </item>
     
     <item>

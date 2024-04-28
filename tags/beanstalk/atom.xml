@@ -22,7 +22,9 @@
       <pubDate>Tue, 05 Oct 2021 18:29:53 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mzsmfdhir/</guid>
-      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 command: echo &amp;#39;127.0.0.1 hostname&amp;#39; &amp;gt;&amp;gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
+      <description>  https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
+  .ebextensions에 커맨드를 추가
+command: echo &amp;#39;127.0.0.1 hostname&amp;#39; &amp;gt;&amp;gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
     </item>
     
     <item>

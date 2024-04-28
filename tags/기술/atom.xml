@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>기술 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/%EA%B8%B0%EC%88%A0/</link>
+    <description>Recent content in 기술 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Jun 2023 11:18:51 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/%EA%B8%B0%EC%88%A0/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개인 슬랙 채널을 제품의 클라이언트로 사용하기</title>
+      <link>https://ariyn.github.io/posts/zbh5q2_6-/</link>
+      <pubDate>Wed, 14 Jun 2023 11:18:51 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/zbh5q2_6-/</guid>
+      <description>최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DONE on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/done/</link>
+    <description>Recent content in DONE on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 May 2022 18:45:34 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/done/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>{{}} gophernotes에서 import를 어떻게 사용하는지 확인 필요</title>
+      <link>https://ariyn.github.io/posts/tz3zkdcgu/</link>
+      <pubDate>Tue, 10 May 2022 18:45:34 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/tz3zkdcgu/</guid>
+      <description> gophernotes에서는 gomacro를 사용해서 interpreting하고 있다  따라서 gomacro에서 어떻게 import하는지 확인이 필요하다   gomacro에서는 매번 go get을 사용해서 소스를 가져온다  이후 자신들이 사용하기 편리한 방법으로 컴파일 해 놓는다 이는 $GOPATH/src/gomacro.imports/하위에 위치한다    </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -26,12 +26,12 @@
     </item>
     
     <item>
-      <title>gh auth login에서 --with-token을 사용할 때, stdin으로 사용해야 함</title>
+      <title>gh auth login에서 --with-token을 사용할 때, stdin으로 사용해야 한다</title>
       <link>https://ariyn.github.io/posts/jbv4dg8tg/</link>
       <pubDate>Sat, 28 Aug 2021 22:36:55 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/jbv4dg8tg/</guid>
-      <description>echo &amp;#34;token&amp;#34; | gh auth login --with-token </description>
+      <description>echo &amp;#34;token&amp;#34; | gh auth login --with-token    </description>
     </item>
     
   </channel>

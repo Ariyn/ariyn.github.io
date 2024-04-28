@@ -6,7 +6,63 @@
     <description>Recent content in Posts on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2024 19:36:43 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Apr 2024 16:43:05 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQS fifo 큐에서 aviliability 타임을 지정해두면, 앞의 메시지가 안보이는 동안 뒤의 메시지들은 polling되지 않는다.</title>
+      <link>https://ariyn.github.io/posts/qyhqeuadx/</link>
+      <pubDate>Fri, 12 Apr 2024 16:43:05 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/qyhqeuadx/</guid>
+      <description> 공식 문서의 내용 - 메시지 그룹 ID가 있는 메시지를 수신한 경우, 동일한 메시지 그룹 ID에 대한 메시지는 그 메시지를 삭제하거나 메시지가 표시되는 경우가 아니라면 더 이상 반환되지 않습니다.  메시지 그룹 ID를 바꿔준다면 해당 그룹의 메시지들은 계속 나온다.   따라서 fifo 큐를 쓰고 있는데 메시지가 안나온다면 당황하지 말고 확인해보자.  </description>
+    </item>
+    
+    <item>
+      <title>`--log-driver local --log-opt max-size=10m`</title>
+      <link>https://ariyn.github.io/posts/5z33czr1j/</link>
+      <pubDate>Mon, 01 Apr 2024 10:40:37 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/5z33czr1j/</guid>
+      <description> 이 옵션을 통해서 로그를 rotation할 수 있다. 그냥 켠다면 도커는 계속해서 log를 로컬에 남기게 된다.  물론 container가 삭제된다면 로그도 삭제되지만, 오랫동안 켜져 있는 경우 로그가 커 문제가 생길수도 있다.    </description>
+    </item>
+    
+    <item>
+      <title>아인슈텔룽 효과</title>
+      <link>https://ariyn.github.io/posts/ylr9oc25t/</link>
+      <pubDate>Mon, 26 Feb 2024 10:53:57 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ylr9oc25t/</guid>
+      <description> 아인슈텔룽(Einstellung)은 기계화된 정신 상태 발달을 말한다. 문제해결 세트(problem solving set)로도 불리는 아인슈텔룽은, 더 좋거나 적절한 문제해결 방식이 존재함에도 특정 방식으로 문제를 해결하려는 소인(predisposition)을 의미한다. 출처 경로 의존성이나 터널 시야가 아인슈텔룽 효과의 한 예라고 볼 수 있을 것 하지만 이 둘이 인간 육체의 어쩔수 없는 현상이라고 한다면, 터널시야를 피하는 것은 &amp;ldquo;의지&amp;quot;로는 극복하기 힘들다는 증거가 아닐까?  </description>
+    </item>
+    
+    <item>
+      <title>IMDS</title>
+      <link>https://ariyn.github.io/posts/bcvnqnlc-/</link>
+      <pubDate>Fri, 12 Jan 2024 15:55:22 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/bcvnqnlc-/</guid>
+      <description>Instance Metadata Service의 약자로 인스턴스에서 해당 인스턴스의 메타데이터를 요청할 수 있는 서비스이다.
+ 인스턴스 메타데이터는 실행 중인 인스턴스를 구성하거나 관리하는 데 사용할 수 있는 인스턴스에 대한 데이터입니다.    모든 요청은 169.254.169.254로 http 요청을 보내면 된다.
+ 모든 응답은 plain/text로 내려오기 때문에, 필요한 만큼 가공해서 써야한다.  인스턴스 아이디처럼 스트링 그대로 써도 되는 것들이 많기 때문에 큰 단점은 아니다.    curl -H &amp;#34;X-aws-ec2-metadata-token: $TOKEN&amp;#34; -v http://169.</description>
+    </item>
+    
+    <item>
+      <title>nest js의 controller에서 @Response를 선언하고 response를 호출하지 않는다면 pending된다</title>
+      <link>https://ariyn.github.io/posts/ntpw0nauu/</link>
+      <pubDate>Wed, 10 Jan 2024 10:53:37 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ntpw0nauu/</guid>
+      <description>@Response를 사용한다면 반드시 response.json을 호출해주어야 한다.  // @Response가 없고 값을 반환하는 정상적인 상황 @Get(&amp;#39;:id&amp;#39;) findOne(@Param() params: any): string { console.log(params.id); return {message: `This action returns a #${params.id}cat`}; } // @Response를 선언하고, @Response를 통해 값을 반환하는 정상적인 상황 @Get(&amp;#39;:id&amp;#39;) findOne(@Param() params: any): string { console.log(params.id); res.json({message: `This action returns a #${params.id}cat`}); } // @Response를 선언했지만 값을 반환했기때문에 서버가 Hang 되는 상황 // 피해야한다. @Get(&amp;#39;:id&amp;#39;) findOne(@Param() params: any): string { console.</description>
+    </item>
+    
+    <item>
+      <title>NSWindowStyleMaskNonactivatingPanel를 사용하면 맥 어디에서나 윈도우를 띄울 수 있다.</title>
+      <link>https://ariyn.github.io/posts/6w8gbfe5e/</link>
+      <pubDate>Wed, 10 Jan 2024 09:59:28 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/6w8gbfe5e/</guid>
+      <description> electron에서는 window.type = &amp;quot;panel&amp;quot;로 설정 가능하다. 이경우 전체화면으로 띄워진 창에서도 창을 그 위에 띄울 수 있다.  </description>
+    </item>
+    
     <item>
       <title>zsh에서의 alias -g 옵션</title>
       <link>https://ariyn.github.io/posts/udzptctqb/</link>
@@ -14,8 +70,53 @@
       
       <guid>https://ariyn.github.io/posts/udzptctqb/</guid>
       <description>-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.
-$ cat ~/.zshrc alias -g G=&amp;#34;| grep -i&amp;#34; $ ls G do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
+$ cat ~/.zshrc alias -g G=&amp;#34;| grep&amp;#34; $ ls G Do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
 $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify when succeed alias -g ^nf=&amp;#34;|| echo &amp;#34; # notify when failed $ true ^ns &amp;#34;성공하였습니다.&amp;#34; ^nf &amp;#34;실패하였습니다.&amp;#34; 성공하였습니다. $ false ^ns &amp;#34;성공하였습니다.&amp;#34; ^nf &amp;#34;실패하였습니다.&amp;#34; 실패하였습니다.  이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>장례</title>
+      <link>https://ariyn.github.io/posts/szug4baxo/</link>
+      <pubDate>Tue, 18 Jul 2023 15:39:23 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/szug4baxo/</guid>
+      <description>처음으로 상복을 입었던 장례인데, 현실적으로 서너번은 더 입어야 할 것이기에 기록해둔다.  상조에 들지 않았기에 꽤 고생이었지만, 상조에 들어 있었다면 크게 걱정할 일이 없을 것이다. 또한 생각해보면 현충원 절차들이 꽤나 고생이었지, 나머지는 하라는대로 하면 되는 것이었다.   병원  병원에서 돌아가셨다면 알아서 절차가 진행된다. 병원비 결제는 한 번에 되지 않는다. 한 번 해두고, 며칠 뒤에 정산된다. 앞으로 쓸 일 많다. 사망 진단서는 많이 떼어두자. 바쁘고 하루에도 여러명이 죽다보니 병원은 그다지 친절하지 않다.</description>
+    </item>
+    
+    <item>
+      <title>개인 슬랙 채널을 제품의 클라이언트로 사용하기</title>
+      <link>https://ariyn.github.io/posts/zbh5q2_6-/</link>
+      <pubDate>Wed, 14 Jun 2023 11:18:51 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/zbh5q2_6-/</guid>
+      <description>최근 개인적으로 사용할 툴이나 아이디어의 구현을 슬랙으로 하고 있다.  메시지를 보내면 roam research에 자동으로 저장되거나, 블로그의 랜덤한 아티클을 슬랙으로 받거나, 시간 기록 클라이언트로 사용하거나   대부분의 경우 내가 만드려는 제품에 필요한 인터렉션은 몇 가지로 나뉜다    메시지 표시     사용자에게 표시해야 하는 경우이다. react나 vue를 사용해도 괜찮지만 버그 등의 수정이 필요하기도 하고, 무엇보다 디자인에 신경쓰다보면 꽤 시간이 걸린다 슬랙이 대신 UI/UX를 신경써주고 있으니, 나쁘지 않게 나온다.</description>
+    </item>
+    
+    <item>
+      <title>[n8n](https://n8n.io/)은 노드메이션이라 불린다</title>
+      <link>https://ariyn.github.io/posts/ktwn1ew4w/</link>
+      <pubDate>Tue, 13 Jun 2023 10:50:01 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/ktwn1ew4w/</guid>
+      <description> k8s나 a16z, i18n과 같은 방식 그래도 그렇지, 쿠버네티스는 쿠버네티스에 약어로 k8s라고 쓰지, 도메인 전체에 k8s라고 사용하지는 않는데, 찾아보기 전까지 n8n은 정말 몰랐다&amp;hellip;  </description>
+    </item>
+    
+    <item>
+      <title>prometheus에서 https 메트릭을 가져오는 방법</title>
+      <link>https://ariyn.github.io/posts/xf3ycorqp/</link>
+      <pubDate>Sat, 03 Jun 2023 14:58:52 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/xf3ycorqp/</guid>
+      <description> scheme에 https를 적어주면 된다  - job_name: &amp;#39;server&amp;#39; scheme: https static_configs: - targets: [&amp;#39;example.org&amp;#39;]  https://stackoverflow.com/questions/68435536/how-to-add-https-url-on-target-prometheus  </description>
+    </item>
+    
+    <item>
+      <title>RSA에 대하여</title>
+      <link>https://ariyn.github.io/posts/fcpd564de/</link>
+      <pubDate>Wed, 31 May 2023 22:38:21 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/fcpd564de/</guid>
+      <description>Ron Rivest, Adi Shamir, Leonard Adleman에 의해서 만들어졌으며, 이름의 앞글자를 따서 RSA가 되었다 (c:BLUERivest, c:BLUEShamir, c:BLUEAdleman)  https://dl.acm.org/doi/pdf/10.1145/359340.359342   RSA의 제안 이유  당시에 NBS (National Breau of Standards)에서 Data Encryption Standard라는 표준을 제정함 그러나 이 방식은 비밀키 방식이라 키 교환에 안전한 통신 채널이 필요했음  비밀키 방식 = 비밀키 한 개로 암호화와 복호화를 진행함. 따라서 전화선을 감청해서 비밀키를 알아낸다면, 이후의 모든 암호화를 깰 수 있다.   따라서 &amp;ldquo;안전하지 않은 통신 채널에서 비밀키를 교환하는 방법&amp;quot;을 찾기 위해 RSA가 제안됨  공개키 방식을 사용하면 모든 대화 내용을 감청해도 복호화가 불가능하다     공개키 암호화 방식으로 공개키와 개인키 두 개의 키를 사용한다  공개키 (public key)는 모두가 알고있고 모든 사람들이 메시지를 암호화하는데 사용된다.</description>
     </item>
     
     <item>
@@ -33,7 +134,8 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sun, 02 Apr 2023 20:35:02 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/vebrp0jjn/</guid>
-      <description>mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다.  기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다.  python, android, ios, C++ 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다.   현재는 ML이 적용된 새로운 버전이 나오고 있다.  일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다.</description>
+      <description>mediapipe는 구글에서 만든 모션 캡쳐 라이브러리다.
+ 기존의 모션 캡쳐 라이브러리가 2D에서 2D를 인식하는 한계가 있었다면, 이 라이브러리는 2D이미지를 가지고 3D를 인식하는 것이 목표이다.  python, android, ios, C++ 버전이 있으며, 온 디바이스에서 바로 인식하는것을 목표로 개발중이다. Pose, Hand, Face, Object 트래킹등 모션 캡쳐에 필요한 대부분의 기능이 포함되어 있고, 여러가지를 동시에 사용할 수도 있다.   현재는 ML이 적용된 새로운 버전이 나오고 있다.  일부 기능에만 ML이 적용된 버전이 있는데, 모든 기능에 대해서 나온다면 훨씬 좋은 성능을 낼 것으로 기대된다.</description>
     </item>
     
     <item>
@@ -42,7 +144,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 21 Feb 2023 11:01:10 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/afuqp7vsv/</guid>
-      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat /etc/crontab.daily/logrotate #!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &amp;#34;ALERT exited abnormally with [$EXITVALUE]&amp;#34; fi exit $EXITVALUE  cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;amp;&amp;amp; run-parts --report /etc/cron.</description>
+      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다.
+ 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.    cat /etc/crontab.daily/logrotate
+#!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE !</description>
     </item>
     
     <item>
@@ -69,16 +173,12 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sun, 22 Jan 2023 18:11:24 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/y-c3qqp6f/</guid>
-      <description>정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다  org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다.  authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다 UsernamePasswordAuthenticationToken(userDetails, null)``` * [출처](https://www.toptal.com/spring/spring-security-tutorial)    그러나 403 forbidden만 뜨면서 진행이 안된다 수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다. org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); ... --- inspector decision = AuthorizationDecision [granted=false]  원인을 찾아보니, UsernamePasswordAuthenticationToken의 생성자에 숨어 있었다.</description>
-    </item>
-    
-    <item>
-      <title>2022년 F1의 휘어지는 플로어에 대해 FIA는 &#34;의도적으로 규정을 위반한 팀은 없지만, 기술적 구멍은 해결하겠다&#34;고 발표했다</title>
-      <link>https://ariyn.github.io/posts/ein25ewtb/</link>
-      <pubDate>Sun, 01 Jan 2023 19:51:17 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/ein25ewtb/</guid>
-      <description>https://www.motorsport.com/f1/news/fia-no-f1-flexi-floor-cheating-in-2022-but-trickery-was-possible/10414049   출처 Giorgio Piola   22년 F1에서 가장 큰 이슈를 꼽아보자면, 무엇해도 폴포징 이슈를 빼 놓을 수 없습니다.  폴포징 이슈는 쉽게 설명하자면 자동차가 빠른 속도로 달리는 동안에 위 아래로 흔들리는 현상입니다.  실제로 차가 흔들리는 영상   자동차가 달리면서 그라운드 이팩트가 발생하면 차 바닥이 지면에 붙게됩니다. 이때 바닥에 붙은 상태에서는 공기의 흐름이 깨지기 때문에, 그라운드 이팩트가 사라지고 차가 올라옵니다. 이로 인해서 마치 돌고래가 위 아래로 헤엄치는듯한 현상이 발생합니다.</description>
+      <description>정체도 알 수 없는 패키지를 임포트하고 싶지 않아 JwtTokenFilter를 직접 구현했다
+  org.springframework.web.filter.OncePerRequestFilter를 상속받아, doFilterInternal을 구현하고, 인증이 되었다면 SecurityContextHolder에 authentication을 추가해주면 되는 간단한 작업이었다.
+  authentication은 org.springframework.security.authentication.UsernamePasswordAuthenticationToken을 사용했다
+UsernamePasswordAuthenticationToken(userDetails, null)`  출처      그러나 403 forbidden만 뜨면서 진행이 안된다
+  수많은 페이지를 찾아보고, 오랜시간 step into를 눌러가면서 확인한 결과, authentication이 granted false 되는것을 확인했다.
+org/springframework/security/web/access/intercept/AuthorizationFilter.java:95 try { AuthorizationDecision decision = this.authorizationManager.check(this::getAuthentication, request); .</description>
     </item>
     
     <item>
@@ -177,7 +277,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Mon, 14 Nov 2022 01:06:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/k3feurkfw/</guid>
-      <description>abstract class Element { def contents: Array[String] def height: Int = contents.length def width: Int = if (height == 0) 0 else contents(0).length } var height = Element.height``` [출처](https://www.artima.com/pins1ed/composition-and-inheritance.html#i1343251059-1:~:text=Listing%2010.2%20%2D%20Defining%20parameterless%20methods%20width%20and%20height.) * `def foo: Int`의 경우 `parameterless method`로, `def foo(): Int`의 경우 `empty-paren methods`라고 부르는 것 같다 * https://stackoverflow.com/questions/7600910/difference-between-function-with-parentheses-and-without * 사이드이펙트가 있는경우 괄호가 있는 방법으로 선언해야 한다고 한다 ```scala &amp;#34;hello&amp;#34;.length // no () because no side-effect println() // better to not drop the () ``` * https://softwareengineering.</description>
+      <description>abstract class Element { def contents: Array[String] def height: Int = contents.length def width: Int = if (height == 0) 0 else contents(0).length } var height = Element.height``` [출처](https://www.artima.com/pins1ed/composition-and-inheritance.html#i1343251059-1:~:text=Listing%2010.2%20%2D%20Defining%20parameterless%20methods%20width%20and%20heigh   def foo: Int의 경우 parameterless method로, def foo(): Int의 경우 empty-paren methods라고 부르는 것 같다
+ https://stackoverflow.com/questions/7600910/difference-between-function-with-parentheses-and-without    사이드이펙트가 있는경우 괄호가 있는 방법으로 선언해야 한다고 한다
+&amp;#34;hello&amp;#34;.length // no () because no side-effect println() // better to not drop the ()  https://softwareengineering.</description>
     </item>
     
     <item>
@@ -186,7 +288,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sat, 12 Nov 2022 21:58:13 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ypcno-aru/</guid>
-      <description> yield는 syntax sugar라고 한다.  실제로 아래의 문법으로 변환되서 실행된다고 한다  for( x &amp;lt;- c ) yield {...} c.map(x =&amp;gt; {....})  생각보다 많은곳에서 사용할 수 있는것 같다.  좀 더 공부가 필요할 듯   출처  </description>
+      <description>  yield는 syntax sugar라고 한다.
+ 실제로 아래의 문법으로 변환되서 실행된다고 한다  for( x &amp;lt;- c ) yield {...} c.map(x =&amp;gt; {....})   생각보다 많은곳에서 사용할 수 있는것 같다.
+ 좀 더 공부가 필요할 듯    출처
+  </description>
     </item>
     
     <item>
@@ -195,7 +300,8 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 10 Nov 2022 16:53:43 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_9t8wmpbd/</guid>
-      <description>공식 문서에서 나온 방법과는 차이가 있기 때문에, 공부할때만 주로 써야할 것 같다.  이 방법으로 복잡한 코드를 실행하면 외부 라이브러리 같은 이슈가 있을 것 출처    &amp;gt; vim main.scala object HelloYou { def main(args: Array[String]) = { println(&amp;#34;Hello, World&amp;#34;) } } &amp;gt; scalac main.scala &amp;gt; scala HelloYou &amp;#34;Hello, World&amp;#34; * 자바처럼 실제로 빌드된 파일은 오브젝트의 이름을 따라간다.   main args에 파라미터를 넣는 방법도 쉽다 &amp;gt; vim main.</description>
+      <description>공식 문서에서 나온 방법과는 차이가 있기 때문에, 공부할때만 주로 써야할 것 같다.  이 방법으로 복잡한 코드를 실행하면 외부 라이브러리 같은 이슈가 있을 것 출처    &amp;gt; vim main.scala object HelloYou { def main(args: Array[String]) = { println(&amp;#34;Hello, World&amp;#34;) } } &amp;gt; scalac main.scala &amp;gt; scala HelloYou &amp;#34;Hello, World&amp;#34; * 자바처럼 실제로 빌드된 파일은 오브젝트의 이름을 따라간다.    main args에 파라미터를 넣는 방법도 쉽다
+&amp;gt; vim main.</description>
     </item>
     
     <item>
@@ -208,7 +314,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
     </item>
     
     <item>
-      <title>내성법은 필요하다. </title>
+      <title>내성법은 필요하다.</title>
       <link>https://ariyn.github.io/posts/la1uwr5xl/</link>
       <pubDate>Thu, 10 Nov 2022 11:49:03 +0700</pubDate>
       
@@ -267,7 +373,8 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Mon, 07 Nov 2022 00:05:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/qwhwydl7i/</guid>
-      <description>롬 리서치를 쓸 때, 세벌식을 사용하면 백쿼트를 한번 누르면 세개가 동시에 나타난다 ```  그러나 이는 의도되지 않은 동작으로, 앞 두개만 코드 블럭으로 인식되고 마지막 백쿼트는 그냥 나타난다. 따라서 어딘가 오류가 있는 상황 윈도우 세벌식에서 키를 누르면, chrome onkeydown 이벤트 이전에 이미 글자를 적는 것 같다. 두벌식에서는 onkeydown 이벤트가 먼저 나타나고 글자가 나타남 따라서 롬 리서치에서 정상적으로 백 쿼트 두개를 추가했지만, 세벌식 입력기가 먼저 백쿼트를 하나 입력했기 때문에 세개가 나타나는 현상으로 추측   추가  확인하다보니, 세벌식 IME가 특수문자에도 keycode 229를 입력하는 것으로 보인다.</description>
+      <description>롬 리서치를 쓸 때, 세벌식을 사용하면 백쿼트를 한번 누르면 세개가 동시에 나타난다
+ * 그러나 이는 의도되지 않은 동작으로, 앞 두개만 코드 블럭으로 인식되고 마지막 백쿼트는 그냥 나타난다. * 따라서 어딘가 오류가 있는 상황 * 윈도우 세벌식에서 키를 누르면, chrome onkeydown 이벤트 이전에 이미 글자를 적는 것 같다. * 두벌식에서는 onkeydown 이벤트가 먼저 나타나고 글자가 나타남 * 따라서 롬 리서치에서 정상적으로 백 쿼트 두개를 추가했지만, 세벌식 입력기가 먼저 백쿼트를 하나 입력했기 때문에 세개가 나타나는 현상으로 추측   추가</description>
     </item>
     
     <item>
@@ -312,7 +419,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sat, 29 Oct 2022 00:50:59 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/3hfvpiz21/</guid>
-      <description>사용한 esp01 모듈 AT+CIPSTART 명령어를 사용해서 서버에 접속  AT+CIPSTART=&amp;quot;TCP&amp;quot;,&amp;quot;ADDRESS&amp;quot;,POST   AT+CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT+CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 +2 해줘야 한다   이후에 OK &amp;gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&amp;lt;/br&amp;gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT+CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다.</description>
+      <description>사용한 esp01 모듈
+  AT+CIPSTART 명령어를 사용해서 서버에 접속
+ AT+CIPSTART=&amp;quot;TCP&amp;quot;,&amp;quot;ADDRESS&amp;quot;,POST    AT+CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시
+ AT+CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 +2 해줘야 한다   이후에 OK &amp;gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r\n로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다    AT+CIPCLOSE 명령어를 사용해서 접속을 종료</description>
     </item>
     
     <item>
@@ -321,7 +431,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sat, 29 Oct 2022 00:12:48 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/scwrasju9/</guid>
-      <description> 최초 설정인 115200으로 사용하니, esp01에서 반환하는 응답값이 깨지는 문제가 있었다. AT+CIP*UIQ�&amp;quot;TCP&amp;quot;,&amp;quot;192.168.0.100&amp;quot;,&amp;quot;8080&amp;quot;  자세히 찾아보니 아두이노에서 사용하기에 115200은 너무 빠르다  기본 Tx, Rx(0, 1)핀은 해당 baud에서 작동 하지만, 다른 핀을 소프트시리얼로 사용할 경우 문제가 생긴다  나의 경우 8,9번을 Tx, Rx로 사용해서 그런것으로 보인다.   https://forum.arduino.cc/t/baud-rate-of-arduino-uno/464956   AT+UART_DEF=9600,8,1,0,0 명령어를 사용해서 변경하니, 문제없이 출력된다.  출처    </description>
+      <description>  최초 설정인 115200으로 사용하니, esp01에서 반환하는 응답값이 깨지는 문제가 있었다.
+AT+CIP*UIQ�&amp;quot;TCP&amp;quot;,&amp;quot;192.168.0.100&amp;quot;,&amp;quot;8080&amp;quot;   자세히 찾아보니 아두이노에서 사용하기에 115200은 너무 빠르다
+ 기본 Tx, Rx(0, 1)핀은 해당 baud에서 작동 하지만, 다른 핀을 소프트시리얼로 사용할 경우 문제가 생긴다  나의 경우 8,9번을 Tx, Rx로 사용해서 그런것으로 보인다.   https://forum.arduino.cc/t/baud-rate-of-arduino-uno/464956    AT+UART_DEF=9600,8,1,0,0 명령어를 사용해서 변경하니, 문제없이 출력된다.
+ 출처    </description>
     </item>
     
     <item>
@@ -375,7 +488,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 08 Sep 2022 12:46:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8kd_rq31s/</guid>
-      <description> export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. #godot #TIL  이 내용과 동일함.   따라서 사용하려면 _ready 내부에서 사용해야 한다 class X: var other: other.Class; func _init(name): self.other = other.Class.new() ._init(); var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다. func _ready(): var x = X.new() # autoload되었기 때문에, 문제없이 동작한다.   </description>
+      <description> [export로 설정한 변수는 ready이전에는 null로 초기화되어 있다. godotTIL(/posts/vt01h5M2Z)  이 내용과 동일함.   따라서 사용하려면 _ready 내부에서 사용해야 한다 class X: var other: other.Class; func _init(name): self.other = other.Class.new() ._init(); var x = X.new() # 아직 autoload가 되지 않았기 때문에, _init함수가 실패한다. func _ready(): var x = X.new() # autoload되었기 때문에, 문제없이 동작한다.   </description>
     </item>
     
     <item>
@@ -447,7 +560,8 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Wed, 27 Jul 2022 11:13:07 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/q9h64csxh/</guid>
-      <description>module default { type Station { property name -&amp;gt; str; property line_number -&amp;gt; int64; multi link connected -&amp;gt; Station; } } { default::Station {name: &amp;#39;사당&amp;#39;, line_number: 2, connected: {}}, default::Station {name: &amp;#39;사당&amp;#39;, line_number: 4, connected: {}}, default::Station {name: &amp;#39;낙성대&amp;#39;, line_number: 4, connected: {}}, }  위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨 update Station filter .name = &amp;#34;사당&amp;#34; set {connected += (select Station filter .</description>
+      <description>module default { type Station { property name -&amp;gt; str; property line_number -&amp;gt; int64; multi link connected -&amp;gt; Station; } } { default::Station {name: &amp;#39;사당&amp;#39;, line_number: 2, connected: {}}, default::Station {name: &amp;#39;사당&amp;#39;, line_number: 4, connected: {}}, default::Station {name: &amp;#39;낙성대&amp;#39;, line_number: 4, connected: {}}, }   위와 같은 상황에서 아래의 코드를 실행 시킨다면, select filter된 내용 중에서 동작하게 됨
+update Station filter .name = &amp;#34;사당&amp;#34; set {connected += (select Station filter .</description>
     </item>
     
     <item>
@@ -483,7 +597,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sun, 17 Jul 2022 13:03:09 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/8r4lxplh6/</guid>
-      <description> 아무래도 마라톤의 유래가, 아테네가 페르시아와의 전투에서 승리한 사실을 알린것을 기념하는 대회이다보니, 페르시아의 후손인 이란에서는 금지되어 있다고 한다 그렇지만 이것도 옛날 이야기고, 이제는 이란에서도 마라톤을 완전히 금지하지는 않는 것으로 보인다. 추가 [[November 6th, 2022]]  외대 중동 연구소의 한 교수님께 메일을 보내서 물어 보았는데, 이란에서 법적으로 금지한 적은 없다고 한다    </description>
+      <description> 아무래도 마라톤의 유래가, 아테네가 페르시아와의 전투에서 승리한 사실을 알린것을 기념하는 대회이다보니, 페르시아의 후손인 이란에서는 금지되어 있다고 한다 그렇지만 이것도 옛날 이야기고, 이제는 이란에서도 마라톤을 완전히 금지하지는 않는 것으로 보인다. 추가 November 6th, 2022  이란에 대해 연구하시는 교수님께 메일을 보내서 물어 보았는데, 이란에서 법적으로 금지한 적은 없다고 한다.    </description>
     </item>
     
     <item>
@@ -667,7 +781,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
     </item>
     
     <item>
-      <title>{{[[DONE]]}} gophernotes에서 import를 어떻게 사용하는지 확인 필요</title>
+      <title>{{}} gophernotes에서 import를 어떻게 사용하는지 확인 필요</title>
       <link>https://ariyn.github.io/posts/tz3zkdcgu/</link>
       <pubDate>Tue, 10 May 2022 18:45:34 +0700</pubDate>
       
@@ -735,7 +849,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 26 Apr 2022 11:20:03 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gzpnb8tcn/</guid>
-      <description>이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&amp;hellip;  어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&amp;hellip;   코드 // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451 // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams case &amp;#34;loc&amp;#34;: if value, err = url.QueryUnescape(value); err != nil { return } cfg.Loc, err = time.LoadLocation(value) if err != nil { return } // time/zoneinfo_read.go:529 // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다. // 이 함수는 Asia/Seoul 형식의 타임존 이름을 파싱하고, 시스템에서 값을 불러온다.</description>
+      <description>이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&amp;hellip;
+ 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&amp;hellip;    코드
+// github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451 // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams case &amp;#34;loc&amp;#34;: if value, err = url.QueryUnescape(value); err != nil { return } cfg.Loc, err = time.LoadLocation(value) if err != nil { return } // time/zoneinfo_read.go:529 // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다.</description>
     </item>
     
     <item>
@@ -753,17 +869,17 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 14 Apr 2022 11:44:26 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i26odekcd/</guid>
-      <description>2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서
- logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    </description>
+      <description> 2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서   logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    </description>
     </item>
     
     <item>
-      <title>캐리지 리턴()과 라인 피드(&lt;/br&gt;)</title>
+      <title>캐리지 리턴()과 라인 피드(
+)</title>
       <link>https://ariyn.github.io/posts/e4riphidk/</link>
       <pubDate>Wed, 13 Apr 2022 11:30:10 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/e4riphidk/</guid>
-      <description>\r은 캐리지 리턴을 의미한다. 캐리지를 가장 왼쪽으로 보내는 행동을 한다 은 라인피드를 의미하며, 한 줄 아래로 보내는 행동을 한다 이 둘은 키보드에서는 언뜻 이해가 안되지만, 타자기에서는 이해가 쉽다.  그럴만한게 타자기에서 나온 개념이기 때문에.   타자기에서 다음줄에 글자를 찍는 방법  타자기에서는 종이가 왼쪽으로 이동하며, 글자가 찍힌다. 한줄을 꽉 채웠다면 종이는 왼쪽으로 이동해서, 커서가 오른쪽 끝을 가리키는 상황이 되었을 것 이때 새로운 줄에 글자를 찍기 위해서는 아래의 두개의 행동을 해야한다.</description>
+      <description>\r은 캐리지 리턴을 의미한다. 캐리지를 가장 왼쪽으로 보내는 행동을 한다 \n은 라인피드를 의미하며, 한 줄 아래로 보내는 행동을 한다 이 둘은 키보드에서는 언뜻 이해가 안되지만, 타자기에서는 이해가 쉽다.  그럴만한게 타자기에서 나온 개념이기 때문에.   타자기에서 다음줄에 글자를 찍는 방법  타자기에서는 종이가 왼쪽으로 이동하며, 글자가 찍힌다. 한줄을 꽉 채웠다면 종이는 왼쪽으로 이동해서, 커서가 오른쪽 끝을 가리키는 상황이 되었을 것 이때 새로운 줄에 글자를 찍기 위해서는 아래의 두개의 행동을 해야한다.</description>
     </item>
     
     <item>
@@ -844,7 +960,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 31 Mar 2022 23:40:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/2y_pj6syo/</guid>
-      <description> impl 뒤에 {trait_name} for를 추가하면 된다 impl {trait} for {structure} { fn ... }  기본 구현이라는 방법이 있다  트레잇에서 함수의 원형뿐만 아니라 body까지 구현하고, impl시에 비어있는 중괄호를 사용하면 기본 구현을 자동으로 사용한다.  pub trait Sample { fn sample() string { String::from(&amp;#34;Hello&amp;#34;) } } impl Sample for s {}   </description>
+      <description>  impl 뒤에 {trait_name} for를 추가하면 된다
+impl {trait} for {structure} { fn ... }   기본 구현이라는 방법이 있다
+ 트레잇에서 함수의 원형뿐만 아니라 body까지 구현하고, impl시에 비어있는 중괄호를 사용하면 기본 구현을 자동으로 사용한다.  pub trait Sample { fn sample() string { String::from(&amp;#34;Hello&amp;#34;) } } impl Sample for s {}   </description>
     </item>
     
     <item>
@@ -862,7 +980,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 31 Mar 2022 23:36:16 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mpow-ysfu/</guid>
-      <description> 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것    </description>
+      <description> 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? Area/찾아볼 것    </description>
     </item>
     
     <item>
@@ -884,7 +1002,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
     </item>
     
     <item>
-      <title>[2. 함수가 다시 변수를 반환해서 동일한 값에 저장](/posts/kihuwqqiz)</title>
+      <title>2. 함수가 다시 변수를 반환해서 동일한 값에 저장</title>
       <link>https://ariyn.github.io/posts/ssnhdg8k8/</link>
       <pubDate>Tue, 29 Mar 2022 22:18:27 +0700</pubDate>
       
@@ -898,7 +1016,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 29 Mar 2022 21:22:55 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/s0kpvhium/</guid>
-      <description>기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우 let x = String::from(&amp;#34;hello&amp;#34;); let y = x;  이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 let x = String::from(&amp;#34;hello&amp;#34;); let y = x; println!</description>
+      <description>기본
+ rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨    할당과 관련된 골치아픈 경우
+let x = String::from(&amp;#34;hello&amp;#34;); let y = x;   이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨
+  그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨</description>
     </item>
     
     <item>
@@ -934,16 +1055,19 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Fri, 25 Mar 2022 10:14:39 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/-sgx3whw7/</guid>
-      <description> 1885년 독일의 헤르만 에빙하우스가 만들어낸 수식 R = e ^(-t/S) R = 기억 보유량 S = 상대적인 기억력 t = 시간  쓸모없는 단어를 만들고, 그 단어를 얼마나 기억하는지를 기반으로 만들어졌다고 한다 한달뒤 몇퍼센트 이런 자극적인 것 보다는, &amp;ldquo;기억은 저장된 즉시 휘발되기 시작하며, 유일한 해결책은 과잉학습과 반복학습뿐이다&amp;quot;라는 교훈을 얻는게 좋을 듯  </description>
+      <description>  1885년 독일의 헤르만 에빙하우스가 만들어낸 수식
+R = e ^(-t/S) R = 기억 보유량 S = 상대적인 기억력 t = 시간   쓸모없는 단어를 만들고, 그 단어를 얼마나 기억하는지를 기반으로 만들어졌다고 한다
+  한달뒤 몇퍼센트 이런 자극적인 것 보다는, &amp;ldquo;기억은 저장된 즉시 휘발되기 시작하며, 유일한 해결책은 과잉학습과 반복학습뿐이다&amp;quot;라는 교훈을 얻는게 좋을 듯
+  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>russ cox</title>
       <link>https://ariyn.github.io/posts/euq3mp2zg/</link>
       <pubDate>Wed, 23 Mar 2022 23:56:21 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/euq3mp2zg/</guid>
-      <description> 고랭 구현에 핵심 인물중 한명으로 보임  golang github의 contributors를 보면, russ cox가 200만 라인의 기여를 한 것을 볼 수 있다&amp;hellip;   보통 golang 공식 포럼이나 메일링 리스트에서 이사람의 말이 가장 권위가 있는듯  golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다 #TIL #golang   https://swtch.com/~rsc/  </description>
+      <description> 고랭 구현에 핵심 인물 중 한명  golang github의 contributors를 보면, russ cox가 200만 라인의 기여를 한 것을 볼 수 있다&amp;hellip;   보통 golang 공식 포럼이나 메일링 리스트에서 이사람의 말이 가장 권위가 있는듯  [golang은 기술적 이유로 인해서 negative lookahead를 지원하지 않는다 TILgolang(/posts/8XIyPU_hf)   https://swtch.com/~rsc/  </description>
     </item>
     
     <item>
@@ -1195,7 +1319,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sun, 16 Jan 2022 19:33:40 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/_z87fdhcl/</guid>
-      <description> 플라톤의 메논에서 나온 역설  사람이 어떠한 지식을 알고 있다면, 배울 필요가 없다 사람이 어떠한 지식을 알고 있지 않다면, 무엇을 배워야 할지 모르기 때문에, 배울 수 없다   소크라테스는 상기설을 통해서 반박한다  우리가 모르는거지, 영혼은 수많은 윤회를 통해 알고 있다고 하는 것   이 이 역설을 깰 수 있는거 아닐까?  우연한 행동들과 경험이 쌓여, 지식을 구성하게 된다 무엇을 배워야 할지 모르기 때문에, 우연히 읽은것들이 지식을 구성하게 된다    </description>
+      <description> 플라톤의 메논에서 나온 역설  사람이 어떠한 지식을 알고 있다면, 배울 필요가 없다 사람이 어떠한 지식을 알고 있지 않다면, 무엇을 배워야 할지 모르기 때문에, 배울 수 없다   소크라테스는 상기설을 통해서 반박한다  우리가 모르는거지, 영혼은 수많은 윤회를 통해 알고 있다고 하는 것   뷔리당의 당나귀 안티프래질비유이 이 역설을 깰 수 있지 않을까?  우연한 행동들과 경험이 쌓여, 지식을 구성하게 된다 무엇을 배워야 할지 모르기 때문에, 우연히 읽은것들이 지식을 구성하게 된다    </description>
     </item>
     
     <item>
@@ -1213,7 +1337,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sun, 16 Jan 2022 19:01:28 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mworbbdq9/</guid>
-      <description> 현대 컨테이너의 아버지 트럭의 짐칸을 떼어 내서 화물선에 실는 방법을 고안함  당시 미국 법에는 트럭이 바다를 이동하면 안된다는 법이 있었음 이 법을 피하기 위해 트럭의 일부(=짐칸)만 화물선에 선적함   유조선을 개조해서 테스트를 했고, 11m의 철제 컨테이너를 만듬  오늘날까지 사용되는 12m 철제 컨테이너의 규격이 탄생   본격적으로 서비스를 시작하자 상/하역 비용은 36배나 낮아짐  1톤당 5.86$에서 16센트로 낮아짐   맥린은 씨랜드 서비스라는 운송회사를 설립하였다  씨랜드는 30년간 사업을 하다가, 99년 머스크에 합병됨   The BOX 책이 컨테이너와 그의 이야기를 다룬 책 #책 #읽을꺼리  </description>
+      <description> 현대 컨테이너의 아버지 트럭의 짐칸을 떼어 내서 화물선에 실는 방법을 고안함  당시 미국 법에는 트럭이 바다를 이동하면 안된다는 법이 있었음 이 법을 피하기 위해 트럭의 일부(=짐칸)만 화물선에 선적함   유조선을 개조해서 테스트를 했고, 11m의 철제 컨테이너를 만듬  오늘날까지 사용되는 12m 철제 컨테이너의 규격이 탄생   본격적으로 서비스를 시작하자 상/하역 비용은 36배나 낮아짐  1톤당 5.86$에서 16센트로 낮아짐   맥린은 씨랜드 서비스라는 운송회사를 설립하였다  씨랜드는 30년간 사업을 하다가, 99년 머스크에 합병됨   The BOX 책이 컨테이너와 그의 이야기를 다룬 책 책읽을꺼리  </description>
     </item>
     
     <item>
@@ -1276,7 +1400,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 28 Dec 2021 20:47:21 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/ztj6o7_cw/</guid>
-      <description>최초 til은 6/25에 공병우 박사님에 관련된 til  {{[[embed]]: 공병우 박사님은 1907년생이다. #TIL}}   오늘 (12/28)까지 187일동안 til 작성  그동안 작성한 til은 총 148개  하루에 약 0.8개씩 작성   타입별  개발관련 86개 비 개발 62개   태그별  shell이 20개로 가장 많다. til 태그가 달린 파일들의 정성적 분석 필요  각 태그별 그래프             태그 한 개도 많다.</description>
+      <description>최초 til은 6/25에 공병우 박사님에 관련된 til  {{[[embed]]: [공병우 박사님은 1907년생이다. TIL(/posts/WcI_vPRx5)}}   오늘 (12/28)까지 187일동안 til 작성  그동안 작성한 til은 총 148개  하루에 약 0.8개씩 작성   타입별  개발관련 86개 비 개발 62개   태그별  shell이 20개로 가장 많다. til 태그가 달린 파일들의 정성적 분석 필요  각 태그별 그래프             태그 한 개도 많다.</description>
     </item>
     
     <item>
@@ -1384,7 +1508,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 09 Dec 2021 17:50:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
-      <description>문제의 코드 f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;)  그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.</description>
+      <description>문제의 코드
+f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.
+ bad file descriptor    O_APPEND는 access mode가 아니다.
+ The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7.org/linux/man-pages/man2/open.2.html   open 커맨드의 man에 따르자면, access mode는 세가지.</description>
     </item>
     
     <item>
@@ -1393,7 +1520,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 07 Dec 2021 23:58:34 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/qfc_bozqa/</guid>
-      <description> [[:digit:]]  </description>
+      <description> [:digit:](/tags/:digit:)  </description>
     </item>
     
     <item>
@@ -1474,7 +1601,11 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Wed, 01 Dec 2021 15:00:35 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/u8qsqcsgg/</guid>
-      <description> 태그만 존재하는 블럭의 하위 항목  이거 나중에 확인이 어렵다.  태그 페이지에서 빈줄로 나옴 (하위 항목이 한번에 보이지 않고, 기본적으로 collapse되어 있음)   무조건 태그는 제목 내지는 한줄 요약에 붙이고, 그 하위에 내용을 써야 함 좋지 않은 예시 * #태그 * 내용 1 * 내용 2  좋은 예시 * 내용들 #태그 * 내용 1 * 내용 2     </description>
+      <description> 태그만 존재하는 블럭의 하위 항목   이거 나중에 확인이 어렵다.
+ 태그 페이지에서 빈줄로 나옴 (하위 항목이 한번에 보이지 않고, 기본적으로 collapse되어 있음)    무조건 태그는 제목 내지는 한줄 요약에 붙이고, 그 하위에 내용을 써야 함
+  좋지 않은 예시
+* #태그 * 내용 1 * 내용 2   좋은 예시
+* 내용들 #태그 * 내용 1 * 내용 2     </description>
     </item>
     
     <item>
@@ -1631,7 +1762,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
     </item>
     
     <item>
-      <title>git에서 특정 파일들만 stash하기  /stash</title>
+      <title>git에서 특정 파일들만 stash하기</title>
       <link>https://ariyn.github.io/posts/jbz107kko/</link>
       <pubDate>Fri, 12 Nov 2021 14:43:54 +0700</pubDate>
       
@@ -1690,7 +1821,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 04 Nov 2021 22:41:22 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/njo_ltxgb/</guid>
-      <description> https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다 문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다  업데이트가 안된 버전임 결국 삭제후 재 설치해야 함  bin/logstash-plugin uninstall logstash-output-opensearch bin/logstash-plugin install logstash-output-opensearch  생명의 구원자  https://githubmemory.com/@arianitu    </description>
+      <description>  https://opensearch.org/docs/latest/clients/logstash/index/ 여기서 다운 받았다
+  문제는 해당 패키지에 들어있는 logstash-opensearch-output-plugin이 문제가 있다
+ 업데이트가 안된 버전임 결국 삭제후 재 설치해야 함  bin/logstash-plugin uninstall logstash-output-opensearch bin/logstash-plugin install logstash-output-opensearch   출처
+  </description>
     </item>
     
     <item>
@@ -1708,7 +1842,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Wed, 03 Nov 2021 14:29:06 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mtkokevx0/</guid>
-      <description> json filter plugin을 사용하고 target을 지정하지 않으면 root로 들어가게 된다. filter { grok { match =&amp;gt; &amp;#34;test %{GREEDYDATA:jsonString}&amp;#34; } json { source =&amp;gt; &amp;#34;jsonString&amp;#34; } }  https://www.elastic.co/guide/en/logstash/current/plugins-filters-json.html#plugins-filters-json-target  </description>
+      <description>  json filter plugin을 사용하고 target을 지정하지 않으면 root로 들어가게 된다.
+filter { grok { match =&amp;gt; &amp;#34;test %{GREEDYDATA:jsonString}&amp;#34; } json { source =&amp;gt; &amp;#34;jsonString&amp;#34; } }   https://www.elastic.co/guide/en/logstash/current/plugins-filters-json.html#plugins-filters-json-target
+  </description>
     </item>
     
     <item>
@@ -1753,7 +1889,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 28 Oct 2021 17:23:00 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i720z9kdf/</guid>
-      <description>echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text```&amp;lt;/br&amp;gt; </description>
+      <description>echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text``` </description>
     </item>
     
     <item>
@@ -1789,7 +1925,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 26 Oct 2021 21:19:11 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/a40q4vdgs/</guid>
-      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자 ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime  혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정  debian, ubuntu만 가능함  ENV DEBIAN_FRONTEND=noninteractive  단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
+      <description>  간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자
+ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime   혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정
+ debian, ubuntu만 가능함  ENV DEBIAN_FRONTEND=noninteractive  단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
     </item>
     
     <item>
@@ -1843,7 +1981,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Sun, 24 Oct 2021 17:49:18 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/syl4e5dxv/</guid>
-      <description> 단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함 func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(s) }  따라서 아래와 같이 임시 타입을 생성해서 진행해야 함 func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(struct { Strc }{Strc: s}) }   </description>
+      <description>  단순히 marshalJson을 하게되면 recursive하게 실행될 가능성이 존재함
+func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(s) }   따라서 아래와 같이 임시 타입을 생성해서 진행해야 함
+func (s Strc) MarshalJson() ([]byte, error) { data, err := json.Marshal(struct { Strc }{Strc: s}) }   </description>
     </item>
     
     <item>
@@ -1924,7 +2064,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Mon, 11 Oct 2021 11:18:40 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tdj1-h9ev/</guid>
-      <description> ~/.zshrc에 아래의 세 줄을 추가 autoload bashcompinit &amp;amp;&amp;amp; bashcompinit autoload -Uz compinit &amp;amp;&amp;amp; compinit complete -C &amp;#34;$(which aws_completer)&amp;#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      </description>
+      <description>  ~/.zshrc에 아래의 세 줄을 추가
+autoload bashcompinit &amp;amp;&amp;amp; bashcompinit autoload -Uz compinit &amp;amp;&amp;amp; compinit complete -C &amp;#34;$(which aws_completer)&amp;#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html    autoload의 역할
+ 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh    auto complete 방법
+ https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      </description>
     </item>
     
     <item>
@@ -1951,16 +2094,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 05 Oct 2021 18:29:53 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mzsmfdhir/</guid>
-      <description> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html .ebextensions에 커맨드를 추가 command: echo &amp;#39;127.0.0.1 hostname&amp;#39; &amp;gt;&amp;gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
-    </item>
-    
-    <item>
-      <title>2d Hexagon 거리 측정</title>
-      <link>https://ariyn.github.io/posts/smonoglfz/</link>
-      <pubDate>Mon, 04 Oct 2021 19:11:46 +0700</pubDate>
-      
-      <guid>https://ariyn.github.io/posts/smonoglfz/</guid>
-      <description>빠르게 해야하니, 단순히 recursive하게 계산  각 depth마다, 자신 주변의 모든 타일에 대해 recursive하게 들어감 depth가 넘어가면 더이상 들어가지 않고, 주변 타일만 계산함   아마도 문제가 있을 부분  비어있는 타일이 있을경우, 그 타일때문에, 계산이 달라질 듯. 그러나 아직은 버그를 허용하고 빠르게 만드는게 목적   다음에 해야하는 일  캐릭터를 선택했을때, 현재 위치에 따라 거리를 계산 계산된 거리에 따라 타일의 색을 바꿔줌  현재는 sprite를 사용하지만, 이건 phaser3의 특성인지 바꾸기 어려운 듯.</description>
+      <description>  https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
+  .ebextensions에 커맨드를 추가
+command: echo &amp;#39;127.0.0.1 hostname&amp;#39; &amp;gt;&amp;gt; /etc/hosts  https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk https://namocom.tistory.com/825    </description>
     </item>
     
     <item>
@@ -2023,7 +2159,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 16 Sep 2021 00:04:04 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mu4oltbad/</guid>
-      <description> 대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다 could not use snapshotter aufs in metadata plugin&amp;#34; error=&amp;#34;modprobe aufs failed: &amp;#34;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &amp;#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin  이경우 iptables를 legacy 모드로 바꿔줘야 함 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy  출처  https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
+      <description>  대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다
+could not use snapshotter aufs in metadata plugin&amp;#34; error=&amp;#34;modprobe aufs failed: &amp;#34;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &amp;#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin   이경우 iptables를 legacy 모드로 바꿔줘야 함
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy   출처
+ https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
     </item>
     
     <item>
@@ -2032,7 +2171,11 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Wed, 15 Sep 2021 09:46:45 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/l2c0vdijo/</guid>
-      <description> -N옵션 mysql -N -e &amp;#39;SELECT * FROM user;&amp;#39;  -column-names  Write column names in results. (Defaults to on; use &amp;ndash;skip-column-names to disable.)   N, &amp;ndash;skip-column-names  Don&amp;rsquo;t write column names in results.   실수로 -n 옵션을 주게되면 다른게 적용되니 조심하자  -n, &amp;ndash;unbuffered Flush buffer after each query.    </description>
+      <description>  -N옵션
+mysql -N -e &amp;#39;SELECT * FROM user;&amp;#39;   -column-names
+ Write column names in results. (Defaults to on; use &amp;ndash;skip-column-names to disable.)    N, &amp;ndash;skip-column-names
+ Don&amp;rsquo;t write column names in results.    실수로 -n 옵션을 주게되면 다른게 적용되니 조심하자
+ -n, &amp;ndash;unbuffered Flush buffer after each query.    </description>
     </item>
     
     <item>
@@ -2059,7 +2202,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Mon, 13 Sep 2021 14:37:15 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/dta1vnjfr/</guid>
-      <description>3.14 - 1592 - 65359</description>
+      <description> 3.14 - 1592 - 65359  </description>
     </item>
     
     <item>
@@ -2144,12 +2287,12 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
     </item>
     
     <item>
-      <title>gh auth login에서 --with-token을 사용할 때, stdin으로 사용해야 함</title>
+      <title>gh auth login에서 --with-token을 사용할 때, stdin으로 사용해야 한다</title>
       <link>https://ariyn.github.io/posts/jbv4dg8tg/</link>
       <pubDate>Sat, 28 Aug 2021 22:36:55 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/jbv4dg8tg/</guid>
-      <description>echo &amp;#34;token&amp;#34; | gh auth login --with-token </description>
+      <description>echo &amp;#34;token&amp;#34; | gh auth login --with-token    </description>
     </item>
     
     <item>
@@ -2176,7 +2319,8 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Mon, 23 Aug 2021 11:07:07 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i7m3allfm/</guid>
-      <description> cat nohup.out | grep -e pattern -e pattern2 -e pattern3 cat nohup.out | grep -E &#39;pattern|pattern2|pattern3&#39; 참고  -E옵션을 사용하면, 정규식을 사용할 수 있게됨 -E, --extended-regexp PATTERN is an extended regular expression  따라서 -E 옵션 하나만 주로 사용하는 버릇을 들이자      </description>
+      <description> cat nohup.out | grep -e pattern -e pattern2 -e pattern3 cat nohup.out | grep -E &#39;pattern|pattern2|pattern3&#39; 참고   -E옵션을 사용하면, 정규식을 사용할 수 있게됨
+-E, --extended-regexp PATTERN is an extended regular expression  따라서 -E 옵션 하나만 주로 사용하는 버릇을 들이자      </description>
     </item>
     
     <item>
@@ -2392,7 +2536,10 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Thu, 05 Aug 2021 10:41:00 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/1rjkw8cvs/</guid>
-      <description>서재필과 주시경이 발간한 독립신문(1896/04/07)에서 처음 사용됨 띄어쓰기의 이유를 이렇게 설명함 우리 신문이 한문은 안쓰고 다만 국문으로만 쓰는것은 상하귀천이 다 보게 함이라. 또 국문의 구절을 이렇게 띄어쓴 이유는, 누구라도 이 신문을 보기가 쉽고 신문속에 있는 말을 자세히 알아보게 함이라.  일본이 띄어쓰기가 없어 한자를 포기 못하는 것을 본다면, 이들의 노력이 한자를 한국어에서 빼는 발판이 된게 아닐까. 영어의 조사가 띄어쓰기의 대상에 포함된다는 것을 생각해보면, 저때 조사는 띄어쓰지 않는다고 정한게 얼마나 다행인걸까&amp;hellip; (혹은 너무 길어져서 띄어쓰지 않도록 정한것일까?</description>
+      <description>서재필과 주시경이 발간한 독립신문(1896/04/07)에서 처음 사용됨
+  띄어쓰기의 이유를 이렇게 설명함
+우리 신문이 한문은 안쓰고 다만 국문으로만 쓰는것은 상하귀천이 다 보게 함이라. 또 국문의 구절을 이렇게 띄어쓴 이유는, 누구라도 이 신문을 보기가 쉽고 신문속에 있는 말을 자세히 알아보게 함이라.   일본이 띄어쓰기가 없어 한자를 포기 못하는 것을 본다면, 이들의 노력이 한자를 한국어에서 빼는 발판이 된게 아닐까.
+  영어의 조사가 띄어쓰기의 대상에 포함된다는 것을 생각해보면, 저때 조사는 띄어쓰지 않는다고 정한게 얼마나 다행인걸까&amp;hellip; (혹은 너무 길어져서 띄어쓰지 않도록 정한것일까?</description>
     </item>
     
     <item>
@@ -2419,7 +2566,9 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Wed, 28 Jul 2021 09:44:33 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/idkgl0jbu/</guid>
-      <description>그래야 내 생각이 내 전문성을 사용해서 뻗어나갈 수 있다. 좋은 예시) https://johngrib.github.io/wiki/cleaning-tile-cycle/  물때를 언제 청소할 것인가에 대한 간단한 생각에서 출발한다.그러나 물때를 청소하는 것에 대한 요구사항(?)을 Threshold로 명명한다.이름을 threshold로 명명하고 나니, cs에서 사용하는 접근방법들이 같이 떠오르고, 이를 사용해서 문제를 해결한다.  자동 GC라면 기계가 되었던 사람이 되었건 항상 누군가가 대기하여 threshold를 감지하고 일정 영역을 청소할 준비를 해놔야 한다. &amp;#39;처리량(throughput)&amp;#39;과 &amp;#39;짧은 일시 정지 시간&amp;#39;이 상충한다는 GC의 상식을 떠올려본다.  나라면 &amp;ldquo;더러움에 대한 역치&amp;quot;라는 단어를 사용 했을 것이다.</description>
+      <description>그래야 내 생각이 내 전문성을 사용해서 뻗어나갈 수 있다.
+  좋은 예시) https://johngrib.github.io/wiki/cleaning-tile-cycle/
+ 물때를 언제 청소할 것인가에 대한 간단한 생각에서 출발한다. 그러나 물때를 청소하는 것에 대한 요구사항(?)을 Threshold로 명명한다. 이름을 threshold로 명명하고 나니, cs에서 사용하는 접근방법들이 같이 떠오르고, 이를 사용해서 문제를 해결한다.  자동 GC라면 기계가 되었던 사람이 되었건 항상 누군가가 대기하여 threshold를 감지하고 일정 영역을 청소할 준비를 해놔야 한다. &amp;#39;처리량(throughput)&amp;#39;과 &amp;#39;짧은 일시 정지 시간&amp;#39;이 상충한다는 GC의 상식을 떠올려본다.</description>
     </item>
     
     <item>
@@ -2428,7 +2577,7 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       <pubDate>Tue, 27 Jul 2021 08:08:31 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/nxtca5ebc/</guid>
-      <description>roam research와 거의 동일한 수준으로  좀 더 이쁘게 할 수는 있을 듯 다만 글을 체계적으로 쓰는 노력을 할 수 있게 + 큰 노력을 들이지 않고 블로그 글을 쓸 수 있게 따라서 api를 이용해서 특정 태그가 걸려 있다면 자동으로 글을 업로드 해야 함  단 하면 안되는 태그가 있을경우 업로드 해서는 안됨 혹은 preview, review가 확실하게 진행 되어야 함     프로세스  롬 리서치에 글을 씀  이때 글은 새 페이지 뿐만 아니라, daily notes에 쓴 블럭도 포함됨   태그가 붙은 블럭의 하위 모든 블럭을 md로 출력  블로그에 올릴 글의 최상위 블럭에 #블로그 와 같은 태그를 붙임 crontab을 이용해 매일 정시에 roam research의 태그를 검색 기존에 존재하지 않던 id의 블럭이 생겨 있다면, 해당 블럭을 출력 id값 저장   raw git repo에 md 파일 저장 후 push raw git repo를 기반으로 static web site 컴파일 후 push   생각해볼 기능  local환경에서 빌드하고 테스트 할 수 있도록 정리 가져오는것에 실패 했다면 커밋을 취소하기 [[September 17th, 2021]]  가끔 모든 파일을 삭제한채로 커밋하는 경우가 있음 막아줄 것   quote 기능  roam research에서는 동작 안해도, 실제로는 필요하다.</description>
+      <description>roam research와 거의 동일한 수준으로  좀 더 이쁘게 할 수는 있을 듯 다만 글을 체계적으로 쓰는 노력을 할 수 있게 + 큰 노력을 들이지 않고 블로그 글을 쓸 수 있게 따라서 api를 이용해서 특정 태그가 걸려 있다면 자동으로 글을 업로드 해야 함  단 하면 안되는 태그가 있을경우 업로드 해서는 안됨 혹은 preview, review가 확실하게 진행 되어야 함     프로세스  롬 리서치에 글을 씀  이때 글은 새 페이지 뿐만 아니라, daily notes에 쓴 블럭도 포함됨   태그가 붙은 블럭의 하위 모든 블럭을 md로 출력  블로그에 올릴 글의 최상위 블럭에 [블로그](/tags/블로그`)와 같은 태그를 붙임 crontab을 이용해 매일 정시에 roam research의 태그를 검색 기존에 존재하지 않던 id의 블럭이 생겨 있다면, 해당 블럭을 출력 id값 저장   raw git repo에 md 파일 저장 후 push raw git repo를 기반으로 static web site 컴파일 후 push   생각해볼 기능   local환경에서 빌드하고 테스트 할 수 있도록 정리</description>
     </item>
     
     <item>
@@ -2492,6 +2641,15 @@ $ cat ~/.zshrc alias -g ^ns=&amp;#34;&amp;amp;&amp;amp; echo &amp;#34; # notify 
       
       <guid>https://ariyn.github.io/posts/haor0b6mf/</guid>
       <description> 예) 운동을 해야지.  주변 환경을 만들어 두면, 내 의지가 적게 필요함. 이로 인해 성공의 확률이 높아짐.   일을 잘하는 사람은 소셜 네트워크가 좋음 좋은 피아노 선생은 이것을 소셜 네트워크로 전환시킴.  예) 이걸 누가 들을것이라 생각하느냐, 누구와 함께 칠 것 같으냐    </description>
+    </item>
+    
+    <item>
+      <title>리눅스는 파일이 열려있는 상태에서 지울 수 있는데, 이경우 실제로 지워지지는 않고 안보이게만 해 둔다</title>
+      <link>https://ariyn.github.io/posts/5_yh45vyl/</link>
+      <pubDate>Mon, 01 Jan 0001 08:27:52 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/5_yh45vyl/</guid>
+      <description> 이때 파일을 열고있는 프로세스들이 모두 종료되면, 그때 파일을 삭제한다 lsof | grep delete 명령어를 사용해서 확인할 수 있다  </description>
     </item>
     
   </channel>

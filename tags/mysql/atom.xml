@@ -40,7 +40,11 @@
       <pubDate>Wed, 15 Sep 2021 09:46:45 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/l2c0vdijo/</guid>
-      <description> -N옵션 mysql -N -e &amp;#39;SELECT * FROM user;&amp;#39;  -column-names  Write column names in results. (Defaults to on; use &amp;ndash;skip-column-names to disable.)   N, &amp;ndash;skip-column-names  Don&amp;rsquo;t write column names in results.   실수로 -n 옵션을 주게되면 다른게 적용되니 조심하자  -n, &amp;ndash;unbuffered Flush buffer after each query.    </description>
+      <description>  -N옵션
+mysql -N -e &amp;#39;SELECT * FROM user;&amp;#39;   -column-names
+ Write column names in results. (Defaults to on; use &amp;ndash;skip-column-names to disable.)    N, &amp;ndash;skip-column-names
+ Don&amp;rsquo;t write column names in results.    실수로 -n 옵션을 주게되면 다른게 적용되니 조심하자
+ -n, &amp;ndash;unbuffered Flush buffer after each query.    </description>
     </item>
     
     <item>

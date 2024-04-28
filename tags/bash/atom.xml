@@ -13,7 +13,9 @@
       <pubDate>Tue, 21 Feb 2023 11:01:10 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/afuqp7vsv/</guid>
-      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat /etc/crontab.daily/logrotate #!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &amp;#34;ALERT exited abnormally with [$EXITVALUE]&amp;#34; fi exit $EXITVALUE  cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;amp;&amp;amp; run-parts --report /etc/cron.</description>
+      <description>로그 로테이트는 service가 아니라 crontab으로 실행된다.
+ 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.    cat /etc/crontab.daily/logrotate
+#!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE !</description>
     </item>
     
     <item>
@@ -49,7 +51,7 @@
       <pubDate>Thu, 28 Oct 2021 17:23:00 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/i720z9kdf/</guid>
-      <description>echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text```&amp;lt;/br&amp;gt; </description>
+      <description>echo | openssl s_client -showcerts -servername gnupg.org -connect hostname.tld:443 2&amp;gt;/dev/null | openssl x509 -inform pem -noout -text``` </description>
     </item>
     
     <item>
@@ -58,7 +60,9 @@
       <pubDate>Tue, 26 Oct 2021 21:19:11 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/a40q4vdgs/</guid>
-      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자 ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime  혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정  debian, ubuntu만 가능함  ENV DEBIAN_FRONTEND=noninteractive  단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
+      <description>  간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자
+ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime   혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정
+ debian, ubuntu만 가능함  ENV DEBIAN_FRONTEND=noninteractive  단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
     </item>
     
     <item>
@@ -76,7 +80,10 @@
       <pubDate>Mon, 11 Oct 2021 11:18:40 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/tdj1-h9ev/</guid>
-      <description> ~/.zshrc에 아래의 세 줄을 추가 autoload bashcompinit &amp;amp;&amp;amp; bashcompinit autoload -Uz compinit &amp;amp;&amp;amp; compinit complete -C &amp;#34;$(which aws_completer)&amp;#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      </description>
+      <description>  ~/.zshrc에 아래의 세 줄을 추가
+autoload bashcompinit &amp;amp;&amp;amp; bashcompinit autoload -Uz compinit &amp;amp;&amp;amp; compinit complete -C &amp;#34;$(which aws_completer)&amp;#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html    autoload의 역할
+ 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh    auto complete 방법
+ https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      </description>
     </item>
     
     <item>

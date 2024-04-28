@@ -6,7 +6,16 @@
     <description>Recent content in docker on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jun 2022 11:06:42 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/docker/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 10:40:37 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/docker/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`--log-driver local --log-opt max-size=10m`</title>
+      <link>https://ariyn.github.io/posts/5z33czr1j/</link>
+      <pubDate>Mon, 01 Apr 2024 10:40:37 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/5z33czr1j/</guid>
+      <description> 이 옵션을 통해서 로그를 rotation할 수 있다. 그냥 켠다면 도커는 계속해서 log를 로컬에 남기게 된다.  물론 container가 삭제된다면 로그도 삭제되지만, 오랫동안 켜져 있는 경우 로그가 커 문제가 생길수도 있다.    </description>
+    </item>
+    
     <item>
       <title>도커를 실행시켰다면, 반드시 껐다 켜보자</title>
       <link>https://ariyn.github.io/posts/gc-4ykvrt/</link>
@@ -58,7 +67,9 @@
       <pubDate>Tue, 26 Oct 2021 21:19:11 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/a40q4vdgs/</guid>
-      <description> 간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자 ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime  혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정  debian, ubuntu만 가능함  ENV DEBIAN_FRONTEND=noninteractive  단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
+      <description>  간단히 해결하려면 /etc/localtime에 tz 정보를 넣어주자
+ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime   혹은 그 이외의 이유로 docker build과정에서 input을 입력해야 한다면 Dockerfile에 아래의 환경변수 설정
+ debian, ubuntu만 가능함  ENV DEBIAN_FRONTEND=noninteractive  단 추천하지는 않는다고 한다  https://docs.docker.com/engine/faq/#why-is-debian_frontendnoninteractive-discouraged-in-dockerfiles https://www.debian.org/releases/stable/amd64/ch05s03.en.html#installer-args      </description>
     </item>
     
     <item>
@@ -67,7 +78,10 @@
       <pubDate>Thu, 16 Sep 2021 00:04:04 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mu4oltbad/</guid>
-      <description> 대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다 could not use snapshotter aufs in metadata plugin&amp;#34; error=&amp;#34;modprobe aufs failed: &amp;#34;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &amp;#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin  이경우 iptables를 legacy 모드로 바꿔줘야 함 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy  출처  https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
+      <description>  대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다
+could not use snapshotter aufs in metadata plugin&amp;#34; error=&amp;#34;modprobe aufs failed: &amp;#34;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &amp;#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin   이경우 iptables를 legacy 모드로 바꿔줘야 함
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy   출처
+ https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
     </item>
     
     <item>

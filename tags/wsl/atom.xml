@@ -13,7 +13,10 @@
       <pubDate>Thu, 16 Sep 2021 00:04:04 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mu4oltbad/</guid>
-      <description> 대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다 could not use snapshotter aufs in metadata plugin&amp;#34; error=&amp;#34;modprobe aufs failed: &amp;#34;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &amp;#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin  이경우 iptables를 legacy 모드로 바꿔줘야 함 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy  출처  https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
+      <description>  대표적으로 이런 오류가 /var/log/docker.log에 기록되는 듯 하다
+could not use snapshotter aufs in metadata plugin&amp;#34; error=&amp;#34;modprobe aufs failed: &amp;#34;modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file &amp;#39;/lib/modules/4.4.0-18362-Microsoft/modules.dep.bin   이경우 iptables를 legacy 모드로 바꿔줘야 함
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy   출처
+ https://github.com/WhitewaterFoundry/Pengwin/issues/485    </description>
     </item>
     
   </channel>

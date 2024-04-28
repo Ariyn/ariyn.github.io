@@ -8,7 +8,10 @@
   <title>rust의 소유권 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="rust의 소유권" />
-<meta property="og:description" content="기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우 let x = String::from(&#34;hello&#34;); let y = x;  이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 let x = String::from(&#34;hello&#34;); let y = x; println!" />
+<meta property="og:description" content="기본
+ rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨    할당과 관련된 골치아픈 경우
+let x = String::from(&#34;hello&#34;); let y = x;   이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨
+  그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/s0kpvhium/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-29T21:22:55+07:00" />
@@ -17,13 +20,19 @@
 
   
   <meta itemprop="name" content="rust의 소유권">
-<meta itemprop="description" content="기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우 let x = String::from(&#34;hello&#34;); let y = x;  이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 let x = String::from(&#34;hello&#34;); let y = x; println!"><meta itemprop="datePublished" content="2022-03-29T21:22:55+07:00" />
+<meta itemprop="description" content="기본
+ rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨    할당과 관련된 골치아픈 경우
+let x = String::from(&#34;hello&#34;); let y = x;   이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨
+  그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨"><meta itemprop="datePublished" content="2022-03-29T21:22:55+07:00" />
 <meta itemprop="dateModified" content="2022-03-29T22:12:22+07:00" />
 <meta itemprop="wordCount" content="240">
 <meta itemprop="keywords" content="TIL,rust," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="rust의 소유권"/>
-<meta name="twitter:description" content="기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우 let x = String::from(&#34;hello&#34;); let y = x;  이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 let x = String::from(&#34;hello&#34;); let y = x; println!"/>
+<meta name="twitter:description" content="기본
+ rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨    할당과 관련된 골치아픈 경우
+let x = String::from(&#34;hello&#34;); let y = x;   이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨
+  그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨"/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/s0kpvhium/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -31,9 +40,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -45,7 +54,7 @@
     "name": "rust의 소유권",
     "headline": "rust의 소유권",
     "alternativeHeadline": "",
-    "description": "기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우 let x = String::from(\u0026#34;hello\u0026#34;); let y = x;  이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 let x = String::from(\u0026#34;hello\u0026#34;); let y = x; println!",
+    "description": "기본\n rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨    할당과 관련된 골치아픈 경우\nlet x = String::from(\u0026#34;hello\u0026#34;); let y = x;   이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨\n  그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -90,6 +99,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -107,26 +117,34 @@
         
       <h2 class="post">rust의 소유권</h2>
       <ul>
-<li>기본
+<li>
+<p>기본</p>
 <ul>
 <li>rust에서 모든 변수는 owner를 가짐</li>
 <li>owner는 하나의 스코프에서 하나만 생겨남</li>
 <li>pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨</li>
 </ul>
 </li>
-<li>할당과 관련된 골치아픈 경우
+<li>
+<p>할당과 관련된 골치아픈 경우</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;hello&#34;</span>);
 <span style="color:#66d9ef">let</span> y <span style="color:#f92672">=</span> x;
 </code></pre></div><ul>
-<li>이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨</li>
-<li>그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨</li>
-<li><strong>따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴</strong>
+<li>
+<p>이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨</p>
+</li>
+<li>
+<p>그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨</p>
+</li>
+<li>
+<p><strong>따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴</strong></p>
 <ul>
 <li>이를 이동(move)라고 표현함</li>
 <li>rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함</li>
 </ul>
 </li>
-<li>만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함
+<li>
+<p>만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;hello&#34;</span>);
 <span style="color:#66d9ef">let</span> y <span style="color:#f92672">=</span> x;
 
@@ -142,7 +160,8 @@ error[E0382]: <span style="color:#a6e22e">use</span> of moved value: <span style
   <span style="color:#f92672">=</span> note: <span style="color:#a6e22e">move</span> occurs because <span style="color:#960050;background-color:#1e0010">`</span>x<span style="color:#960050;background-color:#1e0010">`</span> has <span style="color:#66d9ef">type</span> <span style="color:#960050;background-color:#1e0010">`</span>std::string::String<span style="color:#960050;background-color:#1e0010">`</span>,
 which does not implement the <span style="color:#960050;background-color:#1e0010">`</span>Copy<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#66d9ef">trait</span>
 </code></pre></div></li>
-<li>단 i32처럼 스택에 들어갈 수 있는 것들은 move되지 않고 copy됨
+<li>
+<p>단 i32처럼 스택에 들어갈 수 있는 것들은 move되지 않고 copy됨</p>
 <ul>
 <li>이는 copy 트레잇으로 구분됨</li>
 <li>copy와 drop 트레잇이 동시에 구현되어 있다면 또한 오류</li>
@@ -150,7 +169,8 @@ which does not implement the <span style="color:#960050;background-color:#1e0010
 </li>
 </ul>
 </li>
-<li>함수 호출과 관련된 골치 아픈 경우
+<li>
+<p>함수 호출과 관련된 골치 아픈 경우</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;hello&#34;</span>)
 sample(x); <span style="color:#75715e">// x가 파라미터 s로 move됨
 </span><span style="color:#75715e"></span>println!(x); <span style="color:#75715e">// 소유권이 종료되었기 때문에 사용 불가
@@ -162,17 +182,25 @@ sample(x); <span style="color:#75715e">// x가 파라미터 s로 move됨
 <li>맙소사 함수를 호출하면서 파라미터에 변수가 복사되었고, 이는 이후에 사용 불가함</li>
 <li>이를 해결하기 위해서는 두가지로 보이는데
 <ol>
-<li>&amp;연산자를 사용해서 pointer를 넘겨줌
+<li>
+<ol>
+<li>&amp;연산자를 사용해서 pointer를 넘겨줌</li>
+</ol>
+</li>
+</ol>
 <ul>
 <li>포인터는 값에 대한 소유권이 없다</li>
 </ul>
+<ol>
+<li>
+<ol start="2">
+<li>함수가 다시 변수를 반환해서 동일한 값에 저장</li>
+</ol>
 </li>
-<li>함수가 다시 변수를 반환해서 동일한 값에 저장
+</ol>
 <ul>
 <li>변수가 반환되면, 이는 일종의 move로 drop되지 않는다</li>
 </ul>
-</li>
-</ol>
 </li>
 </ul>
 </li>

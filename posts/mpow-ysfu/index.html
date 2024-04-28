@@ -8,7 +8,7 @@
   <title>generic은 컴파일 타임에 지정된 타입으로 변환된다 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="generic은 컴파일 타임에 지정된 타입으로 변환된다" />
-<meta property="og:description" content=" 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것    " />
+<meta property="og:description" content=" 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? Area/찾아볼 것    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/mpow-ysfu/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-31T23:36:16+07:00" />
@@ -17,13 +17,13 @@
 
   
   <meta itemprop="name" content="generic은 컴파일 타임에 지정된 타입으로 변환된다">
-<meta itemprop="description" content=" 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것    "><meta itemprop="datePublished" content="2022-03-31T23:36:16+07:00" />
+<meta itemprop="description" content=" 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? Area/찾아볼 것    "><meta itemprop="datePublished" content="2022-03-31T23:36:16+07:00" />
 <meta itemprop="dateModified" content="2022-03-31T23:36:43+07:00" />
 <meta itemprop="wordCount" content="37">
 <meta itemprop="keywords" content="TIL,rust," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="generic은 컴파일 타임에 지정된 타입으로 변환된다"/>
-<meta name="twitter:description" content=" 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것    "/>
+<meta name="twitter:description" content=" 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? Area/찾아볼 것    "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/mpow-ysfu/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -31,9 +31,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -45,7 +45,7 @@
     "name": "generic은 컴파일 타임에 지정된 타입으로 변환된다",
     "headline": "generic은 컴파일 타임에 지정된 타입으로 변환된다",
     "alternativeHeadline": "",
-    "description": " 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것    ",
+    "description": " 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? Area\/찾아볼 것    ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -90,6 +90,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -114,7 +115,7 @@
 </li>
 <li>타입 언어이다보니 가능한 마법으로 보인다
 <ul>
-<li>만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? <a href="/tags/%EC%B0%BE%EC%95%84%EB%B3%BC_%EA%B2%83">찾아볼 것</a></li>
+<li>만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? <a href="/tags/Area/%EC%B0%BE%EC%95%84%EB%B3%BC_%EA%B2%83">Area/찾아볼 것</a></li>
 </ul>
 </li>
 </ul>

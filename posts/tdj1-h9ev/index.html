@@ -8,7 +8,10 @@
   <title>aws cli 자동완성을 zsh에서 사용하는 방법 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="aws cli 자동완성을 zsh에서 사용하는 방법" />
-<meta property="og:description" content=" ~/.zshrc에 아래의 세 줄을 추가 autoload bashcompinit &amp;&amp; bashcompinit autoload -Uz compinit &amp;&amp; compinit complete -C &#34;$(which aws_completer)&#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      " />
+<meta property="og:description" content="  ~/.zshrc에 아래의 세 줄을 추가
+autoload bashcompinit &amp;&amp; bashcompinit autoload -Uz compinit &amp;&amp; compinit complete -C &#34;$(which aws_completer)&#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html    autoload의 역할
+ 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh    auto complete 방법
+ https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/tdj1-h9ev/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-10-11T11:18:40+07:00" />
@@ -17,13 +20,19 @@
 
   
   <meta itemprop="name" content="aws cli 자동완성을 zsh에서 사용하는 방법">
-<meta itemprop="description" content=" ~/.zshrc에 아래의 세 줄을 추가 autoload bashcompinit &amp;&amp; bashcompinit autoload -Uz compinit &amp;&amp; compinit complete -C &#34;$(which aws_completer)&#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      "><meta itemprop="datePublished" content="2021-10-11T11:18:40+07:00" />
+<meta itemprop="description" content="  ~/.zshrc에 아래의 세 줄을 추가
+autoload bashcompinit &amp;&amp; bashcompinit autoload -Uz compinit &amp;&amp; compinit complete -C &#34;$(which aws_completer)&#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html    autoload의 역할
+ 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh    auto complete 방법
+ https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      "><meta itemprop="datePublished" content="2021-10-11T11:18:40+07:00" />
 <meta itemprop="dateModified" content="2021-12-01T23:31:02+07:00" />
 <meta itemprop="wordCount" content="49">
 <meta itemprop="keywords" content="TIL,aws,shell,bash,zsh," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="aws cli 자동완성을 zsh에서 사용하는 방법"/>
-<meta name="twitter:description" content=" ~/.zshrc에 아래의 세 줄을 추가 autoload bashcompinit &amp;&amp; bashcompinit autoload -Uz compinit &amp;&amp; compinit complete -C &#34;$(which aws_completer)&#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh   auto complete 방법  https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      "/>
+<meta name="twitter:description" content="  ~/.zshrc에 아래의 세 줄을 추가
+autoload bashcompinit &amp;&amp; bashcompinit autoload -Uz compinit &amp;&amp; compinit complete -C &#34;$(which aws_completer)&#34; aws  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html    autoload의 역할
+ 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh    auto complete 방법
+ https://devmanual.gentoo.org/tasks-reference/completion/index.html/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/tdj1-h9ev/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -31,9 +40,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -45,7 +54,7 @@
     "name": "aws cli 자동완성을 zsh에서 사용하는 방법",
     "headline": "aws cli 자동완성을 zsh에서 사용하는 방법",
     "alternativeHeadline": "",
-    "description": " ~\/.zshrc에 아래의 세 줄을 추가 autoload bashcompinit \u0026amp;\u0026amp; bashcompinit autoload -Uz compinit \u0026amp;\u0026amp; compinit complete -C \u0026#34;$(which aws_completer)\u0026#34; aws  https:\/\/docs.aws.amazon.com\/ko_kr\/cli\/latest\/userguide\/cli-configure-completion.html   autoload의 역할  배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https:\/\/medium.com\/harrythegreat\/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https:\/\/stackoverflow.com\/questions\/30840651\/what-does-autoload-do-in-zsh   auto complete 방법  https:\/\/devmanual.gentoo.org\/tasks-reference\/completion\/index.html\/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      ",
+    "description": "  ~\/.zshrc에 아래의 세 줄을 추가\nautoload bashcompinit \u0026amp;\u0026amp; bashcompinit autoload -Uz compinit \u0026amp;\u0026amp; compinit complete -C \u0026#34;$(which aws_completer)\u0026#34; aws  https:\/\/docs.aws.amazon.com\/ko_kr\/cli\/latest\/userguide\/cli-configure-completion.html    autoload의 역할\n 배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯 https:\/\/medium.com\/harrythegreat\/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e https:\/\/stackoverflow.com\/questions\/30840651\/what-does-autoload-do-in-zsh    auto complete 방법\n https:\/\/devmanual.gentoo.org\/tasks-reference\/completion\/index.html\/ complete 명령어를 사용  man complete로는 나오지 않는다. 인터넷에서 찾을 것      ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -90,6 +99,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -107,7 +117,8 @@
         
       <h2 class="post">aws cli 자동완성을 zsh에서 사용하는 방법</h2>
       <ul>
-<li>~/.zshrc에 아래의 세 줄을 추가
+<li>
+<p>~/.zshrc에 아래의 세 줄을 추가</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">autoload</span> <span style="color:#a6e22e">bashcompinit</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">bashcompinit</span>
 <span style="color:#a6e22e">autoload</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">Uz</span> <span style="color:#a6e22e">compinit</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">compinit</span>
 
@@ -116,14 +127,16 @@
 <li><a href="https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html">https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-completion.html</a></li>
 </ul>
 </li>
-<li>autoload의 역할
+<li>
+<p>autoload의 역할</p>
 <ul>
 <li>배시 스크립트에 작성된 함수를 파일 이름으로 호출하는 함수로 만드는 역할인 듯</li>
 <li><a href="https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e">https://medium.com/harrythegreat/zsh-%EC%98%A4%ED%86%A0%EB%A1%9C%EB%94%A9-%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0-3d1faff1a68e</a></li>
 <li><a href="https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh">https://stackoverflow.com/questions/30840651/what-does-autoload-do-in-zsh</a></li>
 </ul>
 </li>
-<li>auto complete 방법
+<li>
+<p>auto complete 방법</p>
 <ul>
 <li><a href="https://devmanual.gentoo.org/tasks-reference/completion/index.html/">https://devmanual.gentoo.org/tasks-reference/completion/index.html/</a></li>
 <li>complete 명령어를 사용

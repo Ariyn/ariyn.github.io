@@ -13,7 +13,9 @@
       <pubDate>Tue, 26 Apr 2022 11:20:03 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/gzpnb8tcn/</guid>
-      <description>이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&amp;hellip;  어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&amp;hellip;   코드 // github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451 // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams case &amp;#34;loc&amp;#34;: if value, err = url.QueryUnescape(value); err != nil { return } cfg.Loc, err = time.LoadLocation(value) if err != nil { return } // time/zoneinfo_read.go:529 // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다. // 이 함수는 Asia/Seoul 형식의 타임존 이름을 파싱하고, 시스템에서 값을 불러온다.</description>
+      <description>이게 mysql에서 문제로 생각을 했었는데, 사실은 ubuntu에 Asia/Seoul zone info가 없어서 발생한 문제였음&amp;hellip;
+ 어쩐지 호스트에서 도커로 접속하면 되고, 동일한 코드가 리눅스에서는 안된다 싶더라니&amp;hellip;    코드
+// github.com/go-sql-driver/mysql@v1.5.0/dsn.go:451 // connection string을 파싱해서 옵션들을 만들어내는 함수 parseDSNParams case &amp;#34;loc&amp;#34;: if value, err = url.QueryUnescape(value); err != nil { return } cfg.Loc, err = time.LoadLocation(value) if err != nil { return } // time/zoneinfo_read.go:529 // parserDSNParams의 time.LoadLocation 함수가 마지막에 호출한다.</description>
     </item>
     
     <item>
@@ -49,7 +51,10 @@
       <pubDate>Thu, 09 Dec 2021 17:50:49 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/294uvuols/</guid>
-      <description>문제의 코드 f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;)  그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.  bad file descriptor   확인해본 결과, O_APPEND는 우리의 생각과 다르게 access mode가 아니라고 한다.  The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.</description>
+      <description>문제의 코드
+f, err := os.OpenFile(&amp;#34;/tmp/test&amp;#34;, os.Append, 0755) if err != nil { panic(err) } fmt.Fprintln(f, &amp;#34;test&amp;#34;)   그러나 쓰기가 되지 않았고, fmt.Fprintln의 err을 확인했을때 아래의 오류가 나왔다.
+ bad file descriptor    O_APPEND는 access mode가 아니다.
+ The argument __flags__ must include one of the following __access modes__: **O_RDONLY**, **O_WRONLY**, or **O_RDWR**. These request opening the file read-only, write-only, or read/write, respectively.  https://man7.org/linux/man-pages/man2/open.2.html   open 커맨드의 man에 따르자면, access mode는 세가지.</description>
     </item>
     
     <item>

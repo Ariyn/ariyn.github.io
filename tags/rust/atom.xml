@@ -40,7 +40,9 @@
       <pubDate>Thu, 31 Mar 2022 23:40:42 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/2y_pj6syo/</guid>
-      <description> impl 뒤에 {trait_name} for를 추가하면 된다 impl {trait} for {structure} { fn ... }  기본 구현이라는 방법이 있다  트레잇에서 함수의 원형뿐만 아니라 body까지 구현하고, impl시에 비어있는 중괄호를 사용하면 기본 구현을 자동으로 사용한다.  pub trait Sample { fn sample() string { String::from(&amp;#34;Hello&amp;#34;) } } impl Sample for s {}   </description>
+      <description>  impl 뒤에 {trait_name} for를 추가하면 된다
+impl {trait} for {structure} { fn ... }   기본 구현이라는 방법이 있다
+ 트레잇에서 함수의 원형뿐만 아니라 body까지 구현하고, impl시에 비어있는 중괄호를 사용하면 기본 구현을 자동으로 사용한다.  pub trait Sample { fn sample() string { String::from(&amp;#34;Hello&amp;#34;) } } impl Sample for s {}   </description>
     </item>
     
     <item>
@@ -58,7 +60,7 @@
       <pubDate>Thu, 31 Mar 2022 23:36:16 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/mpow-ysfu/</guid>
-      <description> 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? 찾아볼 것    </description>
+      <description> 이를 단형상화 (monomorphization)이라 부른다  즉 제네릭 타입 T에 들어가는 모든 타입들을 확인한 다음, 애초에 그 타입인 것 처럼 컴파일 한다   타입 언어이다보니 가능한 마법으로 보인다  만약에 모호한 제네릭 타입이 생기면 어떻게 될까? 컴파일 에러를 리턴할까? Area/찾아볼 것    </description>
     </item>
     
     <item>
@@ -80,7 +82,7 @@
     </item>
     
     <item>
-      <title>[2. 함수가 다시 변수를 반환해서 동일한 값에 저장](/posts/kihuwqqiz)</title>
+      <title>2. 함수가 다시 변수를 반환해서 동일한 값에 저장</title>
       <link>https://ariyn.github.io/posts/ssnhdg8k8/</link>
       <pubDate>Tue, 29 Mar 2022 22:18:27 +0700</pubDate>
       
@@ -94,7 +96,10 @@
       <pubDate>Tue, 29 Mar 2022 21:22:55 +0700</pubDate>
       
       <guid>https://ariyn.github.io/posts/s0kpvhium/</guid>
-      <description>기본  rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨   할당과 관련된 골치아픈 경우 let x = String::from(&amp;#34;hello&amp;#34;); let y = x;  이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨 그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨 따라서 rust에서는 변수(x)가 복사되는 순간 기존의 변수(x)는 무효화 시킴  이를 이동(move)라고 표현함 rust에서는 명시적으로 사용하지 않는한 모든 변수를 shallow copy함   만에하나 아래처럼 이동된 변수를 사용한다면 에러가 발생함 let x = String::from(&amp;#34;hello&amp;#34;); let y = x; println!</description>
+      <description>기본
+ rust에서 모든 변수는 owner를 가짐 owner는 하나의 스코프에서 하나만 생겨남 pc가 스코프를 벗어나 기존의 owner가 버려질 때, 해당 owner를 가진 모든 변수는 drop함수를 실행하고, free됨    할당과 관련된 골치아픈 경우
+let x = String::from(&amp;#34;hello&amp;#34;); let y = x;   이경우 x와 y는 두개의 변수이며, 같은 owner를 지니기 때문에 동시에 drop됨
+  그러나 x와 y는 동일한 힙의 데이터를 바라보고 있기 때문에, 두번 drop되면 안됨</description>
     </item>
     
     <item>

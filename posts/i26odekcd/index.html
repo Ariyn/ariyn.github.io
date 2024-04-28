@@ -8,8 +8,7 @@
   <title>`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값" />
-<meta property="og:description" content="2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서
- logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    " />
+<meta property="og:description" content=" 2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서   logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/i26odekcd/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-14T11:44:26+07:00" />
@@ -18,15 +17,13 @@
 
   
   <meta itemprop="name" content="`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값">
-<meta itemprop="description" content="2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서
- logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    "><meta itemprop="datePublished" content="2022-04-14T11:44:26+07:00" />
+<meta itemprop="description" content=" 2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서   logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    "><meta itemprop="datePublished" content="2022-04-14T11:44:26+07:00" />
 <meta itemprop="dateModified" content="2022-04-14T11:48:48+07:00" />
 <meta itemprop="wordCount" content="22">
 <meta itemprop="keywords" content="TIL,elasticsearch," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값"/>
-<meta name="twitter:description" content="2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서
- logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    "/>
+<meta name="twitter:description" content=" 2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https://discuss.elastic.co/t/-timestamp-deprecated/38514 * 공식 문서   logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    "/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/i26odekcd/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -34,9 +31,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -48,7 +45,7 @@
     "name": "`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값",
     "headline": "`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값",
     "alternativeHeadline": "",
-    "description": "2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https:\/\/discuss.elastic.co\/t\/-timestamp-deprecated\/38514 * 공식 문서\n logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    ",
+    "description": " 2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯 * https:\/\/discuss.elastic.co\/t\/-timestamp-deprecated\/38514 * 공식 문서   logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 @timestamp이다  공식 문서    ",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -93,6 +90,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -109,9 +107,11 @@
       
         
       <h2 class="post">`@timestamp`는 ElasticSearch가 아닌 LogStash가 넣어주는 값</h2>
-      <p>2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯
+      <ol>
+<li>2.X 까지는 _timestamp라는 값을 자동으로 넣어줬던 듯
 * <a href="https://discuss.elastic.co/t/-timestamp-deprecated/38514">https://discuss.elastic.co/t/-timestamp-deprecated/38514</a>
-* <a href="https://www.elastic.co/guide/en/elasticsearch/reference/2.1/breaking_20_mapping_changes.html#_literal__timestamp_literal_and_literal__ttl_literal_deprecated">공식 문서</a></p>
+* <a href="https://www.elastic.co/guide/en/elasticsearch/reference/2.1/breaking_20_mapping_changes.html#_literal__timestamp_literal_and_literal__ttl_literal_deprecated">공식 문서</a></li>
+</ol>
 <ul>
 <li>logstash에서 timestamp를 넣는 경우, 기본 필드 이름이 <code>@timestamp</code>이다
 <ul>

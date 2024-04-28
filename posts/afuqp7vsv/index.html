@@ -8,7 +8,9 @@
   <title>logrotate의 실행 구조 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="logrotate의 실행 구조" />
-<meta property="og:description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat /etc/crontab.daily/logrotate #!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &#34;ALERT exited abnormally with [$EXITVALUE]&#34; fi exit $EXITVALUE  cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;&amp; run-parts --report /etc/cron." />
+<meta property="og:description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다.
+ 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.    cat /etc/crontab.daily/logrotate
+#!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/afuqp7vsv/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-02-21T11:01:10+07:00" />
@@ -17,13 +19,17 @@
 
   
   <meta itemprop="name" content="logrotate의 실행 구조">
-<meta itemprop="description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat /etc/crontab.daily/logrotate #!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &#34;ALERT exited abnormally with [$EXITVALUE]&#34; fi exit $EXITVALUE  cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;&amp; run-parts --report /etc/cron."><meta itemprop="datePublished" content="2023-02-21T11:01:10+07:00" />
+<meta itemprop="description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다.
+ 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.    cat /etc/crontab.daily/logrotate
+#!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE !"><meta itemprop="datePublished" content="2023-02-21T11:01:10+07:00" />
 <meta itemprop="dateModified" content="2023-02-21T11:07:29+07:00" />
 <meta itemprop="wordCount" content="109">
 <meta itemprop="keywords" content="logrotate,bash,TIL," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="logrotate의 실행 구조"/>
-<meta name="twitter:description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat /etc/crontab.daily/logrotate #!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then /usr/bin/logger -t logrotate &#34;ALERT exited abnormally with [$EXITVALUE]&#34; fi exit $EXITVALUE  cat /etc/crontab 25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / &amp;&amp; run-parts --report /etc/cron."/>
+<meta name="twitter:description" content="로그 로테이트는 service가 아니라 crontab으로 실행된다.
+ 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.    cat /etc/crontab.daily/logrotate
+#!/bin/sh  # skip in favour of systemd timer if [ -d /run/systemd/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x /usr/sbin/logrotate ]; then exit 0 fi /usr/sbin/logrotate /etc/logrotate.conf EXITVALUE=$? if [ $EXITVALUE !"/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/afuqp7vsv/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -31,9 +37,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -45,7 +51,7 @@
     "name": "logrotate의 실행 구조",
     "headline": "logrotate의 실행 구조",
     "alternativeHeadline": "",
-    "description": "로그 로테이트는 service가 아니라 crontab으로 실행된다.  생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.   cat \/etc\/crontab.daily\/logrotate #!\/bin\/sh  # skip in favour of systemd timer if [ -d \/run\/systemd\/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x \/usr\/sbin\/logrotate ]; then exit 0 fi \/usr\/sbin\/logrotate \/etc\/logrotate.conf EXITVALUE=$? if [ $EXITVALUE != 0 ]; then \/usr\/bin\/logger -t logrotate \u0026#34;ALERT exited abnormally with [$EXITVALUE]\u0026#34; fi exit $EXITVALUE  cat \/etc\/crontab 25 6\t* * *\troot\ttest -x \/usr\/sbin\/anacron || ( cd \/ \u0026amp;\u0026amp; run-parts --report \/etc\/cron.",
+    "description": "로그 로테이트는 service가 아니라 crontab으로 실행된다.\n 생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.    cat \/etc\/crontab.daily\/logrotate\n#!\/bin\/sh  # skip in favour of systemd timer if [ -d \/run\/systemd\/system ]; then exit 0 fi # this cronjob persists removals (but not purges) if [ ! -x \/usr\/sbin\/logrotate ]; then exit 0 fi \/usr\/sbin\/logrotate \/etc\/logrotate.conf EXITVALUE=$? if [ $EXITVALUE !",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -90,6 +96,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -107,12 +114,14 @@
         
       <h2 class="post">logrotate의 실행 구조</h2>
       <ul>
-<li>로그 로테이트는 service가 아니라 crontab으로 실행된다.
+<li>
+<p>로그 로테이트는 service가 아니라 crontab으로 실행된다.</p>
 <ul>
 <li>생각해보면 계속 상주해있는게 아니라, 하루에 한 번 실행되면 되는 서비스이니 잘 구성한 것 같다.</li>
 </ul>
 </li>
-<li>cat /etc/crontab.daily/logrotate
+<li>
+<p>cat /etc/crontab.daily/logrotate</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e"># skip in favour of systemd timer</span>
@@ -132,10 +141,13 @@ EXITVALUE<span style="color:#f92672">=</span>$?
 <span style="color:#66d9ef">fi</span>
 exit $EXITVALUE
 </code></pre></div></li>
-<li>cat /etc/crontab
+<li>
+<p>cat /etc/crontab</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">25</span> 6	* * *	root	test -x /usr/sbin/anacron <span style="color:#f92672">||</span> <span style="color:#f92672">(</span> cd / <span style="color:#f92672">&amp;&amp;</span> run-parts --report /etc/cron.daily <span style="color:#f92672">)</span>
 </code></pre></div></li>
-<li>이 두개의 파일로 인해서 로그로테이트는 매일 아침 6시 25분에 실행되게 된다</li>
+<li>
+<p>이 두개의 파일로 인해서 로그로테이트는 매일 아침 6시 25분에 실행되게 된다</p>
+</li>
 </ul>
 
       

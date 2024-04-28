@@ -8,7 +8,10 @@
   <title>아두이노와 esp01 모듈을 사용해 http get 요청 보내기 | this.isMin.uk</title>
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="아두이노와 esp01 모듈을 사용해 http get 요청 보내기" />
-<meta property="og:description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속  AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST   AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다." />
+<meta property="og:description" content="사용한 esp01 모듈
+  AT&#43;CIPSTART 명령어를 사용해서 서버에 접속
+ AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST    AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시
+ AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r\n로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다    AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/3hfvpiz21/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-29T00:50:59+07:00" />
@@ -17,13 +20,19 @@
 
   
   <meta itemprop="name" content="아두이노와 esp01 모듈을 사용해 http get 요청 보내기">
-<meta itemprop="description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속  AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST   AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다."><meta itemprop="datePublished" content="2022-10-29T00:50:59+07:00" />
+<meta itemprop="description" content="사용한 esp01 모듈
+  AT&#43;CIPSTART 명령어를 사용해서 서버에 접속
+ AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST    AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시
+ AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r\n로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다    AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료"><meta itemprop="datePublished" content="2022-10-29T00:50:59+07:00" />
 <meta itemprop="dateModified" content="2022-11-24T16:11:34+07:00" />
 <meta itemprop="wordCount" content="150">
 <meta itemprop="keywords" content="TIL,아두이노,임베디드," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="아두이노와 esp01 모듈을 사용해 http get 요청 보내기"/>
-<meta name="twitter:description" content="사용한 esp01 모듈 AT&#43;CIPSTART 명령어를 사용해서 서버에 접속  AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST   AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r&lt;/br&gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다."/>
+<meta name="twitter:description" content="사용한 esp01 모듈
+  AT&#43;CIPSTART 명령어를 사용해서 서버에 접속
+ AT&#43;CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST    AT&#43;CIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시
+ AT&#43;CIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 &#43;2 해줘야 한다   이후에 OK &gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET / HTTP/1.1\r\n로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다    AT&#43;CIPCLOSE 명령어를 사용해서 접속을 종료"/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/3hfvpiz21/">
   <meta name="monetization" content="$twitter.xrptipbot.com/ronaldsvilcins">
@@ -31,9 +40,9 @@
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -45,7 +54,7 @@
     "name": "아두이노와 esp01 모듈을 사용해 http get 요청 보내기",
     "headline": "아두이노와 esp01 모듈을 사용해 http get 요청 보내기",
     "alternativeHeadline": "",
-    "description": "사용한 esp01 모듈 AT\u002bCIPSTART 명령어를 사용해서 서버에 접속  AT\u002bCIPSTART=\u0026quot;TCP\u0026quot;,\u0026quot;ADDRESS\u0026quot;,POST   AT\u002bCIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시  AT\u002bCIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 \u002b2 해줘야 한다   이후에 OK \u0026gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET \/ HTTP\/1.1\\r\u0026lt;\/br\u0026gt;로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다   AT\u002bCIPCLOSE 명령어를 사용해서 접속을 종료  여러개의 접속을 사용하면 link-id를 입력해야 한다.",
+    "description": "사용한 esp01 모듈\n  AT\u002bCIPSTART 명령어를 사용해서 서버에 접속\n AT\u002bCIPSTART=\u0026quot;TCP\u0026quot;,\u0026quot;ADDRESS\u0026quot;,POST    AT\u002bCIPSEND 명령어를 사용해서 몇 바이트 보낼 것인지 명시\n AT\u002bCIPSEND=BYTE_SIZE  이때 데이터의 제일 마지막에 CRLF가 들어가는 것을 기억해서 \u002b2 해줘야 한다   이후에 OK \u0026gt;가 나오면 데이터를 입력한다.  이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 GET \/ HTTP\/1.1\\r\\n로 16바이트이다.   전송이 무사히 끝났다면 SEND OK가 모듈에서 반환된다    AT\u002bCIPCLOSE 명령어를 사용해서 접속을 종료",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -90,6 +99,7 @@
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -107,13 +117,17 @@
         
       <h2 class="post">아두이노와 esp01 모듈을 사용해 http get 요청 보내기</h2>
       <ul>
-<li>사용한 <a href="https://www.devicemart.co.kr/goods/view?no=1279338">esp01 모듈</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/TCP-IP_AT_Commands.html#cmd-start">AT+CIPSTART 명령어</a>를 사용해서 서버에 접속
+<li>
+<p>사용한 <a href="https://www.devicemart.co.kr/goods/view?no=1279338">esp01 모듈</a></p>
+</li>
+<li>
+<p><a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/TCP-IP_AT_Commands.html#cmd-start">AT+CIPSTART 명령어</a>를 사용해서 서버에 접속</p>
 <ul>
 <li><code>AT+CIPSTART=&quot;TCP&quot;,&quot;ADDRESS&quot;,POST</code></li>
 </ul>
 </li>
-<li><a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/TCP-IP_AT_Commands.html#cmd-send">AT+CIPSEND 명령어</a>를 사용해서 몇 바이트 보낼 것인지 명시
+<li>
+<p><a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/TCP-IP_AT_Commands.html#cmd-send">AT+CIPSEND 명령어</a>를 사용해서 몇 바이트 보낼 것인지 명시</p>
 <ul>
 <li><code>AT+CIPSEND=BYTE_SIZE</code>
 <ul>
@@ -122,19 +136,21 @@
 </li>
 <li>이후에 <code>OK &gt;</code>가 나오면 데이터를 입력한다.
 <ul>
-<li>이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 <code>GET / HTTP/1.1\r&lt;/br&gt;</code>로 16바이트이다.</li>
+<li>이번에 보내는 데이터는 http 요청의 가장 기본적인 내용 <code>GET / HTTP/1.1\r\n</code>로 16바이트이다.</li>
 </ul>
 </li>
 <li>전송이 무사히 끝났다면 <code>SEND OK</code>가 모듈에서 반환된다</li>
 </ul>
 </li>
-<li><a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/TCP-IP_AT_Commands.html#cmd-close">AT+CIPCLOSE 명령어</a>를 사용해서 접속을 종료
+<li>
+<p><a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/TCP-IP_AT_Commands.html#cmd-close">AT+CIPCLOSE 명령어</a>를 사용해서 접속을 종료</p>
 <ul>
 <li>여러개의 접속을 사용하면 link-id를 입력해야 한다.</li>
 <li>지금은 한개의 접속만 존재하기 때문에 상관없다</li>
 </ul>
 </li>
-<li>시리얼 모니터로 직접 명령어를 전송한 기록
+<li>
+<p>시리얼 모니터로 직접 명령어를 전송한 기록</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">00:47:38.598 -&gt; AT+CIPSTART=&#34;TCP&#34;,&#34;192.168.0.2&#34;,9999
 
 00:47:38.641 -&gt; CONNECT
@@ -156,7 +172,8 @@
 00:49:15.501 -&gt; 
 00:49:15.501 -&gt; OK
 </code></pre></div></li>
-<li>서버 로그
+<li>
+<p>서버 로그</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">
 ➜  ~ python3 -m http.server 9999
 Serving HTTP on 0.0.0.0 port 9999 (http://0.0.0.0:9999/) ...

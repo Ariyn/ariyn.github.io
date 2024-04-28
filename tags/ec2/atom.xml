@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ec2 on this.isMin.uk</title>
+    <link>https://ariyn.github.io/tags/ec2/</link>
+    <description>Recent content in ec2 on this.isMin.uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jan 2024 15:55:22 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/ec2/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IMDS</title>
+      <link>https://ariyn.github.io/posts/bcvnqnlc-/</link>
+      <pubDate>Fri, 12 Jan 2024 15:55:22 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/bcvnqnlc-/</guid>
+      <description>Instance Metadata Service의 약자로 인스턴스에서 해당 인스턴스의 메타데이터를 요청할 수 있는 서비스이다.
+ 인스턴스 메타데이터는 실행 중인 인스턴스를 구성하거나 관리하는 데 사용할 수 있는 인스턴스에 대한 데이터입니다.    모든 요청은 169.254.169.254로 http 요청을 보내면 된다.
+ 모든 응답은 plain/text로 내려오기 때문에, 필요한 만큼 가공해서 써야한다.  인스턴스 아이디처럼 스트링 그대로 써도 되는 것들이 많기 때문에 큰 단점은 아니다.    curl -H &amp;#34;X-aws-ec2-metadata-token: $TOKEN&amp;#34; -v http://169.</description>
+    </item>
+    
+  </channel>
+</rss>

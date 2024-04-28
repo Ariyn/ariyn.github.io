@@ -6,7 +6,16 @@
     <description>Recent content in mac on this.isMin.uk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Dec 2021 21:49:42 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/mac/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 09:59:28 +0700</lastBuildDate><atom:link href="https://ariyn.github.io/tags/mac/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NSWindowStyleMaskNonactivatingPanel를 사용하면 맥 어디에서나 윈도우를 띄울 수 있다.</title>
+      <link>https://ariyn.github.io/posts/6w8gbfe5e/</link>
+      <pubDate>Wed, 10 Jan 2024 09:59:28 +0700</pubDate>
+      
+      <guid>https://ariyn.github.io/posts/6w8gbfe5e/</guid>
+      <description> electron에서는 window.type = &amp;quot;panel&amp;quot;로 설정 가능하다. 이경우 전체화면으로 띄워진 창에서도 창을 그 위에 띄울 수 있다.  </description>
+    </item>
+    
     <item>
       <title>~/.zprofile</title>
       <link>https://ariyn.github.io/posts/kzstscfvn/</link>

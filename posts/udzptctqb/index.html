@@ -9,7 +9,7 @@
   <meta name="description" content="Minimalistic Hugo blogging theme">
 <meta property="og:title" content="zsh에서의 alias -g 옵션" />
 <meta property="og:description" content="-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.
-$ cat ~/.zshrc alias -g G=&#34;| grep -i&#34; $ ls G do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
+$ cat ~/.zshrc alias -g G=&#34;| grep&#34; $ ls G Do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
 $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed alias -g ^nf=&#34;|| echo &#34; # notify when failed $ true ^ns &#34;성공하였습니다.&#34; ^nf &#34;실패하였습니다.&#34; 성공하였습니다. $ false ^ns &#34;성공하였습니다.&#34; ^nf &#34;실패하였습니다.&#34; 실패하였습니다.  이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ariyn.github.io/posts/udzptctqb/" /><meta property="article:section" content="posts" />
@@ -20,15 +20,15 @@ $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed ali
   
   <meta itemprop="name" content="zsh에서의 alias -g 옵션">
 <meta itemprop="description" content="-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.
-$ cat ~/.zshrc alias -g G=&#34;| grep -i&#34; $ ls G do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
+$ cat ~/.zshrc alias -g G=&#34;| grep&#34; $ ls G Do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
 $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed alias -g ^nf=&#34;|| echo &#34; # notify when failed $ true ^ns &#34;성공하였습니다.&#34; ^nf &#34;실패하였습니다.&#34; 성공하였습니다. $ false ^ns &#34;성공하였습니다.&#34; ^nf &#34;실패하였습니다.&#34; 실패하였습니다.  이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다."><meta itemprop="datePublished" content="2024-01-07T19:36:43+07:00" />
 <meta itemprop="dateModified" content="2024-01-07T22:32:55+07:00" />
-<meta itemprop="wordCount" content="128">
+<meta itemprop="wordCount" content="118">
 <meta itemprop="keywords" content="TIL," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="zsh에서의 alias -g 옵션"/>
 <meta name="twitter:description" content="-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.
-$ cat ~/.zshrc alias -g G=&#34;| grep -i&#34; $ ls G do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
+$ cat ~/.zshrc alias -g G=&#34;| grep&#34; $ ls G Do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.
 $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed alias -g ^nf=&#34;|| echo &#34; # notify when failed $ true ^ns &#34;성공하였습니다.&#34; ^nf &#34;실패하였습니다.&#34; 성공하였습니다. $ false ^ns &#34;성공하였습니다.&#34; ^nf &#34;실패하였습니다.&#34; 실패하였습니다.  이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다."/>
 
   <link rel="canonical" href="https://ariyn.github.io/posts/udzptctqb/">
@@ -37,9 +37,9 @@ $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed ali
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
   <link rel="alternate" type="application/atom+xml" title="this.isMin.uk" href="https://ariyn.github.io/atom.xml" />
   <link rel="alternate" type="application/json" title="this.isMin.uk" href="https://ariyn.github.io/feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  
-  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:auto;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{padding:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.MathJax{display:inline!important}pre>code{background:#272822}</style>
   
 
 
@@ -51,7 +51,7 @@ $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed ali
     "name": "zsh에서의 alias -g 옵션",
     "headline": "zsh에서의 alias -g 옵션",
     "alternativeHeadline": "",
-    "description": "-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.\n$ cat ~\/.zshrc alias -g G=\u0026#34;| grep -i\u0026#34; $ ls G do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.\n$ cat ~\/.zshrc alias -g ^ns=\u0026#34;\u0026amp;\u0026amp; echo \u0026#34; # notify when succeed alias -g ^nf=\u0026#34;|| echo \u0026#34; # notify when failed $ true ^ns \u0026#34;성공하였습니다.\u0026#34; ^nf \u0026#34;실패하였습니다.\u0026#34; 성공하였습니다. $ false ^ns \u0026#34;성공하였습니다.\u0026#34; ^nf \u0026#34;실패하였습니다.\u0026#34; 실패하였습니다.  이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다.",
+    "description": "-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.\n$ cat ~\/.zshrc alias -g G=\u0026#34;| grep\u0026#34; $ ls G Do Documents Downloads   이를 응용해서 ns와 nf를 만들었다.\n$ cat ~\/.zshrc alias -g ^ns=\u0026#34;\u0026amp;\u0026amp; echo \u0026#34; # notify when succeed alias -g ^nf=\u0026#34;|| echo \u0026#34; # notify when failed $ true ^ns \u0026#34;성공하였습니다.\u0026#34; ^nf \u0026#34;실패하였습니다.\u0026#34; 성공하였습니다. $ false ^ns \u0026#34;성공하였습니다.\u0026#34; ^nf \u0026#34;실패하였습니다.\u0026#34; 실패하였습니다.  이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -88,7 +88,7 @@ $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed ali
     },
     "image": "https://ariyn.github.io/",
     "url" : "https:\/\/ariyn.github.io\/posts\/udzptctqb\/",
-    "wordCount" : "128",
+    "wordCount" : "118",
     "genre" : [ "TIL" ],
     "keywords" : [ "TIL" ]
 }
@@ -96,6 +96,7 @@ $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed ali
 
 
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
 <main id="main">
@@ -116,38 +117,36 @@ $ cat ~/.zshrc alias -g ^ns=&#34;&amp;&amp; echo &#34; # notify when succeed ali
 <li>
 <p>-g 옵션을 준다면, 명령어의 처음이 아니라 어느 부분에서나 사용할 수 있다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cat ~/.zshrc
-alias -g G<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;| grep -i&#34;</span>
+alias -g G<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;| grep&#34;</span>
 
-$ ls G <span style="color:#66d9ef">do</span>
+$ ls G Do
 Documents Downloads
 </code></pre></div></li>
 <li>
 <p>이를 응용해서 ns와 nf를 만들었다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span> <span style="color:#a6e22e">cat</span> <span style="color:#f92672">~</span><span style="color:#960050;background-color:#1e0010">/.zshrc</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cat ~/.zshrc
 
-<span style="color:#a6e22e">alias</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">g</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">ns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;&amp; echo &#34;</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">notify</span> <span style="color:#a6e22e">when</span> <span style="color:#a6e22e">succeed</span>
-<span style="color:#a6e22e">alias</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">g</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">nf</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;|| echo &#34;</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">notify</span> <span style="color:#a6e22e">when</span> <span style="color:#a6e22e">failed</span>
+alias -g ^ns<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;&amp; echo &#34;</span> <span style="color:#75715e"># notify when succeed</span>
+alias -g ^nf<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;|| echo &#34;</span> <span style="color:#75715e"># notify when failed</span>
 
-<span style="color:#a6e22e">$</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">ns</span> <span style="color:#e6db74">&#34;성공하였습니다.&#34;</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">nf</span> <span style="color:#e6db74">&#34;실패하였습니다.&#34;</span>
-<span style="color:#a6e22e">성공하였습니다</span>.
+$ true ^ns <span style="color:#e6db74">&#34;성공하였습니다.&#34;</span> ^nf <span style="color:#e6db74">&#34;실패하였습니다.&#34;</span>
+성공하였습니다.
 
-<span style="color:#a6e22e">$</span> <span style="color:#66d9ef">false</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">ns</span> <span style="color:#e6db74">&#34;성공하였습니다.&#34;</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">nf</span> <span style="color:#e6db74">&#34;실패하였습니다.&#34;</span>
-<span style="color:#a6e22e">실패하였습니다</span>.
+$ false ^ns <span style="color:#e6db74">&#34;성공하였습니다.&#34;</span> ^nf <span style="color:#e6db74">&#34;실패하였습니다.&#34;</span>
+실패하였습니다.
 </code></pre></div><ul>
 <li>이 덕분에 어느 명령어든지 옵션을 추가하는 것 처럼 노티를 사용할 수 있다.</li>
 </ul>
 </li>
 <li>
 <p>nf와 ns의 순서를 거꾸로 쓰면 생각치 못한 버그가 있다</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span> <span style="color:#66d9ef">false</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">nf</span> <span style="color:#a6e22e">failure</span> <span style="color:#f92672">^</span><span style="color:#a6e22e">ns</span> <span style="color:#a6e22e">succeed</span>
-<span style="color:#a6e22e">failure</span>
-<span style="color:#a6e22e">succeed</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ false ^nf failure ^ns succeed
+failure
+succeed
 </code></pre></div><ul>
-<li>앞선 명령어가 실패했기 때문에 <code>nf = || echo</code>가 실행된다. 그리고 echo 가 정상적으로 실행되었기 때문에 <code>ns = &amp;&amp; echo</code>도 실행된다.
-<ul>
-<li>이런 상황은 어떻게 보면 당연한 것이기 때문에, 지금은 강제 규칙을 세워서 사용하고 있다.</li>
-</ul>
-</li>
+<li>앞선 명령어가 실패했기 때문에 <code>nf = || echo</code>가 실행된다.
+그리고 echo 가 정상적으로 실행되었기 때문에 <code>ns = &amp;&amp; echo</code>도 실행된다.</li>
+<li>방법이 필요할 것 같다&hellip;</li>
 </ul>
 </li>
 <li>
