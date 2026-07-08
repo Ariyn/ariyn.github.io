@@ -13,20 +13,28 @@ tags:
   - "regexp"
   - "golang"
 ---
-* Go의 `regexp`에서 `.`은 기본적으로 newline을 매칭하지 않는다.
-  * 여러 줄에 걸친 문자열을 `.*?` 같은 패턴으로 잡고 싶다면 `(?s)` 플래그를 붙인다.
-  * `(?s)`는 dot이 newline까지 포함해 매칭되도록 만든다.
+Go의 `regexp`에서 `.`은 기본적으로 newline을 매칭하지 않는다.
+여러 줄에 걸친 문자열을 `.*?` 같은 패턴으로 잡고 싶다면 `(?s)` 플래그를 붙인다.
 
-```go
-regexp.MustCompile(`(?s)START(.*?)STOP`)
-```
+{: .tractatus}
+1. Go의 `regexp`에서 `.`은 기본적으로 newline을 매칭하지 않는다.
 
-* multi-line anchor 동작까지 같이 바꾸고 싶다면 `(?m)`과 함께 쓸 수 있다.
+   1. 여러 줄에 걸친 문자열을 `.*?` 같은 패턴으로 잡고 싶다면 `(?s)` 플래그를 붙인다.
 
-```go
-regexp.MustCompile(`(?sm)START(.*?)STOP`)
-```
+   2. `(?s)`는 dot이 newline까지 포함해 매칭되도록 만든다.
 
-* `(?s)`와 `(?m)`은 역할이 다르다.
-  * `(?s)`는 `.`이 newline을 포함할지에 영향을 준다.
-  * `(?m)`은 `^`, `$`가 줄 단위 경계로 동작할지에 영향을 준다.
+      ```go
+      regexp.MustCompile(`(?s)START(.*?)STOP`)
+      ```
+
+2. multi-line anchor 동작까지 같이 바꾸고 싶다면 `(?m)`과 함께 쓸 수 있다.
+
+   ```go
+   regexp.MustCompile(`(?sm)START(.*?)STOP`)
+   ```
+
+3. `(?s)`와 `(?m)`은 역할이 다르다.
+
+   1. `(?s)`는 `.`이 newline을 포함할지에 영향을 준다.
+
+   2. `(?m)`은 `^`, `$`가 줄 단위 경계로 동작할지에 영향을 준다.

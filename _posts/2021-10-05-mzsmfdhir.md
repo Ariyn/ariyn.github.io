@@ -13,12 +13,19 @@ tags:
   - "aws"
   - "beanstalk"
 ---
-* https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
-  * .ebextensions에 커맨드를 추가
-    ```yaml
-    command:
-      echo '127.0.0.1 hostname' >> /etc/hosts
-    ```
+.ebextensions에 커맨드를 추가.
+핵심은 필요한 판단과 확인 지점을 짧은 명제로 남기는 것이다.
 
-    * https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk
-    * https://namocom.tistory.com/825
+{: .tractatus}
+1. https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
+
+   1. .ebextensions에 커맨드를 추가
+
+      ```yaml
+          command:
+            echo '127.0.0.1 hostname' >> /etc/hosts
+      ```
+
+   2. https://stackoverflow.com/questions/41903297/how-to-customize-hosts-file-in-elastic-beanstalk
+
+   3. https://namocom.tistory.com/825

@@ -12,11 +12,18 @@ tags:
   - "TIL"
   - "mysql"
 ---
-```sql
-  DELETE S1 FROM table AS S1  
-  INNER JOIN table AS S2   
-  WHERE S1.id < S2.id AND S1.column = S2.column;
-  ```
+inner join을 한 다음, id가 더 높고, 동일한 컬럼인 경우 삭제하는 쿼리.
+핵심은 필요한 판단과 확인 지점을 짧은 명제로 남기는 것이다.
 
-  * inner join을 한 다음, id가 더 높고, 동일한 컬럼인 경우 삭제하는 쿼리
-  * https://www.javatpoint.com/mysql-delete-duplicate-records
+{: .tractatus}
+1. 예시는 아래와 같다.
+
+   ```sql
+     DELETE S1 FROM table AS S1
+     INNER JOIN table AS S2
+     WHERE S1.id < S2.id AND S1.column = S2.column;
+   ```
+
+   1. inner join을 한 다음, id가 더 높고, 동일한 컬럼인 경우 삭제하는 쿼리
+
+   2. https://www.javatpoint.com/mysql-delete-duplicate-records
