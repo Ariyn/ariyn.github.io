@@ -3,13 +3,5 @@ layout: default
 ---
 
 <h2 class="post">{{ page.tag }}</h2>
-<ul class="posts list">
-  {% assign tagged_posts = site.tags[page.tag] | sort: "date" | reverse %}
-  {% for post in tagged_posts %}
-    <li>
-      <a class="link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
-      <hr class="hr-list">
-      <time class="time meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y/%m/%d" }}</time>
-    </li>
-  {% endfor %}
-</ul>
+{% assign tagged_posts = site.tags[page.tag] | sort: "date" | reverse %}
+{% include post-list.html posts=tagged_posts %}

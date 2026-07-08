@@ -156,6 +156,31 @@ ol {
   color: #777;
 }
 
+.post-meta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.kind-label {
+  color: #555;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.kind-label::before {
+  content: "[";
+}
+
+.kind-label::after {
+  content: "]";
+}
+
+.home-sections > section + section {
+  margin-top: 3rem;
+}
+
 .hr-list {
   margin: 0 0.5rem;
   height: 1px;

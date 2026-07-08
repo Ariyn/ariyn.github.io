@@ -1,0 +1,11 @@
+---
+layout: default
+title: Dev
+permalink: /dev/
+---
+
+<section>
+  <h2 class="post">Dev</h2>
+  {% assign dev_posts = site.posts | where: "kind", "dev" %}
+  {% include post-list.html posts=dev_posts %}
+</section>

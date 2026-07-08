@@ -5,13 +5,6 @@ permalink: /posts/
 ---
 
 <section>
-  <ul class="list">
-    {% for post in site.posts %}
-      <li>
-        <a class="link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
-        <hr class="hr-list">
-        <time class="time meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y/%m/%d" }}</time>
-      </li>
-    {% endfor %}
-  </ul>
+  <h2 class="post">Posts</h2>
+  {% include post-list.html posts=site.posts %}
 </section>

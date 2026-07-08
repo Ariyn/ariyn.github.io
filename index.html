@@ -4,13 +4,20 @@ title:
 ---
 
 <section>
-  <ul class="list">
-    {% for post in site.posts %}
-      <li>
-        <a class="link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
-        <hr class="hr-list">
-        <time class="time meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y/%m/%d" }}</time>
-      </li>
-    {% endfor %}
-  </ul>
+  {% assign dev_posts = site.posts | where: "kind", "dev" %}
+  {% assign personal_posts = site.posts | where: "kind", "personal" %}
+
+  <div class="home-sections">
+    <section>
+      <h2 class="post"><a href="{{ '/dev/' | relative_url }}">Dev</a> <span class="meta">({{ dev_posts.size }})</span></h2>
+      {% include post-list.html posts=dev_posts limit=8 %}
+      <p><a href="{{ '/dev/' | relative_url }}">All Dev posts</a></p>
+    </section>
+
+    <section>
+      <h2 class="post"><a href="{{ '/personal/' | relative_url }}">Personal</a> <span class="meta">({{ personal_posts.size }})</span></h2>
+      {% include post-list.html posts=personal_posts limit=8 %}
+      <p><a href="{{ '/personal/' | relative_url }}">All Personal posts</a></p>
+    </section>
+  </div>
 </section>

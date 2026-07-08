@@ -1,0 +1,26 @@
+---
+layout:
+permalink: /dev/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }} - Dev</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ "/dev/" | absolute_url }}</link>
+    <language>{{ site.lang | default: "ko" }}</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll</generator>
+    <atom:link href="{{ "/dev/atom.xml" | absolute_url }}" rel="self" type="application/rss+xml" />
+    {% assign dev_posts = site.posts | where: "kind", "dev" %}
+    {% for post in dev_posts limit: 20 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid>{{ post.url | absolute_url }}</guid>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <description>{{ post.content | strip_html | normalize_whitespace | truncate: 500 | xml_escape }}</description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

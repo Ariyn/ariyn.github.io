@@ -1,0 +1,6 @@
+{% assign kind = include.kind | default: include.post.kind | default: page.kind %}
+{% if kind == "dev" %}
+  <a class="kind-label kind-dev" href="{{ '/dev/' | relative_url }}">Dev</a>
+{% elsif kind == "personal" %}
+  <a class="kind-label kind-personal" href="{{ '/personal/' | relative_url }}">Personal</a>
+{% endif %}

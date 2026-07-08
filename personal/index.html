@@ -1,0 +1,11 @@
+---
+layout: default
+title: Personal
+permalink: /personal/
+---
+
+<section>
+  <h2 class="post">Personal</h2>
+  {% assign personal_posts = site.posts | where: "kind", "personal" %}
+  {% include post-list.html posts=personal_posts %}
+</section>
