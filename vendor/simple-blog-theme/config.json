@@ -1,0 +1,14 @@
+{
+	"static files":{
+		"static":"static"
+	},
+	"skin":{
+		"article":"html/post.html",
+		"":"html/404.html"
+	},
+	"code": {
+		"path":"./src",
+		"files":["test.py"],
+		"replaceData":{}
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+		<%inherit file="header.html" />
+	</head>
+	<body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1><a href="/">${site.name}</a></h1>
+        <p class="lead">${site.description}</p>
+
+        <div class="colophon">
+          <a href="https://github.com/ariyn">GitHub projects</a><br>
+		  <a href="https://bitbucket.org/ariyn">Bitbucket projects</a>
+          <p>&copy; 2014. ${site.author.name} All rights reserved.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content container">
+      <div class="post">
+				<h1>${post.title}</h1>
+				<span class="post-date">${post.date }</span>
+				${content}
+			</div>
+
+			<div class="related">
+				<h2>Related Posts</h2>
+				<ul class="related-posts">
+					<table>
+						% for _post in site.related_posts:
+							${makePost(_post)}
+						% endfor
+					</table>
+
+					<%def name="makePost(article)">
+						<li><h3>
+							<a href="${article.url}">
+								${post.title}
+								<small>${post.date}</small>
+							</a>
+						</h3></li>
+					</%def>
+				</ul>
+			</div>
+
+    </div>
+
+  </body>
+		% if post.hasCode:
+			<script>hljs.initHighlightingOnLoad();</script>
+		% endif
+</html>
