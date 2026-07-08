@@ -40,7 +40,7 @@ tags:
           x:bound["X"] as? Int ?? -10000,
           y:bound["Y"] as? Int ?? -10000,
           width:bound["width"] as? Int ?? -10000,
-          height:bound["hwight"] as? Int ?? -10000
+          height:bound["Height"] as? Int ?? -10000
       ))
   }
   
@@ -49,9 +49,12 @@ tags:
   }
   ```
 
-  * 이후에 환경설정 > 보안 > 화면 기록에서 터미널을 추가 & 터미널 재시작 해줘야 한다.
-    * 안할경우 kCGWindowName (각 위도우별 제목)이 안뜸
-  * CGWindowListCopyWindowInfo가 리턴하는 형식
+  * `CGWindowListCopyWindowInfo`로 macOS의 현재 window 정보를 가져올 수 있다.
+    * window bounds, owner process, window title 같은 값이 dictionary 형태로 반환된다.
+    * bounds key는 예시 출력처럼 `X`, `Y`, `Width`, `Height`를 사용한다.
+  * 이후에 환경설정 > 보안 > 화면 기록에서 터미널을 추가하고 터미널을 재시작해야 한다.
+    * 권한이 없으면 `kCGWindowName`, 즉 각 window 제목이 비어 보일 수 있다.
+  * `CGWindowListCopyWindowInfo`가 리턴하는 형식은 대략 아래와 같다.
     ```swift
     [
       {
@@ -75,10 +78,9 @@ tags:
     ]
     ```
 
-  * 추가적으로 할 일
+  * 추가로 할 일
     * 아이콘 정보 가져오기
       * https://stackoverflow.com/questions/36389173/how-to-observe-other-application-icon-in-os-x
-  * 느낀점
-    * 윈도우의 정보를 가져오도록 구현하는것과 비슷한 시간이 걸린 json serialize
-    * 이렇게 어려울 일인가? 으음....
-    * 내가 swift의 핵심을 이해 못하는건가, swift의 핵심이 맛이 가 있는것인가...
+  * 정리하면, window 목록 자체를 가져오는 일보다 permission과 dictionary key를 정확히 확인하는 일이 더 중요했다.
+    * Swift에서 `NSDictionary`를 직접 다루면 key 오타가 런타임 기본값으로 숨어버리기 쉽다.
+    * 이런 코드는 예시 출력과 실제 접근 key를 같이 두고 확인하는 편이 안전하다.

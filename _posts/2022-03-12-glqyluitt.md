@@ -10,7 +10,7 @@ tags:
   - "TIL"
   - "mysql"
 ---
-```javascript
+```sql
   DELETE S1 FROM table AS S1  
   INNER JOIN table AS S2   
   WHERE S1.id < S2.id AND S1.column = S2.column;

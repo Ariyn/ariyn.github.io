@@ -12,7 +12,7 @@ tags:
   - "shell"
 ---
 * https://github.com/nodesource/distributions/blob/master/README.md
-  ```javascript
+  ```shell
   curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
   apt-get install -y nodejs
   ```

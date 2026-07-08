@@ -10,7 +10,7 @@ tags:
   - "golang"
   - "TIL"
 ---
-```javascript
+```go
   type foo struct {
     bar, bar2 int
   }
@@ -23,7 +23,7 @@ tags:
 
   * 마치 함수 파라미터에서 두개 이상 받을 수 있는것 처럼
   * 그래서인지 ast의 Field를 보면, Names가 list로 되어있음
-    ```javascript
+    ```go
     // A Field represents a Field declaration list in a struct type,
     // a method list in an interface type, or a parameter/result declaration
     // in a signature.

@@ -10,6 +10,13 @@ tags:
   - "TIL"
   - "logstash"
 ---
-* `file input plugin`, `grok filter plugin` 등등으로 부르는 듯 하다.
-    * https://www.elastic.co/guide/en/logstash/current/plugins-inputs-file.html
-    * https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html
+* Logstash에서 `file`, `grok`, `json` 같은 것은 plugin으로 부른다.
+  * 입력 단계에 쓰이면 input plugin이다.
+  * 가공 단계에 쓰이면 filter plugin이다.
+  * 출력 단계에 쓰이면 output plugin이다.
+* 예를 들어 `file`은 file input plugin이고, `grok`은 grok filter plugin이다.
+  * 문서를 찾을 때도 이 이름으로 검색하면 공식 문서를 찾기 쉽다.
+* Logstash pipeline을 읽을 때는 plugin 종류를 먼저 나누면 구조가 보인다.
+  * input은 어디서 가져오는가.
+  * filter는 어떻게 파싱하고 변환하는가.
+  * output은 어디로 보내는가.

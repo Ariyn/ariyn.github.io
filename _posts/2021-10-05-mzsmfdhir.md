@@ -13,7 +13,7 @@ tags:
 ---
 * https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/ebextensions.html
   * .ebextensions에 커맨드를 추가
-    ```javascript
+    ```yaml
     command:
       echo '127.0.0.1 hostname' >> /etc/hosts
     ```

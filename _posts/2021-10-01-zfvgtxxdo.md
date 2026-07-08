@@ -11,14 +11,16 @@ tags:
   - "golang"
   - "beanstalk"
 ---
-* golang을 사용할 때, 몇가지 옵션을 사용할 수 있다.
-    * Buildfile을 사용한 빌드
-    * application.go를 자동으로 빌드
-    * bin/application 바이너리를 사용
-      * root에 Procfile이 필수
-  * 이때 주의할 점은, 앞에서 하나라도 만족되면 이후 것들이 진행되지 않는다.
-    * 따라서 application.go가 있다면, Procfile에서 bin/application을 실행하라고 해도 실행되지 않는다.
-  * 로그에서 확인 할 것
-    * no Buildfile found, checking application.go file
-    * 이런식으로 계속 있을것.
-    * 어디까지 로그가 찍혀 있는지 확인필요
+* Elastic Beanstalk에서 Go 애플리케이션을 배포할 때는 실행 방식을 자동으로 판별한다.
+  * `Buildfile`을 사용한 빌드
+  * `application.go` 자동 빌드
+  * `bin/application` 바이너리 실행
+  * `Procfile` 기반 실행
+* 주의할 점은 앞 단계 조건이 만족되면 뒤 단계가 실행되지 않을 수 있다는 것이다.
+  * 예를 들어 `application.go`가 있으면, `Procfile`에서 `bin/application`을 실행하라고 적어도 기대한 경로로 가지 않을 수 있다.
+  * 파일 이름 하나가 배포 동작을 바꾸는 셈이다.
+* 문제를 확인할 때는 배포 로그를 봐야 한다.
+  * `no Buildfile found, checking application.go file` 같은 로그가 어디까지 찍혔는지 확인한다.
+  * Beanstalk가 어떤 배포 방식을 선택했는지 로그에서 먼저 확정해야 한다.
+* 배포 방식을 명시하고 싶다면 불필요한 후보 파일을 두지 않는 것이 좋다.
+  * 자동 감지는 편하지만, 여러 방식의 흔적이 섞이면 오히려 예측하기 어려워진다.

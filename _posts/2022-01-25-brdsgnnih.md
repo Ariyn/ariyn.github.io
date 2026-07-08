@@ -9,6 +9,10 @@ kind: dev
 tags:
   - "TIL"
 ---
-* cmd + shift + m
-    * [support.google.com](https://support.google.com/chrome/answer/157179?hl=ko&co=GENIE.Platform%3DDesktop#zippy=%2C%ED%83%AD-%EB%B0%8F-%EC%B0%BD-%EB%8B%A8%EC%B6%95%ED%82%A4%2Cchrome-%EA%B8%B0%EB%8A%A5-%EB%8B%A8%EC%B6%95%ED%82%A4) 참고
-  * 사용자 변경만을 위한 단축키는 아니지만, 쉽게 변경할 수 있음
+* Chrome에서 사용자 프로필을 빠르게 바꾸려면 프로필 메뉴 단축키를 사용할 수 있다.
+  * macOS 기준으로 메모 당시 사용한 단축키는 `Cmd + Shift + M`이었다.
+  * 사용자 변경만을 위한 단축키라기보다는 프로필 메뉴를 여는 단축키에 가깝다.
+* 프로필 메뉴가 열리면 원하는 Chrome 사용자로 전환할 수 있다.
+  * 개인 계정, 회사 계정, 테스트 계정을 자주 오갈 때 유용하다.
+* 브라우저 단축키는 OS와 Chrome 버전에 따라 달라질 수 있다.
+  * 동작하지 않으면 Chrome 공식 단축키 문서나 메뉴 항목을 다시 확인하는 편이 좋다.

@@ -10,10 +10,17 @@ tags:
   - "TIL"
   - "rust"
 ---
-* 단 너무 많이 쓰면 문제의 신호일 수 있을것
-  ```rust
-  struct Foo<T,U> {
+* Rust generic type parameter는 하나만 쓸 필요가 없다.
+  * 필요한 만큼 여러 개를 선언할 수 있다.
+
+```rust
+struct Foo<T, U> {
     x: T,
     y: U,
-  }
-  ```
+}
+```
+
+* 위 예시에서 `x`와 `y`는 서로 다른 타입을 가질 수 있다.
+  * 예를 들어 `Foo<i32, String>`처럼 사용할 수 있다.
+* 다만 generic parameter가 너무 많아지면 타입 설계가 복잡해졌다는 신호일 수 있다.
+  * 여러 타입을 정말 독립적으로 받아야 하는지, trait이나 별도 struct로 나누는 편이 나은지 같이 봐야 한다.
