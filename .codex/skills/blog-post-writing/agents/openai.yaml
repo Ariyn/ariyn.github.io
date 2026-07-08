@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Post Writing"
+  short_description: "Write and verify posts for this Jekyll blog."
+  default_prompt: "블로그 글 작성. 주제와 메모를 적어줘."
