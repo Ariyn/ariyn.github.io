@@ -7,7 +7,6 @@
         <a class="link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
         <hr class="hr-list">
         <span class="post-meta">
-          {% include kind-label.html post=post %}
           <time class="time meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y/%m/%d" }}</time>
         </span>
       </li>
