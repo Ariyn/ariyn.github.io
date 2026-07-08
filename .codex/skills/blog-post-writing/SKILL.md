@@ -19,10 +19,10 @@ description: Write, revise, and verify posts for this Jekyll blog. Use when the 
    - New post path: `_posts/<YYYY-MM-DD>-<slug>.md`.
    - Use the current date from the environment for `date` and `lastmod`.
 4. Write Jekyll front matter using the repository format.
-5. Draft the body in the existing blog style:
+5. Draft the body in the blog style reference format:
    - Korean technical blog tone.
-   - `*` bullet-first structure.
-   - 2-space indented nested bullets.
+   - Short summary at the top.
+   - Hierarchical numbered propositions instead of bullet lists.
    - Short judgment, reason, implementation detail, validation, and lesson learned.
 6. Run `bundle exec jekyll build` after writing or revising.
 7. Report the changed file path and build result.

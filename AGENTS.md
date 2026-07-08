@@ -6,6 +6,7 @@
 - Keep all created or edited workflow files inside this repository. Do not create or modify global Codex, global agent, or other repository files for this workflow.
 - For blog writing tasks, read `.codex/skills/blog-post-writing/references/blog-style.md` before drafting the post.
 - Reference recent and related files in `_posts/` to confirm the current front matter shape, tone, and formatting, but prefer the style reference file when there is a conflict.
+- Use the current default body format from `blog-style.md`: a short summary followed by hierarchical numbered propositions.
 - Edit only the new or explicitly requested post file. Do not modify existing posts in bulk.
 - Validate post changes with `bundle exec jekyll build`.
 - Do not stage or commit automatically. Only stage and commit when the user explicitly asks, and stage only the files that belong to that task.

@@ -207,3 +207,58 @@ img {
 .MathJax {
   display: inline !important;
 }
+
+.tractatus {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+  margin: 2rem 0;
+}
+
+.tractatus ol {
+  counter-reset: item;
+  list-style: none;
+  margin-top: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+.tractatus li {
+  counter-increment: item;
+  position: relative;
+  margin: 0.7rem 0;
+  line-height: 1.75;
+  padding-left: 4.5rem;
+}
+
+.tractatus li::before {
+  content: counters(item, ".") " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.5rem;
+  color: #888;
+  font-variant-numeric: tabular-nums;
+}
+
+.tractatus > li {
+  margin-top: 1.6rem;
+  font-weight: 500;
+}
+
+.tractatus > li > ol {
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .tractatus li {
+    padding-left: 3.2rem;
+  }
+
+  .tractatus ol {
+    padding-left: 1.25rem;
+  }
+
+  .tractatus li::before {
+    width: 2.6rem;
+  }
+}

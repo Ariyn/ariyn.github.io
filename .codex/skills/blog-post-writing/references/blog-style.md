@@ -10,9 +10,14 @@
 
 ## Body Format
 
-- Use `*` as the top-level bullet marker.
-- Use 2 spaces for nested bullet indentation.
-- Keep paragraphs short.
+- Start with a short 2-3 sentence summary before the numbered body.
+- Write the body as hierarchical propositions rendered by nested ordered lists.
+- Add the kramdown class attribute `{: .tractatus}` immediately before the top-level ordered list.
+- Leave generous blank space between top-level propositions.
+- Indent subordinate propositions with nested ordered lists, but keep the hierarchy shallow. Prefer no deeper than three levels.
+- Make each proposition short, direct, and judgeable.
+- Let `.tractatus` CSS render hierarchical numbers such as `1.`, `1.1.`, and `1.1.1.` in the left gutter. Do not write those compound numbers manually and do not force spacing with inline HTML.
+- Keep paragraphs short when a proposition needs supporting explanation.
 - Use inline code for file names, commands, identifiers, and tools.
 - Avoid large section headings unless the post clearly needs them.
 - Do not over-explain common tools. Explain only what matters for this migration, bug, or technical decision.
@@ -20,13 +25,24 @@
 Example:
 
 ```md
-* 먼저 문제는 배포 흐름이 복잡하다는 것이었다.
-  * 글을 쓰는 일보다 빌드와 배포를 신경 쓰는 시간이 더 커졌다.
-  * 그래서 GitHub Pages와 맞는 구조로 줄이는 것이 목표였다.
-* 작업은 크게 세 가지였다.
-  * front matter를 Jekyll 형식으로 맞췄다.
-  * 기존 permalink를 유지했다.
-  * 마지막으로 `bundle exec jekyll build`로 확인했다.
+배포 흐름을 줄이는 것이 이번 변경의 핵심이었다.
+글을 쓰는 일보다 빌드와 배포를 신경 쓰는 시간이 커졌기 때문이다.
+
+{: .tractatus}
+1. 먼저 문제는 배포 흐름이 복잡하다는 것이었다.
+
+   1. 글을 쓰는 일보다 빌드와 배포를 신경 쓰는 시간이 더 커졌다.
+
+   2. 그래서 GitHub Pages와 맞는 구조로 줄이는 것이 목표였다.
+
+
+2. 작업은 크게 세 가지였다.
+
+   1. front matter를 Jekyll 형식으로 맞췄다.
+
+   2. 기존 permalink를 유지했다.
+
+   3. 마지막으로 `bundle exec jekyll build`로 확인했다.
 ```
 
 ## Front Matter
