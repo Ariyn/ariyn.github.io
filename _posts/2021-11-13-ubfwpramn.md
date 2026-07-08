@@ -5,6 +5,7 @@ date: "2021-11-13T17:21:13+07:00"
 lastmod: "2021-11-13T17:22:43+07:00"
 slug: "ubfwpramn"
 permalink: "/posts/ubfwpramn/"
+kind: dev
 tags:
   - "TIL"
   - "golang"

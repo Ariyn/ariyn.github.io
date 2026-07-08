@@ -5,6 +5,7 @@ date: "2022-03-31T23:30:37+07:00"
 lastmod: "2022-03-31T23:35:41+07:00"
 slug: "aloeqidvp"
 permalink: "/posts/aloeqidvp/"
+kind: dev
 tags:
   - "TIL"
   - "rust"

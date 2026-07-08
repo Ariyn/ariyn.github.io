@@ -5,6 +5,7 @@ date: "2021-08-18T18:39:32+07:00"
 lastmod: "2021-12-01T22:31:33+07:00"
 slug: "hsaaqmayc"
 permalink: "/posts/hsaaqmayc/"
+kind: dev
 tags:
   - "TIL"
   - "커뮤니케이션"

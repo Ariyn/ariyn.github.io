@@ -5,6 +5,7 @@ date: "2022-07-20T14:51:57+07:00"
 lastmod: "2022-07-20T15:40:39+07:00"
 slug: "gypmvccah"
 permalink: "/posts/gypmvccah/"
+kind: personal
 tags:
   - "TIL"
   - "학습"

@@ -5,6 +5,7 @@ date: "2021-11-03T14:31:05+07:00"
 lastmod: "2021-11-03T14:31:40+07:00"
 slug: "ygybygxfk"
 permalink: "/posts/ygybygxfk/"
+kind: dev
 tags:
   - "TIL"
   - "logstash"

@@ -5,6 +5,7 @@ date: "2023-04-25T16:51:00+07:00"
 lastmod: "2023-05-21T09:39:12+07:00"
 slug: "jpwflromv"
 permalink: "/posts/jpwflromv/"
+kind: personal
 tags:
   - "블로그"
   - "버트런드 러셀"

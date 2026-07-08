@@ -5,6 +5,7 @@ date: "2021-09-10T22:36:56+07:00"
 lastmod: "2021-09-17T10:04:02+07:00"
 slug: "hcgnzjtrl"
 permalink: "/posts/hcgnzjtrl/"
+kind: dev
 tags:
   - "TIL"
   - "regexp"

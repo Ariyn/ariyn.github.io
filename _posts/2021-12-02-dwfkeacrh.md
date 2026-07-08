@@ -5,6 +5,7 @@ date: "2021-12-02T22:36:34+07:00"
 lastmod: "2024-03-04T22:05:17+07:00"
 slug: "dwfkeacrh"
 permalink: "/posts/dwfkeacrh/"
+kind: dev
 tags:
   - "재밌는"
   - "TIL"

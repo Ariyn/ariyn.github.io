@@ -5,6 +5,7 @@ date: "2022-05-01T13:07:13+07:00"
 lastmod: "2022-05-01T13:07:29+07:00"
 slug: "opcbmjmnr"
 permalink: "/posts/opcbmjmnr/"
+kind: personal
 tags:
   - "어원"
   - "단어"

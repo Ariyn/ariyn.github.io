@@ -5,6 +5,7 @@ date: "2022-11-14T01:31:37+07:00"
 lastmod: "2024-04-28T16:01:30+07:00"
 slug: "plzjlfnva"
 permalink: "/posts/plzjlfnva/"
+kind: personal
 tags:
   - "영원의 건축"
   - "November 16th, 2022"

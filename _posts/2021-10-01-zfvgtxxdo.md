@@ -5,6 +5,7 @@ date: "2021-10-01T12:07:36+07:00"
 lastmod: "2021-12-01T23:24:54+07:00"
 slug: "zfvgtxxdo"
 permalink: "/posts/zfvgtxxdo/"
+kind: dev
 tags:
   - "TIL"
   - "golang"

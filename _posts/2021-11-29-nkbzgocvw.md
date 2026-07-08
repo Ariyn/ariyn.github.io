@@ -5,6 +5,7 @@ date: "2021-11-29T09:59:56+07:00"
 lastmod: "2021-12-03T23:42:54+07:00"
 slug: "nkbzgocvw"
 permalink: "/posts/nkbzgocvw/"
+kind: dev
 tags:
   - "airflow"
   - "TIL"

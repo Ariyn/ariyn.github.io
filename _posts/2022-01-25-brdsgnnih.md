@@ -5,6 +5,7 @@ date: "2022-01-25T11:47:40+07:00"
 lastmod: "2022-01-25T11:48:05+07:00"
 slug: "brdsgnnih"
 permalink: "/posts/brdsgnnih/"
+kind: dev
 tags:
   - "TIL"
 ---

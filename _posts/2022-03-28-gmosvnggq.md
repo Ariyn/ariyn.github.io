@@ -5,6 +5,7 @@ date: "2022-03-28T10:13:44+07:00"
 lastmod: "2022-03-28T11:52:55+07:00"
 slug: "gmosvnggq"
 permalink: "/posts/gmosvnggq/"
+kind: personal
 tags:
   - "TIL"
   - "역사"

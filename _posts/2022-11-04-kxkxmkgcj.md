@@ -5,6 +5,7 @@ date: "2022-11-04T10:22:11+07:00"
 lastmod: "2022-11-04T10:22:25+07:00"
 slug: "kxkxmkgcj"
 permalink: "/posts/kxkxmkgcj/"
+kind: personal
 tags:
   - "TIL"
   - "트리비아"

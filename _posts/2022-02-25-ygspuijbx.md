@@ -5,6 +5,7 @@ date: "2022-02-25T16:37:22+07:00"
 lastmod: "2022-02-25T18:02:03+07:00"
 slug: "ygspuijbx"
 permalink: "/posts/ygspuijbx/"
+kind: personal
 tags:
   - "수학"
   - "TIL"

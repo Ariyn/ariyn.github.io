@@ -5,6 +5,7 @@ date: "2021-10-16T23:11:31+07:00"
 lastmod: "2021-12-03T00:27:26+07:00"
 slug: "jigpaezuv"
 permalink: "/posts/jigpaezuv/"
+kind: personal
 tags:
   - "TIL"
   - "중동"

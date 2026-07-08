@@ -5,6 +5,7 @@ date: "2021-08-06T09:44:44+07:00"
 lastmod: "2021-12-01T22:23:32+07:00"
 slug: "rphrpnenm"
 permalink: "/posts/rphrpnenm/"
+kind: personal
 tags:
   - "TIL"
   - "코칭"

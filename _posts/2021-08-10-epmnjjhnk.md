@@ -5,6 +5,7 @@ date: "2021-08-10T23:07:05+07:00"
 lastmod: "2021-12-01T22:26:33+07:00"
 slug: "epmnjjhnk"
 permalink: "/posts/epmnjjhnk/"
+kind: dev
 tags:
   - "TIL"
   - "swift"

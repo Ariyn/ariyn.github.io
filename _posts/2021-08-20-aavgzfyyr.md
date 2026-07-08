@@ -5,6 +5,7 @@ date: "2021-08-20T14:56:45+07:00"
 lastmod: "2021-12-01T22:36:24+07:00"
 slug: "aavgzfyyr"
 permalink: "/posts/aavgzfyyr/"
+kind: dev
 tags:
   - "lets encrypt"
   - "TIL"

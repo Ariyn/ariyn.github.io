@@ -5,6 +5,7 @@ date: "2021-08-19T10:06:57+07:00"
 lastmod: "2023-05-21T09:39:12+07:00"
 slug: "gteknican"
 permalink: "/posts/gteknican/"
+kind: personal
 tags:
   - "블로그"
   - "이번주 습관"

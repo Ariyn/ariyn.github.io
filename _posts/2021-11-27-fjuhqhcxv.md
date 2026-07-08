@@ -5,6 +5,7 @@ date: "2021-11-27T16:45:43+07:00"
 lastmod: "2021-12-03T23:41:52+07:00"
 slug: "fjuhqhcxv"
 permalink: "/posts/fjuhqhcxv/"
+kind: dev
 tags:
   - "godot"
   - "TIL"

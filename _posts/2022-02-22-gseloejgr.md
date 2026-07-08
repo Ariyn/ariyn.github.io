@@ -5,6 +5,7 @@ date: "2022-02-22T00:26:42+07:00"
 lastmod: "2022-02-22T00:29:38+07:00"
 slug: "gseloejgr"
 permalink: "/posts/gseloejgr/"
+kind: dev
 tags:
   - "golang"
   - "TIL"

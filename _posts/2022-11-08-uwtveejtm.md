@@ -5,6 +5,7 @@ date: "2022-11-08T19:51:25+07:00"
 lastmod: "2023-05-21T09:39:12+07:00"
 slug: "uwtveejtm"
 permalink: "/posts/uwtveejtm/"
+kind: dev
 tags:
   - "블로그"
   - "개발"

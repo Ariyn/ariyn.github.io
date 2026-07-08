@@ -5,6 +5,7 @@ date: "2021-08-11T10:10:25+07:00"
 lastmod: "2021-08-11T10:10:46+07:00"
 slug: "hjzrvdsma"
 permalink: "/posts/hjzrvdsma/"
+kind: personal
 tags:
   - "개선"
   - "TIL"

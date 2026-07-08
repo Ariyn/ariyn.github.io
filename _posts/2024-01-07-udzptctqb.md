@@ -5,6 +5,7 @@ date: "2024-01-07T19:36:43+07:00"
 lastmod: "2024-01-07T22:32:55+07:00"
 slug: "udzptctqb"
 permalink: "/posts/udzptctqb/"
+kind: dev
 tags:
   - "TIL"
 ---

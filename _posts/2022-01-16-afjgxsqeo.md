@@ -5,6 +5,7 @@ date: "2022-01-16T19:12:11+07:00"
 lastmod: "2022-01-16T19:14:21+07:00"
 slug: "afjgxsqeo"
 permalink: "/posts/afjgxsqeo/"
+kind: dev
 tags:
   - "TIL"
 ---

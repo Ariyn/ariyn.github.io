@@ -5,6 +5,7 @@ date: "2022-02-10T10:28:58+07:00"
 lastmod: "2022-02-10T23:52:26+07:00"
 slug: "fqgadhggd"
 permalink: "/posts/fqgadhggd/"
+kind: personal
 tags:
   - "TIL"
 ---

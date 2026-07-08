@@ -5,6 +5,7 @@ date: "2021-12-12T16:56:20+07:00"
 lastmod: "2021-12-12T16:56:37+07:00"
 slug: "xpmlpwpho"
 permalink: "/posts/xpmlpwpho/"
+kind: personal
 tags:
   - "법"
   - "TIL"

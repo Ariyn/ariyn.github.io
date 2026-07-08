@@ -5,6 +5,7 @@ date: "2021-12-23T21:49:42+07:00"
 lastmod: "2021-12-23T21:49:56+07:00"
 slug: "kzstscfvn"
 permalink: "/posts/kzstscfvn/"
+kind: dev
 tags:
   - "TIL"
   - "mac"

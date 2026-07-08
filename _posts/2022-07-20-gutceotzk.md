@@ -5,6 +5,7 @@ date: "2022-07-20T17:37:03+07:00"
 lastmod: "2022-07-20T17:37:14+07:00"
 slug: "gutceotzk"
 permalink: "/posts/gutceotzk/"
+kind: dev
 tags:
   - "TIL"
   - "golang"

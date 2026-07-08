@@ -5,6 +5,7 @@ date: "2022-03-12T21:38:16+07:00"
 lastmod: "2022-03-12T21:39:34+07:00"
 slug: "glqyluitt"
 permalink: "/posts/glqyluitt/"
+kind: dev
 tags:
   - "TIL"
   - "mysql"

@@ -5,6 +5,7 @@ date: "2022-11-14T17:30:33+07:00"
 lastmod: "2023-05-21T09:39:12+07:00"
 slug: "wggfvhfkl"
 permalink: "/posts/wggfvhfkl/"
+kind: personal
 tags:
   - "패턴 언어"
   - "블로그"

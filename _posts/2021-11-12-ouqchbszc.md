@@ -5,6 +5,7 @@ date: "2021-11-12T14:54:44+07:00"
 lastmod: "2021-11-12T14:54:52+07:00"
 slug: "ouqchbszc"
 permalink: "/posts/ouqchbszc/"
+kind: personal
 tags:
   - "TIL"
   - "심리"

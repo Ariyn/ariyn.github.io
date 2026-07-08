@@ -5,6 +5,7 @@ date: "2021-08-21T21:55:45+07:00"
 lastmod: "2021-12-01T22:39:50+07:00"
 slug: "aflryfrwt"
 permalink: "/posts/aflryfrwt/"
+kind: dev
 tags:
   - "TIL"
   - "shell"

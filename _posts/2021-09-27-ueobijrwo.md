@@ -5,6 +5,7 @@ date: "2021-09-27T15:14:38+07:00"
 lastmod: "2021-12-01T23:05:05+07:00"
 slug: "ueobijrwo"
 permalink: "/posts/ueobijrwo/"
+kind: personal
 tags:
   - "TIL"
   - "트리비아"

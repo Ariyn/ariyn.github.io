@@ -5,6 +5,7 @@ date: "2024-04-12T16:43:05+07:00"
 lastmod: "2024-04-28T20:46:36+07:00"
 slug: "qyhqeuadx"
 permalink: "/posts/qyhqeuadx/"
+kind: dev
 tags:
   - "TIL"
 ---

@@ -5,6 +5,7 @@ date: "2022-02-04T17:06:46+07:00"
 lastmod: "2022-02-04T17:33:12+07:00"
 slug: "utgrfchew"
 permalink: "/posts/utgrfchew/"
+kind: dev
 tags:
   - "TIL"
   - "vim"

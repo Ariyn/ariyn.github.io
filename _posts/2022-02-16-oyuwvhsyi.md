@@ -5,6 +5,7 @@ date: "2022-02-16T21:47:13+07:00"
 lastmod: "2022-02-16T21:47:24+07:00"
 slug: "oyuwvhsyi"
 permalink: "/posts/oyuwvhsyi/"
+kind: personal
 tags:
   - "TIL"
 ---

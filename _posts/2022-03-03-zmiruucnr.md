@@ -5,6 +5,7 @@ date: "2022-03-03T14:52:22+07:00"
 lastmod: "2022-03-03T16:47:16+07:00"
 slug: "zmiruucnr"
 permalink: "/posts/zmiruucnr/"
+kind: dev
 tags:
   - "스티비"
   - "업무노트"

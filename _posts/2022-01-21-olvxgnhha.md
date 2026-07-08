@@ -5,6 +5,7 @@ date: "2022-01-21T00:14:09+07:00"
 lastmod: "2022-01-21T00:14:17+07:00"
 slug: "olvxgnhha"
 permalink: "/posts/olvxgnhha/"
+kind: personal
 tags:
   - "TIL"
   - "심리"

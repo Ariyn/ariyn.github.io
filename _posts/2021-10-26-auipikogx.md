@@ -5,6 +5,7 @@ date: "2021-10-26T14:51:15+07:00"
 lastmod: "2021-10-26T16:30:45+07:00"
 slug: "auipikogx"
 permalink: "/posts/auipikogx/"
+kind: personal
 tags:
   - "TIL"
   - "개념"

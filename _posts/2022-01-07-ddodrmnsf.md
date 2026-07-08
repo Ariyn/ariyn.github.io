@@ -5,6 +5,7 @@ date: "2022-01-07T18:04:22+07:00"
 lastmod: "2022-01-07T18:04:34+07:00"
 slug: "ddodrmnsf"
 permalink: "/posts/ddodrmnsf/"
+kind: personal
 tags:
   - "단어"
   - "TIL"

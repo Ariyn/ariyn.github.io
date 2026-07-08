@@ -5,6 +5,7 @@ date: "2021-10-05T18:29:53+07:00"
 lastmod: "2021-10-05T18:31:16+07:00"
 slug: "mzsmfdhir"
 permalink: "/posts/mzsmfdhir/"
+kind: dev
 tags:
   - "TIL"
   - "aws"

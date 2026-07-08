@@ -5,6 +5,7 @@ date: "2022-07-20T15:40:34+07:00"
 lastmod: "2022-07-20T16:52:31+07:00"
 slug: "ttfqiummz"
 permalink: "/posts/ttfqiummz/"
+kind: dev
 tags:
   - "TIL"
   - "bash"

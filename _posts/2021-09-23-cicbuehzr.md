@@ -5,6 +5,7 @@ date: "2021-09-23T09:43:32+07:00"
 lastmod: "2021-09-23T09:46:33+07:00"
 slug: "cicbuehzr"
 permalink: "/posts/cicbuehzr/"
+kind: personal
 tags:
   - "트리비아"
   - "TIL"
