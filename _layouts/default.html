@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ko' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main</a>
+    <main id="main">
+      <div class="content">
+        {% include header.html %}
+        {{ content }}
+      </div>
+    </main>
+    {% include mathjax.html %}
+  </body>
+</html>

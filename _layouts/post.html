@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article>
+  <h2 class="post">{{ page.title }}</h2>
+  {{ content }}
+  {% if page.tags and page.tags.size > 0 %}
+    <p class="meta tags">
+      {% for tag in page.tags %}
+        {% assign tag_slug = tag | site_tag_slug %}
+        <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+</article>

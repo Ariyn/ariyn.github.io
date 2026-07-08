@@ -1,13 +1,24 @@
-<script src="/dist/jquery.js"></script>
-<script>
-  const posts = "/posts.json"
-
-  $.get( posts, function(posts) {
-    console.log(posts)
-    const nextPostId = posts[Math.floor(Math.random()*posts.length)];
-
-    window.location.href = window.location.origin + "/posts/"+nextPostId+"/"
-  }).fail(function() {
-    history.back()
-  })
-</script>
+---
+layout:
+title: Random
+permalink: /random/
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'ko' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random | {{ site.title }}</title>
+  </head>
+  <body>
+    <script>
+      fetch("/posts.json")
+        .then((response) => response.json())
+        .then((posts) => {
+          const nextPostId = posts[Math.floor(Math.random() * posts.length)];
+          window.location.href = `${window.location.origin}/posts/${nextPostId}/`;
+        })
+        .catch(() => history.back());
+    </script>
+  </body>
+</html>

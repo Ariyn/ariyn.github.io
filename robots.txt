@@ -1,3 +1,7 @@
+---
+layout:
+permalink: /robots.txt
+---
 User-agent: *
 Disallow:
-Sitemap: https://ronaldsvilcins.com/sitemap.xml
+Sitemap: {{ "/sitemap.xml" | absolute_url }}

@@ -1,0 +1,31 @@
+title: "this.isMin.uk"
+description: "Minimalistic blogging theme"
+url: "https://this.ismin.uk"
+baseurl: ""
+timezone: "Asia/Bangkok"
+lang: "ko"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /posts/:slug/
+
+include:
+  - TjmWLYp02/_rJ3leDZfN.png
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      render_with_liquid: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - vendor
+  - README.md
