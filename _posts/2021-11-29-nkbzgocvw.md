@@ -6,6 +6,8 @@ lastmod: "2021-12-03T23:42:54+07:00"
 slug: "nkbzgocvw"
 permalink: "/posts/nkbzgocvw/"
 kind: dev
+section: til
+category: short-error-fix
 tags:
   - "airflow"
   - "TIL"

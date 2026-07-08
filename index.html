@@ -4,19 +4,33 @@ title:
 ---
 
 <section>
-  {% assign dev_posts = site.posts | where: "kind", "dev" %}
+  {% assign tech_blog_posts = site.posts | where: "section", "tech-blog" %}
+  {% assign til_posts = site.posts | where: "section", "til" %}
+  {% assign project_posts = site.posts | where: "section", "projects" %}
   {% assign personal_posts = site.posts | where: "kind", "personal" %}
 
   <div class="home-sections">
     <section>
-      <h2 class="post"><a href="{{ '/dev/' | relative_url }}">Dev</a> <span class="meta">({{ dev_posts.size }})</span></h2>
-      {% include post-list.html posts=dev_posts limit=8 %}
-      <p><a href="{{ '/dev/' | relative_url }}">All Dev posts</a></p>
+      <h2 class="post"><a href="{{ '/tech-blog/' | relative_url }}">Dev/Tech Blog</a> <span class="meta">({{ tech_blog_posts.size }})</span></h2>
+      {% include post-list.html posts=tech_blog_posts limit=5 %}
+      <p><a href="{{ '/tech-blog/' | relative_url }}">All Dev/Tech Blog posts</a></p>
+    </section>
+
+    <section>
+      <h2 class="post"><a href="{{ '/projects/' | relative_url }}">Dev/Projects</a> <span class="meta">({{ project_posts.size }})</span></h2>
+      {% include post-list.html posts=project_posts limit=5 %}
+      <p><a href="{{ '/projects/' | relative_url }}">All Dev/Projects posts</a></p>
+    </section>
+
+    <section>
+      <h2 class="post"><a href="{{ '/til/' | relative_url }}">Dev/TIL</a> <span class="meta">({{ til_posts.size }})</span></h2>
+      {% include post-list.html posts=til_posts limit=5 %}
+      <p><a href="{{ '/til/' | relative_url }}">All Dev/TIL posts</a></p>
     </section>
 
     <section>
       <h2 class="post"><a href="{{ '/personal/' | relative_url }}">Personal</a> <span class="meta">({{ personal_posts.size }})</span></h2>
-      {% include post-list.html posts=personal_posts limit=8 %}
+      {% include post-list.html posts=personal_posts limit=5 %}
       <p><a href="{{ '/personal/' | relative_url }}">All Personal posts</a></p>
     </section>
   </div>

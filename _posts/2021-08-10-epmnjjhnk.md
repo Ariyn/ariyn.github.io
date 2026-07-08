@@ -6,6 +6,8 @@ lastmod: "2021-12-01T22:26:33+07:00"
 slug: "epmnjjhnk"
 permalink: "/posts/epmnjjhnk/"
 kind: dev
+section: til
+category: library-usage
 tags:
   - "TIL"
   - "swift"

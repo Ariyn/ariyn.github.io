@@ -6,6 +6,8 @@ lastmod: "2021-12-01T22:30:40+07:00"
 slug: "biggmfjwt"
 permalink: "/posts/biggmfjwt/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
   - "nodejs"

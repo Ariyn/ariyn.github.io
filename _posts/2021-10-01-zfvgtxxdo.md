@@ -6,6 +6,8 @@ lastmod: "2021-12-01T23:24:54+07:00"
 slug: "zfvgtxxdo"
 permalink: "/posts/zfvgtxxdo/"
 kind: dev
+section: til
+category: configuration-note
 tags:
   - "TIL"
   - "golang"

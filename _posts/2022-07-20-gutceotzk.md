@@ -6,6 +6,8 @@ lastmod: "2022-07-20T17:37:14+07:00"
 slug: "gutceotzk"
 permalink: "/posts/gutceotzk/"
 kind: dev
+section: til
+category: library-usage
 tags:
   - "TIL"
   - "golang"

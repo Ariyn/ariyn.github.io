@@ -6,6 +6,8 @@ lastmod: "2021-12-01T22:39:50+07:00"
 slug: "aflryfrwt"
 permalink: "/posts/aflryfrwt/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
   - "shell"

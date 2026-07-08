@@ -6,6 +6,8 @@ lastmod: "2021-12-23T21:49:56+07:00"
 slug: "kzstscfvn"
 permalink: "/posts/kzstscfvn/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
   - "mac"

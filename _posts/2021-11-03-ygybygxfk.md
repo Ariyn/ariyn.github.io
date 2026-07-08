@@ -6,6 +6,8 @@ lastmod: "2021-11-03T14:31:40+07:00"
 slug: "ygybygxfk"
 permalink: "/posts/ygybygxfk/"
 kind: dev
+section: til
+category: configuration-note
 tags:
   - "TIL"
   - "logstash"

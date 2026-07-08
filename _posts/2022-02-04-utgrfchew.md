@@ -6,6 +6,8 @@ lastmod: "2022-02-04T17:33:12+07:00"
 slug: "utgrfchew"
 permalink: "/posts/utgrfchew/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
   - "vim"

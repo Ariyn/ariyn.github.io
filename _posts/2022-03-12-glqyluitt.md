@@ -6,6 +6,8 @@ lastmod: "2022-03-12T21:39:34+07:00"
 slug: "glqyluitt"
 permalink: "/posts/glqyluitt/"
 kind: dev
+section: til
+category: library-usage
 tags:
   - "TIL"
   - "mysql"

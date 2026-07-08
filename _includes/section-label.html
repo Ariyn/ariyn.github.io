@@ -1,0 +1,8 @@
+{% assign section = include.section | default: include.post.section | default: page.section %}
+{% if section == "tech-blog" %}
+  <a class="kind-label section-tech-blog" href="{{ '/tech-blog/' | relative_url }}">Dev/Tech Blog</a>
+{% elsif section == "til" %}
+  <a class="kind-label section-til" href="{{ '/til/' | relative_url }}">Dev/TIL</a>
+{% elsif section == "projects" %}
+  <a class="kind-label section-projects" href="{{ '/projects/' | relative_url }}">Dev/Projects</a>
+{% endif %}

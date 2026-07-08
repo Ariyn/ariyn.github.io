@@ -6,6 +6,8 @@ lastmod: "2021-12-03T23:41:52+07:00"
 slug: "fjuhqhcxv"
 permalink: "/posts/fjuhqhcxv/"
 kind: dev
+section: til
+category: short-error-fix
 tags:
   - "godot"
   - "TIL"

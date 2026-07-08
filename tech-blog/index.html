@@ -1,0 +1,11 @@
+---
+layout: default
+title: Dev/Tech Blog
+permalink: /tech-blog/
+---
+
+<section>
+  <h2 class="post">Dev/Tech Blog</h2>
+  {% assign tech_blog_posts = site.posts | where: "section", "tech-blog" %}
+  {% include post-list.html posts=tech_blog_posts %}
+</section>

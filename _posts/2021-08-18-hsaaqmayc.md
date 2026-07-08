@@ -6,6 +6,8 @@ lastmod: "2021-12-01T22:31:33+07:00"
 slug: "hsaaqmayc"
 permalink: "/posts/hsaaqmayc/"
 kind: dev
+section: tech-blog
+category: operating-experience
 tags:
   - "TIL"
   - "커뮤니케이션"

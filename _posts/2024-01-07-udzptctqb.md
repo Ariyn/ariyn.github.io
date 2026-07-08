@@ -6,6 +6,8 @@ lastmod: "2024-01-07T22:32:55+07:00"
 slug: "udzptctqb"
 permalink: "/posts/udzptctqb/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
 ---

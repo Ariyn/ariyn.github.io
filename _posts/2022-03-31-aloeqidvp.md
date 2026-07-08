@@ -6,6 +6,8 @@ lastmod: "2022-03-31T23:35:41+07:00"
 slug: "aloeqidvp"
 permalink: "/posts/aloeqidvp/"
 kind: dev
+section: til
+category: library-usage
 tags:
   - "TIL"
   - "rust"

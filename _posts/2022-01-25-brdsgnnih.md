@@ -6,6 +6,8 @@ lastmod: "2022-01-25T11:48:05+07:00"
 slug: "brdsgnnih"
 permalink: "/posts/brdsgnnih/"
 kind: dev
+section: til
+category: library-usage
 tags:
   - "TIL"
 ---

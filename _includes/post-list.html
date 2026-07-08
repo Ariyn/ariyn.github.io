@@ -7,6 +7,9 @@
         <a class="link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
         <hr class="hr-list">
         <span class="post-meta">
+          {% if include.show_section and post.section %}
+            {% include section-label.html section=post.section %}
+          {% endif %}
           <time class="time meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y/%m/%d" }}</time>
         </span>
       </li>

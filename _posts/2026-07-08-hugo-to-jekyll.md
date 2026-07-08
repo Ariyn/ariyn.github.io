@@ -6,6 +6,8 @@ lastmod: "2026-07-08T00:00:00+07:00"
 slug: "hugo-to-jekyll"
 permalink: "/posts/hugo-to-jekyll/"
 kind: dev
+section: tech-blog
+category: technical-choice-trade-off
 tags:
   - "블로그"
   - "개발"

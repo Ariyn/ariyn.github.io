@@ -6,6 +6,8 @@ lastmod: "2022-03-12T19:44:51+07:00"
 slug: "eytikfvjz"
 permalink: "/posts/eytikfvjz/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
   - "gorm"

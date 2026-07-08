@@ -6,6 +6,8 @@ lastmod: "2021-11-24T21:52:11+07:00"
 slug: "napcywbps"
 permalink: "/posts/napcywbps/"
 kind: dev
+section: til
+category: configuration-note
 tags:
   - "TIL"
   - "godot"

@@ -6,6 +6,8 @@ lastmod: "2022-03-03T16:47:16+07:00"
 slug: "zmiruucnr"
 permalink: "/posts/zmiruucnr/"
 kind: dev
+section: tech-blog
+category: design-decision
 tags:
   - "스티비"
   - "업무노트"

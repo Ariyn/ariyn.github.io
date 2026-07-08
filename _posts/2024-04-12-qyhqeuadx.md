@@ -6,6 +6,8 @@ lastmod: "2024-04-28T20:46:36+07:00"
 slug: "qyhqeuadx"
 permalink: "/posts/qyhqeuadx/"
 kind: dev
+section: tech-blog
+category: troubleshooting-retrospective
 tags:
   - "TIL"
 ---

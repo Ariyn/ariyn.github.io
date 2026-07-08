@@ -1,8 +1,11 @@
 ---
 layout: default
-title: Projects
+title: Dev/Projects
 permalink: /projects/
 ---
 
-<h2 class="post">Projects</h2>
-<ul class="list"></ul>
+<section>
+  <h2 class="post">Dev/Projects</h2>
+  {% assign project_posts = site.posts | where: "section", "projects" %}
+  {% include post-list.html posts=project_posts %}
+</section>

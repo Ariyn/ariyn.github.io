@@ -6,6 +6,8 @@ lastmod: "2021-10-05T18:31:16+07:00"
 slug: "mzsmfdhir"
 permalink: "/posts/mzsmfdhir/"
 kind: dev
+section: til
+category: configuration-note
 tags:
   - "TIL"
   - "aws"

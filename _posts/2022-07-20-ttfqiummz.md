@@ -6,6 +6,8 @@ lastmod: "2022-07-20T16:52:31+07:00"
 slug: "ttfqiummz"
 permalink: "/posts/ttfqiummz/"
 kind: dev
+section: til
+category: command
 tags:
   - "TIL"
   - "bash"

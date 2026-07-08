@@ -6,6 +6,8 @@ lastmod: "2023-05-21T09:39:12+07:00"
 slug: "uwtveejtm"
 permalink: "/posts/uwtveejtm/"
 kind: dev
+section: projects
+category: automation
 tags:
   - "블로그"
   - "개발"

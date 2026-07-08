@@ -6,6 +6,8 @@ lastmod: "2021-12-01T22:36:24+07:00"
 slug: "aavgzfyyr"
 permalink: "/posts/aavgzfyyr/"
 kind: dev
+section: til
+category: link-short-summary
 tags:
   - "lets encrypt"
   - "TIL"

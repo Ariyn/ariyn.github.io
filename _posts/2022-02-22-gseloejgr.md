@@ -6,6 +6,8 @@ lastmod: "2022-02-22T00:29:38+07:00"
 slug: "gseloejgr"
 permalink: "/posts/gseloejgr/"
 kind: dev
+section: til
+category: library-usage
 tags:
   - "golang"
   - "TIL"

@@ -6,6 +6,8 @@ lastmod: "2021-11-13T17:22:43+07:00"
 slug: "ubfwpramn"
 permalink: "/posts/ubfwpramn/"
 kind: dev
+section: til
+category: short-error-fix
 tags:
   - "TIL"
   - "golang"

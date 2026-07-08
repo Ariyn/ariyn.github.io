@@ -6,6 +6,8 @@ lastmod: "2022-01-16T19:14:21+07:00"
 slug: "afjgxsqeo"
 permalink: "/posts/afjgxsqeo/"
 kind: dev
+section: til
+category: link-short-summary
 tags:
   - "TIL"
 ---

@@ -1,0 +1,11 @@
+---
+layout: default
+title: Dev/TIL
+permalink: /til/
+---
+
+<section>
+  <h2 class="post">Dev/TIL</h2>
+  {% assign til_posts = site.posts | where: "section", "til" %}
+  {% include post-list.html posts=til_posts %}
+</section>

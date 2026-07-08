@@ -7,6 +7,9 @@ layout: default
   {{ content }}
   <p class="meta">
     {% include kind-label.html kind=page.kind %}
+    {% if page.section %}
+      {% include section-label.html section=page.section %}
+    {% endif %}
   </p>
   {% if page.tags and page.tags.size > 0 %}
     <p class="meta tags">
