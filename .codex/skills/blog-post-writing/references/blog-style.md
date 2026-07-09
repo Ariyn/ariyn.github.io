@@ -12,6 +12,9 @@
 
 - Start with a short 2-3 sentence summary before the numbered body.
 - Write the body as hierarchical propositions rendered by nested ordered lists.
+- Same-level propositions must read as one coherent essay when collected in order; they should not read like a bare outline or a list of claims.
+- The collected same-level essay must function as the subordinate essay for its parent proposition.
+- For essay-style posts, let top-level propositions follow the movement of experience, observation, and judgment rather than a rigid argumentative outline.
 - Add the kramdown class attribute `{: .tractatus}` immediately before the top-level ordered list.
 - Leave generous blank space between top-level propositions.
 - Indent subordinate propositions with nested ordered lists, but keep the hierarchy shallow. Prefer no deeper than three levels.
