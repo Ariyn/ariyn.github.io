@@ -14,6 +14,9 @@
 - Write the body as hierarchical propositions rendered by nested ordered lists.
 - Same-level propositions must read as one coherent essay when collected in order; they should not read like a bare outline or a list of claims.
 - The collected same-level essay must function as the subordinate essay for its parent proposition.
+- Each level must be independently readable: the top-level propositions alone should form a complete essay, and any sibling group such as `1.1`, `1.2`, and `1.3` should also read as a smaller coherent essay.
+- Lower-level propositions must enrich their parent proposition by adding context, cause, contrast, implementation detail, or consequence. Do not use them as unrelated notes.
+- Treat `_posts/2026-07-09-supabase-lite.md` as the current canonical example of this structure. Its top-level propositions form the full essay, while each nested sibling group expands the parent proposition.
 - For essay-style posts, let top-level propositions follow the movement of experience, observation, and judgment rather than a rigid argumentative outline.
 - Add the kramdown class attribute `{: .tractatus}` immediately before the top-level ordered list.
 - Leave generous blank space between top-level propositions.
